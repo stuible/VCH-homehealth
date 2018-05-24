@@ -1,0 +1,45 @@
+body{
+    background-image: url("../image/demoBG.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+
+}
+.landing-parent {
+    position: relative;
+    height:100vh;
+  }
+
+.landing-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing-title {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+.landing-description {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.landing-actions {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.landing-button{
+    background-color: #C98931;
+    color: white;
+    border: none;
+}

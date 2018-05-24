@@ -1,0 +1,13 @@
+.menubar{
+    background-color: #0E141F;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+}
+
+.menu{
+    position: absolute;
+    bottom: 50px;
+    width: 300px;
+}
