@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700');
+
 body {
     /* margin-top: 50px; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
 }
 .container {
     margin-top: 50px;
@@ -23,15 +28,39 @@ body {
 }
 
 .menu-icon{
-    background-image: url("../icon/Topics.svg");
+    background-image: url("../image/icons/modules-icon.svg");
     background-repeat: no-repeat;
-    background-position: left center;
-    /* background-color: #C98931; */
+    background-position: right center;
+    background-color: #fff;
+    text-align: right;
     height: 25px;
-    width: 40px;
+    width: 200px;
     float: left;
     margin-top: 12px;
-    margin-left: 12px;
+    margin-left: -210px;
+    padding-right: 60px;
+    border: solid 10px #fff;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    font-weight: 400;
+}
+
+.module-menu:hover {
+    cursor: pointer;
+}
+
+.module-menu:hover > .menu-icon {
+    -webkit-transform: translate(146px,0);
+    -moz-transform: translate(146px,0);
+    -o-transform: translate(146px,0);
+    -ms-transform: translate(146px,0);
+    transform: translate(146px,0);
+}
+
+.menu-name {
+    color: #fff;
+    line-height: 70px;
+    margin-left: 15px;
+    float: left;
 }
 
 .menu-support {
@@ -140,13 +169,30 @@ body {
 }
 
 .landing-logo {
-    font-size: 50px;
+    background-image: url("../image/logos/homehealthlogo.svg");
+    height: 65px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center; 
+}
+
+.landing-title {
+    font-size: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
     color: white;
 }
 
 .landing-description {
     color: white;
     margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
 }
 
 .landing-actions {
@@ -156,6 +202,21 @@ body {
 .landing-button {
     width: 175px;
     color: white;
+    border: none;
+}
+
+.begin-button {
+    background-color: #CB8C31;
+    margin-left: 15px;
+}
+
+.prereqs-button {
+    background-color: rgb(40, 23, 70);
+}
+
+.landing-button:hover {
+    width: 175px;
+    background-color: white;
 }
 
 .lt-logo {
