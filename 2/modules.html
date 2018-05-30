@@ -55,13 +55,54 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><a href="index.html"><div id="landing">Landing</div></a></div>
-                            <div class="swiper-slide"><a href="introduction.html"><div id="intro">Introduction</div></a></div>
-                            <div class="swiper-slide"><a href="introduction.html"><div id="slide-2">Introduction</div></a></div>
-                            <div class="swiper-slide"><a href="introduction.html"><div id="slide-3">Introduction</div></a></div>
-                            <div class="swiper-slide"><a href="introduction.html"><div id="slide-4">Introduction</div></a></div>
+
+                            <!-- LANDING PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="index.html"><div id="landing">
+                                    <div class="slide-title">Landing</div>
+                                </div></a>
+                            </div>
+
+                            <!-- INTRODUCTION PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="introduction.html"><div id="intro">
+                                    <div class="slide-title">Introduction</div>
+                                    <div class="slide-actions">
+                                        <button class="button-primary">Learn More</button>
+                                    </div>
+                                </div></a>
+                            </div>
+
+                            <!-- PERSON CENTERED CARE PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="introduction.html"><div id="slide-3">
+                                    <div class="slide-title">Person Centered Care</div>
+                                </div></a>
+                            </div>
+
+                            <!-- WOUND CARE PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="introduction.html"><div id="slide-4">
+                                    <div class="slide-title">Wound Care</div>
+                                </div></a>
+                            </div>
+
+                            <!-- INTERDISCIPLINARY COLLABORATION PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="introduction.html"><div id="slide-5">
+                                    <div class="slide-title">Interdisciplinary Collaboration</div>
+                                </div></a>
+                            </div>
+
+                            <!-- IV THERAPY PAGE  -->
+                            <div class="swiper-slide">
+                                <a href="introduction.html"><div id="slide-3">
+                                    <div class="slide-title">IV Therapy</div>
+                                </div></a>
+                            </div>
                         </div>
-                        <!-- If we need pagination -->
+                        
+                        <!-- pagination -->
                         <div class="swiper-pagination"></div>
 
                         <!-- If we need navigation buttons -->
@@ -69,6 +110,11 @@
                         <div class="swiper-button-next"></div>
                 </div>
     </div>
+    <script>
+        $().ready(function(){
+            instantiateSlider();
+        });
+    </script>
 
 </body>
 

@@ -192,6 +192,7 @@ $().ready(function() {
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+    // spaceBetween: '50',
 
     // If we need pagination
     pagination: {
@@ -204,7 +205,5 @@ $().ready(function() {
       prevEl: '.swiper-button-prev',
     },
   });
-
-  console.log("instantiated slider");
 
   }
