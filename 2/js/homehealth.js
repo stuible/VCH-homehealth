@@ -11,25 +11,6 @@ $().ready(function() {
       }
     });
 
-  //Instantiate Swiper (Carousel)
-  var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
 
     var FadeTransition = Barba.BaseTransition.extend({
       start: function() {
@@ -42,7 +23,7 @@ $().ready(function() {
         // As soon the loading is finished and the old page is faded out, let's fade the new page
         Promise
           .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this));
+          .then(this.fadeIn.bind(this)).then(instantiateSlider());
       },
     
       fadeOut: function() {
@@ -101,6 +82,11 @@ $().ready(function() {
       lastElementClicked = el;
     });
 
+    Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+      instantiateSlider();
+    });
+
+    // Barba.Dispatcher.on('newPageReady', instantiateSlider());
 
 
 
@@ -197,3 +183,28 @@ $().ready(function() {
   // };
 
   });
+
+  function instantiateSlider(){
+  //Instantiate Swiper (Carousel)
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  console.log("instantiated slider");
+
+  }

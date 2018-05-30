@@ -106,3 +106,29 @@ body {
     font-size: 50px;
     color: white;
 }
+
+.landing-description {
+    color: white;
+    margin-top: 100px;
+}
+
+.landing-actions {
+    margin-top: 50px;
+}
+
+.landing-button {
+    width: 175px;
+    color: white;
+}
+
+.lt-logo {
+    background-image: url("../image/logos/lt.png");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+}
