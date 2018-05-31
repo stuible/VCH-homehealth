@@ -23,10 +23,13 @@ body {
 }
 
 .menu{
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    width: 300px;
+    /* position: absolute; */
+    margin-top: 45px !important;
+    border: none;
+    /* position: fixed; */
+    width: 100%;
+    text-align: left;
+    margin-left: 60px !important;
 }
 
 .menu-icon{
@@ -45,13 +48,13 @@ body {
 .menu-icon-container{
     background-color: #fff;
     text-align: right;
-    height: 25px;
-    width: 200px;
+    height: 45px;
+    width: 220px;
     float: left;
     margin-top: 12px;
     margin-left: -210px;
     padding-right: 60px;
-    border: solid 10px #fff;
+    /* border: solid 10px #fff; */
     transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     font-weight: 400;
 }
