@@ -2,14 +2,15 @@ $().ready(function() {
 
   //Instantiate Menu
   $(".menu").menu();
-    $('.menu-icon').click(function(){
-      if($(".menu").is(":visible")){
-        $(".menu").hide();
-      }
-      else {
-        $(".menu").show();
-      }
-    });
+  $('.menu-icon-container').click(function() {
+    toggleMenu();
+  });
+  $('.menu-icon').click(function() {
+    toggleMenu();
+  });
+  $('.menu-name').click(function() {
+    toggleMenu();
+  });
 
 
     var FadeTransition = Barba.BaseTransition.extend({
@@ -23,7 +24,7 @@ $().ready(function() {
         // As soon the loading is finished and the old page is faded out, let's fade the new page
         Promise
           .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this)).then(instantiateSlider());
+          .then(this.fadeIn.bind(this));
       },
     
       fadeOut: function() {
@@ -206,4 +207,13 @@ $().ready(function() {
     },
   });
 
+  }
+
+  function toggleMenu(){
+    if($(".menu").is(":visible")){
+      $(".menu").hide();
+    }
+    else {
+      $(".menu").show();
+    }
   }
