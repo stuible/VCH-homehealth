@@ -83,7 +83,7 @@ $().ready(function() {
       lastElementClicked = el;
     });
 
-    Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+    Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
       instantiateSlider();
     });
 
