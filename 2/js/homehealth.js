@@ -89,8 +89,13 @@ $().ready(function() {
       lastElementClicked = el;
     });
 
-    Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-      instantiateSlider();
+    //Check to see if the page we're loading has swiper on it before trying to initialize
+    Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus, container) {
+      var newpage = currentStatus.url.split("/").pop().replace(".html","");
+      if(newpage == 'modules'){
+        instantiateSlider();
+      }
+      
     });
 
     // Barba.Dispatcher.on('newPageReady', instantiateSlider());
