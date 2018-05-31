@@ -11,6 +11,12 @@ $().ready(function() {
   $('.menu-name').click(function() {
     toggleMenu();
   });
+  $('.module-menu').mouseleave(function(){
+    if($('.menu').is(':visible')){
+      toggleMenu();
+    }
+    
+  });
 
 
     var FadeTransition = Barba.BaseTransition.extend({
@@ -210,10 +216,9 @@ $().ready(function() {
   }
 
   function toggleMenu(){
-    if($(".menu").is(":visible")){
-      $(".menu").hide();
-    }
-    else {
-      $(".menu").show();
-    }
+
+      $(".menu").slideToggle( "fast", function() {
+        // Animation complete.
+      });
+
   }
