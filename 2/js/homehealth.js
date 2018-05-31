@@ -211,6 +211,11 @@ $().ready(function() {
       el: '.swiper-pagination',
     },
 
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
