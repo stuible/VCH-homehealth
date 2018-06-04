@@ -1,1 +1,19 @@
-{{ content }}
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            {{content}}
+        </div>
+    </div>
+
+</body>
+
+</html>

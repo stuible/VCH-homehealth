@@ -29,6 +29,27 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+# Collections
+collections:
+  introduction:
+    output: true
+    permalink: /introduction/:path/
+  person-centred-care:
+    output: true
+    permalink: /person-centred-care/:path/
+  wound-care:
+    output: true
+    permalink: /wound-care/:path/
+  collaboration:
+    output: true
+    permalink: /collaboration/:path/
+  iv-therapy:
+    output: true
+    permalink: /iv-therapy/:path/
+  palliative-care:
+    output: true
+    permalink: /palliative-care/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
