@@ -304,8 +304,16 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 .narrative img {
     width: 100%;
+    border-radius: 5px;
+}
+
+.more-info-button {
+    background-color: #CB8C31;
+    border: none;
+    color: #fff;
 }
