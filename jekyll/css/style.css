@@ -4,7 +4,11 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
-    background-color: #000000;
+    background: #453d56; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #453d56 0%, #274042 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #453d56 0%,#274042 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #453d56 0%,#274042 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#453d56', endColorstr='#274042',GradientType=1 );  IE6-9 fallback on horizontal gradient */
 }
 .container {
     margin-top: 80px;
@@ -140,7 +144,7 @@ body {
 .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
-    background: #CB8C31;
+    background: #ffffffc9;
 }
 
 .swiper-pagination-bullets {
@@ -278,6 +282,12 @@ body {
     bottom: 0;
     height: 100px;
     width: 100px;
+}
+
+/* MODULE PAGE */
+.course-objectives {
+    color: #fff;
+    text-align: center;
 }
 
 /* INTRODUCTION PAGE */
