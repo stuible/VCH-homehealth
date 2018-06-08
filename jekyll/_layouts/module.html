@@ -1,0 +1,68 @@
+---
+layout: module
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <!-- Swiper -->
+            <div class="module-swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="module-swiper-slide">
+                            <div class="container">
+                                    {{content}}
+                            </div>
+
+                        </div>
+                        <div class="module-swiper-slide">
+                                <div class="container">
+                                        <div class="narratives-parent-container">
+                                            <div class="narratives-container">
+                                                {% for item in page.cases %}
+                                                    <div class="narrative">
+                                                        <img src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
+                                                        <div class="narrative-name">{{ item.name }}</div>
+                                                    </div>
+                                                {% endfor %}
+
+                                                <div class="row">
+                                                    <div class="offset-by-four four columns">
+                                                        <a class="button more-info-button" href="#">More On This Topic</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Initialize Swiper -->
+            <script>
+                    var swiper = new Swiper('.module-swiper-container', {
+                    direction: 'vertical',
+                    slideClass: 'module-swiper-slide',
+                    mousewheel: {
+                        invert: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    });
+            </script>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

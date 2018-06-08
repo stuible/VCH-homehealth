@@ -95,8 +95,14 @@ $().ready(function() {
       if(newpage == 'modules'){
         instantiateSlider();
       }
-      else if(newpage == 'introduction'){
-        instantiateIntro();
+      else if(  newpage == 'introduction' ||
+                newpage == 'person-centered-care' ||
+                newpage == 'wound-care' || 
+                newpage == 'collaboration' ||
+                newpage == 'iv-therapy' || 
+                newpage == 'pallative-care'){
+
+                instantiateModule();
       }
       
     });
@@ -233,6 +239,21 @@ $().ready(function() {
     var introSwiper = new Swiper('.intro-swiper-container', {
       direction: 'vertical',
       slideClass: 'intro-swiper-slide',
+      mousewheel: {
+          invert: false,
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      });
+  }
+
+  function instantiateModule(){
+
+    var introSwiper = new Swiper('.module-swiper-container', {
+      direction: 'vertical',
+      slideClass: 'module-swiper-slide',
       mousewheel: {
           invert: false,
       },

@@ -7,8 +7,39 @@
 
     <div id="barba-wrapper">
             <div class="barba-container">
-                {{content}}
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <!-- LANDING PAGE  -->
+                        <div class="swiper-slide">
+                                <a href="{{site.url}}"><div id="landing" style="background-image: url('{{site.baseurl}}/image/modules/4.jpg')">
+                                    <div class="slide-title">Landing</div>
+                                </div></a>
+                        </div>
+
+                        {% for item in page.modules %}
+                            <div class="swiper-slide">
+                                <a href="{{site.baseurl}}/{{ item.pagename }}"><div id="{{ item.pagename }}" style="background-image: url('{{site.baseurl}}/image/modules/{{ item.image }}')">
+                                    <div class="slide-title">{{ item.name }}</div>
+                                    <div class="slide-actions">
+                                        <button class="button-primary">Before I Begin</button>
+                                    </div>
+                                </div></a>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+            </div>
     </div>
     <script>
         $().ready(function(){
