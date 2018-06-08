@@ -95,6 +95,9 @@ $().ready(function() {
       if(newpage == 'modules'){
         instantiateSlider();
       }
+      else if(newpage == 'introduction'){
+        instantiateIntro();
+      }
       
     });
 
@@ -197,32 +200,47 @@ $().ready(function() {
   });
 
   function instantiateSlider(){
-  //Instantiate Swiper (Carousel)
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    // spaceBetween: '50',
+    //Instantiate Swiper (Carousel)
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      // spaceBetween: '50',
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
+  }
+
+  function instantiateIntro(){
+
+    var introSwiper = new Swiper('.intro-swiper-container', {
+      direction: 'vertical',
+      slideClass: 'intro-swiper-slide',
+      mousewheel: {
+          invert: false,
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      });
   }
 
   function toggleMenu(){
