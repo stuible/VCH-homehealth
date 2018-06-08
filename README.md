@@ -38,14 +38,15 @@ Jekyll builds into a flat file website (found in _sites).  SImple build and depl
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
+* [Jekyll](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Swiper](https://maven.apache.org/) - JS carousell library
+* [Jquery](https://rometools.github.io/rome/) - A godsend
+* [Skeleton](https://rometools.github.io/rome/) - CSS Framework
+* [Barba](https://rometools.github.io/rome/) - AJAX Page loader
 
 ## Authors
 
-* **Josh Stuible** - *Main Developer* - [Site](https://stuible.com)
+* **Josh Stuible** - *Main Developer* - [Visit website](https://stuible.com)
 
 
 ## Libraries & Frameworks Used
