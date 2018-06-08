@@ -38,22 +38,13 @@ Jekyll builds into a flat file website (found in _sites).  SImple build and depl
 
 ## Built With
 
-* [Jekyll](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Swiper](https://maven.apache.org/) - JS carousell library
-* [Jquery](https://rometools.github.io/rome/) - A godsend
-* [Skeleton](https://rometools.github.io/rome/) - CSS Framework
-* [Barba](https://rometools.github.io/rome/) - AJAX Page loader
+* [Jekyll](https://jekyllrb.com/) - The web framework used
+* [Swiper](http://idangero.us/swiper/) - JS carousell library
+* [Jquery](https://jquery.com/) - A godsend
+* [Skeleton](http://getskeleton.com/) - CSS Framework
+* [Barba](http://barbajs.org/) - JS Framework that handles AJAX Page loading
 
 ## Authors
 
 * **Josh Stuible** - *Main Developer* - [Visit website](https://stuible.com)
-
-
-## Libraries & Frameworks Used
-
-* Jekyll
-* Swiper
-* Jquery
-* Barba
-* Skeleton
 
