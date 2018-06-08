@@ -91,7 +91,8 @@ $().ready(function() {
 
     //Check to see if the page we're loading has swiper on it before trying to initialize
     Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus, container) {
-      var newpage = currentStatus.url.split("/").pop().replace(".html","");
+      var newpage = getLastPart(currentStatus.url.split("#")[0]);
+      // newpage = newpage.split("/").pop().replace(".html","");
       // alert(newpage);
       if(newpage == 'modules'){
         instantiateSlider();
@@ -218,6 +219,7 @@ $().ready(function() {
       centeredSlides: true,
       // spaceBetween: '50',
 
+      hashNavigation: true,
       hashNavigation: {
         watchState: true,
       },
@@ -283,3 +285,10 @@ $().ready(function() {
       });
 
   }
+
+  function getLastPart(url) {
+    var parts = url.split("/");
+    return (url.lastIndexOf('/') !== url.length - 1 
+       ? parts[parts.length - 1]
+       : parts[parts.length - 2]);
+}
