@@ -1,3 +1,6 @@
+---
+layout: landing
+---
 <!DOCTYPE html>
 <html>
 {% include header.html %}
@@ -7,27 +10,27 @@
 
     <div id="barba-wrapper">
         <div class="barba-container">
-            <div class="landing-background">
-                <div class="container">
-                    <div class="landing-logo"></div>
-                    <div class="landing-title">{{site.title}}</div>
-                    <div class="landing-description">
-                            {{ content }}
-                        </div>
-                        <div class="landing-actions">
-                            <div class="row">
-                                <div class="four columns offset-by-two">
-                                    <a class="button landing-button prereqs-button" href="#">PRE-REQUISITES</a>
-                                </div>
-                                <div class="four columns">
-                                    <a class="button landing-button begin-button" href="modules.html">BEGIN</a>
-                                </div>
+                <div class="landing-background">
+                        <div class="container">
+                            <div class="landing-logo"></div>
+                            <div class="landing-title">{{ site.title }}</div>
+                            <div class="landing-description">
+                                {{content}}
                             </div>
-                            
+                            <div class="landing-actions">
+                                <div class="row">
+                                    <div class="four columns offset-by-two">
+                                        <a class="button landing-button prereqs-button" href="#">PRE-REQUISITES</a>
+                                    </div>
+                                    <div class="four columns">
+                                        <a class="button landing-button begin-button" href="{{site.baseurl}}modules">BEGIN</a>
+                                    </div>
+                                </div>
+                    
+                            </div>
                         </div>
-                </div>
-            <div class="lt-logo"></div>
-            </div>
+                        <div class="lt-logo"></div>
+                    </div>
         </div>
     </div>
 
