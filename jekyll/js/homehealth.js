@@ -218,7 +218,7 @@ $().ready(function() {
       slidesPerView: 'auto',
       centeredSlides: true,
       // spaceBetween: '50',
-
+      mousewheel: false,
       hashNavigation: true,
       hashNavigation: {
         watchState: true,
