@@ -1,6 +1,6 @@
 --- 
 layout: module
-permalink: "/pallative-care/"
+permalink: "/modules/person-centered-care/"
 cases:
   - name: Margaret
     image: jane.png
@@ -15,3 +15,4 @@ cases:
     image: jon.png
     url:
 ---
+#### Before you do the Person Centered Care I'm going to need you to do this...

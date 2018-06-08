@@ -1,6 +1,6 @@
 --- 
 layout: module
-permalink: "/wound-care/"
+permalink: "/modules/iv-therapy/"
 cases:
   - name: Margaret
     image: jane.png
@@ -15,3 +15,4 @@ cases:
     image: jon.png
     url:
 ---
+#### Before you do the IV Therapy Care I'm going to need you to do this...

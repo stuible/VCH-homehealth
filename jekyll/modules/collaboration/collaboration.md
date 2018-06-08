@@ -1,6 +1,6 @@
 --- 
 layout: module
-permalink: "/iv-therapy/"
+permalink: "/modules/collaboration/"
 cases:
   - name: Margaret
     image: jane.png
@@ -15,3 +15,4 @@ cases:
     image: jon.png
     url:
 ---
+#### Before you do the Collaberation I'm going to need you to do this...

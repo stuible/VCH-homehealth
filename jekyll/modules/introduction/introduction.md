@@ -1,6 +1,6 @@
 --- 
 layout: intro
-permalink: "/introduction/"
+permalink: "/modules/introduction/"
 cases:
   - name: Margaret
     image: jane.png
@@ -18,3 +18,4 @@ cases:
     image: jane.png
     url:
 ---
+#### Before you do the Introduction I'm going to need you to do this...

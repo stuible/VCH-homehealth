@@ -22,7 +22,7 @@
 
                         {% for item in page.modules %}
                             <div class="swiper-slide" data-hash="{{ item.pagename }}">
-                                <a href="{{site.baseurl}}/{{ item.pagename }}"><div id="{{ item.pagename }}" style="background-image: url('{{site.baseurl}}/image/modules/{{ item.image }}')">
+                                <a href="{{site.baseurl}}/modules/{{ item.pagename }}"><div id="{{ item.pagename }}" style="background-image: url('{{site.baseurl}}/image/modules/{{ item.image }}')">
                                     <div class="slide-title">{{ item.name }}</div>
                                     <div class="slide-actions">
                                         <button class="button-primary">Before I Begin</button>

@@ -1,6 +1,6 @@
 --- 
 layout: module
-permalink: "/collaboration/"
+permalink: "/modules/wound-care/"
 cases:
   - name: Margaret
     image: jane.png
@@ -15,3 +15,4 @@ cases:
     image: jon.png
     url:
 ---
+#### Before you do the Wound Care I'm going to need you to do this...
