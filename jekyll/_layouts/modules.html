@@ -14,14 +14,14 @@
                         <!-- Slides -->
 
                         <!-- LANDING PAGE  -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-hash="landing">
                                 <a href="{{site.url}}"><div id="landing" style="background-image: url('{{site.baseurl}}/image/modules/4.jpg')">
                                     <div class="slide-title">Landing</div>
                                 </div></a>
                         </div>
 
                         {% for item in page.modules %}
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-hash="{{ item.pagename }}">
                                 <a href="{{site.baseurl}}/{{ item.pagename }}"><div id="{{ item.pagename }}" style="background-image: url('{{site.baseurl}}/image/modules/{{ item.image }}')">
                                     <div class="slide-title">{{ item.name }}</div>
                                     <div class="slide-actions">
@@ -36,8 +36,8 @@
                     <div class="swiper-pagination"></div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
                 </div>
             </div>
     </div>

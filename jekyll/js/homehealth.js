@@ -92,11 +92,14 @@ $().ready(function() {
     //Check to see if the page we're loading has swiper on it before trying to initialize
     Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus, container) {
       var newpage = currentStatus.url.split("/").pop().replace(".html","");
+      // alert(newpage);
       if(newpage == 'modules'){
         instantiateSlider();
       }
-      else if(  newpage == 'introduction' ||
-                newpage == 'person-centered-care' ||
+      else if(newpage == 'introduction'){
+        instantiateIntro();
+      }
+      else if(  newpage == 'person-centered-care' ||
                 newpage == 'wound-care' || 
                 newpage == 'collaboration' ||
                 newpage == 'iv-therapy' || 
@@ -215,6 +218,9 @@ $().ready(function() {
       centeredSlides: true,
       // spaceBetween: '50',
 
+      hashNavigation: {
+        watchState: true,
+      },
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
@@ -239,6 +245,9 @@ $().ready(function() {
     var introSwiper = new Swiper('.intro-swiper-container', {
       direction: 'vertical',
       slideClass: 'intro-swiper-slide',
+      hashNavigation: {
+        watchState: true,
+      },
       mousewheel: {
           invert: false,
       },
@@ -256,6 +265,9 @@ $().ready(function() {
       slideClass: 'module-swiper-slide',
       mousewheel: {
           invert: false,
+      },
+      hashNavigation: {
+        watchState: true,
       },
       pagination: {
           el: '.swiper-pagination',
