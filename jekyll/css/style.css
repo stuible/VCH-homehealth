@@ -284,16 +284,13 @@ body {
 
 .narratives-parent-container{
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .narratives-container {
     text-align: center;
     width: 100%;
-    /* position: absolute; */
     margin-top: 30%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -80%); */
 }
 
 .narrative {
