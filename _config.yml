@@ -51,6 +51,7 @@ plugins:
 #     permalink: /palliative-care/:path/
 
 title: Home Health
+# baseurl: /stuible/homehealth/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

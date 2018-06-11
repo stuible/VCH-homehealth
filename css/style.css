@@ -44,14 +44,14 @@ body {
 }
 
 .menu-icon{
-    background-image: url("../image/icons/modules-icon.svg");
+    /* background-image: url("../image/icons/modules-icon.svg"); */
     background-repeat: no-repeat;
     background-position: center center;
     height: 30px;
-    width: 30px;
+    width: 55px;
     position: fixed;
-    top: 18px;
-    left: 25px;
+    top: 19px;
+    left: 15px;
     z-index: 15;
 
 }
@@ -73,6 +73,8 @@ body {
 .module-menu {
     height: auto;
     width: auto;
+    display: inline-block;
+    cursor: pointer !important;
 }
 
 .module-menu:hover {
@@ -90,7 +92,7 @@ body {
 .menu-name {
     color: #fff;
     line-height: 70px;
-    margin-left: 15px;
+    margin-left: 85px;
     float: left;
     mix-blend-mode: difference;
 }

@@ -1,7 +1,7 @@
 <div class="menubar">
-    <div class="module-menu">
+    <a class="module-menu" href="{{site.baseurl}}/modules/">
         <div class="menu-icon"></div>
-        <div class="menu-icon-container">
+       <!-- <div class="menu-icon-container">
                 <ul class="menu" style="display: none">
                         <li><div>Introduction</div></li>
                         <li><div>Pallative Care</div><ul>
@@ -15,8 +15,72 @@
                         <li><div>Home Support</div>
                         </li>
                 </ul>
-        </div>
+        </div> -->
+        <script>
+                window.onload = function() {
+                    var s = Snap();
+                    var mainRect = s.rect(18, 5, 20, 20, 2);
+                    var rightRect = s.rect(43, 10, 10, 10, 2);
+                    var leftRect = s.rect(3, 10, 10, 10, 2);
+                    var farleftRect = s.rect(-16, 10, 10, 10, 2);
+
+                    var allRects = s.group(mainRect,rightRect, leftRect, farleftRect);
+
+                    mainRect.attr({
+                        fill: "none",
+                        stroke: "#fff",
+                        strokeWidth: 2,
+                        "vector-effect": "non-scaling-stroke"
+
+                    });
+
+                    rightRect.attr({
+                        fill: "none",
+                        stroke: "#fff",
+                        strokeWidth: 2,
+                        "vector-effect": "non-scaling-stroke"
+                    });
+
+                    leftRect.attr({
+                        fill: "none",
+                        stroke: "#fff",
+                        strokeWidth: 2,
+                        "vector-effect": "non-scaling-stroke"
+                    });
+
+                    farleftRect.attr({
+                        fill: "none",
+                        stroke: "#fff",
+                        strokeWidth: 2,
+                        "vector-effect": "non-scaling-stroke"
+                    });
+
+                    var container = document.getElementsByClassName("menu-icon");
+                    $(container).append(s.node);
+
+                    $('.module-menu').hover(function(){
+                        allRects.animate({ transform:'translate(20,0)'}, 700, mina.bounce );
+                        mainRect.animate({ transform: 's0.5,0.5' }, 700,  mina.bounce);
+                        leftRect.animate({ transform: 's2,2' }, 700,  mina.bounce) ;
+                    },
+                    function(){
+                        allRects.animate({ transform:'translate(0,0)'}, 700, mina.bounce );
+                        mainRect.animate({ transform: 's1,1' }, 700,  mina.bounce);
+                        leftRect.animate({ transform: 's1,1' }, 700,  mina.bounce) ;
+                    });
+
+                    $('.module-menu').click();
+
+                    
+                    //mainRect.animate({ transform:'translateX(-5)'}, 700, mina.bounce );
+                    //mainRect.animate({ transform:'translateY(-5)'}, 700, mina.bounce );
+
+                    // mainRect.animate({ry:1}, 220, function(){
+                      //  mainRect.animate({ry: 90}, 300);
+                      //  }); 
+            }
+        </script>
         <div class="menu-name">Modules</div>
-    </div>
+    </a>
     <div class="menu-support">Support</div>    
 </div>
