@@ -5,26 +5,26 @@ permalink: "/modules/"
 modules:
   - name: Introduction
     pagename: introduction
-    image: 3.jpg
+    video: CaseStudy1.mp4
     beforebeginning: do stuff
   - name: Person Centered Care
     pagename: person-centered-care
-    image: 2.jpg
+    video: PatientCenteredCare.mp4
     beforebeginning: do stuff
   - name: Wound Care
     pagename: wound-care
-    image: 3.jpg
+    video: Wound.mp4
     beforebeginning: do stuff
   - name: Interdisciplinary Collaboration
     pagename: collaboration
-    image: 1.jpg
+    video: CaseStudy3.mp4
     beforebeginning: do stuff
   - name: IV Therapy
     pagename: iv-therapy
-    image: 4.jpg
+    video: CaseStudy2.mp4
     beforebeginning: do stuff
   - name: Pallative Care
     pagename: pallative-care
-    image: demoBG.jpg
+    video: Pallatative.mp4
     beforebeginning: do stuff
 ---

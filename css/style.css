@@ -114,10 +114,12 @@ body {
 }
 
 .swiper-slide {
-    width: 60% !important;
-    height: 300px !important;
+    width: 50vw !important;
+    height: 30vw !important;
+    margin: 0.5625vw auto;
     margin-left: 50px;
     margin-right: 50px;
+    
 }
 
 .swiper-slide a{
@@ -164,6 +166,12 @@ body {
 
 .swiper-button-prev {
     left: 15% !important;
+}
+
+.module-video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
 
 /* SLIDES */
