@@ -24,11 +24,11 @@
 
                         {% for item in page.modules %}
                             <div class="swiper-slide" data-hash="{{ item.pagename }}">
-                                    <video loop autoplay preload="auto" class="module-video" ><source src="{{site.baseurl}}/video/case-studies/{{ item.video }}" type="video/mp4" /></video>
+                                    <video loop autoplay class="module-video" ><source src="{{site.baseurl}}/video/case-studies/{{ item.video }}" type="video/mp4" /></video>
                                 <a href="{{site.baseurl}}/modules/{{ item.pagename }}"><div id="{{ item.pagename }}" >
                                     <div class="slide-title">{{ item.name }}</div>
                                     <div class="slide-actions">
-                                        <button class="button-primary">Before I Begin</button>
+                                        <button class="button more-info-button">Before I Begin</button>
                                     </div>
                                 </div></a>
                             </div>
