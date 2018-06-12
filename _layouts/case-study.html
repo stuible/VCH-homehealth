@@ -1,0 +1,24 @@
+---
+layout: case-study
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+<div class="background">
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <video autoplay loop preload="auto" class="case-study-video">
+                <source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4">
+                Your browser does not support this yupe of video
+            </video>
+            {{content}}
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
