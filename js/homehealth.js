@@ -92,13 +92,16 @@ $().ready(function() {
     //Check to see if the page we're loading has swiper on it before trying to initialize
     Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus, container) {
       var newpage = getLastPart(currentStatus.url.split("#")[0]);
+      currentPage = newpage;
       // newpage = newpage.split("/").pop().replace(".html","");
       // alert(newpage);
       if(newpage == 'modules'){
         instantiateSlider();
+        $(".module-menu").attr("href", "#");
       }
       else if(newpage == 'introduction'){
         instantiateIntro();
+        $(".module-menu").attr("href", baseurl + '/modules/');
       }
       else if(  newpage == 'person-centered-care' ||
                 newpage == 'wound-care' || 
@@ -107,6 +110,10 @@ $().ready(function() {
                 newpage == 'pallative-care'){
 
                 instantiateModule();
+                $(".module-menu").attr("href", baseurl + '/modules/');
+      }
+      else {
+        $(".module-menu").attr("href", baseurl + '/modules/');
       }
       
     });
