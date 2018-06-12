@@ -22,20 +22,20 @@ layout: module
                             </div>
 
                         </div>
-                        <div class="module-swiper-slide">
+                        <div class="module-swiper-slide" data-hash="case-studies">
                                 <div class="container">
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
                                                 {% for item in page.cases %}
-                                                    <div class="narrative">
+                                                    <a class="narrative" href="{{ page.url }}{{ item.name | downcase}}">
                                                         <img src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.name }}</div>
-                                                    </div>
+                                                    </a>
                                                 {% endfor %}
 
                                                 <div class="row">
                                                     <div class="offset-by-four four columns">
-                                                        <a class="button more-info-button" href="#">More On This Topic</a>
+                                                        <a class="button more-info-button" href="{{ page.url }}more">More On This Topic</a>
                                                     </div>
                                                 </div>
                                             </div>
