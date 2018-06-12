@@ -2,20 +2,20 @@
 layout: intro
 permalink: "/modules/introduction/"
 cases:
-  - name: Margaret
+  - name: Part 1
     image: jane.png
     url:
-  - name: Franny
+  - name: Part 2
     image: jane.png
     url:
-  - name: Luigi
+  - name: Part 3
     image: jon.png
     url:
-  - name: Agit
+  - name: Part 4
     image: jon.png
     url:
-  - name: Samantha
-    image: jane.png
-    url:
+  # - name: Samantha
+  #   image: jane.png
+  #   url:
 ---
 #### Before you do the Introduction I'm going to need you to do this...
