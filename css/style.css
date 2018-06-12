@@ -90,17 +90,25 @@ body {
 }
 
 .menu-name {
-    color: #fff;
+    color: #ffffffbf;
     line-height: 70px;
     margin-left: 85px;
     float: left;
 }
 
+.menu-name:hover {
+    color: #ffffff;
+}
+
 .menu-support {
-    color: white;
+    color: #ffffffbf;
     float: right;
     margin-top: 22px;
     margin-right: 20px;
+}
+
+.menu-support:hover {
+    color: #ffffff;
 }
 
 
