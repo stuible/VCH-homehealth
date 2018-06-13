@@ -1,6 +1,6 @@
 $().ready(function() {
 
-  //Instantiate Menu
+  //Instantiate Menu (Not used at the moment)
   $(".menu").menu();
   $('.menu-icon-container').click(function() {
     toggleMenu();
@@ -17,7 +17,6 @@ $().ready(function() {
     }
     
   });
-
 
     var FadeTransition = Barba.BaseTransition.extend({
       start: function() {
@@ -85,6 +84,16 @@ $().ready(function() {
     Barba.Pjax.start();
     Barba.Prefetch.init();
 
+    Barba.Pjax.originalPreventCheck = Barba.Pjax.preventCheck;
+
+    //Fix for bug in Barba where URLs with hashes (#) in them will cause a full browser reload
+    Barba.Pjax.preventCheck = function(evt, element) {
+        if ($(element).attr('href') && $(element).attr('href').indexOf('#') > -1)
+            return true;
+        else
+            return Barba.Pjax.originalPreventCheck(evt, element)
+    };
+
     Barba.Dispatcher.on('linkClicked', function(el) {
       lastElementClicked = el;
     });
@@ -101,7 +110,7 @@ $().ready(function() {
       }
       else if(newpage == 'introduction'){
         instantiateIntro();
-        $(".module-menu").attr("href", baseurl + '/modules/');
+        $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       else if(  newpage == 'person-centered-care' ||
                 newpage == 'wound-care' || 
@@ -110,10 +119,10 @@ $().ready(function() {
                 newpage == 'pallative-care'){
 
                 instantiateModule();
-                $(".module-menu").attr("href", baseurl + '/modules/');
+                $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       else {
-        $(".module-menu").attr("href", baseurl + '/modules/');
+        $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       
     });
@@ -245,6 +254,11 @@ $().ready(function() {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+    });
+
+    //Update variable with the last slide the user saw on the modules page
+    mySwiper.on('slideChange', function () {
+      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
     });
 
   }
