@@ -21,7 +21,7 @@ $ gulp
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_css`
     - Where the uncompiled Sass stylesheets can be found (only modify these styles)
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_includes`
-    - Where some common / resuble html elements are kept (referenced and compiled with Jekyll)
+    - Where some common / reusable html elements are kept (referenced and compiled with Jekyll)
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_js`
     - Where unconcatoncated and unminified javascript is kept
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_layouts`
