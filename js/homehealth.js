@@ -1,133 +1,132 @@
-$().ready(function() {
+$().ready(function () {
 
   //Instantiate Menu (Not used at the moment)
-  $(".menu").menu();
-  $('.menu-icon-container').click(function() {
-    toggleMenu();
-  });
-  $('.menu-icon').click(function() {
-    toggleMenu();
-  });
-  $('.menu-name').click(function() {
-    toggleMenu();
-  });
-  $('.module-menu').mouseleave(function(){
-    if($('.menu').is(':visible')){
-      toggleMenu();
-    }
-    
-  });
+  // $(".menu").menu();
+  // $('.menu-icon-container').click(function() {
+  //   toggleMenu();
+  // });
+  // $('.menu-icon').click(function() {
+  //   toggleMenu();
+  // });
+  // $('.menu-name').click(function() {
+  //   toggleMenu();
+  // });
+  // $('.module-menu').mouseleave(function(){
+  //   if($('.menu').is(':visible')){
+  //     toggleMenu();
+  //   }
+  // });
 
-    var FadeTransition = Barba.BaseTransition.extend({
-      start: function() {
-        /**
-         * This function is automatically called as soon the Transition starts
-         * this.newContainerLoading is a Promise for the loading of the new container
-         * (Barba.js also comes with an handy Promise polyfill!)
-         */
-    
-        // As soon the loading is finished and the old page is faded out, let's fade the new page
-        Promise
-          .all([this.newContainerLoading, this.fadeOut()])
-          .then(this.fadeIn.bind(this));
-      },
-    
-      fadeOut: function() {
-        /**
-         * this.oldContainer is the HTMLElement of the old Container
-         */
-    
-        return $(this.oldContainer).animate({ opacity: 0 }).promise();
-      },
-    
-      fadeIn: function() {
-        /**
-         * this.newContainer is the HTMLElement of the new Container
-         * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-         * Please note, newContainer is available just after newContainerLoading is resolved!
-         */
-    
-        var _this = this;
-        var $el = $(this.newContainer);
-    
-        $(this.oldContainer).hide();
-    
-        $el.css({
-          visibility : 'visible',
-          opacity : 0
-        });
-    
-        $el.animate({ opacity: 1 }, 400, function() {
-          /**
-           * Do not forget to call .done() as soon your transition is finished!
-           * .done() will automatically remove from the DOM the old Container
-           */
-    
-          _this.done();
-        });
-      }
-    });
-    
-    /**
-     * Next step, you have to tell Barba to use the new Transition
-     */
-    
-    Barba.Pjax.getTransition = function() {
+  // Barba Page Transition
+  var FadeTransition = Barba.BaseTransition.extend({
+    start: function () {
       /**
-       * Here you can use your own logic!
-       * For example you can use different Transition based on the current page or link...
+       * This function is automatically called as soon the Transition starts
+       * this.newContainerLoading is a Promise for the loading of the new container
+       * (Barba.js also comes with an handy Promise polyfill!)
        */
-    
-      return FadeTransition;
-    };
 
-    Barba.Pjax.start();
-    Barba.Prefetch.init();
+      // As soon the loading is finished and the old page is faded out, let's fade the new page
+      Promise
+        .all([this.newContainerLoading, this.fadeOut()])
+        .then(this.fadeIn.bind(this));
+    },
 
-    Barba.Pjax.originalPreventCheck = Barba.Pjax.preventCheck;
+    fadeOut: function () {
+      /**
+       * this.oldContainer is the HTMLElement of the old Container
+       */
 
-    //Fix for bug in Barba where URLs with hashes (#) in them will cause a full browser reload
-    Barba.Pjax.preventCheck = function(evt, element) {
-        if ($(element).attr('href') && $(element).attr('href').indexOf('#') > -1)
-            return true;
-        else
-            return Barba.Pjax.originalPreventCheck(evt, element)
-    };
+      return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    },
 
-    Barba.Dispatcher.on('linkClicked', function(el) {
-      lastElementClicked = el;
-    });
+    fadeIn: function () {
+      /**
+       * this.newContainer is the HTMLElement of the new Container
+       * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+       * Please note, newContainer is available just after newContainerLoading is resolved!
+       */
 
-    //Check to see if the page we're loading has swiper on it before trying to initialize
-    Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus, container) {
-      var newpage = getLastPart(currentStatus.url.split("#")[0]);
-      currentPage = newpage;
-      // newpage = newpage.split("/").pop().replace(".html","");
-      // alert(newpage);
-      if(newpage == 'modules'){
-        instantiateSlider();
-        // $(".module-menu").attr("href", "#");
-      }
-      else if(newpage == 'introduction'){
-        instantiateIntro();
-        // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-      }
-      else if(  newpage == 'person-centered-care' ||
-                newpage == 'wound-care' || 
-                newpage == 'collaboration' ||
-                newpage == 'iv-therapy' || 
-                newpage == 'pallative-care'){
+      var _this = this;
+      var $el = $(this.newContainer);
 
-                instantiateModule();
-                // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-      }
-      else {
-        // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-      }
-      
-    });
+      $(this.oldContainer).hide();
 
-    // Barba.Dispatcher.on('newPageReady', instantiateSlider());
+      $el.css({
+        visibility: 'visible',
+        opacity: 0
+      });
+
+      $el.animate({ opacity: 1 }, 400, function () {
+        /**
+         * Do not forget to call .done() as soon your transition is finished!
+         * .done() will automatically remove from the DOM the old Container
+         */
+
+        _this.done();
+      });
+    }
+  });
+
+  /**
+   * Next step, you have to tell Barba to use the new Transition
+   */
+
+  Barba.Pjax.getTransition = function () {
+    /**
+     * Here you can use your own logic!
+     * For example you can use different Transition based on the current page or link...
+     */
+
+    return FadeTransition;
+  };
+
+  Barba.Pjax.start();
+  Barba.Prefetch.init();
+
+  Barba.Pjax.originalPreventCheck = Barba.Pjax.preventCheck;
+
+  //Fix for bug in Barba where URLs with hashes (#) in them will cause a full browser reload
+  Barba.Pjax.preventCheck = function (evt, element) {
+    if ($(element).attr('href') && $(element).attr('href').indexOf('#') > -1)
+      return true;
+    else
+      return Barba.Pjax.originalPreventCheck(evt, element)
+  };
+
+  Barba.Dispatcher.on('linkClicked', function (el) {
+    lastElementClicked = el;
+  });
+
+  //Check to see if the page we're loading has swiper on it before trying to initialize
+  Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
+    var newpage = getLastPart(currentStatus.url.split("#")[0]);
+    currentPage = newpage;
+    // newpage = newpage.split("/").pop().replace(".html","");
+    if (newpage == 'modules') {
+      instantiateSlider();
+      $(".module-menu").attr("href", "#");
+    }
+    else if (newpage == 'introduction') {
+      instantiateIntro();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+    }
+    else if (newpage == 'person-centered-care' ||
+      newpage == 'wound-care' ||
+      newpage == 'collaboration' ||
+      newpage == 'iv-therapy' ||
+      newpage == 'pallative-care') {
+
+      instantiateModule();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+    }
+    else {
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+    }
+
+  });
+
+  // Barba.Dispatcher.on('newPageReady', instantiateSlider());
 
 
 
@@ -223,93 +222,93 @@ $().ready(function() {
   //   return transitionObj;
   // };
 
+});
+
+function instantiateSlider() {
+  //Instantiate Swiper (Carousel)
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    // spaceBetween: '50',
+    mousewheel: false,
+    hashNavigation: true,
+    hashNavigation: {
+      watchState: true,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
-  function instantiateSlider(){
-    //Instantiate Swiper (Carousel)
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      // spaceBetween: '50',
-      mousewheel: false,
-      hashNavigation: true,
-      hashNavigation: {
-        watchState: true,
-      },
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+  //Update variable with the last slide the user saw on the modules page
+  mySwiper.on('slideChange', function () {
+    lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+  });
 
-      keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-      },
+}
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+function instantiateIntro() {
 
-    //Update variable with the last slide the user saw on the modules page
-    mySwiper.on('slideChange', function () {
-      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
-    });
+  var introSwiper = new Swiper('.intro-swiper-container', {
+    direction: 'vertical',
+    slideClass: 'intro-swiper-slide',
+    hashNavigation: {
+      watchState: true,
+    },
+    mousewheel: {
+      invert: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
 
-  }
+function instantiateModule() {
 
-  function instantiateIntro(){
+  var introSwiper = new Swiper('.module-swiper-container', {
+    direction: 'vertical',
+    slideClass: 'module-swiper-slide',
+    mousewheel: {
+      invert: false,
+    },
+    hashNavigation: {
+      watchState: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
 
-    var introSwiper = new Swiper('.intro-swiper-container', {
-      direction: 'vertical',
-      slideClass: 'intro-swiper-slide',
-      hashNavigation: {
-        watchState: true,
-      },
-      mousewheel: {
-          invert: false,
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      });
-  }
+// function toggleMenu(){
 
-  function instantiateModule(){
+//     $(".menu").slideToggle( "fast", function() {
+//       // Animation complete.
+//     });
 
-    var introSwiper = new Swiper('.module-swiper-container', {
-      direction: 'vertical',
-      slideClass: 'module-swiper-slide',
-      mousewheel: {
-          invert: false,
-      },
-      hashNavigation: {
-        watchState: true,
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      });
-  }
+// }
 
-  function toggleMenu(){
-
-      $(".menu").slideToggle( "fast", function() {
-        // Animation complete.
-      });
-
-  }
-
-  function getLastPart(url) {
-    var parts = url.split("/");
-    return (url.lastIndexOf('/') !== url.length - 1 
-       ? parts[parts.length - 1]
-       : parts[parts.length - 2]);
+function getLastPart(url) {
+  var parts = url.split("/");
+  return (url.lastIndexOf('/') !== url.length - 1
+    ? parts[parts.length - 1]
+    : parts[parts.length - 2]);
 }
