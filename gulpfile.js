@@ -67,6 +67,7 @@ gulp.task('jekyll', () => {
       }
     });
     gulp.watch(cssFiles, ['css']);
+    gulp.watch(jsSources, ['js']);
   });
   
 
