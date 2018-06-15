@@ -4,7 +4,7 @@ Home Health is a Learning Technologies and VCH project created using Jekyll.
 
 ## Getting Started
 
-Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat file websites.  The final output / compilation can be found in "_site".  I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simple run:
+Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat file websites.  The final output / compilation can be found in "_site".  I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simply run:
 
 ```
 $ gulp
