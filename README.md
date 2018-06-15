@@ -1,18 +1,46 @@
 # VCH HOME HEALTH
 
-Home Health is a VCH project created for education using Jekyll.
+Home Health is a Learning Technologies and VCH project created using Jekyll.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat file websites.  The final output / compilation can be found in "_site".  I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simple run:
 
 ```
-Give examples
+$ gulp
 ```
+
+## File Structure
+
+![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `Uncompiled / Editable` 
+&nbsp;  &nbsp;
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Compiled by Jekyll`
+ &nbsp;&nbsp;
+![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `Compiled by Gulp`
+
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_css`
+    - Where the uncompiled Sass stylesheets can be found (only modify these styles)
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_includes`
+    - Where some common / resuble html elements are kept (referenced and compiled with Jekyll)
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_js`
+    - Where unconcatoncated and unminified javascript is kept
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_layouts`
+    - Where teh templtes for the different pages used by jekyll are kept (Uses the Liquid templating engine)
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `_site`
+    - where the final / compiled site is found
+- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `css`
+    - where the compiled, concatoned and minified css is put by gulp before copied to _site/css by jekyll
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `image`
+    - image assets used by the site
+- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `js`
+    - where the compiled, concatoned and minified js is put by gulp before copied to _site/js by jekyll
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `library`
+    - where js / css libraries that Home Health needs are kept
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `modules`
+    - where the mardown is kept for all the pages
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `video`
+    - video assets used by the site
+
 
 ### Installing
 
