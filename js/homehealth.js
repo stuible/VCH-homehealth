@@ -106,11 +106,11 @@ $().ready(function() {
       // alert(newpage);
       if(newpage == 'modules'){
         instantiateSlider();
-        $(".module-menu").attr("href", "#");
+        // $(".module-menu").attr("href", "#");
       }
       else if(newpage == 'introduction'){
         instantiateIntro();
-        $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+        // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       else if(  newpage == 'person-centered-care' ||
                 newpage == 'wound-care' || 
@@ -119,10 +119,10 @@ $().ready(function() {
                 newpage == 'pallative-care'){
 
                 instantiateModule();
-                $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+                // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       else {
-        $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+        // $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
       }
       
     });

@@ -1,0 +1,83 @@
+@import "../variables";
+
+/* MAIN CAROUSEL */
+
+.swiper-container {
+    
+    width: 100%;
+    margin-top: 200px !important;
+    overflow: visible !important;
+    
+}
+
+.swiper-slide {
+    width: 50vw !important;
+    height: 30vw !important;
+    margin: 0.5625vw auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.swiper-slide a{
+    text-decoration: none;
+}
+
+.swiper-slide div{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide > a > div {
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,0.5186449579831933) 0%, rgba(0,0,0,0) 54%, rgba(0,0,0,0) 100%);
+}
+
+.slide-title {
+    color: white;
+    font-size: 28px;
+    flex: 0 0 100%;
+    height: auto !important;
+}
+
+.slide-actions{
+    flex: 0 0 100%;
+    height: auto !important;
+    /* margin-top: -200px; */
+}
+
+.swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background: #ffffffc9;
+}
+
+.swiper-pagination-bullets {
+    bottom: -50px !important;
+}
+
+.swiper-button-next {
+    right: 15% !important;
+}
+
+.swiper-button-prev {
+    left: 15% !important;
+}
+
+.module-video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+}
+
+.before-begin-button {
+    -webkit-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
+    box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
+}

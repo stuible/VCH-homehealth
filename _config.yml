@@ -51,12 +51,12 @@ plugins:
 #     permalink: /palliative-care/:path/
 
 title: Home Health
-# baseurl: /stuible/homehealth
+# baseurl: /
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude: [node_modules, gulpfile.js]
+exclude: [node_modules, gulpfile.js, package.json]
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

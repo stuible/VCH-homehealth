@@ -1,0 +1,91 @@
+@import "variables";
+
+/* TOP MENU */
+
+.menubar{
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    top: 0px;
+    background: #00000000; /* For browsers that do not support gradients */
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.3)); 
+    z-index: 11;
+}
+
+.menu{
+    /* position: absolute; */
+    margin-top: 45px !important;
+    border: none !important;
+    /* position: fixed; */
+    width: 100%;
+    text-align: left;
+    margin-left: 60px !important;
+}
+
+.menu-icon{
+    /* background-image: url("../image/icons/modules-icon.svg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 55px;
+    position: fixed;
+    top: 19px;
+    left: 15px;
+    z-index: 15;
+
+}
+
+.menu-icon-container{
+    background-color: #fff;
+    text-align: right;
+    height: 45px;
+    width: 220px;
+    float: left;
+    margin-top: 12px;
+    margin-left: -210px;
+    padding-right: 60px;
+    /* border: solid 10px #fff; */
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    font-weight: 400;
+}
+
+.module-menu {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    cursor: pointer !important;
+}
+
+.module-menu:hover {
+    cursor: pointer;
+}
+
+.module-menu:hover > .menu-icon-container {
+    -webkit-transform: translate(146px,0);
+    -moz-transform: translate(146px,0);
+    -o-transform: translate(146px,0);
+    -ms-transform: translate(146px,0);
+    transform: translate(146px,0);
+}
+
+.menu-name {
+    color: #ffffffbf;
+    line-height: 70px;
+    margin-left: 85px;
+    float: left;
+}
+
+.menu-name:hover {
+    color: #ffffff;
+}
+
+.menu-support {
+    color: #ffffffbf;
+    float: right;
+    margin-top: 22px;
+    margin-right: 20px;
+}
+
+.menu-support:hover {
+    color: #ffffff;
+}

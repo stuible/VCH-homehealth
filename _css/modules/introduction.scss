@@ -1,0 +1,42 @@
+@import "../variables";
+
+/* INTRODUCTION PAGE */
+
+.narratives-parent-container{
+    position: relative;
+    /* height: 100vh; */
+}
+
+.narratives-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 30%;
+}
+
+.narrative {
+    display: inline-block;
+    width: 160px;
+    height: 200px;
+    background-color: $primaryColour;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.narrative:hover {
+    color: #fff;
+}
+
+.narrative img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.more-info-button {
+    background-color: $primaryColour;
+    border: none;
+    color: #fff;
+}
