@@ -1,0 +1,33 @@
+---
+layout: branching-narrative
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+<div class="background">
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="narrative-container top-padding center-align">
+                <div class="narrative-question">
+                    {{ page.questions.first.question}}
+                </div>
+                <div class="narrative-answers">
+                    {% for answer in page.questions.first.answers %}
+                    <div class="narrative-answer">
+                            {{ answer }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            {{content}}
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
