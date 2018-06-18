@@ -12,42 +12,26 @@ layout: branching-narrative
     <div id="barba-wrapper">
         <div class="barba-container">
             <div class="narrative-container top-padding center-align">
-                <div data-narrative="1" class="question-container narrative-primary">
-                        <div class="narrative-question">
-                                {{ page.questions.first.question}}
-                            </div>
-                            <div class="narrative-answers">
-                                {% for answer in page.questions.first.answers %}
+                {% for question in page.questions %}
+
+                    {% if forloop.first == true %}
+                        <div data-narrative="{{ question.link }}" class="question-container narrative-primary">
+                    {% else %}
+                        <div data-narrative="{{ question.link }}" class="question-container narrative-secondary">
+                    {% endif %}
+
+                    <div class="narrative-question">
+                        {{ question.question }}
+                    </div>
+                    <div class="narrative-answers">
+                                {% for answer in question.answers %}
                                 <a href="{{ answer.link }}" class="button narrative-answer">
                                     {{ answer.text }}
                                 </a>
                                 {% endfor %}
-                        </div>
+                    </div>
                 </div>
-                <div data-narrative="1a" class="question-container narrative-secondary">
-                        <div class="narrative-question">
-                                {{ page.questions[1].question}}
-                            </div>
-                            <div class="narrative-answers">
-                                {% for answer in page.questions[1].answers %}
-                                <a href="{{ answer.link }}" class="button narrative-answer">
-                                    {{ answer.text }}
-                                </a>
-                                {% endfor %}
-                        </div>
-                </div>
-                <div data-narrative="1b" class="question-container narrative-secondary">
-                        <div class="narrative-question">
-                                {{ page.questions[2].question}}
-                            </div>
-                            <div class="narrative-answers">
-                                {% for answer in page.questions[2].answers %}
-                                <a href="{{ answer.link }}" class="button narrative-answer">
-                                    {{ answer.text }}
-                                </a>
-                                {% endfor %}
-                        </div>
-                </div>
+                {% endfor %}
 
                 {% for question in page.questions %}
                     {% for answer in question.answers %}
@@ -58,27 +42,9 @@ layout: branching-narrative
                     </div>
                     {% endfor %}
                 {% endfor %}
-                
-                <div data-narrative="2b" class="question-container narrative-tertiary">
-                        <div class="narrative-question">
-                                {{ page.questions[2].feedback}}
-                            </div>
-                </div>
-                <div data-narrative="3a" class="question-container narrative-tertiary">
-                        <div class="narrative-question">
-                                {{ page.questions[1].feedback}}
-                            </div>
-                </div>
-                <div data-narrative="3b" class="question-container narrative-tertiary">
-                        <div class="narrative-question">
-                                {{ page.questions[2].feedback}}
-                            </div>
-                </div>
 
                 
             </div>
-            
-            {{content}}
         </div>
     </div>
 </div>

@@ -6,6 +6,7 @@ image:
 #FIRST LEVEL
 questions: 
   - question: Why are you like this?
+    link: 1
     answers:
       - answer:
         text: Because
@@ -18,6 +19,7 @@ questions:
 #SECOND LEVEL
 
   - question: Are you sure?
+    link: 1a
     answers:
       - answer:
         text: 'Yes'
@@ -31,6 +33,7 @@ questions:
 
 
   - question: Positive?
+    link: 1b
     answers:
       - answer:
         text: Positive
