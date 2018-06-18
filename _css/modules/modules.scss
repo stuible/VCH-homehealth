@@ -1,13 +1,13 @@
 @import "../variables";
 
+$modulesBorderRadius: 10px;
+
 /* MAIN CAROUSEL */
 
 .swiper-container {
-    
     width: 100%;
     margin-top: 200px !important;
-    overflow: visible !important;
-    
+    overflow: visible !important; 
 }
 
 .swiper-slide {
@@ -16,7 +16,6 @@
     margin: 0.5625vw auto;
     margin-left: 50px;
     margin-right: 50px;
-    
 }
 
 .swiper-slide a{
@@ -35,6 +34,7 @@
 .swiper-slide > a > div {
     background: rgb(0,0,0);
     background: linear-gradient(177deg, rgba(0,0,0,0.5186449579831933) 0%, rgba(0,0,0,0) 54%, rgba(0,0,0,0) 100%);
+    border-radius: $modulesBorderRadius;
 }
 
 .slide-title {
@@ -74,10 +74,16 @@
     width: 100%;
     -webkit-filter: brightness(80%);
     filter: brightness(80%);
+    border-radius: $modulesBorderRadius;
 }
 
 .before-begin-button {
     -webkit-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
     -moz-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
     box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
+}
+
+.module-button-container {
+    height: auto !important;
+    margin-top: -20%;
 }
