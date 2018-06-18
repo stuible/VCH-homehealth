@@ -7,19 +7,39 @@ image:
 questions: 
   - question: Why are you like this?
     answers:
-        - Because
-        - Cuz
+      - answer:
+        text: Because
+        link: 1a
+   
+      - answer:
+        text: Just Cuz
+        link: 1b
 
 #SECOND LEVEL
 
   - question: Are you sure?
     answers:
-        - Yes
-        - No
+      - answer:
+        text: 'Yes'
+        feedback: feedbacky stuff for yes
+        link: 2a
+   
+      - answer:
+        text: 'No'
+        feedback: feedbacky stuff for no
+        link: 2b
+
 
   - question: Positive?
     answers:
-        - Positive
-        - Negetive
+      - answer:
+        text: Positive
+        feedback: feedbacky stuff for positive
+        link: 3a
+   
+      - answer:
+        text: Negetive
+        feedback: feedbacky stuff for negetive
+        link: 3b
 
 ---
