@@ -104,6 +104,7 @@ $().ready(function () {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
+    initializeBranching(); 
     if (newpage == 'modules') {
       instantiateSlider();
       $(".module-menu").attr("href", "#");
@@ -367,7 +368,7 @@ function getLastPart(url) {
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
 }
-$().ready(function () { 
+function initializeBranching() { 
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
         var nextQuestion = $(this).attr('href');
@@ -375,4 +376,4 @@ $().ready(function () {
         $('.question-container[data-narrative="' + nextQuestion + '"]').show();
         return false;
     });
-});
+}

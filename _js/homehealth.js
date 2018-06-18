@@ -104,6 +104,7 @@ $().ready(function () {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
+    initializeBranching(); 
     if (newpage == 'modules') {
       instantiateSlider();
       $(".module-menu").attr("href", "#");

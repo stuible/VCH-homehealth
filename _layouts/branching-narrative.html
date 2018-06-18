@@ -25,7 +25,7 @@ layout: branching-narrative
                     </div>
                     <div class="narrative-answers">
                                 {% for answer in question.answers %}
-                                <a href="{{ answer.link }}" class="button narrative-answer">
+                                <a href="{{ answer.link }}" class="button narrative-answer no-barba">
                                     {{ answer.text }}
                                 </a>
                                 {% endfor %}
@@ -48,6 +48,12 @@ layout: branching-narrative
         </div>
     </div>
 </div>
+
+<!-- Initialize Branching Funciton -->
+<script>
+initializeBranching();
+</script>
+
 </body>
 
 </html>

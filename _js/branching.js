@@ -1,4 +1,4 @@
-$().ready(function () { 
+function initializeBranching() { 
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
         var nextQuestion = $(this).attr('href');
@@ -6,4 +6,4 @@ $().ready(function () {
         $('.question-container[data-narrative="' + nextQuestion + '"]').show();
         return false;
     });
-});
+}
