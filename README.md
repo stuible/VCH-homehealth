@@ -1,16 +1,13 @@
-# VCH HOME HEALTH
+# 🏥 VCH HOME HEALTH 🏥
 
 Home Health is a Learning Technologies and VCH project created using Jekyll.
 
-## Getting Started
+## 🏁 Getting Started
 
-Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat file websites.  The final output / compilation can be found in "_site".  I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simply run:
+Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat file websites.  The final output / compilation can be found in "_site".
 
-```
-$ gulp
-```
 
-## File Structure
+## 🗄 File Structure
 
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `Uncompiled / Editable` 
 &nbsp;  &nbsp;
@@ -25,46 +22,36 @@ $ gulp
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_js`
     - Where unconcatoncated and unminified javascript is kept
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_layouts`
-    - Where teh templtes for the different pages used by jekyll are kept (Uses the Liquid templating engine)
+    - Where the templates for the different pages used by jekyll are kept ( Jekyll uses the Liquid templating engine created by Shopify)
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `_site`
     - where the final / compiled site is found
 - ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `css`
-    - where the compiled, concatoned and minified css is put by gulp before copied to _site/css by jekyll
+    - where the compiled, concatoned and minified css is put by gulp before being copied to _site/css by jekyll
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `image`
     - image assets used by the site
 - ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `js`
-    - where the compiled, concatoned and minified js is put by gulp before copied to _site/js by jekyll
+    - where the compiled, concatoned and minified js is put by gulp before being copied to _site/js by jekyll
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `library`
-    - where js / css libraries that Home Health needs are kept
+    - where the various js & css libraries that Home Health needs are kept
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `modules`
     - where the mardown is kept for all the pages
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `video`
     - video assets used by the site
 
 
-### Installing
+## 🖥 Building
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simply run:
 
 ```
-Give the example
+$ gulp
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Deployment
+## ⤴️ Deployment
 
 Jekyll builds into a flat file website (found in _sites).  SImple build and deply onto any web server
 
-## Built With
+## 📚 Built With
 
 * [Jekyll](https://jekyllrb.com/) - The web framework used
 * [Swiper](http://idangero.us/swiper/) - JS carousell library
