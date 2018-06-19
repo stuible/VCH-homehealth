@@ -1,11 +1,38 @@
 //functions for instantiating Introdunction and individual module pages
 
+$().ready(function () {   
+    var narrative = Barba.BaseView.extend({
+        namespace: 'module',
+        onEnter: function () {
+            darkBackground(true);
+            instantiateModule();
+            $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+        }
+    });
+
+    narrative.init();
+});
+
+$().ready(function () {   
+    var introduction = Barba.BaseView.extend({
+        namespace: 'introduction',
+        onEnter: function () {
+            instantiateIntro();
+            $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+        }
+    });
+
+    introduction.init();
+});
+
 function instantiateIntro() {
 
     var introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',
         slideClass: 'intro-swiper-slide',
         // touchReleaseOnEdges: true,
+        mousewheelSensitivity: 0,
+        mousewheelReleaseOnEdges: true,
         hashNavigation: {
             watchState: true,
         },

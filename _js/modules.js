@@ -1,5 +1,18 @@
 //function for instantiating main Modules Carousel
 
+$().ready(function () {   
+  var modules = Barba.BaseView.extend({
+      namespace: 'modules',
+      onEnter: function () {
+        darkBackground(true);
+        instantiateSlider();
+        $(".module-menu").attr("href", "#");
+      }
+  });
+
+  modules.init();
+});
+
 function instantiateSlider() {
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {

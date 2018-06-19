@@ -1,3 +1,16 @@
+$().ready(function () {   
+    var narrative = Barba.BaseView.extend({
+        namespace: 'narrative',
+        onEnter: function () {
+            darkBackground(true);
+            initializeBranching();
+            $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+        }
+    });
+
+    narrative.init();
+});
+
 function initializeBranching() { 
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));

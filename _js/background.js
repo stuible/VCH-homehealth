@@ -1,7 +1,7 @@
 //Function for changing the Homehealth background during async page loads
-function darkBackground(lightMenu){
-    $('.background').css('background', '#161D2B');
-    if(lightMenu){
+function darkBackground(menu){
+    $('body').animate({backgroundColor: '#161D2B'}, 'slow');
+    if(menu){
         lightMenu();
     }
     else {
@@ -9,9 +9,9 @@ function darkBackground(lightMenu){
     }
 }
 
-function lightBackground(darkMenu){
-    $('.background').css('background', '#ffffff');
-    if(darkMenu){
+function lightBackground(menu){
+    $('body').animate({backgroundColor: '#ffffff'}, 'slow');
+    if(menu){
         darkMenu();
     }
     else {
