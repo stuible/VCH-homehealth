@@ -1,23 +1,5 @@
 $().ready(function () {
 
-  //Instantiate Menu (Not used at the moment)
-  // $(".menu").menu();
-  // $('.menu-icon-container').click(function() {
-  //   toggleMenu();
-  // });
-  // $('.menu-icon').click(function() {
-  //   toggleMenu();
-  // });
-  // $('.menu-name').click(function() {
-  //   toggleMenu();
-  // });
-  // $('.module-menu').mouseleave(function(){
-  //   if($('.menu').is(':visible')){
-  //     toggleMenu();
-  //   }
-  // });
-
-
   // Barba Page Transition
   var FadeTransition = Barba.BaseTransition.extend({
     start: function () {
@@ -128,245 +110,143 @@ $().ready(function () {
 
   });
 
-  // Barba.Dispatcher.on('newPageReady', instantiateSlider());
-
-
-
-
-  // ZOOM THING TO INVESTIGATE LATER
-  //   var lastElementClicked;
-  // Barba.Pjax.init();
-  // Barba.Prefetch.init();
-
-  // Barba.Dispatcher.on('linkClicked', function(el) {
-  //   lastElementClicked = el;
-  // });
-
-  // var ExpandTransition = Barba.BaseTransition.extend({
-  //   start: function() {
-  //     this.originalThumb = lastElementClicked;
-
-  //     Promise
-  //       .all([this.newContainerLoading, this.enlargeThumb()])
-  //       .then(this.showNewPage.bind(this));
-  //   },
-
-  //   enlargeThumb: function() {
-  //     var deferred = Barba.Utils.deferred();
-  //     var thumbPosition = this.originalThumb.getBoundingClientRect();
-
-  //     this.cloneThumb = this.originalThumb.cloneNode(true);
-  //     this.cloneThumb.style.position = 'absolute';
-  //     this.cloneThumb.style.top = thumbPosition.top + 'px';
-  //     this.cloneThumb.style.left = thumbPosition.left + 'px';
-  //     this.cloneThumb.zIndex = "11";
-
-  //     this.oldContainer.appendChild(this.cloneThumb);
-
-  //     TweenLite.to(this.cloneThumb, 1.5, {
-  //       top: 0,
-  //       left: 0,
-  //       right: 0,
-  //       bottom: 0,
-  //       height: window.innerHeight,
-  //       width: window.innerWidth,
-  //       onComplete: function() {
-  //         deferred.resolve();
-  //       }
-  //     });
-
-  //     return deferred.promise;
-  //   },
-
-  //   showNewPage: function() {
-  //     this.newContainer.style.visibility = 'visible';
-  //     this.done();
-  //   }
-  // });
-
-
-  // var ShrinkTransition = Barba.BaseTransition.extend({
-  //   start: function() {
-  //     this.newContainerLoading.then(this.shrinkImage.bind(this));
-  //   },
-
-  //   shrinkImage: function() {
-  //     var _this = this;
-
-  //     this.oldContainer.style.zIndex = '10';
-  //     this.newContainer.style.visibility = 'visible';
-
-  //     var href = Barba.HistoryManager.prevStatus().url.split('/').pop();
-  //     var destThumb = this.newContainer.querySelector('a[href="' + href + '"]');
-  //     var destThumbPosition = destThumb.getBoundingClientRect();
-  //     var fullImage = this.oldContainer.querySelector('.full');
-
-  //     TweenLite.to(this.oldContainer.querySelector('.back'), 0.2, { opacity: 0 });
-
-  //     TweenLite.to(fullImage, 0.3, {
-  //       top: destThumbPosition.top,
-  //       height: destThumb.clientHeight,
-  //       width: destThumb.clientWidth,
-  //       onComplete: function() {
-  //         _this.done();
-  //       }
-  //     });
-  //   }
-  // });
-
-  // Barba.Pjax.getTransition = function() {
-  //   var transitionObj = ExpandTransition;
-
-  //   if (Barba.HistoryManager.prevStatus().namespace === 'detail') {
-  //     transitionObj = ShrinkTransition;
-  //   }
-
-  //   return transitionObj;
-  // };
-
 });
-
-function instantiateSlider() {
-  //Instantiate Swiper (Carousel)
-  var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    // spaceBetween: '50',
-    mousewheel: false,
-    hashNavigation: true,
-    hashNavigation: {
-      watchState: true,
-    },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  //Update variable with the last slide the user saw on the modules page
-  mySwiper.on('slideChange', function () {
-    lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
-  });
-
-  //BEFORE I BEGIN POPUP CODE
-  vex.dialog.buttons.YES.text = 'Begin'
-  vex.dialog.buttons.NO.text = 'Cancel'
-  $('.before-begin-button').click(function () {
-    var href = $(this).data('href');
-
-    vex.dialog.open({
-      message: 'Before You Begin',
-      input: [
-        '<div class="vex-custom-field-wrapper">',
-        '<label for="date">Label</label>',
-        '<div class="vex-custom-input-wrapper">',
-        'Thing',
-        '</div>',
-        '</div>',
-        '<div class="vex-custom-field-wrapper">',
-        '<label for="color">Color</label>',
-        '<div class="vex-custom-input-wrapper">',
-        'Thing',
-        '</div>',
-        '</div>'
-      ].join(''),
-      buttons: [
-        $.extend({}, vex.dialog.buttons.YES, {
-          text: 'Begin',
-          click: function ($vexContent, event) {
-            // $vexContent.data().vex.value = 'yes';
-            // vex.close($vexContent.data().vex.id);
-            Barba.Dispatcher.trigger('linkClicked', this, event);
-
-            Barba.Pjax.goTo(href);
-            return false;
-          }
-        }),
-        $.extend({}, vex.dialog.buttons.NO, {
-          text: 'Cancel'
-        })
-      ],
-      // callback: function (data) {
-      //     if (!data) {
-      //         return console.log('Cancelled')
-      //     }
-      //     console.log('Date', data.date, 'Color', data.color)
-      //     $('.demo-result-custom-vex-dialog').show().html([
-      //         '<h4>Result</h4>',
-      //         '<p>',
-      //             'Date: <b>' + data.date + '</b><br/>',
-      //             'Color: <input type="color" value="' + data.color + '" readonly />',
-      //         '</p>'
-      //     ].join(''))
-      // }
-    });
-  });
-
-}
-
-function instantiateIntro() {
-
-  var introSwiper = new Swiper('.intro-swiper-container', {
-    direction: 'vertical',
-    slideClass: 'intro-swiper-slide',
-    hashNavigation: {
-      watchState: true,
-    },
-    mousewheel: {
-      invert: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}
-
-function instantiateModule() {
-
-  var introSwiper = new Swiper('.module-swiper-container', {
-    direction: 'vertical',
-    slideClass: 'module-swiper-slide',
-    mousewheel: {
-      invert: false,
-    },
-    hashNavigation: {
-      watchState: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}
-
-// function toggleMenu(){
-
-//     $(".menu").slideToggle( "fast", function() {
-//       // Animation complete.
-//     });
-
-// }
 
 function getLastPart(url) {
   var parts = url.split("/");
   return (url.lastIndexOf('/') !== url.length - 1
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
+}
+//function for instantiating main Modules Carousel
+
+function instantiateSlider() {
+    //Instantiate Swiper (Carousel)
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      // spaceBetween: '50',
+      mousewheel: false,
+      hashNavigation: true,
+      hashNavigation: {
+        watchState: true,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+  
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+  
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+    //Update variable with the last slide the user saw on the modules page
+    mySwiper.on('slideChange', function () {
+      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+    });
+  
+    //BEFORE I BEGIN POPUP CODE
+    vex.dialog.buttons.YES.text = 'Begin'
+    vex.dialog.buttons.NO.text = 'Cancel'
+    $('.before-begin-button').click(function () {
+      var href = $(this).data('href');
+  
+      vex.dialog.open({
+        message: 'Before You Begin',
+        input: [
+          '<div class="vex-custom-field-wrapper">',
+          '<label for="date">Label</label>',
+          '<div class="vex-custom-input-wrapper">',
+          'Thing',
+          '</div>',
+          '</div>',
+          '<div class="vex-custom-field-wrapper">',
+          '<label for="color">Color</label>',
+          '<div class="vex-custom-input-wrapper">',
+          'Thing',
+          '</div>',
+          '</div>'
+        ].join(''),
+        buttons: [
+          $.extend({}, vex.dialog.buttons.YES, {
+            text: 'Begin',
+            click: function ($vexContent, event) {
+              // $vexContent.data().vex.value = 'yes';
+              // vex.close($vexContent.data().vex.id);
+              Barba.Dispatcher.trigger('linkClicked', this, event);
+  
+              Barba.Pjax.goTo(href);
+              return false;
+            }
+          }),
+          $.extend({}, vex.dialog.buttons.NO, {
+            text: 'Cancel'
+          })
+        ],
+        // callback: function (data) {
+        //     if (!data) {
+        //         return console.log('Cancelled')
+        //     }
+        //     console.log('Date', data.date, 'Color', data.color)
+        //     $('.demo-result-custom-vex-dialog').show().html([
+        //         '<h4>Result</h4>',
+        //         '<p>',
+        //             'Date: <b>' + data.date + '</b><br/>',
+        //             'Color: <input type="color" value="' + data.color + '" readonly />',
+        //         '</p>'
+        //     ].join(''))
+        // }
+      });
+    });
+  
+  }
+//functions for instantiating Introdunction and individual module pages
+
+function instantiateIntro() {
+
+    var introSwiper = new Swiper('.intro-swiper-container', {
+        direction: 'vertical',
+        slideClass: 'intro-swiper-slide',
+        hashNavigation: {
+            watchState: true,
+        },
+        mousewheel: {
+            invert: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+}
+
+function instantiateModule() {
+
+    var introSwiper = new Swiper('.module-swiper-container', {
+        direction: 'vertical',
+        slideClass: 'module-swiper-slide',
+        mousewheel: {
+            invert: false,
+        },
+        hashNavigation: {
+            watchState: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 }
 function initializeBranching() { 
     $('.narrative-answer').click(function(){
@@ -376,4 +256,34 @@ function initializeBranching() {
         $('.question-container[data-narrative="' + nextQuestion + '"]').show();
         return false;
     });
+}
+//Function for changing the Homehealth background during async page loads
+function darkBackground(lightMenu){
+    $('.background').css('background', '#161D2B');
+    if(lightMenu){
+        lightMenu();
+    }
+    else {
+        darkMenu();
+    }
+}
+
+function lightBackground(darkMenu){
+    $('.background').css('background', '#ffffff');
+    if(darkMenu){
+        darkMenu();
+    }
+    else {
+        lightMenu();
+    }
+}
+
+function lightMenu(){
+    $('.menubar, .menubar a').css('color', '#fff');
+    $(".menu-icon").children().children().children().attr("stroke","#fff");
+}
+
+function darkMenu(){
+    $('.menubar, .menubar a').css('color', '#000');
+    $(".menu-icon").children().children().children().attr("stroke","#000");
 }
