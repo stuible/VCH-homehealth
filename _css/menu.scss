@@ -4,6 +4,7 @@
 
 .menubar{
     width: 100%;
+    color: #ffffff;
     position: fixed;
     height: 75px;
     top: 0px;
@@ -11,6 +12,10 @@
     background: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.3)); 
     z-index: 11;
     font-weight: 400;
+
+    a {
+        color: #ffffff;
+    }
 }
 
 .menu{
@@ -37,7 +42,7 @@
 }
 
 .menu-icon-container{
-    background-color: #fff;
+    // background-color: #fff;
     text-align: right;
     height: 45px;
     width: 220px;
@@ -70,23 +75,26 @@
 }
 
 .menu-name {
-    color: #ffffffbf;
+    // color: #ffffffbf;
+    opacity: 0.8;
     line-height: 70px;
     margin-left: 85px;
     float: left;
 }
 
 .menu-name:hover {
-    color: #ffffff;
+    opacity: 1;    
 }
 
 .menu-support {
-    color: #ffffffbf;
+    // color: #ffffffbf;
     float: right;
     margin-top: 22px;
     margin-right: 20px;
+    opacity: 0.8;
+
 }
 
 .menu-support:hover {
-    color: #ffffff;
+    opacity: 1;
 }
