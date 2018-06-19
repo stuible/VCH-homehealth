@@ -1,6 +1,7 @@
 --- 
 layout: intro
 permalink: "/modules/introduction/"
+video: CaseStudy1-HHsmall.mp4
 cases:
   - name: Part 1
     image: jane.png
