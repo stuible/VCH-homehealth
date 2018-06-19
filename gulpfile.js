@@ -13,8 +13,11 @@ const jsFiles = '_js/';
 const siteRoot = '_site';
 
 var jsSources = [
-    jsFiles + 'homehealth.js',
-    jsFiles + 'branching.js'
+    jsFiles + 'barba.js',
+    jsFiles + 'modules.js',
+    jsFiles + 'module.js',
+    jsFiles + 'branching.js',
+    jsFiles + 'background.js'
 ];
 
 // Task for building blog when something changed:
