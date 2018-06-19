@@ -15,16 +15,25 @@ layout: intro
             <div class="intro-swiper-container">
                     <div class="swiper-wrapper">
                         <div class="intro-swiper-slide">
-                                <video loop autoplay preload="auto" class="module-video" ><source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4" /></video>
+                                <video loop autoplay preload="auto" class="module-feature-video" ><source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4" /></video>
+                                <div class="scroll-btn">
+                                    <a href="#course-objectives">
+                                        <span class="mouse">
+                                            <span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                  <div>scroll down</div>
+                                </div>
                         </div>
-                        <div class="intro-swiper-slide">
+                        <div class="intro-swiper-slide" data-hash="course-objectives">
                             <div class="container">
                                  <div class="course-objectives">
                                     {{content}}
                                 </div>
                             </div>
                         </div>
-                        <div class="intro-swiper-slide">
+                        <div class="intro-swiper-slide" data-hash="case-studies">
                                 <div class="container">
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
