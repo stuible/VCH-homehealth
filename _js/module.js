@@ -1,7 +1,7 @@
 //functions for instantiating Introdunction and individual module pages
 
 $().ready(function () {   
-    var narrative = Barba.BaseView.extend({
+    var moduleView = Barba.BaseView.extend({
         namespace: 'module',
         onEnter: function () {
             darkBackground(true);
@@ -10,7 +10,7 @@ $().ready(function () {
         }
     });
 
-    narrative.init();
+    moduleView.init();
 });
 
 $().ready(function () {   
@@ -49,7 +49,7 @@ function instantiateIntro() {
 
 function instantiateModule() {
 
-    var introSwiper = new Swiper('.module-swiper-container', {
+    var moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',
         mousewheel: {

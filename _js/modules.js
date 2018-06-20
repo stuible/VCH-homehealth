@@ -1,16 +1,7 @@
 //function for instantiating main Modules Carousel
 
 $().ready(function () {   
-  var modules = Barba.BaseView.extend({
-      namespace: 'modules',
-      onEnter: function () {
-        darkBackground(true);
-        instantiateSlider();
-        $(".module-menu").attr("href", "#");
-      }
-  });
-
-  modules.init();
+  
 });
 
 function instantiateSlider() {
@@ -46,7 +37,12 @@ function instantiateSlider() {
   
     //Update variable with the last slide the user saw on the modules page
     mySwiper.on('slideChange', function () {
-      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+      console.log('current Page: ' + currentPage);
+      if(currentPage == 'modules'){
+        lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+        // console.log(lastmoduleSlide);
+      }
+      
     });
   
     //BEFORE I BEGIN POPUP CODE

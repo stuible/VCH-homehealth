@@ -20,11 +20,11 @@ function lightBackground(menu){
 }
 
 function lightMenu(){
-    $('.menubar, .menubar a').css('color', '#fff');
+    $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
     $(".menu-icon").children().children().children().attr("stroke","#fff");
 }
 
 function darkMenu(){
-    $('.menubar, .menubar a').css('color', '#000');
+    $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
 }

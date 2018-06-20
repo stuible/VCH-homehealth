@@ -13,11 +13,11 @@ const jsFiles = '_js/';
 const siteRoot = '_site';
 
 var jsSources = [
+    jsFiles + 'barba.js',
     jsFiles + 'modules.js',
     jsFiles + 'module.js',
     jsFiles + 'branching.js',
     jsFiles + 'case-study.js',
-    jsFiles + 'barba.js',
     jsFiles + 'background.js'
 ];
 
