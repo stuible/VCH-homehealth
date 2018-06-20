@@ -17,7 +17,6 @@ var jsSources = [
     jsFiles + 'modules.js',
     jsFiles + 'module.js',
     jsFiles + 'branching.js',
-    jsFiles + 'case-study.js',
     jsFiles + 'background.js'
 ];
 

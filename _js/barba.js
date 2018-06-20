@@ -81,71 +81,18 @@ $().ready(function () {
     lastElementClicked = el;
   });
 
-  var modules = Barba.BaseView.extend({
-    namespace: 'modules',
-    onEnter: function () {
-      darkBackground(true);
-      instantiateSlider();
-      $(".module-menu").attr("href", "#");
-    }
-});
-
-modules.init();
-
-var narrative = Barba.BaseView.extend({
-  namespace: 'narrative',
-  onEnter: function () {
-      darkBackground(true);
-      initializeBranching();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-narrative.init();
-
-var caseStudy = Barba.BaseView.extend({
-  namespace: 'case-study',
-  onEnter: function () {
-      initializeCaseStudy();
-  }
-});
-
-caseStudy.init();
-
-var moduleView = Barba.BaseView.extend({
-  namespace: 'module',
-  onEnter: function () {
-      darkBackground(true);
-      instantiateModule();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-moduleView.init();
-
-var introduction = Barba.BaseView.extend({
-  namespace: 'introduction',
-  onEnter: function () {
-      instantiateIntro();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-introduction.init();
-
   //Check to see if the page we're loading has swiper on it before trying to initialize
   Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
-    // console.log('new page is being set to: ' + newpage);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
-    // initializeBranching(); 
+    initializeBranching(); 
     if (newpage == 'modules') {
-      // instantiateSlider();
+      instantiateSlider();
       $(".module-menu").attr("href", "#");
     }
     else if (newpage == 'introduction') {
-      // instantiateIntro();
+      instantiateIntro();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else if (newpage == 'person-centered-care' ||
@@ -154,7 +101,7 @@ introduction.init();
       newpage == 'iv-therapy' ||
       newpage == 'pallative-care') {
 
-      // instantiateModule();
+      instantiateModule();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else {
@@ -162,7 +109,6 @@ introduction.init();
     }
 
   });
-  
 
 });
 

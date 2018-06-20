@@ -3,16 +3,16 @@ layout: intro
 permalink: "/modules/introduction/"
 video: CaseStudy1-HHsmall.mp4
 cases:
-  - name: Call of Nature
+  - name: Part 1
     image: jane.png
     url: 1
-  - name: Bereaved
+  - name: Part 2
     image: jane.png
     url: 2
-  - name: Vebal Abuse
+  - name: Part 3
     image: jon.png
     url: 3
-  - name: Burnt Out
+  - name: Part 4
     image: jon.png
     url: 4
   # - name: Samantha

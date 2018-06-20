@@ -3,7 +3,6 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
-    background-color: $backgroundColour;
     
 }
 .container {
@@ -11,10 +10,10 @@ body {
 }
 
 .background {
-    // position: fixed;
-    // width: 100%;
-    // height: 100%;
-    // background: $backgroundColour; /* Old browsers */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $backgroundColour; /* Old browsers */
     /* background: -moz-linear-gradient(-45deg, #453d56 0%, #274042 99%); 
     background: -webkit-linear-gradient(-45deg, #453d56 0%,#274042 99%); 
     background: linear-gradient(135deg, #453d56 0%,#274042 99%); 

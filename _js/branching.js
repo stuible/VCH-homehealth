@@ -1,7 +1,3 @@
-$().ready(function () {   
-    
-});
-
 function initializeBranching() { 
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
