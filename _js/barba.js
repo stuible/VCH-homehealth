@@ -1,57 +1,5 @@
 $().ready(function () {
 
-  var modules = Barba.BaseView.extend({
-    namespace: 'modules',
-    onEnter: function () {
-      darkBackground(true);
-      instantiateSlider();
-      $(".module-menu").attr("href", "#");
-    }
-});
-
-modules.init();
-
-var narrative = Barba.BaseView.extend({
-  namespace: 'narrative',
-  onEnter: function () {
-      darkBackground(true);
-      initializeBranching();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-narrative.init();
-
-var caseStudy = Barba.BaseView.extend({
-  namespace: 'case-study',
-  onEnter: function () {
-      initializeCaseStudy();
-  }
-});
-
-caseStudy.init();
-
-var moduleView = Barba.BaseView.extend({
-  namespace: 'module',
-  onEnter: function () {
-      darkBackground(true);
-      instantiateModule();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-moduleView.init();
-
-var introduction = Barba.BaseView.extend({
-  namespace: 'introduction',
-  onEnter: function () {
-      instantiateIntro();
-      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-  }
-});
-
-introduction.init();
-
   // Barba Page Transition
   var FadeTransition = Barba.BaseTransition.extend({
     start: function () {
@@ -132,6 +80,58 @@ introduction.init();
   Barba.Dispatcher.on('linkClicked', function (el) {
     lastElementClicked = el;
   });
+
+  var modules = Barba.BaseView.extend({
+    namespace: 'modules',
+    onEnter: function () {
+      darkBackground(true);
+      instantiateSlider();
+      $(".module-menu").attr("href", "#");
+    }
+});
+
+modules.init();
+
+var narrative = Barba.BaseView.extend({
+  namespace: 'narrative',
+  onEnter: function () {
+      darkBackground(true);
+      initializeBranching();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+narrative.init();
+
+var caseStudy = Barba.BaseView.extend({
+  namespace: 'case-study',
+  onEnter: function () {
+      initializeCaseStudy();
+  }
+});
+
+caseStudy.init();
+
+var moduleView = Barba.BaseView.extend({
+  namespace: 'module',
+  onEnter: function () {
+      darkBackground(true);
+      instantiateModule();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+moduleView.init();
+
+var introduction = Barba.BaseView.extend({
+  namespace: 'introduction',
+  onEnter: function () {
+      instantiateIntro();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+introduction.init();
 
   //Check to see if the page we're loading has swiper on it before trying to initialize
   Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
