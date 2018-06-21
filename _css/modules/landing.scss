@@ -61,7 +61,6 @@
     }
 
     :hover {
-        width: 175px;
         background-color: white;
     }
 }
@@ -86,6 +85,11 @@
     .prereqs-button {
         float: none;
     }
+}
+
+.landing-button:hover {
+    // width: 175px;
+    background-color: white;
 }
 
 .lt-logo {
