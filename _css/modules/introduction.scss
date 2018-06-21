@@ -6,11 +6,6 @@
     max-height:100vh;
     overflow: hidden;
 }
-
-//.narratives-parent-container{
-    // position: relative;
-    ///* height: 100vh; */
-//}
     
 .intro-swiper-slide {
     overflow: hidden;
@@ -34,9 +29,10 @@
     color: #fff;
     text-decoration: none;
 
-    :hover {
+    &:hover {
         color: #fff;
     }
+
     img {
         width: 100%;
         border-radius: 5px;

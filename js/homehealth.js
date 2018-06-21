@@ -176,7 +176,7 @@ function getLastPart(url) {
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
 }
-//function for instantiating main Modules Carousel
+//Functions for instantiating main Modules Carousel Page
 
 $().ready(function () {   
   

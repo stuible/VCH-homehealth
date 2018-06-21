@@ -1,4 +1,4 @@
-//function for instantiating main Modules Carousel
+//Functions for instantiating main Modules Carousel Page
 
 $().ready(function () {   
   
