@@ -3,7 +3,7 @@
 /* LANDING */
 
 .landing-background {
-    background-image: url("../image/minimalistic-gaussian-blur.jpg");
+    background-image: url("../image/minimalistic-gaussian-blur-dark.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
@@ -14,6 +14,17 @@
     top: 0;
     z-index: -1;
     text-align: center;
+}
+
+.landing-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
 }
 
 .landing-logo {
@@ -68,24 +79,7 @@
 
 .begin-button {
     background-color: $primaryColour;
-    /* margin-left: 15px; */
-    // float: left;
 }
-
-// .prereqs-button {
-//     background-color: #281746;
-//     float: right;
-// }
-
-// @media (max-width: 550px) {
-//     .begin-button {
-//         float: none;
-//     }
-    
-//     .prereqs-button {
-//         float: none;
-//     }
-// }
 
 .lt-logo {
     background-image: url("../image/logos/lt.png");
