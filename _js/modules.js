@@ -1,5 +1,9 @@
 //function for instantiating main Modules Carousel
 
+$().ready(function () {   
+  
+});
+
 function instantiateSlider() {
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -33,7 +37,12 @@ function instantiateSlider() {
   
     //Update variable with the last slide the user saw on the modules page
     mySwiper.on('slideChange', function () {
-      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+      console.log('current Page: ' + currentPage);
+      if(currentPage == 'modules'){
+        lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+        // console.log(lastmoduleSlide);
+      }
+      
     });
   
     //BEFORE I BEGIN POPUP CODE

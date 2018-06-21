@@ -10,17 +10,26 @@ layout: case-study
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container">
+        <div class="barba-container" data-namespace="case-study">
             <video autoplay loop preload="auto" class="case-study-video">
                 <source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4">
                 Your browser does not support this yupe of video
             </video>
-            <div class="container">
+            <div class="container case-study-container">
                 {{content}}
+                <!-- FAKE CONTENT -->
+                <div style="background: lightgrey; height: 400px"> </div>
+                <div style="background: white; height: 400px"> </div>
+                <div style="background: lightgrey; height: 400px"> </div>
+                <div style="background: white; height: 400px"> </div>
             </div>
+
         </div>
     </div>
 </div>
+<script>
+    //initializeCaseStudy();
+</script>
 </body>
 
 </html>

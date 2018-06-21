@@ -2,9 +2,22 @@
 
 /* INTRODUCTION PAGE */
 
+.intro-swiper-container {
+    max-height:100vh;
+    overflow: hidden;
+}
+
 .narratives-parent-container{
-    position: relative;
+    // position: relative;
     /* height: 100vh; */
+}
+
+.intro-wrapper {
+    // min-height: 100%;
+    }
+    
+.intro-swiper-slide {
+    overflow: hidden;
 }
 
 .narratives-container {

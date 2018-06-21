@@ -1,5 +1,57 @@
 $().ready(function () {
 
+  var modules = Barba.BaseView.extend({
+    namespace: 'modules',
+    onEnter: function () {
+      darkBackground(true);
+      instantiateSlider();
+      $(".module-menu").attr("href", "#");
+    }
+});
+
+modules.init();
+
+var narrative = Barba.BaseView.extend({
+  namespace: 'narrative',
+  onEnter: function () {
+      darkBackground(true);
+      initializeBranching();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+narrative.init();
+
+var caseStudy = Barba.BaseView.extend({
+  namespace: 'case-study',
+  onEnter: function () {
+      initializeCaseStudy();
+  }
+});
+
+caseStudy.init();
+
+var moduleView = Barba.BaseView.extend({
+  namespace: 'module',
+  onEnter: function () {
+      darkBackground(true);
+      instantiateModule();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+moduleView.init();
+
+var introduction = Barba.BaseView.extend({
+  namespace: 'introduction',
+  onEnter: function () {
+      instantiateIntro();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+introduction.init();
+
   // Barba Page Transition
   var FadeTransition = Barba.BaseTransition.extend({
     start: function () {
@@ -81,18 +133,20 @@ $().ready(function () {
     lastElementClicked = el;
   });
 
+
   //Check to see if the page we're loading has swiper on it before trying to initialize
   Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
+    // console.log('new page is being set to: ' + newpage);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
-    initializeBranching(); 
+    // initializeBranching(); 
     if (newpage == 'modules') {
-      instantiateSlider();
+      // instantiateSlider();
       $(".module-menu").attr("href", "#");
     }
     else if (newpage == 'introduction') {
-      instantiateIntro();
+      // instantiateIntro();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else if (newpage == 'person-centered-care' ||
@@ -101,7 +155,7 @@ $().ready(function () {
       newpage == 'iv-therapy' ||
       newpage == 'pallative-care') {
 
-      instantiateModule();
+      // instantiateModule();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else {
@@ -109,6 +163,7 @@ $().ready(function () {
     }
 
   });
+  
 
 });
 
@@ -119,6 +174,10 @@ function getLastPart(url) {
     : parts[parts.length - 2]);
 }
 //function for instantiating main Modules Carousel
+
+$().ready(function () {   
+  
+});
 
 function instantiateSlider() {
     //Instantiate Swiper (Carousel)
@@ -153,7 +212,12 @@ function instantiateSlider() {
   
     //Update variable with the last slide the user saw on the modules page
     mySwiper.on('slideChange', function () {
-      lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+      console.log('current Page: ' + currentPage);
+      if(currentPage == 'modules'){
+        lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
+        // console.log(lastmoduleSlide);
+      }
+      
     });
   
     //BEFORE I BEGIN POPUP CODE
@@ -213,12 +277,44 @@ function instantiateSlider() {
   }
 //functions for instantiating Introdunction and individual module pages
 
+// $().ready(function () {   
+//     var moduleView = Barba.BaseView.extend({
+//         namespace: 'module',
+//         onEnter: function () {
+//             darkBackground(true);
+//             instantiateModule();
+//             $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+//         }
+//     });
+
+//     moduleView.init();
+// });
+
+// $().ready(function () {   
+//     var introduction = Barba.BaseView.extend({
+//         namespace: 'introduction',
+//         onEnter: function () {
+//             instantiateIntro();
+//             $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+//         }
+//     });
+
+//     introduction.init();
+// });
+
 function instantiateIntro() {
+
+    console.log('instantiating intro');
 
     var introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',
         slideClass: 'intro-swiper-slide',
+        setWrapperSize: true,
         // touchReleaseOnEdges: true,
+        // mousewheelSensitivity: 0,
+        // mousewheelReleaseOnEdges: true,
+        // autoHeight: true,
+        // height: "300%",
         hashNavigation: {
             watchState: true,
         },
@@ -235,7 +331,9 @@ function instantiateIntro() {
 
 function instantiateModule() {
 
-    var introSwiper = new Swiper('.module-swiper-container', {
+    console.log('instantiating module');
+
+    var moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',
         mousewheel: {
@@ -250,7 +348,12 @@ function instantiateModule() {
         },
     });
 }
+$().ready(function () {   
+    
+});
+
 function initializeBranching() { 
+    console.log('instantiating branching');
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
         var nextQuestion = $(this).attr('href');
@@ -259,10 +362,27 @@ function initializeBranching() {
         return false;
     });
 }
+function initializeCaseStudy(){
+    lightBackground(false);
+
+    var caseStudyContainerWaypoint = new Waypoint({
+        element: $('.case-study-container'),
+        handler: function(direction) {
+            console.log(direction);
+            if(direction == 'down'){
+                darkMenu();
+            }
+            else {
+                lightMenu();
+            }          
+        },
+        offset: -10 
+      })
+}
 //Function for changing the Homehealth background during async page loads
-function darkBackground(lightMenu){
-    $('.background').css('background', '#161D2B');
-    if(lightMenu){
+function darkBackground(menu){
+    $('body').animate({backgroundColor: '#161D2B'}, 'slow');
+    if(menu){
         lightMenu();
     }
     else {
@@ -270,9 +390,9 @@ function darkBackground(lightMenu){
     }
 }
 
-function lightBackground(darkMenu){
-    $('.background').css('background', '#ffffff');
-    if(darkMenu){
+function lightBackground(menu){
+    $('body').animate({backgroundColor: '#ffffff'}, 'slow');
+    if(menu){
         darkMenu();
     }
     else {
@@ -281,11 +401,11 @@ function lightBackground(darkMenu){
 }
 
 function lightMenu(){
-    $('.menubar, .menubar a').css('color', '#fff');
+    $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
     $(".menu-icon").children().children().children().attr("stroke","#fff");
 }
 
 function darkMenu(){
-    $('.menubar, .menubar a').css('color', '#000');
+    $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
 }

@@ -1,7 +1,7 @@
 //Function for changing the Homehealth background during async page loads
-function darkBackground(lightMenu){
-    $('.background').css('background', '#161D2B');
-    if(lightMenu){
+function darkBackground(menu){
+    $('body').animate({backgroundColor: '#161D2B'}, 'slow');
+    if(menu){
         lightMenu();
     }
     else {
@@ -9,9 +9,9 @@ function darkBackground(lightMenu){
     }
 }
 
-function lightBackground(darkMenu){
-    $('.background').css('background', '#ffffff');
-    if(darkMenu){
+function lightBackground(menu){
+    $('body').animate({backgroundColor: '#ffffff'}, 'slow');
+    if(menu){
         darkMenu();
     }
     else {
@@ -20,11 +20,11 @@ function lightBackground(darkMenu){
 }
 
 function lightMenu(){
-    $('.menubar, .menubar a').css('color', '#fff');
+    $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
     $(".menu-icon").children().children().children().attr("stroke","#fff");
 }
 
 function darkMenu(){
-    $('.menubar, .menubar a').css('color', '#000');
+    $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
 }

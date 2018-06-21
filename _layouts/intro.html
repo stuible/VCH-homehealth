@@ -10,21 +10,23 @@ layout: intro
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container">
+        <div class="barba-container" data-namespace="introduction">
             <!-- Swiper -->
             <div class="intro-swiper-container">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper intro-wrapper">
                         <div class="intro-swiper-slide">
+                            <div class="slide-video-container">
                                 <video loop autoplay preload="auto" class="module-feature-video" ><source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4" /></video>
                                 <div class="scroll-btn">
-                                    <a href="#course-objectives">
-                                        <span class="mouse">
-                                            <span>
+                                        <a href="#course-objectives">
+                                            <span class="mouse">
+                                                <span>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </a>
-                                  <div>scroll down</div>
+                                        </a>
+                                      <div>scroll down</div>
                                 </div>
+                            </div>
                         </div>
                         <div class="intro-swiper-slide" data-hash="course-objectives">
                             <div class="container">
@@ -63,7 +65,7 @@ layout: intro
 
 <!-- Initialize Swiper -->
 <script>
-    instantiateIntro();
+    //instantiateIntro();
 </script>
 
 </body>
