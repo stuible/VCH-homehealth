@@ -26,6 +26,9 @@ var caseStudy = Barba.BaseView.extend({
   namespace: 'case-study',
   onEnter: function () {
       initializeCaseStudy();
+  },
+  onEnterCompleted: function () {
+    finalizeCaseStudy();
   }
 });
 

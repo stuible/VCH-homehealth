@@ -26,6 +26,9 @@ var caseStudy = Barba.BaseView.extend({
   namespace: 'case-study',
   onEnter: function () {
       initializeCaseStudy();
+  },
+  onEnterCompleted: function () {
+    finalizeCaseStudy();
   }
 });
 
@@ -315,6 +318,7 @@ function instantiateIntro() {
         // mousewheelReleaseOnEdges: true,
         // autoHeight: true,
         // height: "300%",
+        speed: 700,
         hashNavigation: {
             watchState: true,
         },
@@ -363,8 +367,15 @@ function initializeBranching() {
     });
 }
 function initializeCaseStudy(){
+
+    console.log('instantiating case study');
+
     lightBackground(false);
 
+}
+
+function finalizeCaseStudy(){
+    console.log('finalizing case study');
     var caseStudyContainerWaypoint = new Waypoint({
         element: $('.case-study-container'),
         handler: function(direction) {

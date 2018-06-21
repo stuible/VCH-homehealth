@@ -2,6 +2,11 @@
 
 /* MODULE PAGE */
 
+.module-swiper-container {
+    max-height:100vh;
+    overflow: hidden;
+}
+
 .course-objectives {
     color: #fff;
     text-align: center;

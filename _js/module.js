@@ -38,6 +38,7 @@ function instantiateIntro() {
         // mousewheelReleaseOnEdges: true,
         // autoHeight: true,
         // height: "300%",
+        speed: 700,
         hashNavigation: {
             watchState: true,
         },
