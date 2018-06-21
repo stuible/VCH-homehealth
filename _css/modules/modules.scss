@@ -2,11 +2,20 @@
 
 $modulesBorderRadius: 10px;
 
+.modules-logo {
+    background-image: url("../image/logos/homehealthlogo.svg");
+    height: 65px;
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center; 
+}
+
 /* MAIN CAROUSEL */
 
 .swiper-container {
     width: 100%;
-    margin-top: 200px !important;
+    margin-top: 10vh !important;
 }
 
 .swiper-slide {

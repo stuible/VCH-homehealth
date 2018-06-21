@@ -22,11 +22,18 @@ function lightBackground(menu){
 function lightMenu(){
     $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
     $(".menu-icon").children().children().children().attr("stroke","#fff");
+    // if(allRects){
+    //     allRects.animate({ stroke: "#fff" }, 500);
+    // }
+    
 }
 
 function darkMenu(){
     $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
+    // if(allRects){
+    //     allRects.animate({ stroke: "#000" }, 500);
+    // }
 }
 
 function hideMenu(){

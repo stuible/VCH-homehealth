@@ -1,36 +1,15 @@
 //functions for instantiating Introdunction and individual module pages
 
-// $().ready(function () {   
-//     var moduleView = Barba.BaseView.extend({
-//         namespace: 'module',
-//         onEnter: function () {
-//             darkBackground(true);
-//             instantiateModule();
-//             $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-//         }
-//     });
-
-//     moduleView.init();
-// });
-
-// $().ready(function () {   
-//     var introduction = Barba.BaseView.extend({
-//         namespace: 'introduction',
-//         onEnter: function () {
-//             instantiateIntro();
-//             $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
-//         }
-//     });
-
-//     introduction.init();
-// });
+//Declare swiper variables globally
+var introSwiper;
+var moduleSwiper;
 
 function instantiateIntro() {
 
     console.log('instantiating intro');
     showMenu();
 
-    var introSwiper = new Swiper('.intro-swiper-container', {
+    introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',
         slideClass: 'intro-swiper-slide',
         setWrapperSize: true,
@@ -59,7 +38,7 @@ function instantiateModule() {
     console.log('instantiating module');
     showMenu();
 
-    var moduleSwiper = new Swiper('.module-swiper-container', {
+    moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',
         mousewheel: {

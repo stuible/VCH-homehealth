@@ -69,23 +69,23 @@
 .begin-button {
     background-color: $primaryColour;
     /* margin-left: 15px; */
-    float: left;
+    // float: left;
 }
 
-.prereqs-button {
-    background-color: #281746;
-    float: right;
-}
+// .prereqs-button {
+//     background-color: #281746;
+//     float: right;
+// }
 
-@media (max-width: 550px) {
-    .begin-button {
-        float: none;
-    }
+// @media (max-width: 550px) {
+//     .begin-button {
+//         float: none;
+//     }
     
-    .prereqs-button {
-        float: none;
-    }
-}
+//     .prereqs-button {
+//         float: none;
+//     }
+// }
 
 .lt-logo {
     background-image: url("../image/logos/lt.png");

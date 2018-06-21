@@ -10,11 +10,12 @@
                 var lastmoduleSlide = "";
                 var currentPage = '{{page.title}}';
                 var baseurl = '{{site.baseurl}}';
+                var allRects = null;
 
                 if(currentPage == 'modules'){
                     $('.module-menu').hide();
                 }
-                
+
                 window.onload = function() {
                     var s = Snap();
                     var mainRect = s.rect(18, 5, 20, 20, 2);
