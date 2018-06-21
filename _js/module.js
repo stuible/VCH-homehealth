@@ -28,6 +28,7 @@
 function instantiateIntro() {
 
     console.log('instantiating intro');
+    showMenu();
 
     var introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',
@@ -56,6 +57,7 @@ function instantiateIntro() {
 function instantiateModule() {
 
     console.log('instantiating module');
+    showMenu();
 
     var moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',

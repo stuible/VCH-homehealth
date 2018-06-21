@@ -183,6 +183,9 @@ $().ready(function () {
 });
 
 function instantiateSlider() {
+  
+    hideMenu();
+
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
@@ -309,6 +312,7 @@ function instantiateSlider() {
 function instantiateIntro() {
 
     console.log('instantiating intro');
+    showMenu();
 
     var introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',
@@ -337,6 +341,7 @@ function instantiateIntro() {
 function instantiateModule() {
 
     console.log('instantiating module');
+    showMenu();
 
     var moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
@@ -359,6 +364,9 @@ $().ready(function () {
 
 function initializeBranching() { 
     console.log('instantiating branching');
+
+    showMenu();
+
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
         var nextQuestion = $(this).attr('href');
@@ -372,6 +380,7 @@ function initializeCaseStudy(){
     console.log('instantiating case study');
 
     lightBackground(false);
+    showMenu();
 
 }
 
@@ -420,4 +429,11 @@ function lightMenu(){
 function darkMenu(){
     $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
+}
+
+function hideMenu(){
+    $('.module-menu').fadeOut()
+}
+function showMenu(){
+    $('.module-menu').fadeIn()
 }

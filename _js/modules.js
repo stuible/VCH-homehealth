@@ -5,6 +5,9 @@ $().ready(function () {
 });
 
 function instantiateSlider() {
+  
+    hideMenu();
+
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
       // Optional parameters

@@ -3,6 +3,7 @@ function initializeCaseStudy(){
     console.log('instantiating case study');
 
     lightBackground(false);
+    showMenu();
 
 }
 

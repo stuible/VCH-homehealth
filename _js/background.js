@@ -28,3 +28,10 @@ function darkMenu(){
     $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
 }
+
+function hideMenu(){
+    $('.module-menu').fadeOut()
+}
+function showMenu(){
+    $('.module-menu').fadeIn()
+}
