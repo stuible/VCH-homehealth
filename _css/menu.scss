@@ -60,19 +60,20 @@
     width: auto;
     display: inline-block;
     cursor: pointer !important;
+
+    :hover {
+        cursor: pointer;
+        
+        > .menu-icon-container {
+            -webkit-transform: translate(146px,0);
+            -moz-transform: translate(146px,0);
+            -o-transform: translate(146px,0);
+            -ms-transform: translate(146px,0);
+            transform: translate(146px,0);
+        }
+    }
 }
 
-.module-menu:hover {
-    cursor: pointer;
-}
-
-.module-menu:hover > .menu-icon-container {
-    -webkit-transform: translate(146px,0);
-    -moz-transform: translate(146px,0);
-    -o-transform: translate(146px,0);
-    -ms-transform: translate(146px,0);
-    transform: translate(146px,0);
-}
 
 .menu-name {
     // color: #ffffffbf;
@@ -80,10 +81,10 @@
     line-height: 70px;
     margin-left: 85px;
     float: left;
-}
 
-.menu-name:hover {
-    opacity: 1;    
+    :hover {
+        opacity: 1;    
+    }
 }
 
 .menu-support {
@@ -93,8 +94,7 @@
     margin-right: 20px;
     opacity: 0.8;
 
-}
-
-.menu-support:hover {
-    opacity: 1;
+    :hover {
+        opacity: 1;
+    }
 }

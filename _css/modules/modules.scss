@@ -7,7 +7,6 @@ $modulesBorderRadius: 10px;
 .swiper-container {
     width: 100%;
     margin-top: 200px !important;
-    // overflow: visible !important; 
 }
 
 .swiper-slide {
@@ -16,26 +15,27 @@ $modulesBorderRadius: 10px;
     margin: 0.5625vw auto;
     margin-left: 50px;
     margin-right: 50px;
-}
 
-.swiper-slide a{
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-.swiper-slide div{
+    div {
     
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    > a > div {
+        background: rgb(0,0,0);
+        background: linear-gradient(177deg, rgba(0,0,0,0.5186449579831933) 0%, rgba(0,0,0,0) 54%, rgba(0,0,0,0) 100%);
+        border-radius: $modulesBorderRadius;
+    }
 }
 
-.swiper-slide > a > div {
-    background: rgb(0,0,0);
-    background: linear-gradient(177deg, rgba(0,0,0,0.5186449579831933) 0%, rgba(0,0,0,0) 54%, rgba(0,0,0,0) 100%);
-    border-radius: $modulesBorderRadius;
-}
 
 .slide-title {
     color: white;
@@ -56,21 +56,15 @@ $modulesBorderRadius: 10px;
     background: #ffffffc9;
 }
 
-// .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-//     bottom: 7px;
-//     left: 0;
-//     width: 100%;
-//     height: 10px;
-// }
-
-.modules-pagination > .swiper-pagination-bullet {
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
 .modules-pagination {
     width: 100%;
     text-align: center;
+
+    > .swiper-pagination-bullet {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 

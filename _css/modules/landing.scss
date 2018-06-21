@@ -51,15 +51,21 @@
     width: 175px;
     color: white;
     border: none;
+
+    :visited {
+        color: #ffffff;
+
+        :hover{
+            color: #000000;
+        }
+    }
+
+    :hover {
+        width: 175px;
+        background-color: white;
+    }
 }
 
-.landing-button:visited {
-    color: #ffffff;
-}
-
-.landing-button:visited:hover{
-    color: #000000;
-}
 
 .begin-button {
     background-color: $primaryColour;
@@ -80,11 +86,6 @@
     .prereqs-button {
         float: none;
     }
-}
-
-.landing-button:hover {
-    width: 175px;
-    background-color: white;
 }
 
 .lt-logo {

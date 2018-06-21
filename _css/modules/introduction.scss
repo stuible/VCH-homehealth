@@ -7,10 +7,10 @@
     overflow: hidden;
 }
 
-.narratives-parent-container{
+//.narratives-parent-container{
     // position: relative;
-    /* height: 100vh; */
-}
+    ///* height: 100vh; */
+//}
     
 .intro-swiper-slide {
     overflow: hidden;
@@ -33,15 +33,14 @@
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-}
 
-.narrative:hover {
-    color: #fff;
-}
-
-.narrative img {
-    width: 100%;
-    border-radius: 5px;
+    :hover {
+        color: #fff;
+    }
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
 }
 
 .more-info-button {
