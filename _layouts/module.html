@@ -16,8 +16,25 @@ layout: module
                     <div class="swiper-wrapper">
                         <div class="module-swiper-slide" data-hash="course-objectives">
                             <div class="container">
-                                <div class="course-objectives">
-                                    {{content}}
+                                <div class="course-objectives row">
+                                    <div class="objectives-title">Objectectives</div>
+                                    {% for objective in page.objectives %}
+                                    <div class="row objective-row">
+                                    <div class="five columns">
+                                            <div class="row">
+                                                <div class="objective-number">{{ forloop.index }}</div>
+                                                    <div class="objective">{{objective.objective}}</div>
+                                            </div>
+                                    </div>
+                                    <div class="five columns">
+                                                <div class="row">
+                                                <p>{{objective.application}}</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+
                                 </div>
                                 <!-- <div class="scroll-btn">
                                         <a onclick="moduleSwiper.slideTo(1)" href="#">

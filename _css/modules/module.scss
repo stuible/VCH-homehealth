@@ -2,6 +2,10 @@
 
 /* MODULE PAGE */
 
+.objective-row {
+    margin-bottom: 25px;
+}
+
 .module-swiper-container {
     max-height:100vh;
     overflow: hidden;
@@ -9,7 +13,19 @@
 
 .course-objectives {
     color: #fff;
+}
+
+.objective-number {
+    font-size: 42px;
+    float: left;
+    margin-right: 15px;
+}
+
+.objectives-title {
     text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 
 .slide-video-container {
@@ -25,4 +41,11 @@
     min-height: 100vh;
     width: auto;
     height: auto;
+}
+
+.objective {
+    font-size: 18px;
+    display: inline-block;
+    width: 80%;
+
 }
