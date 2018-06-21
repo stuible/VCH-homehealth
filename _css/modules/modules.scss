@@ -63,6 +63,16 @@ $modulesBorderRadius: 10px;
 //     height: 10px;
 // }
 
+.modules-pagination > .swiper-pagination-bullet {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modules-pagination {
+    width: 100%;
+    text-align: center;
+}
+
 
 .swiper-button-next {
     right: 15% !important;

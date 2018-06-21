@@ -198,7 +198,8 @@ function instantiateSlider() {
       },
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+        el: '.modules-pagination',
+        clickable: true
       },
   
       keyboard: {
