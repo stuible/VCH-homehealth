@@ -26,7 +26,7 @@
     text-align: center;
     font-size: 36px;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 .slide-video-container {
@@ -56,7 +56,7 @@
     padding-bottom: 10px;
     border-bottom: solid #5AAF7F 5px;
     font-weight: 400;
-    
+
 }
 
 .mapplications-title {
@@ -76,4 +76,40 @@
 .module-bullets .swiper-pagination-bullet-active {
     height: 12px;
     width: 12px;
+}
+
+.module-case-studies-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $lightTextColour;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.narratives-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.narrative {
+    display: inline-block;
+    width: 160px;
+    height: 200px;
+    background-color: $primaryColour;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
 }

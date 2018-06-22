@@ -6,12 +6,6 @@ body {
 .container {
   margin-top: 80px; }
 
-.background {
-  /* background: -moz-linear-gradient(-45deg, #453d56 0%, #274042 99%); 
-    background: -webkit-linear-gradient(-45deg, #453d56 0%,#274042 99%); 
-    background: linear-gradient(135deg, #453d56 0%,#274042 99%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#453d56', endColorstr='#274042',GradientType=1 );   */ }
-
 .top-padding {
   margin-top: 100px; }
 
@@ -238,32 +232,6 @@ body {
 .intro-swiper-slide {
   overflow: hidden; }
 
-.narratives-container {
-  text-align: center;
-  width: 100%;
-  margin-top: 30%; }
-
-.narrative {
-  display: inline-block;
-  width: 160px;
-  height: 200px;
-  background-color: #5AAF7F;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none; }
-  .narrative:hover {
-    color: #fff; }
-  .narrative img {
-    width: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; }
-
 .more-info-button {
   background-color: #5AAF7F;
   border: none;
@@ -367,7 +335,7 @@ body {
   text-align: center;
   font-size: 36px;
   font-weight: 400;
-  margin-bottom: 50px; }
+  margin-bottom: 75px; }
 
 .slide-video-container {
   position: relative;
@@ -411,6 +379,39 @@ body {
 .module-bullets .swiper-pagination-bullet-active {
   height: 12px;
   width: 12px; }
+
+.module-case-studies-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.narratives-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 20%; }
+
+.narrative {
+  display: inline-block;
+  width: 160px;
+  height: 200px;
+  background-color: #5AAF7F;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none; }
+  .narrative:hover {
+    color: #fff; }
+  .narrative img {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
 
 .modules-logo {
   background-image: url("../image/logos/homehealthlogo.svg");
