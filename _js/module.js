@@ -18,7 +18,7 @@ function instantiateIntro() {
         // mousewheelReleaseOnEdges: true,
         // autoHeight: true,
         // height: "300%",
-        speed: 700,
+        speed: 400,
         hashNavigation: {
             watchState: true,
         },
@@ -41,6 +41,7 @@ function instantiateModule() {
     moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',
+        speed: 400,
         mousewheel: {
             invert: false,
         },
