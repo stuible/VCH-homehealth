@@ -18,15 +18,23 @@ layout: module
                             <div class="container">
                                 <div class="course-objectives row">
                                     <div class="objectives-title">Objectives</div>
+                                    <div class="row objective-row">
+                                        <div class="six columns lobjectives-title">
+                                            Learning Objectives
+                                        </div>
+                                        <div class="six columns mapplications-title">
+                                            Measurable Applications
+                                        </div>
+                                    </div>
                                     {% for objective in page.objectives %}
                                     <div class="row objective-row">
-                                    <div class="five columns">
+                                    <div class="six columns">
                                             <div class="row">
                                                 <div class="objective-number">{{ forloop.index }}</div>
                                                     <div class="objective">{{objective.objective}}</div>
                                             </div>
                                     </div>
-                                    <div class="five columns">
+                                    <div class="six columns">
                                                 <div class="row">
                                                 <p>{{objective.application}}</p>
                                                 </div>
@@ -70,7 +78,7 @@ layout: module
                         </div>
                     </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination module-bullets"></div>
             </div>
             
             
