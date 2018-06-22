@@ -6,7 +6,10 @@ const child = require('child_process');
 const gutil = require('gulp-util');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
+
 
 const cssFiles = '_css/**/*.?(s)css';
 const jsFiles = '_js/';
@@ -31,8 +34,15 @@ gulp.task('build', shell.task(['bundle exec jekyll serve']));
 //CSS Concatonation
 gulp.task('css', () => {
     gulp.src(cssFiles)
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({utputStyle: 'nested'}))
         .pipe(concat('style.css'))
+        .pipe(autoprefixer({
+          browsers: ['last 99 versions'],
+          cascade: false
+        }))
+        .pipe(gulp.dest('css'))
+        .pipe(rename('style.min.css'))
+        .pipe(csso())
         .pipe(gulp.dest('css'))
   });
 

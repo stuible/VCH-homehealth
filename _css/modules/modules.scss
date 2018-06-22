@@ -89,14 +89,11 @@ $modulesBorderRadius: 10px;
     position: absolute;
     z-index: -1;
     width: 100%;
-    -webkit-filter: brightness(80%);
     filter: brightness(80%);
     border-radius: $modulesBorderRadius;
 }
 
 .before-begin-button {
-    -webkit-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
-    -moz-box-shadow: 0px 0px 109px -15px rgba(0,0,0,0.64);
     box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
 }
 
