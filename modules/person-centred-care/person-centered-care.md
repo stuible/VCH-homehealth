@@ -12,6 +12,9 @@ objectives:
   - objective: Learners will apply reflective practive to foster nurse/client relationships
     application: Examines own values/beliefs related to quality of life and client autonomy in home/community settings
 
+  - objective: Analyze the use of co-created care plans for nurses and clients
+    application: Develops mutually agreed upon care plans with associated interventions that are clients specific and individualized.
+
 cases:
   - name: Margaret
     image: jane.png
