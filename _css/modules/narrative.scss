@@ -1,17 +1,17 @@
 @import "../variables";
 
 .narrative-question {
-    color: #fff;
+    color: $lightTextColour;
     font-size: 48px;
 }
 
 .narrative-answers {
-    color: #fff;
+    color: $lightTextColour;
 }
 
 .narrative-answer {
     background-color: $primaryColour;
-    color: #fff;
+    color: $lightTextColour;
     border: none;
 }
 
