@@ -1,5 +1,6 @@
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){
+    clearBackground();
     $('body').animate({backgroundColor: '#161D2B'}, 'slow');
     if(menu){
         lightMenu();
@@ -10,6 +11,7 @@ function darkBackground(menu){
 }
 
 function lightBackground(menu){
+    clearBackground();
     $('body').animate({backgroundColor: '#ffffff'}, 'slow');
     if(menu){
         darkMenu();
@@ -17,6 +19,17 @@ function lightBackground(menu){
     else {
         lightMenu();
     }
+}
+
+function setBackground(image){
+    $( ".background" ).first().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).fadeIn();
+    // $('.background').css({"background-image":"url(" + image +")"});
+    
+}
+
+function clearBackground(){
+    $(".background").fadeOut();
+    $(".background").not(':last').remove();
 }
 
 function lightMenu(){

@@ -6,7 +6,7 @@ layout: branching-narrative
 {% include header.html %}
 
 <body>
-<div class="background">
+<div class="background"></div>
     {% include menu.html %}
 
     <div id="barba-wrapper">
@@ -15,9 +15,9 @@ layout: branching-narrative
                 {% for question in page.questions %}
 
                     {% if forloop.first == true %}
-                        <div data-narrative="{{ question.link }}" class="question-container narrative-primary">
+                        <div data-narrative="{{ question.link }}" data-background="{{site.baseurl}}/image/branch/{{ question.background }}" class="question-container narrative-primary">
                     {% else %}
-                        <div data-narrative="{{ question.link }}" class="question-container narrative-secondary">
+                        <div data-narrative="{{ question.link }}" data-background="{{site.baseurl}}/image/branch/{{ question.background }}" class="question-container narrative-secondary">
                     {% endif %}
 
                     <div class="narrative-question">
@@ -35,7 +35,7 @@ layout: branching-narrative
 
                 {% for question in page.questions %}
                     {% for answer in question.answers %}
-                    <div data-narrative="{{ answer.link }}" class="question-container narrative-tertiary">
+                    <div data-narrative="{{ answer.link }}" class="question-container narrative-tertiary" data-background="{{site.baseurl}}/image/branch/{{ answer.background }}">
                         <div class="narrative-question">
                             {{ answer.feedback}}
                          </div>
@@ -47,7 +47,6 @@ layout: branching-narrative
             </div>
         </div>
     </div>
-</div>
 
 <!-- Initialize Branching Funciton -->
 <script>
