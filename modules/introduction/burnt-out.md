@@ -1,6 +1,6 @@
 --- 
 layout: branching-narrative
-permalink: "/modules/introduction/1/"
+permalink: "/modules/introduction/burnt-out/"
 image:
 
 #FIRST LEVEL

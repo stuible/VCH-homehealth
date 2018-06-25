@@ -11,7 +11,7 @@ layout: branching-narrative
 
     <div id="barba-wrapper">
         <div class="barba-container" data-namespace="narrative">
-            <div class="narrative-container top-padding center-align">
+            <div class="container narrative-container top-padding center-align">
                 {% for question in page.questions %}
 
                     {% if forloop.first == true %}
@@ -25,9 +25,11 @@ layout: branching-narrative
                     </div>
                     <div class="narrative-answers">
                                 {% for answer in question.answers %}
-                                <a href="{{ answer.link }}" class="button narrative-answer no-barba">
-                                    {{ answer.text }}
-                                </a>
+                                <div class="row">
+                                    <a href="{{ answer.link }}" class="button narrative-answer no-barba">
+                                        {{ answer.text }}
+                                    </a>
+                                </div>
                                 {% endfor %}
                     </div>
                 </div>

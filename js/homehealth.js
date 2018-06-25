@@ -185,6 +185,7 @@ $().ready(function () {
 function instantiateSlider() {
   
     hideMenu();
+    darkBackground(true);
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -292,6 +293,7 @@ function instantiateIntro() {
 
     console.log('instantiating intro');
     showMenu();
+    darkBackground(true);
 
     introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',

@@ -529,15 +529,18 @@ body {
 
 .narrative-question {
   color: #fff;
-  font-size: 48px; }
+  font-size: 36px;
+  font-weight: 400; }
 
 .narrative-answers {
-  color: #fff; }
+  color: #fff;
+  margin-top: 50px; }
 
 .narrative-answer {
   background-color: #5AAF7F;
   color: #fff;
-  border: none; }
+  border: none;
+  width: 100%; }
 
 .narrative-secondary, .narrative-tertiary {
   display: none; }

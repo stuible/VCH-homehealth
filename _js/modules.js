@@ -7,6 +7,7 @@ $().ready(function () {
 function instantiateSlider() {
   
     hideMenu();
+    darkBackground(true);
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {

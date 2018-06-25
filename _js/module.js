@@ -8,6 +8,7 @@ function instantiateIntro() {
 
     console.log('instantiating intro');
     showMenu();
+    darkBackground(true);
 
     introSwiper = new Swiper('.intro-swiper-container', {
         direction: 'vertical',

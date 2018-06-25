@@ -2,17 +2,20 @@
 
 .narrative-question {
     color: $lightTextColour;
-    font-size: 48px;
+    font-size: 36px;
+    font-weight: 400;
 }
 
 .narrative-answers {
     color: $lightTextColour;
+    margin-top: 50px;
 }
 
 .narrative-answer {
     background-color: $primaryColour;
     color: $lightTextColour;
     border: none;
+    width: 100%;
 }
 
 .narrative-secondary, .narrative-tertiary{

@@ -19,18 +19,14 @@ objectives:
 cases:
   - name: Call of Nature
     image: jane.png
-    url: 1
+    url: call-of-nature
   - name: Bereaved
     image: jane.png
-    url: 2
+    url: bereaved
   - name: Vebal Abuse
     image: jon.png
-    url: 3
+    url: vebal-abuse
   - name: Burnt Out
     image: jon.png
-    url: 4
-  # - name: Samantha
-  #   image: jane.png
-  #   url:
+    url: burnt-out
 ---
-#### Before you do the Introduction I'm going to need you to do this...
