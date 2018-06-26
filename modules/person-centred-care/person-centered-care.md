@@ -28,5 +28,22 @@ cases:
   - name: Agit
     image: jon.png
     url: agit
+
+more:
+  - title: Holistic Care
+    image: hands.jpg
+    url: holistic
+  - title: Older Adult Care
+    image: lady.jpg
+    url: older-adult
+  - title: Chronic Conditions
+    image: pills.jpg
+    url: chronic
+  - title: Care Planning
+    image: plan.jpg
+    url: care
+  - title: Deliverables & Quiz
+    image: plan.jpg
+    url: deliverables
 ---
 #### Before you do the Person Centered Care I'm going to need you to do this...

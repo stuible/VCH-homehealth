@@ -45,6 +45,17 @@ var moduleView = Barba.BaseView.extend({
 
 moduleView.init();
 
+var moreView = Barba.BaseView.extend({
+  namespace: 'more-on-topic',
+  onEnter: function () {
+      lightBackground(true);
+      instantiateMore();
+      $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  }
+});
+
+moreView.init();
+
 var introduction = Barba.BaseView.extend({
   namespace: 'introduction',
   onEnter: function () {
