@@ -16,10 +16,6 @@ modules:
     pagename: wound-care
     video: Wound-HHsmall.mp4
     beforebeginning: do stuff
-  - name: Interdisciplinary Collaboration
-    pagename: collaboration
-    video: CaseStudy3-HHsmall.mp4
-    beforebeginning: do stuff
   - name: IV Therapy
     pagename: iv-therapy
     video: CaseStudy2-HHsmall.mp4
