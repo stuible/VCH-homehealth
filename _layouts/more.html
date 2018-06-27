@@ -18,7 +18,7 @@ layout: more
                         {% for part in section.section %}
 
                             {% if part.part == 'left' %}
-                            <div class="six columns">
+                            <div class="five columns">
                                 {% for component in part %}
                                     {% if component[0] == 'title' %}
                                         <div class="more-left-title">
@@ -33,8 +33,11 @@ layout: more
                                     {% if component[0] == 'circles' %}
                                         <div class="more-small-circles">
                                             {% for circle in component[1] %}
-                                            <div>
+                                            <div class="more-small-circle-container">
+                                                <div class="more-small-circle"></div>
+                                                <div class="more-small-circle-text">
                                                 {{ circle }}
+                                                </div>
                                             </div>
                                             {% endfor %}
                                         </div>
@@ -53,7 +56,7 @@ layout: more
                             {% endif %}
 
                             {% if part.part == 'right' %}
-                            <div class="six columns">
+                            <div class="five columns offset-by-one">
                                     {% for component in part %}
                                         {% if component[0] == 'title' %}
                                             <div class="more-right-title">
