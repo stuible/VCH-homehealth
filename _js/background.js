@@ -22,7 +22,11 @@ function lightBackground(menu){
 }
 
 function setBackground(image){
-    $( ".background" ).first().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).fadeIn();
+    $( ".background" ).first().fadeOut("slow", function() {
+        $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).fadeIn("slow");
+    });
+    
+    
     // $('.background').css({"background-image":"url(" + image +")"});
     
 }
