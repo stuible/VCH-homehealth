@@ -19,6 +19,12 @@ body {
 .center-align {
   text-align: center; }
 
+@font-face {
+  font-family: 'Perpetua';
+  src: url("../fonts/perpetua/Perpetua.eot?#iefix") format("embedded-opentype"), url("../fonts/perpetua/Perpetua.otf") format("opentype"), url("../fonts/perpetua/Perpetua.woff") format("woff"), url("../fonts/perpetua/Perpetua.ttf") format("truetype"), url("../fonts/perpetua/Perpetua.svg#Perpetua") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* TOP MENU */
 .menubar {
   width: 100%;
@@ -555,21 +561,30 @@ body {
   margin-top: -20%; }
 
 .more-title {
-  font-size: 36px; }
+  font-size: 45px;
+  font-family: "Perpetua", serif; }
 
 .more-left-title {
   font-size: 26px;
+  letter-spacing: 0.25px;
   padding-bottom: 5px;
-  margin-bottom: 20px;
-  height: 40px; }
+  margin-bottom: 30px;
+  height: 40px;
+  font-family: "Perpetua", serif; }
 
 .more-left-text {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 400; }
+
+.more-text {
+  font-weight: 400; }
 
 .more-right-title {
   font-size: 18px;
+  font-family: "Perpetua", serif;
+  letter-spacing: 0.25px;
   height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   padding-bottom: 5px; }
 
 .more-questions {
