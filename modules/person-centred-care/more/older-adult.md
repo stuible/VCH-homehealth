@@ -1,30 +1,40 @@
 ---
 layout: more
-permalink: "/modules/person-centered-care/holistic/"
-title: Holistic Care
+permalink: "/modules/person-centered-care/older-adult/"
+title: Care of a Older Adult
 
 sections:
   - section:
 
     - part: left
-      title: Holistic Assessment
-      text: Part of person centred care is assessing the person as a whole.  This includes not only assessing them physically but all aspects including
-      circles: [ 'Emotional', 'Spiritual', 'Cultural',  'Cognitive', 'Development', 'Environmental', 'Social']
+      title: Physical changes
+      text: As we age, our body changes.
 
     - part: right
-      title: Reflection
-      text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
-      questions: ['How did you feel?', 'What were the ramifications?']
+      title: Action
+      text: Hover over each part of the image to see physical changes
 
     - part: full
-      text: test
+      large-cover-circles: test
 
   
   - section:
 
     - part: left
-      title: Cultural Connection
-      text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients. 
+      title: Aging in Place
+      text:
+            Support older adults to age in place
+            involves the following
+
+            Keeping the older adult independent,
+            healthy and able to manage chronic
+            conditions in their home environment
+
+            Aging is associated with increased
+            risk of chronic diseases and with
+            functional decline, which can affect
+            a person’s ability to perform ADLs
+            and IADLs
 
     - part: right
       title: Personal Reflection

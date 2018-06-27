@@ -27,15 +27,18 @@ $sectionTitleBoarderBottom: 5px;
 
 .more-text {
     font-weight: 400;
+    margin-bottom: 25px;
 }
 
 .more-right-title {
-    font-size: 18px;
+    font-size: 24px;
     font-family: $serifFont;
     letter-spacing: 0.25px;
     height: $sectionTitleHeight;
-    margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom;
+    margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom - 2px;
     padding-bottom: $sectionTitlePaddingBottom;
+
+    padding-top: 2px;
 }
 
 .more-questions {
@@ -87,4 +90,12 @@ $sectionTitleBoarderBottom: 5px;
 .more-small-circle-text{
     text-align: center;
     margin-top: 5px;
+}
+
+// Video
+.more-video{
+    video {
+        width: 100%;
+    }
+
 }

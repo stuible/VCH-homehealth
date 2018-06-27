@@ -578,15 +578,17 @@ body {
   margin-bottom: 25px; }
 
 .more-text {
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 25px; }
 
 .more-right-title {
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Perpetua", serif;
   letter-spacing: 0.25px;
   height: 40px;
-  margin-bottom: 35px;
-  padding-bottom: 5px; }
+  margin-bottom: 33px;
+  padding-bottom: 5px;
+  padding-top: 2px; }
 
 .more-questions {
   font-size: 24px; }
@@ -624,6 +626,9 @@ body {
 .more-small-circle-text {
   text-align: center;
   margin-top: 5px; }
+
+.more-video video {
+  width: 100%; }
 
 .narrative-question {
   color: #fff;

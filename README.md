@@ -85,8 +85,6 @@ sections:
  
 ```
 
-### MORE ON THIS TOPIC
-#### /_layouts/more.html
 
 ## 📚 Built With
 
