@@ -1,0 +1,58 @@
+@import "../variables";
+
+$sectionTitleHeight: 40px;
+$sectionTitleMarginBottom: 20px;
+$sectionTitlePaddingBottom: 5px;
+$sectionTitleBoarderBottom: 5px;
+
+.more-title{
+    font-size: 36px;
+}
+
+.more-left-title {
+    font-size: 26px;
+    padding-bottom: $sectionTitlePaddingBottom;
+    margin-bottom: $sectionTitleMarginBottom;
+    height: $sectionTitleHeight;
+}
+
+.more-left-text {
+    font-size: 16px;
+}
+
+.more-right-title {
+    font-size: 18px;
+    height: $sectionTitleHeight;
+    margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom;
+    padding-bottom: $sectionTitlePaddingBottom;
+}
+
+.more-questions {
+    font-size: 24px;
+}
+
+.more-section{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .container {
+        margin-top: 0px;
+    }
+
+    &:nth-of-type(odd){
+        background-color: #ffffff;
+
+        .more-left-title {
+            border-bottom: $sectionTitleBoarderBottom solid $primaryColour;
+        }
+    }
+    &:nth-of-type(even){
+        background-color: $primaryColour;
+        color: #ffffff;
+
+        .more-left-title {
+            border-bottom: $sectionTitleBoarderBottom solid #ffffff;
+        }
+    }
+}

@@ -48,8 +48,8 @@ moduleView.init();
 var moreView = Barba.BaseView.extend({
   namespace: 'more-on-topic',
   onEnter: function () {
-      lightBackground(true);
       instantiateMore();
+      lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
   }
 });
@@ -394,6 +394,11 @@ function finalizeCaseStudy(){
         },
         offset: -10 
       })
+}
+function instantiateMore() { 
+
+    showMenu();
+
 }
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){

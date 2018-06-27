@@ -48,8 +48,8 @@ moduleView.init();
 var moreView = Barba.BaseView.extend({
   namespace: 'more-on-topic',
   onEnter: function () {
-      lightBackground(true);
       instantiateMore();
+      lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
   }
 });

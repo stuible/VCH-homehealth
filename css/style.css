@@ -554,6 +554,42 @@ body {
   height: auto !important;
   margin-top: -20%; }
 
+.more-title {
+  font-size: 36px; }
+
+.more-left-title {
+  font-size: 26px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  height: 40px; }
+
+.more-left-text {
+  font-size: 16px; }
+
+.more-right-title {
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 25px;
+  padding-bottom: 5px; }
+
+.more-questions {
+  font-size: 24px; }
+
+.more-section {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .more-section .container {
+    margin-top: 0px; }
+  .more-section:nth-of-type(odd) {
+    background-color: #ffffff; }
+    .more-section:nth-of-type(odd) .more-left-title {
+      border-bottom: 5px solid #5AAF7F; }
+  .more-section:nth-of-type(even) {
+    background-color: #5AAF7F;
+    color: #ffffff; }
+    .more-section:nth-of-type(even) .more-left-title {
+      border-bottom: 5px solid #ffffff; }
+
 .narrative-question {
   color: #fff;
   font-size: 36px;

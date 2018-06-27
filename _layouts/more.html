@@ -11,7 +11,98 @@ layout: more
 
     <div id="barba-wrapper">
         <div class="barba-container" data-namespace="more-on-topic">
-            {{content}}
+            <div class="center-align container more-title">{{ page.title }}</div>
+            {% for section in page.sections %}
+                <section class="more-section">
+                    <div class="container">
+                        {% for part in section.section %}
+
+                            {% if part.part == 'left' %}
+                            <div class="six columns">
+                                {% for component in part %}
+                                    {% if component[0] == 'title' %}
+                                        <div class="more-left-title">
+                                            {{ component[1] }}
+                                        </div>
+                                    {% endif %}
+                                    {% if component[0] == 'text' %}
+                                        <div class="more-left-text">
+                                            {{ component[1] }}
+                                        </div>
+                                    {% endif %}
+                                    {% if component[0] == 'circles' %}
+                                        <div class="more-small-circles">
+                                            {% for circle in component[1] %}
+                                            <div>
+                                                {{ circle }}
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                    {% if component[0] == 'questions' %}
+                                            <div class="more-questions">
+                                                {% for question in component[1] %}
+                                                <div class="more-question">
+                                                    {{ question }}
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {% if part.part == 'right' %}
+                            <div class="six columns">
+                                    {% for component in part %}
+                                        {% if component[0] == 'title' %}
+                                            <div class="more-right-title">
+                                                {{ component[1] }}
+                                            </div>
+                                        {% endif %}
+                                        {% if component[0] == 'text' %}
+                                            <div class="more-text">
+                                                {{ component[1] }}
+                                            </div>
+                                        {% endif %}
+                                        {% if component[0] == 'circles' %}
+                                            <div class="more-small-circles">
+                                                {% for circle in component[1] %}
+                                                <div>
+                                                    {{ circle }}
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        {% if component[0] == 'questions' %}
+                                            <div class="more-questions">
+                                                {% for question in component[1] %}
+                                                <div class="more-question">
+                                                    {{ question }}
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+
+                            {% if part.part == 'full' %}
+                            <div class="twelve columns">
+                                {% for components in part %}
+                                    {{ components }} </br>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+
+                        {% endfor %}
+
+                    </div>
+                </section>
+            {% endfor %}
+
+            <!-- {% MoreInfoTitle title: "Title" %} -->
         </div>
     </div>
 </body>
