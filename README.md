@@ -27,6 +27,8 @@ Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat fi
     - where the final / compiled site is found
 - ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `css`
     - where the compiled, concatoned and minified css is put by gulp before being copied to _site/css by jekyll
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `fonts`
+    - where web fonts are stored
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `image`
     - image assets used by the site
 - ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `js`
@@ -50,6 +52,41 @@ $ gulp
 ## ⤴️ Deployment
 
 Jekyll builds into a flat file website (found in _sites).  SImple build and deply onto any web server
+
+## 🖋 Editting Content
+Home Health's content can all be found in the 'modules' folder as seen in the file structure above.  In this section I will explain how each page type's markup (with a unique layout in the _layouts folder) is compiled into the final html.
+
+**`Branching Narrative`**   [ /_layouts/more.html ]
+
+
+**`more | More On This Topic`**   [ /_layouts/more.html ]
+
+This page takes quite a bit of custom frontmatter to generate a pretty customizable page.  Inside a nested list named 'sections', you can create sub lists that will be rendered within the section as a 'part'.  Parts can be rendered on the left half, the right half, or fill the entire section 
+    
+```yaml
+sections:
+  #declare a section like this, you can have as many sections as you want
+  - section:
+
+    #Sections can have either just one full part, a left part and a right part, or all three parts.  
+    - part: left | right | full #must be one of these 3 types
+
+      #title of part
+      title: A Great Title 
+
+      #Text block that will appear in the part
+      text: lots of great information
+
+      # A block that displays mutiple small circles containing images
+      circles: ['thing', 'thing', 'thing'] 
+
+      # A block that displays mutiple questions
+      questions: ['How did you feel?', 'What were the ramifications?'] 
+ 
+```
+
+### MORE ON THIS TOPIC
+#### /_layouts/more.html
 
 ## 📚 Built With
 
