@@ -1,7 +1,7 @@
 --- 
 layout: module
 permalink: "/modules/iv-therapy/"
-background: iv.png
+background: iv.jpeg
 
 cases:
   - name: Margaret

@@ -1,7 +1,7 @@
 --- 
 layout: module
 permalink: "/modules/pallative-care/"
-background: pallative.png
+background: pallative.jpeg
 
 cases:
   - name: Margaret

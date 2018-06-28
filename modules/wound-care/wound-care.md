@@ -1,7 +1,7 @@
 --- 
 layout: module
 permalink: "/modules/wound-care/"
-background: wound.png
+background: wound.jpeg
 
 cases:
   - name: Margaret

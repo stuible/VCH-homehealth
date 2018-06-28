@@ -9,6 +9,9 @@ $().ready(function () {
       darkBackground(true);
       instantiateSlider();
       $(".module-menu").attr("href", "#");
+    },
+    onEnterCompleted: function () {
+      clearBackground();
     }
 });
 

@@ -9,6 +9,9 @@ $().ready(function () {
       darkBackground(true);
       instantiateSlider();
       $(".module-menu").attr("href", "#");
+    },
+    onEnterCompleted: function () {
+      clearBackground();
     }
 });
 
@@ -205,6 +208,7 @@ $().ready(function () {
 function instantiateSlider() {
   
     hideMenu();
+    clearBackground();
     darkBackground(true);
 
     //Instantiate Swiper (Carousel)
@@ -435,7 +439,11 @@ function lightBackground(menu){
 
 function setBackground(image){
     $( ".background" ).first().fadeOut("slow", function() {
-        $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).fadeIn("slow");
+        $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
+            // All descendant images have loaded, now slide up.
+            $(this).fadeIn("slow");
+        });
+        
     });
     
     
@@ -444,7 +452,7 @@ function setBackground(image){
 }
 
 function clearBackground(){
-    $(".background").fadeOut();
+    $(".background").stop( true, false ).fadeOut();
     $(".background").not(':last').remove();
 }
 
