@@ -2,6 +2,7 @@
 layout: intro
 permalink: "/modules/introduction/"
 video: CaseStudy1-HHsmall.mp4
+background: intro.png
 
 objectives:
   - objective: Learners will analyze the components of primary health care, and beliefs/values of community health nurses

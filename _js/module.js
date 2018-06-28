@@ -39,6 +39,7 @@ function instantiateModule() {
     console.log('instantiating module');
     showMenu();
 
+
     moduleSwiper = new Swiper('.module-swiper-container', {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',

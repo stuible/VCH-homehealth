@@ -3,7 +3,6 @@ $().ready(function () {
   //Enable lazy loading
   // $('.lazy').Lazy();
 
-
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
     onEnter: function () {
@@ -44,6 +43,9 @@ var moduleView = Barba.BaseView.extend({
       darkBackground(true);
       instantiateModule();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  },
+  onEnterCompleted: function () {
+    setBackground($('.barba-container').data('background'));
   }
 });
 
@@ -65,6 +67,9 @@ var introduction = Barba.BaseView.extend({
   onEnter: function () {
       instantiateIntro();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  },
+  onEnterCompleted: function () {
+    setBackground($('.barba-container').data('background'));
   }
 });
 

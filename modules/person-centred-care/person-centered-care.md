@@ -1,6 +1,7 @@
 --- 
 layout: module
 permalink: "/modules/person-centered-care/"
+background: personcenteredcare.png
 
 objectives:
   - objective: Learners will analyze the components of primary health care, and beliefs / values of community health nurses.
@@ -17,16 +18,16 @@ objectives:
 
 cases:
   - name: Margaret
-    image: jane.png
+    image: MargaretPortrait.png
     url: margaret
   - name: Franny
-    image: jane.png
+    image: FrannyPortrait.png
     url: franny
   - name: Luigi
-    image: jon.png
+    image: LuigiPortrait.png
     url: luigi
   - name: Agit
-    image: jon.png
+    image: AjitPortrait.png
     url: agit
 
 more:

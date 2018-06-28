@@ -14,15 +14,15 @@ objectives:
 
 cases:
   - name: Margaret
-    image: jane.png
-    url:
+    image: MargaretPortrait.png
+    url: margaret
   - name: Franny
-    image: jane.png
-    url:
+    image: FrannyPortrait.png
+    url: franny
   - name: Luigi
-    image: jon.png
-    url:
+    image: LuigiPortrait.png
+    url: luigi
   - name: Agit
-    image: jon.png
-    url:
+    image: AjitPortrait.png
+    url: agit
 ---

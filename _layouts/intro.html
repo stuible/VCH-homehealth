@@ -10,11 +10,11 @@ layout: intro
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container" data-namespace="introduction">
+        <div class="barba-container" data-namespace="introduction" data-background="{{site.baseurl}}/image/modules/{{ page.background }}">
             <!-- Swiper -->
             <div class="intro-swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="intro-swiper-slide">
+                        <!-- <div class="intro-swiper-slide">
                             <div class="slide-video-container">
                                 <video loop autoplay preload="auto" class="module-feature-video" ><source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4" /></video>
                                 <div class="scroll-btn">
@@ -27,7 +27,7 @@ layout: intro
                                       <div>scroll down</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="intro-swiper-slide" data-hash="course-objectives">
                                 <div class="container">
                                         <div class="course-objectives row">
