@@ -1,5 +1,9 @@
 $().ready(function () {
 
+  //Enable lazy loading
+  // $('.lazy').Lazy();
+
+
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
     onEnter: function () {
