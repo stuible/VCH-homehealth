@@ -1,7 +1,16 @@
 $().ready(function () {
 
-  //Enable lazy loading
-  // $('.lazy').Lazy();
+      //Enable lazy loading
+      // $('.lazy').Lazy({
+      //   // your configuration goes here
+      //   //scrollDirection: 'vertical',
+      //   effect: 'fadeIn',
+      //   effectTime: 200,
+      //   visibleOnly: true,
+      //   onError: function(element) {
+      //       console.log('error lazy loading ' + element.data('src'));
+      //   }
+      // });
 
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
@@ -163,7 +172,7 @@ introduction.init();
   //Check to see if the page we're loading has swiper on it before trying to initialize
   Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
-    // console.log('new page is being set to: ' + newpage);
+    console.log('new page is being set to: ' + newpage);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
     // initializeBranching(); 
@@ -187,6 +196,9 @@ introduction.init();
     else {
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
+
+
+
 
   });
   
