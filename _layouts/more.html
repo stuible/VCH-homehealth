@@ -20,45 +20,12 @@ layout: more
                             {% if part.part == 'left' %}
                             <div class="five columns">
                                 {% for component in part %}
-                                    {% if component[0] == 'title' %}
-                                        <div class="more-left-title">
-                                            {{ component[1] }}
-                                        </div>
-                                    {% endif %}
-                                    {% if component[0] == 'text' %}
-                                        <div class="more-left-text">
-                                            {{ component[1] }}
-                                        </div>
-                                    {% endif %}
-                                    {% if component[0] == 'circles' %}
-                                        <div class="more-small-circles">
-                                            {% for circle in component[1] %}
-                                            <div class="more-small-circle-container">
-                                                <div class="more-small-circle"></div>
-                                                <div class="more-small-circle-text">
-                                                {{ circle }}
-                                                </div>
-                                            </div>
-                                            {% endfor %}
-                                        </div>
-                                    {% endif %}
-                                    {% if component[0] == 'questions' %}
-                                            <div class="more-questions">
-                                                {% for question in component[1] %}
-                                                <div class="more-question">
-                                                    {{ question }}
-                                                </div>
-                                                {% endfor %}
-                                            </div>
-                                    {% endif %}
-                                    {% if component[0] == 'video' %}
-                                            <div class="more-video">
-                                            <video controls>
-                                                <source src="/video/more-on-topic/{{ component[1] }}" type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            </div>
-                                    {% endif %}
+
+                                    {% MoreInfoComponent 
+                                        type: component[0] 
+                                        side: part.part 
+                                        text: component[1] %}
+
                                 {% endfor %}
                             </div>
                             {% endif %}
@@ -66,42 +33,12 @@ layout: more
                             {% if part.part == 'right' %}
                             <div class="five columns offset-by-one">
                                     {% for component in part %}
-                                        {% if component[0] == 'title' %}
-                                            <div class="more-right-title">
-                                                {{ component[1] }}
-                                            </div>
-                                        {% endif %}
-                                        {% if component[0] == 'text' %}
-                                            <div class="more-text">
-                                                {{ component[1] }}
-                                            </div>
-                                        {% endif %}
-                                        {% if component[0] == 'circles' %}
-                                            <div class="more-small-circles">
-                                                {% for circle in component[1] %}
-                                                <div>
-                                                    {{ circle }}
-                                                </div>
-                                                {% endfor %}
-                                            </div>
-                                        {% endif %}
-                                        {% if component[0] == 'questions' %}
-                                            <div class="more-questions">
-                                                {% for question in component[1] %}
-                                                <div class="more-question">
-                                                    {{ question }}
-                                                </div>
-                                                {% endfor %}
-                                            </div>
-                                        {% endif %}
-                                        {% if component[0] == 'video' %}
-                                            <div class="more-video">
-                                            <video controls>
-                                                <source src="/video/more-on-topic/{{ component[1] }}" type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            </div>
-                                        {% endif %}
+
+                                        {% MoreInfoComponent 
+                                            type: component[0] 
+                                            side: part.part 
+                                            text: component[1] %}
+
                                     {% endfor %}
                                 </div>
                             {% endif %}
@@ -121,7 +58,6 @@ layout: more
                 </section>
             {% endfor %}
 
-            <!-- {% MoreInfoTitle title: "Title" %} -->
         </div>
     </div>
 </body>
