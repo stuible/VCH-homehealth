@@ -36,6 +36,14 @@
     }
 }
 
+
 .narrative-secondary, .narrative-tertiary{
     display: none;
+}
+
+.narrative-back {
+    margin-top: 25px;
+    background-color: $primaryColour;
+    color: #fff;
+    border: none;
 }
