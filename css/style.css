@@ -172,14 +172,10 @@ body {
 .scroll-btn {
   height: 75px;
   width: 150px;
-  position: fixed;
-  margin-left: -webkit-calc(50vw - 75px);
-  margin-left: -moz-calc(50vw - 75px);
-  margin-left: calc(50vw - 75px);
-  margin-top: -webkit-calc(100vh - 125px);
-  margin-top: -moz-calc(100vh - 125px);
-  margin-top: calc(100vh - 125px);
   text-align: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 50; }
 
 .scroll-btn > * {

@@ -56,7 +56,17 @@ layout: intro
                                             </div>
                                             {% endfor %}
                                         </div>
-                                    </div>
+
+                                        <div class="scroll-btn">
+                                            <a onclick="introSwiper.slideTo(1)" href="#">
+                                                <span class="mouse">
+                                                    <span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                          <div>scroll down</div>
+                                        </div>
+                                </div>
                         </div>
                         <div class="intro-swiper-slide" data-hash="case-studies">
                                 <div class="container">
@@ -68,15 +78,24 @@ layout: intro
                                                         <div class="narrative-name">{{ item.name }}</div>
                                                     </a>
                                                 {% endfor %}
-
-                                                <div class="row">
-                                                    <div class="offset-by-four four columns">
-                                                        <a class="button more-info-button" href="{{ page.url }}more">More On This Topic</a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                        </div>
+                        <div class="intro-swiper-slide" data-hash="more-on-topic">
+                            <div class="container">
+                                    <div class="narratives-parent-container">
+                                        <div class="narratives-container">
+                                            {% for item in page.more %}
+                                                <a class="more-on-topic" href="{{ page.url }}{{ item.url | downcase }}">
+                                                    <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
+                                                    <div class="more-on-topic-name">{{ item.title }}</div>
+                                                </a>
+                                            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 <!-- Add Pagination -->
