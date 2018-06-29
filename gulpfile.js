@@ -26,7 +26,7 @@ var jsSources = [
 ];
 
 // Task for building blog when something changed:
-gulp.task('build', shell.task(['bundle exec jekyll serve']));
+//gulp.task('build', shell.task(['bundle exec jekyll serve --config _config.yml,dev.config.yml']));
 // If you don't use bundle:
 // gulp.task('build', shell.task(['jekyll serve']));
 // If you use  Windows Subsystem for Linux (thanks @SamuliAlajarvela):
@@ -61,7 +61,8 @@ gulp.task('jekyll', () => {
     const jekyll = child.spawn('jekyll', ['build',
       '--watch',
       '--incremental',
-      '--drafts'
+      '--drafts',
+      // '--config _config.yml,dev.config.yml'
     ]);
   
     const jekyllLogger = (buffer) => {

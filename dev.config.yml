@@ -1,0 +1,3 @@
+#This is teh Development config file that overwrites some settings from _config
+
+baseurl: "/"
