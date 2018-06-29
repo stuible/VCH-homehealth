@@ -176,7 +176,8 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  z-index: 50; }
+  z-index: 50;
+  margin-top: 50px; }
 
 .scroll-btn > * {
   line-height: 18px;
@@ -640,7 +641,26 @@ body {
   background-color: #5AAF7F;
   color: #fff;
   border: none;
-  width: 100%; }
+  width: 100%;
+  display: inline-block;
+  /* height: 38px; */
+  margin-bottom: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .narrative-answer:hover {
+    color: #fff;
+    background-color: #28523b; }
 
 .narrative-secondary, .narrative-tertiary {
   display: none; }

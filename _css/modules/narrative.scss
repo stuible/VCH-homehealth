@@ -16,6 +16,24 @@
     color: $lightTextColour;
     border: none;
     width: 100%;
+
+    display: inline-block;
+    /* height: 38px; */
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+        color: #fff;
+        background-color: #28523b;
+    }
 }
 
 .narrative-secondary, .narrative-tertiary{
