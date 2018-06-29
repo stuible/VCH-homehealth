@@ -1,3 +1,6 @@
+//Global variable that states whaether or not a backgorund image should be displayed
+var showBackgroundImage = false;
+
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){
     clearBackground();
@@ -22,10 +25,13 @@ function lightBackground(menu){
 }
 
 function setBackground(image){
+    showBackgroundImage = true;
     $( ".background" ).first().fadeOut("slow", function() {
         $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
             // All descendant images have loaded, now slide up.
-            $(this).fadeIn("slow");
+            if(showBackgroundImage){
+                $(this).fadeIn("slow");
+            } 
         });
         
     });
@@ -36,6 +42,7 @@ function setBackground(image){
 }
 
 function clearBackground(){
+    showBackgroundImage = false;
     $(".background").stop( true, false ).fadeOut();
     $(".background").not(':last').remove();
 }
