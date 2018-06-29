@@ -56,10 +56,46 @@ Jekyll builds into a flat file website (found in _sites).  SImple build and depl
 ## 🖋 Editting Content
 Home Health's content can all be found in the 'modules' folder as seen in the file structure above.  In this section I will explain how each page type's markup (with a unique layout in the _layouts folder) is compiled into the final html.
 
-**`Branching Narrative`**   [ /_layouts/more.html ]
+<details><summary>
+Casy Study (Click to expand)
+</summary>
+[ /_layouts/case-study.html ]
 
+This layout is used for each Case Study found under each module.  This page has not been completed
 
-**`more | More On This Topic`**   [ /_layouts/more.html ]
+```yaml
+#not done
+```
+</details><br>
+
+<details><summary>
+Introduction (Click to expand)
+</summary>
+[ /_layouts/introduction.html ]
+</details><br>
+
+<details><summary>
+Landing Page (Click to expand)
+</summary>
+[ /_layouts/landing.html ]
+</details><br>
+
+<details><summary>
+Module (Click to expand)
+</summary>
+[ /_layouts/module.html ]
+</details><br>
+
+<details><summary>
+Modules (Click to expand)
+</summary>
+[ /_layouts/modules.html ]
+</details><br>
+
+<details><summary>
+More On This Topic (Click to expand)
+</summary>
+[ /_layouts/more.html ]
 
 This page takes quite a bit of custom frontmatter to generate a pretty customizable page.  Inside a nested list named 'sections', you can create sub lists that will be rendered within the section as a 'part'.  Parts can be rendered on the left half, the right half, or fill the entire section 
     
@@ -77,14 +113,20 @@ sections:
       #Text block that will appear in the part
       text: lots of great information
 
-      # A block that displays mutiple small circles containing images
+      # A block that takes in an array and displays mutiple small circles containing images
       circles: ['thing', 'thing', 'thing'] 
 
-      # A block that displays mutiple questions
+      # A block that takes in an array and displays mutiple questions
       questions: ['How did you feel?', 'What were the ramifications?'] 
  
 ```
+</details><br>
 
+<details><summary>
+Branching Narrative (Click to expand)
+</summary>
+[ /_layouts/more.html ]
+</details><br>
 
 ## 📚 Built With
 
