@@ -65,7 +65,7 @@ layout: intro
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
                                                 {% for item in page.cases %}
-                                                    <a class="narrative" href="{{ page.url }}{{ item.url | downcase }}">
+                                                    <a class="narrative" href="{{ item.url | downcase }}">
                                                         <img src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.name }}</div>
                                                     </a>
@@ -80,7 +80,7 @@ layout: intro
                                     <div class="narratives-parent-container">
                                         <div class="narratives-container">
                                             {% for item in page.more %}
-                                                <a class="more-on-topic" href="{{ page.url }}{{ item.url | downcase }}">
+                                                <a class="more-on-topic" href="{{ item.url | downcase }}">
                                                     <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
                                                     <div class="more-on-topic-name">{{ item.title }}</div>
                                                 </a>
