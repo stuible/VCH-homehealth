@@ -21,7 +21,7 @@
                         {% for item in page.modules %}
                             <div class="swiper-slide" data-hash="{{ item.pagename }}">
                                     <video loop autoplay preload="auto" class="module-video" ><source src="{{site.baseurl}}/video/case-studies/{{ item.video }}" type="video/mp4" /></video>
-                                <a href="{{ item.pagename }}"><div id="{{ item.pagename }}" >
+                                <a href="{{ page.url }}{{ item.pagename }}"><div id="{{ item.pagename }}" >
                                     <div class="slide-title">{{ item.name }}</div>
                                     <div class="slide-actions">
                                     </div>
