@@ -56,7 +56,7 @@ layout: module
                                                             Pick the case study that your team has been assigned
                                                     </div>
                                                 {% for item in page.cases %}
-                                                    <a class="blog-card spring-fever narrative hvr-grow" href="{{ item.url | downcase }}">
+                                                    <a class="blog-card spring-fever narrative hvr-grow" href="{{ page.url }}{{ item.url | downcase }}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.name }}</div>
                                                     </a>
@@ -75,7 +75,7 @@ layout: module
                                                         Pick the case study that your team has been assigned
                                                 </div> -->
                                             {% for item in page.more %}
-                                                <a class="more-on-topic" href="{{ item.url | downcase }}">
+                                                <a class="more-on-topic" href="{{ page.url }}{{ item.url | downcase }}">
                                                     <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
                                                     <div class="more-on-topic-name">{{ item.title }}</div>
                                                 </a>
