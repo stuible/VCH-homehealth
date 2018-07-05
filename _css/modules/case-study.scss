@@ -5,3 +5,26 @@
 .case-study-video {
     width: 100%;
 }
+
+.case-study-title {
+position: absolute;
+width: 100%;
+color: #fff;
+text-align: center;
+/* height: 20%; */
+margin-top: 25%;
+font-size: 65px;
+font-family: $serifFont;
+}
+
+.case-study-section-title {
+    border-bottom: #5aaf7f solid 5px;
+    padding-bottom: 4px;
+    font-size: 28px;
+    font-family: $serifFont;
+    margin-bottom: 25px;
+}
+
+.case-study-section-content {
+    font-weight: 400;
+}

@@ -11,17 +11,59 @@ layout: case-study
 
     <div id="barba-wrapper">
         <div class="barba-container" data-namespace="case-study">
+            <div class="case-study-title">
+                {{ page.title }}
+            </div>
             <video autoplay loop preload="auto" class="case-study-video">
                 <source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4">
                 Your browser does not support this yupe of video
             </video>
             <div class="container case-study-container">
-                {{content}}
-                <!-- FAKE CONTENT -->
-                <div style="background: lightgrey; height: 400px"> </div>
-                <div style="background: white; height: 400px"> </div>
-                <div style="background: lightgrey; height: 400px"> </div>
-                <div style="background: white; height: 400px"> </div>
+                <div class="six columns">
+                        <div class="case-study-section">
+                                <div class="case-study-section-title">
+                                    Background
+                                </div>
+                                <div class="case-study-section-content">
+                                    {{ page.background }}
+                                </div>
+                        </div>
+                        <div class="case-study-section">
+                                <div class="case-study-section-title">
+                                    Medications
+                                </div>
+                                <div class="case-study-section-content">
+                                    {% for medication in page.medications %}
+                                        {{ medication }} <br/>
+                                    {% endfor %}
+                                </div>
+                        </div>
+                </div>
+                <div class="six columns case-study-section-content">
+                    {{content}}
+                </div>
+                <div class="twelve columns">
+                        <div class="case-study-section">
+                                <div class="case-study-section-title">
+                                    Initial Visit
+                                </div>
+                                <div class="case-study-section-content">
+                                    {{ page.initial-visit }}
+                                </div>
+                        </div>
+                </div>
+                <div class="twelve columns">
+                        <div class="case-study-section">
+                                <div class="case-study-section-title">
+                                    Reflection
+                                </div>
+                                <div class="case-study-section-content">
+                                    {% for reflection in page.reflection %}
+                                        {{ reflection }} <br/>
+                                    {% endfor %}
+                                </div>
+                        </div>
+                </div>
             </div>
 
         </div>
