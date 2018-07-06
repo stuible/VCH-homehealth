@@ -22,6 +22,7 @@ function instantiateIntro() {
         speed: 400,
         hashNavigation: {
             watchState: true,
+            replaceState: true,
         },
         mousewheel: {
             invert: false,
@@ -48,8 +49,9 @@ function instantiateModule() {
             invert: false,
         },
         hashNavigation: {
-            watchState: true,
-        },
+          watchState: true,
+          replaceState: true,
+      },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

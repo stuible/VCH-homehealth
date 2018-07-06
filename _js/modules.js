@@ -22,7 +22,8 @@ function instantiateSlider() {
       hashNavigation: true,
       hashNavigation: {
         watchState: true,
-      },
+        replaceState: true,
+    },
       // If we need pagination
       pagination: {
         el: '.modules-pagination',
