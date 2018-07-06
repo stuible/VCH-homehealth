@@ -38,8 +38,13 @@
 
     <script href="{{site.baseurl}}/library/polyfill/calc.min.js" type="text/javascript"></script>
 
+    {% if site.use-minified != true %}
     <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
     <script src="{{site.baseurl}}/js/homehealth.js"></script>
+    {% else %}
+    <link rel="stylesheet" href="{{site.baseurl}}/css/style.min.css">
+    <script src="{{site.baseurl}}/js/homehealth.min.js"></script>
+    {% endif %}
 
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 </head>

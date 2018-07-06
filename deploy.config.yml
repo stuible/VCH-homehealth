@@ -13,6 +13,8 @@ markdown: kramdown
 plugins:
   # - jekyll-feed
 
+use-minified: true
+
 
 # Exclude from processing.
 exclude:
@@ -21,4 +23,6 @@ exclude:
   - node_modules
   - gulpfile.js
   - package.json
+  - package-lock.json
   - deploy.config.yml
+  - README.md
