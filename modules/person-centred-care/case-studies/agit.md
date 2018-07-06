@@ -1,7 +1,7 @@
 --- 
 layout: case-study
 permalink: "/modules/person-centered-care/agit/"
-video: url
+video: CaseStudy4.mp4
 title: Ajit’s Story
 
 background: Ajit is a 72 year old man whose, primary language is Tamil and he is able to communicate with simple verbal and written English. He escaped to Canada with his family when the war broke out in Sri Lanka and many members of his extended family were killed. Unfortunately, Ajit was driving when he also lost his 10 year old son in a car accident. Not long after the tragic accident, he started drinking which lead to him losing his job. His wife initiated a divorce close to 15 years ago and he has two remaining daughters and one son.  Aljit lives alone in senior’s social housing and can no longer drive, so has been using public transport.   Since his divorce, he has been drinking more and is struggling with his IADLs. He has also been diagnosed with atrial fibrillation, alcoholic dementia, gout, previous MI with stenting, and CRD.

@@ -1,7 +1,7 @@
 --- 
 layout: case-study
 permalink: "/modules/person-centered-care/franny/"
-video: url
+video: CaseStudy2.mp4
 title: Franny’s Story
 
 background: Franny is a 48 year old woman that lives in a four story walk up apartment building.  Originally from small town Saskatachewan, Franny moved west about 14 years ago after she divorced her ex-husband of 12 years. She is from a large conservative family and her father was the town’s minister.

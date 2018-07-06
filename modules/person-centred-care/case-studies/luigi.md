@@ -1,7 +1,7 @@
 --- 
 layout: case-study
 permalink: "/modules/person-centered-care/luigi/"
-video: url
+video: CaseStudy3.mp4
 title: Luigi’s Story
 
 background: Luigi is an 82 year old gentleman from Italy who came to Canada in his early 20’s with his wife Rosa who he has been married to for 57 years. They have 4 adult children and 12 grandchildren, most of them living locally. Luigi is a retired, previously self employed, bricklayer who enjoys spending time with his garden as well as making wine from the grapes he grows. He has an active social life visiting friends and family.  Luigi and Rosa would attend their local community center twice a weekly to swim. On Sunday’s they would attend church services and go out to lunch with friends then have the family over for dinner in the evenings.
