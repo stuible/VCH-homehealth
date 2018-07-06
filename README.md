@@ -17,6 +17,8 @@ Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat fi
 
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_css`
     - Where the uncompiled Sass stylesheets can be found (only modify these styles)
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `_deploy`
+    - where the final deployable site is compiled to
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_includes`
     - Where some common / reusable html elements are kept (referenced and compiled with Jekyll)
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_js`
@@ -24,7 +26,7 @@ Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat fi
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `_layouts`
     - Where the templates for the different pages used by jekyll are kept ( Jekyll uses the Liquid templating engine created by Shopify)
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `_site`
-    - where the final / compiled site is found
+    - where the debugging site is compiled to
 - ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `css`
     - where the compiled, concatoned and minified css is put by gulp before being copied to _site/css by jekyll
 - ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `fonts`
@@ -41,17 +43,24 @@ Home Health utilizes Jekyll and Gulp to compile markdown and sass into a flat fi
     - video assets used by the site
 
 
-## 🖥 Building
+## 🖥 Building / Debugging
 
 I have included my gulpfile.js so you should be able to navigate to the root directory, install the required packages and simply run:
 
-```
+```bash
 $ gulp
 ```
 
+This will build the debugging version of the site and launch browsersync which is a local web server used to see your changes in real time. do __not__ try to deploy this build as the links will most likely not work
+
 ## ⤴️ Deployment
 
-Jekyll builds into a flat file website (found in _sites).  SImple build and deply onto any web server
+When you are ready to deploy run the following command which uses a seperate deployemnt config file and build to _deploy
+
+```bash
+$ jekyll build --config deploy.config.yml --destination _deploy
+```
+
 
 ## 🖋 Editting Content
 Home Health's content can all be found in the 'modules' folder as seen in the file structure above.  In this section I will explain how each page type's markup (with a unique layout in the _layouts folder) is compiled into the final html.
