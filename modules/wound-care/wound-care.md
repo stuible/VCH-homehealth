@@ -1,7 +1,8 @@
 --- 
-layout: module
+layout: coming-soon
 permalink: "/modules/wound-care/"
 background: wound.jpeg
+enabled: true
 
 cases:
   - name: Margaret

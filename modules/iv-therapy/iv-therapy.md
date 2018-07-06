@@ -1,5 +1,5 @@
 --- 
-layout: module
+layout: coming-soon
 permalink: "/modules/iv-therapy/"
 background: iv.jpeg
 

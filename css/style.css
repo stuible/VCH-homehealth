@@ -585,6 +585,14 @@ body {
     display: inline-block;
     color: #DCE3E7; }
 
+.coming-soon {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 40%; }
+
 .modules-logo {
   background-image: url("../image/logos/homehealthlogo.svg");
   height: 65px;

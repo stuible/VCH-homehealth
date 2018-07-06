@@ -1,0 +1,40 @@
+---
+layout: coming-soon
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+    <div class="background"></div>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container" data-namespace="module" data-background="{{site.baseurl}}/image/modules/{{ page.background }}">
+            <!-- Swiper -->
+            <div class="module-swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="module-swiper-slide" data-hash="course-objectives">
+                            <div class="container">
+                                <div class="coming-soon">
+                                    COMING SOON
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination module-bullets"></div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+<!-- Initialize Swiper -->
+<script>
+    //instantiateModule();
+</script>
+</body>
+
+</html>
