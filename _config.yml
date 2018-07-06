@@ -32,3 +32,4 @@ exclude:
   - gulpfile.js
   - package.json
   - _deploy
+  - deploy.config.yml
