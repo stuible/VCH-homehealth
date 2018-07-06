@@ -1,6 +1,8 @@
 ---
 layout: case-study
 ---
+{% assign contentNoReturns = content | strip_newlines %}
+
 <!DOCTYPE html>
 <html>
 {% include header.html %}
@@ -19,6 +21,7 @@ layout: case-study
                 Your browser does not support this yupe of video
             </video>
             <div class="container case-study-container">
+                <div class="row">
                 <div class="six columns">
                         <div class="case-study-section">
                                 <div class="case-study-section-title">
@@ -28,7 +31,7 @@ layout: case-study
                                     {{ page.background }}
                                 </div>
                         </div>
-                        <div class="case-study-section">
+                        <div class="case-study-section margin top twenty">
                                 <div class="case-study-section-title">
                                     Medications
                                 </div>
@@ -39,10 +42,13 @@ layout: case-study
                                 </div>
                         </div>
                 </div>
+                {% if contentNoReturns != ""  %}
                 <div class="six columns case-study-section-content">
                     {{content}}
                 </div>
-                <div class="twelve columns">
+                {% endif %}
+                </div>
+                <div class="row">
                         <div class="case-study-section">
                                 <div class="case-study-section-title">
                                     Initial Visit
@@ -52,8 +58,8 @@ layout: case-study
                                 </div>
                         </div>
                 </div>
-                <div class="twelve columns">
-                        <div class="case-study-section">
+                <div class="row">
+                        <div class="case-study-section margin top fifty">
                                 <div class="case-study-section-title">
                                     Reflection
                                 </div>
@@ -63,6 +69,9 @@ layout: case-study
                                     {% endfor %}
                                 </div>
                         </div>
+                </div>
+                <div class="case-study-more-section">
+                        <a href="#" class="button">More on this topic</a>
                 </div>
             </div>
 

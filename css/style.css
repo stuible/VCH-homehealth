@@ -20,6 +20,12 @@ body {
 .center-align {
   text-align: center; }
 
+.margin.top.twenty {
+  margin-top: 20px; }
+
+.margin.top.fifty {
+  margin-top: 50px; }
+
 @font-face {
   font-family: 'Perpetua';
   src: url("../fonts/perpetua/Perpetua.eot?#iefix") format("embedded-opentype"), url("../fonts/perpetua/Perpetua.otf") format("opentype"), url("../fonts/perpetua/Perpetua.woff") format("woff"), url("../fonts/perpetua/Perpetua.ttf") format("truetype"), url("../fonts/perpetua/Perpetua.svg#Perpetua") format("svg");
@@ -111,6 +117,13 @@ body {
   .menu-support :hover {
     opacity: 1; }
 
+.button {
+  background-color: #5AAF7F;
+  color: white;
+  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
 
 
 @-webkit-keyframes ani-mouse {
@@ -254,6 +267,11 @@ body {
 
 .case-study-section-content {
   font-weight: 400; }
+
+.case-study-more-section {
+  margin-top: 100px;
+  height: 200px;
+  text-align: center; }
 
 /* INTRODUCTION PAGE */
 .intro-swiper-container {

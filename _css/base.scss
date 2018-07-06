@@ -33,3 +33,14 @@ body {
 .center-align{
     text-align: center;
 }
+
+.margin {
+    &.top {
+        &.twenty {
+            margin-top: 20px;
+        }
+        &.fifty {
+            margin-top: 50px;
+        }
+    }
+}
