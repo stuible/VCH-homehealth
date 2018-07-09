@@ -35,7 +35,7 @@ var jsSources = [
 //CSS Concatonation
 gulp.task('css', () => {
     gulp.src(cssFiles)
-        .pipe(sass({utputStyle: 'nested'}))
+        .pipe(sass({outputStyle: 'nested'}))
         .pipe(concat('style.css'))
         .pipe(autoprefixer({
           browsers: ['last 99 versions'],
