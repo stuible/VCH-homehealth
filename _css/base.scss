@@ -17,6 +17,9 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.15;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     // background: $backgroundColour; /* Old browsers */
     // background: -moz-linear-gradient(-45deg, #453d56 0%, #274042 99%); 
     // background: -webkit-linear-gradient(-45deg, #453d56 0%,#274042 99%); 
