@@ -15,8 +15,17 @@ $modulesBorderRadius: 10px;
 
 .swiper-container {
     width: 100%;
-    margin-top: 10vh !important;
+    margin-top: 20vh !important;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
 }
+
+// .modules-container{
+//     // position: absolute;
+//     // top: 50%;
+//     // transform: translateY(-50%);
+// }
 
 .swiper-slide {
     width: 50vw !important;
