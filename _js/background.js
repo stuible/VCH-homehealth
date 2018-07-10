@@ -33,7 +33,7 @@ function setBackground(image){
 
     if(currentBG != image){
         showBackgroundImage = true;
-        $( ".background" ).first().fadeOut("slow", function() {
+        $( ".background" ).stop( true, false ).fadeOut("slow", function() {
             $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
                 // All descendant images have loaded, now slide up.
                 if(showBackgroundImage){
