@@ -5,10 +5,6 @@ $().ready(function () {
 });
 
 function instantiateSlider() {
-  
-    hideMenu();
-    clearBackground();
-    darkBackground(true);
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -41,13 +37,19 @@ function instantiateSlider() {
         prevEl: '.swiper-button-prev',
       },
     });
+
+    hideMenu();
+    // clearBackground();
+    darkBackground(true);
+    setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
   
     //Update variable with the last slide the user saw on the modules page
     mySwiper.on('slideChange', function () {
       console.log('current Page: ' + currentPage);
       if(currentPage == 'modules'){
         lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
-        // console.log(lastmoduleSlide);
+        setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+        // console.log($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
       
     });

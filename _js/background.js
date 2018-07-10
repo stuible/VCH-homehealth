@@ -3,8 +3,8 @@ var showBackgroundImage = false;
 
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){
-    clearBackground();
-    $('body').animate({backgroundColor: '#161D2B'}, 'slow');
+    // clearBackground();
+    $('body').animate({backgroundColor: '#161616'}, 'slow');
     if(menu){
         lightMenu();
     }
@@ -14,7 +14,7 @@ function darkBackground(menu){
 }
 
 function lightBackground(menu){
-    clearBackground();
+    // clearBackground();
     $('body').animate({backgroundColor: '#ffffff'}, 'slow');
     if(menu){
         darkMenu();
@@ -25,16 +25,29 @@ function lightBackground(menu){
 }
 
 function setBackground(image){
-    showBackgroundImage = true;
-    $( ".background" ).first().fadeOut("slow", function() {
-        $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
-            // All descendant images have loaded, now slide up.
-            if(showBackgroundImage){
-                $(this).fadeIn("slow");
-            } 
+    var currentBG = $( ".background" ).first().css('background-image');
+    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
+
+    console.log("Current Image: " + currentBG);
+    console.log("Future Image: " + image);
+
+    if(currentBG != image){
+        showBackgroundImage = true;
+        $( ".background" ).first().fadeOut("slow", function() {
+            $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
+                // All descendant images have loaded, now slide up.
+                if(showBackgroundImage){
+                    $(this).fadeIn("slow");
+                } 
+            });
+            
         });
-        
-    });
+    }
+    else {
+        console.log('correct image already set, chill out');
+    }
+
+    
     
     
     // $('.background').css({"background-image":"url(" + image +")"});

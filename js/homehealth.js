@@ -20,7 +20,7 @@ $().ready(function () {
       $(".module-menu").attr("href", "#");
     },
     onEnterCompleted: function () {
-      clearBackground();
+      // clearBackground();
     }
 });
 
@@ -197,9 +197,6 @@ introduction.init();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
 
-
-
-
   });
   
 
@@ -218,10 +215,6 @@ $().ready(function () {
 });
 
 function instantiateSlider() {
-  
-    hideMenu();
-    clearBackground();
-    darkBackground(true);
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -254,13 +247,19 @@ function instantiateSlider() {
         prevEl: '.swiper-button-prev',
       },
     });
+
+    hideMenu();
+    // clearBackground();
+    darkBackground(true);
+    setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
   
     //Update variable with the last slide the user saw on the modules page
     mySwiper.on('slideChange', function () {
       console.log('current Page: ' + currentPage);
       if(currentPage == 'modules'){
         lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
-        // console.log(lastmoduleSlide);
+        setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+        // console.log($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
       
     });
@@ -384,83 +383,83 @@ function instantiateModule() {
 
 
 
-$().ready(function() {
-    // Init
-    var container = $('.narrative'),
-        inner = $('.narrative>img');
+// $().ready(function() {
+//     // Init
+//     var container = $('.narrative'),
+//         inner = $('.narrative>img');
   
-    // Mouse
-    var mouse = {
-      _x: 0,
-      _y: 0,
-      x: 0,
-      y: 0,
-      updatePosition: function(event) {
-        var e = event || window.event;
-        this.x = e.clientX - this._x;
-        this.y = (e.clientY - this._y) * -1;
-      },
-      setOrigin: function(e) {
-        this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-        this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-      },
-      show: function() {
-        return "(" + this.x + ", " + this.y + ")";
-      }
-    };
+//     // Mouse
+//     var mouse = {
+//       _x: 0,
+//       _y: 0,
+//       x: 0,
+//       y: 0,
+//       updatePosition: function(event) {
+//         var e = event || window.event;
+//         this.x = e.clientX - this._x;
+//         this.y = (e.clientY - this._y) * -1;
+//       },
+//       setOrigin: function(e) {
+//         this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+//         this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+//       },
+//       show: function() {
+//         return "(" + this.x + ", " + this.y + ")";
+//       }
+//     };
   
-    // Track the mouse position relative to the center of the container.
-    mouse.setOrigin(container);
+//     // Track the mouse position relative to the center of the container.
+//     mouse.setOrigin(container);
   
-    //----------------------------------------------------
+//     //----------------------------------------------------
   
-    var counter = 0;
-    var refreshRate = 10;
-    var isTimeToUpdate = function() {
-      return counter++ % refreshRate === 0;
-    };
+//     var counter = 0;
+//     var refreshRate = 10;
+//     var isTimeToUpdate = function() {
+//       return counter++ % refreshRate === 0;
+//     };
   
-    //----------------------------------------------------
+//     //----------------------------------------------------
   
-    var onMouseEnterHandler = function(event) {
-      update(event);
-    };
+//     var onMouseEnterHandler = function(event) {
+//       update(event);
+//     };
   
-    var onMouseLeaveHandler = function() {
-      inner.style = "";
-    };
+//     var onMouseLeaveHandler = function() {
+//       inner.style = "";
+//     };
   
-    var onMouseMoveHandler = function(event) {
-      if (isTimeToUpdate()) {
-        update(event);
-      }
-    };
+//     var onMouseMoveHandler = function(event) {
+//       if (isTimeToUpdate()) {
+//         update(event);
+//       }
+//     };
   
-    //----------------------------------------------------
+//     //----------------------------------------------------
   
-    var update = function(event) {
-      mouse.updatePosition(event);
-      updateTransformStyle(
-        (mouse.y / inner.offsetHeight / 2).toFixed(2),
-        (mouse.x / inner.offsetWidth / 2).toFixed(2)
-      );
-    };
+//     var update = function(event) {
+//       mouse.updatePosition(event);
+//       updateTransformStyle(
+//         (mouse.y / inner.offsetHeight / 2).toFixed(2),
+//         (mouse.x / inner.offsetWidth / 2).toFixed(2)
+//       );
+//     };
   
-    var updateTransformStyle = function(x, y) {
-      var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-      inner.style.transform = style;
-      inner.style.webkitTransform = style;
-      inner.style.mozTranform = style;
-      inner.style.msTransform = style;
-      inner.style.oTransform = style;
-    };
+//     var updateTransformStyle = function(x, y) {
+//       var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+//       inner.style.transform = style;
+//       inner.style.webkitTransform = style;
+//       inner.style.mozTranform = style;
+//       inner.style.msTransform = style;
+//       inner.style.oTransform = style;
+//     };
   
-    //--------------------------------------------------------
+//     //--------------------------------------------------------
   
-    container.onmousemove = onMouseMoveHandler;
-    container.onmouseleave = onMouseLeaveHandler;
-    container.onmouseenter = onMouseEnterHandler;
-  });
+//     container.onmousemove = onMouseMoveHandler;
+//     container.onmouseleave = onMouseLeaveHandler;
+//     container.onmouseenter = onMouseEnterHandler;
+//   });
 $().ready(function () {   
     
 });
@@ -523,8 +522,8 @@ var showBackgroundImage = false;
 
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){
-    clearBackground();
-    $('body').animate({backgroundColor: '#161D2B'}, 'slow');
+    // clearBackground();
+    $('body').animate({backgroundColor: '#161616'}, 'slow');
     if(menu){
         lightMenu();
     }
@@ -534,7 +533,7 @@ function darkBackground(menu){
 }
 
 function lightBackground(menu){
-    clearBackground();
+    // clearBackground();
     $('body').animate({backgroundColor: '#ffffff'}, 'slow');
     if(menu){
         darkMenu();
@@ -545,16 +544,29 @@ function lightBackground(menu){
 }
 
 function setBackground(image){
-    showBackgroundImage = true;
-    $( ".background" ).first().fadeOut("slow", function() {
-        $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
-            // All descendant images have loaded, now slide up.
-            if(showBackgroundImage){
-                $(this).fadeIn("slow");
-            } 
+    var currentBG = $( ".background" ).first().css('background-image');
+    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
+
+    console.log("Current Image: " + currentBG);
+    console.log("Future Image: " + image);
+
+    if(currentBG != image){
+        showBackgroundImage = true;
+        $( ".background" ).first().fadeOut("slow", function() {
+            $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
+                // All descendant images have loaded, now slide up.
+                if(showBackgroundImage){
+                    $(this).fadeIn("slow");
+                } 
+            });
+            
         });
-        
-    });
+    }
+    else {
+        console.log('correct image already set, chill out');
+    }
+
+    
     
     
     // $('.background').css({"background-image":"url(" + image +")"});

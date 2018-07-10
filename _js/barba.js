@@ -20,7 +20,7 @@ $().ready(function () {
       $(".module-menu").attr("href", "#");
     },
     onEnterCompleted: function () {
-      clearBackground();
+      // clearBackground();
     }
 });
 
@@ -196,9 +196,6 @@ introduction.init();
     else {
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
-
-
-
 
   });
   
