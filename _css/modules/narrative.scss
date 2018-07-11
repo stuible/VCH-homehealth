@@ -2,7 +2,7 @@
 
 .narrative-question {
     color: $lightTextColour;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -46,4 +46,14 @@
     background-color: $primaryColour;
     color: #fff;
     border: none;
+}
+.question-container {
+    position:fixed;
+    left:0px;
+    bottom:25px;
+    // height:100%;
+    width:100%;
+    max-width: 960px;
+    left: 50%;
+    transform: translateX(-50%);
 }
