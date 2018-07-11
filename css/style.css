@@ -270,11 +270,12 @@ body {
 .case-study-section-title {
   border-bottom: #5aaf7f solid 5px;
   padding-bottom: 4px;
-  font-size: 28px;
+  font-size: 36px;
   font-family: "Perpetua", serif;
   margin-bottom: 25px; }
 
 .case-study-section-content {
+  font-size: 18px;
   font-weight: 400; }
 
 .case-study-more-section {
