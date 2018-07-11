@@ -1,6 +1,7 @@
 --- 
 layout: branching-narrative
 permalink: "/modules/introduction/vebal-abuse/"
+title: vebal-abuse
 image:
 
 #FIRST LEVEL

@@ -1,6 +1,7 @@
 --- 
 layout: branching-narrative
 permalink: "/modules/introduction/bereaved/"
+title: bereaved
 image:
 
 #FIRST LEVEL

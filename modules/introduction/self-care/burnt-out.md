@@ -1,6 +1,7 @@
 --- 
 layout: branching-narrative
 permalink: "/modules/introduction/burnt-out/"
+title: burnt-out
 image:
 
 #FIRST LEVEL
