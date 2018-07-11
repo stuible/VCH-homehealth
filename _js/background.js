@@ -28,8 +28,8 @@ function setBackground(image){
     var currentBG = $( ".background" ).first().css('background-image');
     currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
 
-    console.log("Current Image: " + currentBG);
-    console.log("Future Image: " + image);
+    // console.log("Current Image: " + currentBG);
+    // console.log("Future Image: " + image);
 
     if(currentBG != image){
         showBackgroundImage = true;
@@ -44,7 +44,7 @@ function setBackground(image){
         });
     }
     else {
-        console.log('correct image already set, chill out');
+        // console.log('correct image already set, chill out');
     }
 
     
