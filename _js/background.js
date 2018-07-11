@@ -56,7 +56,9 @@ function setBackground(image){
 
 function clearBackground(){
     showBackgroundImage = false;
-    $(".background").stop( true, false ).fadeOut();
+    $(".background").stop( true, false ).fadeOut(function(){
+        $(this).css({"background-image":"unset"})
+    });
     $(".background").not(':last').remove();
 }
 

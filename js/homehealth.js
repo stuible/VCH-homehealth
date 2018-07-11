@@ -40,10 +40,12 @@ narrative.init();
 var caseStudy = Barba.BaseView.extend({
   namespace: 'case-study',
   onEnter: function () {
+      clearBackground();
       initializeCaseStudy();
   },
   onEnterCompleted: function () {
     finalizeCaseStudy();
+    
   }
 });
 
@@ -66,6 +68,7 @@ moduleView.init();
 var moreView = Barba.BaseView.extend({
   namespace: 'more-on-topic',
   onEnter: function () {
+      clearBackground();
       instantiateMore();
       lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
@@ -262,6 +265,32 @@ function instantiateSlider() {
         // console.log($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
       
+    });
+
+    var startProg = 95;
+    var firstCheck = false;
+    mySwiper.on('touchStart', function (progress) {
+      firstCheck = true;
+    });
+
+    mySwiper.on('progress', function (progress) {
+      // console.log(progress);
+      if(firstCheck){
+        startProg = progress;
+        firstCheck = false;
+        console.log('START PROGRESS: ' + startProg);
+      }
+      if(progress > startProg + 0.0007 ){
+        startProg = 95;
+        clearBackground();
+      }
+    });
+
+    mySwiper.on('touchEnd', function (progress) {
+      // setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+      if(lastmoduleSlide == $(mySwiper.slides[mySwiper.activeIndex]).data('hash')){
+        setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+      }
     });
   
     //BEFORE I BEGIN POPUP CODE
@@ -547,8 +576,8 @@ function setBackground(image){
     var currentBG = $( ".background" ).first().css('background-image');
     currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
 
-    console.log("Current Image: " + currentBG);
-    console.log("Future Image: " + image);
+    // console.log("Current Image: " + currentBG);
+    // console.log("Future Image: " + image);
 
     if(currentBG != image){
         showBackgroundImage = true;
@@ -563,7 +592,7 @@ function setBackground(image){
         });
     }
     else {
-        console.log('correct image already set, chill out');
+        // console.log('correct image already set, chill out');
     }
 
     
@@ -575,7 +604,9 @@ function setBackground(image){
 
 function clearBackground(){
     showBackgroundImage = false;
-    $(".background").stop( true, false ).fadeOut();
+    $(".background").stop( true, false ).fadeOut(function(){
+        $(this).css({"background-image":"unset"})
+    });
     $(".background").not(':last').remove();
 }
 

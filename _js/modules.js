@@ -53,6 +53,32 @@ function instantiateSlider() {
       }
       
     });
+
+    var startProg = 95;
+    var firstCheck = false;
+    mySwiper.on('touchStart', function (progress) {
+      firstCheck = true;
+    });
+
+    mySwiper.on('progress', function (progress) {
+      // console.log(progress);
+      if(firstCheck){
+        startProg = progress;
+        firstCheck = false;
+        console.log('START PROGRESS: ' + startProg);
+      }
+      if(progress > startProg + 0.0007 ){
+        startProg = 95;
+        clearBackground();
+      }
+    });
+
+    mySwiper.on('touchEnd', function (progress) {
+      // setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+      if(lastmoduleSlide == $(mySwiper.slides[mySwiper.activeIndex]).data('hash')){
+        setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
+      }
+    });
   
     //BEFORE I BEGIN POPUP CODE
     vex.dialog.buttons.YES.text = 'Begin'
