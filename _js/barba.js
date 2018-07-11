@@ -40,10 +40,12 @@ narrative.init();
 var caseStudy = Barba.BaseView.extend({
   namespace: 'case-study',
   onEnter: function () {
+      clearBackground();
       initializeCaseStudy();
   },
   onEnterCompleted: function () {
     finalizeCaseStudy();
+    
   }
 });
 
@@ -66,6 +68,7 @@ moduleView.init();
 var moreView = Barba.BaseView.extend({
   namespace: 'more-on-topic',
   onEnter: function () {
+      clearBackground();
       instantiateMore();
       lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
