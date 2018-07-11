@@ -37,7 +37,7 @@ function setBackground(image, presence){
         $( ".background" ).stop( true, false ).fadeOut("slow", function() {
 
             if(presence == 'low'){
-                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(5px)", "opacity":"0.15"}).waitForImages(true).done(function() {
+                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(5px)", "opacity":"0.2"}).waitForImages(true).done(function() {
                     // All descendant images have loaded, now slide up.
                     if(showBackgroundImage){
                         $(this).fadeIn("slow");
