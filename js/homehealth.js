@@ -497,7 +497,7 @@ $().ready(function () {
 function initializeBranching() { 
     console.log('instantiating branching');
 
-    setBackground($('.narrative-primary').data('background'));
+    setBackground($('.narrative-primary').data('background'), 'high');
     showMenu();
 
     var answerCount = 0;
@@ -505,7 +505,7 @@ function initializeBranching() {
     $('.narrative-answer').click(function(){
         console.log('ya clicked: ' + $(this).attr('href'));
         var nextQuestion = $(this).attr('href');
-        setBackground($('.question-container[data-narrative="' + nextQuestion + '"]').data('background'));
+        setBackground($('.question-container[data-narrative="' + nextQuestion + '"]').data('background'), 'high');
         $('.question-container').hide();
         $('.question-container[data-narrative="' + nextQuestion + '"]').show();
         answerCount++;
@@ -573,7 +573,8 @@ function lightBackground(menu){
     }
 }
 
-function setBackground(image){
+function setBackground(image, presence){
+    presence = (presence !== undefined) ? presence : 'low';
     var currentBG = $( ".background" ).first().css('background-image');
     currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
 
@@ -583,13 +584,24 @@ function setBackground(image){
     if(currentBG != image){
         showBackgroundImage = true;
         $( ".background" ).stop( true, false ).fadeOut("slow", function() {
-            $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
-                // All descendant images have loaded, now slide up.
-                if(showBackgroundImage){
-                    $(this).fadeIn("slow");
-                } 
-            });
-            
+
+            if(presence == 'low'){
+                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(5px)", "opacity":"0.15"}).waitForImages(true).done(function() {
+                    // All descendant images have loaded, now slide up.
+                    if(showBackgroundImage){
+                        $(this).fadeIn("slow");
+                    } 
+                });
+            }
+            else if(presence == 'high'){
+                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(0px)", "opacity":"0.4"}).waitForImages(true).done(function() {
+                    // All descendant images have loaded, now slide up.
+                    if(showBackgroundImage){
+                        $(this).fadeIn("slow");
+                    } 
+                });
+            }
+
         });
     }
     else {

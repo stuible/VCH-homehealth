@@ -24,7 +24,8 @@ function lightBackground(menu){
     }
 }
 
-function setBackground(image){
+function setBackground(image, presence){
+    presence = (presence !== undefined) ? presence : 'low';
     var currentBG = $( ".background" ).first().css('background-image');
     currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
 
@@ -34,13 +35,24 @@ function setBackground(image){
     if(currentBG != image){
         showBackgroundImage = true;
         $( ".background" ).stop( true, false ).fadeOut("slow", function() {
-            $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")"}).waitForImages(true).done(function() {
-                // All descendant images have loaded, now slide up.
-                if(showBackgroundImage){
-                    $(this).fadeIn("slow");
-                } 
-            });
-            
+
+            if(presence == 'low'){
+                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(5px)", "opacity":"0.15"}).waitForImages(true).done(function() {
+                    // All descendant images have loaded, now slide up.
+                    if(showBackgroundImage){
+                        $(this).fadeIn("slow");
+                    } 
+                });
+            }
+            else if(presence == 'high'){
+                $(this).remove().clone().appendTo('body').hide().css({"background-image":"url(" + image +")", "filter":"blur(0px)", "opacity":"0.4"}).waitForImages(true).done(function() {
+                    // All descendant images have loaded, now slide up.
+                    if(showBackgroundImage){
+                        $(this).fadeIn("slow");
+                    } 
+                });
+            }
+
         });
     }
     else {

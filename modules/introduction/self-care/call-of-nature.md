@@ -1,6 +1,7 @@
 --- 
 layout: branching-narrative
 permalink: "/modules/introduction/call-of-nature/"
+title: call-of-nature
 image:
 
 #FIRST LEVEL

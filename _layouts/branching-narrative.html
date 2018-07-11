@@ -44,7 +44,8 @@ layout: branching-narrative
                     </div>
                     {% endfor %}
                 {% endfor %}
-                <a href="#" class="button narrative-back" style="display: none">
+                {% assign currentPage = page.title | append: "/" | prepend: "/" %}
+                <a href="{{ page.url | remove: currentPage}}" class="button narrative-back" style="display: none">
                     Back to Scenarios
                 </a>
                 
