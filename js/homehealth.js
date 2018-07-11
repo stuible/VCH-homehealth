@@ -228,6 +228,7 @@ function instantiateSlider() {
       centeredSlides: true,
       // spaceBetween: '50',
       mousewheel: false,
+      threshold: 20,
       hashNavigation: true,
       hashNavigation: {
         watchState: true,
