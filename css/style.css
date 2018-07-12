@@ -614,14 +614,14 @@ body {
 /* MAIN CAROUSEL */
 .swiper-container {
   width: 100%;
-  margin-top: 20vh !important; }
+  margin-top: 18vh !important; }
 
 .swiper-slide {
-  width: 50vw !important;
-  height: 30vw !important;
+  width: 60vw !important;
+  height: 36vw !important;
   margin: 0.5625vw auto;
-  margin-left: 50px;
-  margin-right: 50px; }
+  margin-left: 25px;
+  margin-right: 25px; }
   .swiper-slide a {
     text-decoration: none; }
   .swiper-slide div {
@@ -695,8 +695,6 @@ body {
   position: absolute;
   z-index: -1;
   width: 100%;
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }

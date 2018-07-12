@@ -15,7 +15,7 @@ $modulesBorderRadius: 10px;
 
 .swiper-container {
     width: 100%;
-    margin-top: 20vh !important;
+    margin-top: 18vh !important;
     // position: absolute;
     // top: 50%;
     // transform: translateY(-50%);
@@ -28,11 +28,11 @@ $modulesBorderRadius: 10px;
 // }
 
 .swiper-slide {
-    width: 50vw !important;
-    height: 30vw !important;
+    width: 60vw !important;
+    height: 36vw !important;
     margin: 0.5625vw auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 
     a {
         text-decoration: none;
@@ -98,7 +98,7 @@ $modulesBorderRadius: 10px;
     position: absolute;
     z-index: -1;
     width: 100%;
-    filter: brightness(80%);
+    // filter: brightness(80%);
     border-radius: $modulesBorderRadius;
 }
 
