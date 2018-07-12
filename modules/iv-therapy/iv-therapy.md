@@ -5,7 +5,7 @@ background: iv.jpeg
 
 cases:
   - name: Margaret
-    image: MargaretPortrait.jpeg
+    image: MargaretPortrait2.jpeg
     url: margaret
   - name: Franny
     image: FrannyPortrait.jpeg

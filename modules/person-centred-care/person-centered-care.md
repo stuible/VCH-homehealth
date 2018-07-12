@@ -18,7 +18,7 @@ objectives:
 
 cases:
   - name: Margaret
-    image: MargaretPortrait.jpeg
+    image: MargaretPortrait2.jpeg
     url: margaret
   - name: Franny
     image: FrannyPortrait.jpeg
@@ -47,4 +47,3 @@ more:
     image: plan.jpg
     url: deliverables
 ---
-#### Before you do the Person Centered Care I'm going to need you to do this...

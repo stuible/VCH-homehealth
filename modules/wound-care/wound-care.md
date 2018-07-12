@@ -6,7 +6,7 @@ enabled: true
 
 cases:
   - name: Margaret
-    image: MargaretPortrait.png
+    image: MargaretPortrait2.jpeg
     url: margaret
   - name: Franny
     image: FrannyPortrait.png
