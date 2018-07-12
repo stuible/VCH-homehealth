@@ -542,10 +542,12 @@ function finalizeCaseStudy(){
         offset: -10 
       });
 
+      //Set up case study accordions
       $( ".accordion" ).accordion({
         animate: 200,
         collapsible: true,
-        active: false
+        active: false,
+        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
       });
 }
 function instantiateMore() { 

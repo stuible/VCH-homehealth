@@ -6,3 +6,20 @@
     border: none;
     border-radius: 20px;
 }
+
+.accordion-icon {
+    float: right;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: $primaryColour;
+    color: #fff;
+    font-size: 21.5px;
+    text-align: center;
+
+    &.active {
+        transform: rotate(45deg);
+        transition: transform 300ms;
+    }
+}

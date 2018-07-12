@@ -133,6 +133,31 @@ body {
   -moz-border-radius: 20px;
   border-radius: 20px; }
 
+.accordion-icon {
+  float: right;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  background-color: #5AAF7F;
+  color: #fff;
+  font-size: 21.5px;
+  text-align: center; }
+  .accordion-icon.active {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    -moz-transition: transform 300ms, -moz-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
+
 
 @-webkit-keyframes ani-mouse {
   0% {
