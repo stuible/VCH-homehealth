@@ -42,9 +42,9 @@ layout: branching-narrative
                             {{ answer.feedback}}
                          </div>
                          {% assign currentPage = page.title | append: "/" | prepend: "/" %}
-                <a href="{{ page.url | remove: currentPage | append: "#case-studies" }}" class="button narrative-back" style="display: none">
-                    Back to Scenarios
-                </a>
+                        <a href="{{ page.url | remove: currentPage | append: "#case-studies" }}" class="button narrative-back" style="display: none">
+                            Back to Scenarios
+                        </a>
                     </div>
                     {% endfor %}
                 {% endfor %}
@@ -58,7 +58,7 @@ layout: branching-narrative
 <script>
     //initializeBranching();
 </script>
-
+{% include footer.html %}
 </body>
 
 </html>

@@ -22,16 +22,21 @@ layout: case-study
             </video>
             <div class="container case-study-container">
                 <div class="row">
+                    <div class="case-study-section-title">
+                        Background
+                    </div>
+                </div>
+                <div class="row">
                 <div class="six columns">
                         <div class="case-study-section">
-                                <div class="case-study-section-title">
-                                    Background
-                                </div>
+                                
                                 <div class="case-study-section-content">
-                                    {{ page.background }}
+                                    {% assign contentSplit = content | split: '</p>' -%}
+                                    {{ contentSplit[0] }}
+                                    {{ contentSplit[1] }}
                                 </div>
                         </div>
-                        <div class="case-study-section margin top twenty">
+                        <!-- <div class="case-study-section margin top twenty">
                                 <div class="case-study-section-title">
                                     Medications
                                 </div>
@@ -40,13 +45,23 @@ layout: case-study
                                         {{ medication }} <br/>
                                     {% endfor %}
                                 </div>
-                        </div>
+                        </div> -->
                 </div>
                 {% if contentNoReturns != ""  %}
                 <div class="six columns case-study-section-content">
-                    {{content}}
+                        {{ contentSplit[2] }}
                 </div>
                 {% endif %}
+                </div>
+                <div class="row">
+                        <div class="case-study-section">
+                                <div class="case-study-section-title">
+                                    Formal / Informal Supports
+                                </div>
+                                <div class="case-study-section-content">
+                                    {{ page.supports }}
+                                </div>
+                        </div>
                 </div>
                 <div class="row">
                         <div class="case-study-section">
@@ -80,6 +95,7 @@ layout: case-study
 <script>
     //initializeCaseStudy();
 </script>
+{% include footer.html %}
 </body>
 
 </html>
