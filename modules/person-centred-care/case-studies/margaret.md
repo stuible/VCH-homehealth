@@ -5,7 +5,7 @@ permalink: "/modules/person-centered-care/margaret/"
 video: CaseStudy1.mp4
 title: Margaret’s Story
 
-background: 
+supports:  Margaret does not have family in Canada at this time.  The couple have been working on sponsoring her young sister and parents over from China; however there have been some difficulties.  Margaret had been quite involved with the Chinese community and participated in many volunteer activities at the church she attends. She is receiving on hour a day of home support under Long Term Care in the morning to assist her with bathing and dressing and the daily per diem is high so David is wondering if  private care would be less expensive.
 
 medications:
   - Chinese herbal medication

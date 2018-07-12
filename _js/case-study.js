@@ -21,5 +21,11 @@ function finalizeCaseStudy(){
             }          
         },
         offset: -10 
-      })
+      });
+
+      $( ".accordion" ).accordion({
+        animate: 200,
+        collapsible: true,
+        active: false
+      });
 }
