@@ -97,7 +97,15 @@ layout: case-study
                         </div>
                 </div>
                 <div class="case-study-more-section">
-                        <a href="#" class="button">More on this topic</a>
+                        {% assign pageurl_array = page.url | split: "/" %}
+                        {% assign parent_url = '' | split: "jhg"%}
+                        {% for section in pageurl_array %}
+                            {% if forloop.last != true %}
+                                {% assign sectionInArrayForm = section | split: '**' %}
+                                {% assign parent_url = parent_url | concat: sectionInArrayForm %}
+                            {% endif %}
+                        {% endfor %}
+                        <a href="/{{ parent_url | join: "/"}}#more-on-topic" class="button">More on this topic</a>
                 </div>
             </div>
 
