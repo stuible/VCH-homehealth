@@ -19,15 +19,15 @@ objectives:
 
 cases:
   - name: Call of Nature
-    image: jane.png
+    image: toilet.jpg
     url: call-of-nature
   - name: Bereaved
-    image: jane.png
+    image: breieved.jpg
     url: bereaved
   - name: Vebal Abuse
-    image: jon.png
+    image: verbalabuse.jpg
     url: vebal-abuse
   - name: Burnt Out
-    image: jon.png
+    image: burnout.jpg
     url: burnt-out
 ---

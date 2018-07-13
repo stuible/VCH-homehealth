@@ -8,25 +8,70 @@ modules:
     pagename: introduction
     video: intro.mp4
     background: intro.jpeg
-    beforebeginning: do stuff
+    before-beginning:
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
   - name: Person Centered Care
     pagename: person-centered-care
     video: PatientCenteredCare-HHsmall.mp4
     background: personcenteredcare.jpeg
-    beforebeginning: do stuff
+    before-beginning:
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
   - name: Wound Care
     pagename: wound-care
     video: wound.mp4
     background: wound.jpeg
-    beforebeginning: do stuff
+    before-beginning:
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
   - name: IV Therapy
     pagename: iv-therapy
     video: IV.mp4
     background: iv.jpeg
-    beforebeginning: do stuff
+    before-beginning:
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
   - name: Pallative Care
     pagename: pallative-care
     video: Pallatative-HHsmall.mp4
     background: pallative.jpeg
-    beforebeginning: do stuff
+    before-beginning:
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
+      - link: http://google.com
+        link-text: Link
+        text: textext
 ---
