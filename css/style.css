@@ -145,18 +145,89 @@ body {
   color: #fff;
   font-size: 21.5px;
   text-align: center; }
-  .accordion-icon.active {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+
+.ui-accordion-header-active > .accordion-icon {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  -o-transition: -o-transform 300ms;
+  -moz-transition: transform 300ms, -moz-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
+
+.ui-accordion-header-collapsed > .accordion-icon {
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  -o-transition: -o-transform 300ms;
+  -moz-transition: transform 300ms, -moz-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
+
+.flyout-container {
+  width: 100%;
+  overflow: hidden; }
+
+.flyout {
+  z-index: 5;
+  background-color: #fff;
+  width: 34px;
+  height: 200px;
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  -o-transition: -o-transform 300ms;
+  -moz-transition: transform 300ms, -moz-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms;
+  -webkit-transition: width 500ms ease-in-out;
+  -o-transition: width 500ms ease-in-out;
+  -moz-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.51); }
+  .flyout:hover {
+    width: 300px;
     -webkit-transition: -webkit-transform 300ms;
     transition: -webkit-transform 300ms;
     -o-transition: -o-transform 300ms;
     -moz-transition: transform 300ms, -moz-transform 300ms;
     transition: transform 300ms;
-    transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
+    transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms;
+    -webkit-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out; }
+
+.flyout-button {
+  background-color: #5AAF7F;
+  color: #fff;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 200px;
+  -webkit-transform-origin: 17px 17px;
+  -moz-transform-origin: 17px 17px;
+  -ms-transform-origin: 17px 17px;
+  -o-transform-origin: 17px 17px;
+  transform-origin: 17px 17px;
+  text-align: center;
+  font-size: 22px; }
+
+.flyout-content {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 50px;
+  font-size: 18px; }
 
 
 @-webkit-keyframes ani-mouse {
@@ -297,7 +368,10 @@ body {
   padding-bottom: 4px;
   font-size: 36px;
   font-family: "Perpetua", serif;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  cursor: pointer; }
+  .case-study-section-title:focus {
+    outline: none; }
 
 .case-study-section-content {
   font-size: 18px;
@@ -307,6 +381,8 @@ body {
   margin-top: 100px;
   height: 200px;
   text-align: center; }
+  .case-study-more-section:focus {
+    outline: none; }
 
 /* INTRODUCTION PAGE */
 .intro-swiper-container {

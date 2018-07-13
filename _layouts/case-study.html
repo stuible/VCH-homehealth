@@ -20,6 +20,14 @@ layout: case-study
                 <source src="{{site.baseurl}}/video/case-studies/{{ page.video }}" type="video/mp4">
                 Your browser does not support this yupe of video
             </video>
+            <div class="flyout">
+                    <div class="flyout-button">Medications</div>
+                    <div class="flyout-content">
+                        {% for medication in page.medications %}
+                            {{ medication }} <br/><br/>
+                        {% endfor %}
+                    </div>
+            </div>
             <div class="container case-study-container">
                 <div class="row">
                     <div class="case-study-section-title">

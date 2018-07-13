@@ -17,9 +17,68 @@
     color: #fff;
     font-size: 21.5px;
     text-align: center;
+}
 
-    &.active {
-        transform: rotate(45deg);
+.ui-accordion-header-active>.accordion-icon {
+    transform: rotate(45deg);
+    transition: transform 300ms;
+}
+
+.ui-accordion-header-collapsed>.accordion-icon {
+    transition: transform 300ms;
+}
+
+.flyout-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.flyout {
+    z-index: 5;
+    background-color: #fff;
+    width: 34px;
+    height: 200px;;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    overflow: hidden;
+    transition: transform 300ms;
+    transition: width 500ms ease-in-out;
+    box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.51);
+
+    &:hover {
+        width: 300px;
         transition: transform 300ms;
+        transition: width 500ms ease-in-out;
+
+        .flyout-content {
+            // width: 200px;
+        }
     }
+
+}
+
+.flyout-button {
+    // display: inline-block;
+    // position: absolute;
+    // left: -50px;
+    background-color: $primaryColour;
+    color: #fff;
+    transform: rotate(90deg);
+    width: 200px;
+    transform-origin: 17px 17px;
+    // padding: 5px;
+    // height: 200px;
+    text-align: center;
+    // float: left;
+    font-size: 22px;
+
+}
+
+.flyout-content {
+    display: inline-block;
+    // width: 0px;
+    overflow: hidden;
+    margin-left: 50px;
+    font-size: 18px;
 }
