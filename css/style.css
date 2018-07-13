@@ -376,6 +376,8 @@ body {
 .case-study-section-content {
   font-size: 18px;
   font-weight: 400; }
+  .case-study-section-content > .six.columns:nth-of-type(odd) {
+    margin-left: 0px; }
 
 .case-study-more-section {
   margin-top: 100px;
@@ -383,6 +385,12 @@ body {
   text-align: center; }
   .case-study-more-section:focus {
     outline: none; }
+
+.case-study-number {
+  font-size: 55px;
+  font-family: "Perpetua", serif;
+  color: #cfcfcf;
+  margin-top: -15px; }
 
 /* INTRODUCTION PAGE */
 .intro-swiper-container {

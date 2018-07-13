@@ -65,11 +65,12 @@ layout: intro
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
                                                 {% for item in page.cases %}
-                                                    <a class="narrative" href="{{ page.url }}{{ item.url | downcase }}">
-                                                        <img src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
+                                                    <a class="blog-card spring-fever narrative hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
+                                                        <img class="lazy" src="{{site.baseurl}}/image/case-studies/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.name }}</div>
                                                     </a>
                                                 {% endfor %}
+
                                             </div>
                                         </div>
                                         {% include scrollindicator.html %}
