@@ -295,7 +295,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: 50;
-  margin-top: 50px; }
+  position: absolute;
+  bottom: 50px;
+  left: -webkit-calc(50% - 75px);
+  left: -moz-calc(50% - 75px);
+  left: calc(50% - 75px); }
 
 .scroll-btn > * {
   line-height: 18px;
@@ -484,6 +488,9 @@ body {
   width: 100px; }
 
 /* MODULE PAGE */
+.module-swiper-slide {
+  position: relative; }
+
 .objective-row {
   margin-bottom: 1.75em; }
   .objective-row > .six.columns:nth-of-type(odd) {
@@ -580,12 +587,7 @@ body {
 .narratives-container {
   text-align: center;
   width: 100%;
-  font-size: 9px;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%); }
+  font-size: 9px; }
 
 .narrative {
   display: inline-block;

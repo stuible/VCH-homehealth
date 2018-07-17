@@ -2,6 +2,10 @@
 
 /* MODULE PAGE */
 
+.module-swiper-slide{
+    position: relative;
+}
+
 .objective-row {
     margin-bottom: 1.75em;
 
@@ -128,7 +132,7 @@
     width: 100%;
     // margin-top: 20%;
     font-size: 9px;
-    transform: translateY(50%);
+    // transform: translateY(50%);
 }
 
 .narrative {
