@@ -3,7 +3,15 @@
 /* MODULE PAGE */
 
 .objective-row {
-    margin-bottom: 25px;
+    margin-bottom: 1.75em;
+
+    >.six.columns:nth-of-type(odd){
+        margin-left: 0px;
+    }
+
+    .row {
+        margin-bottom: 1em;
+    }
 }
 
 .module-swiper-container {
@@ -13,10 +21,11 @@
 
 .course-objectives {
     color: $lightTextColour;
+    font-size: 13px;
 }
 
 .objective-number {
-    font-size: 42px;
+    font-size: 3em;
     float: left;
     margin-right: 15px;
     line-height: 45px;
@@ -27,6 +36,34 @@
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 75px;
+}
+
+@include larger-than(phone){
+
+    .course-objectives{
+        font-size: 14px;
+    }
+}
+
+@include larger-than(tablet){
+
+    .course-objectives{
+        font-size: 14px;
+    }
+}
+
+@include larger-than(desktop){
+    .course-objectives{
+        font-size: 14px;
+    }
+    
+}
+
+@include larger-than(desktophd){
+    .course-objectives{
+        font-size: 15px;
+    }
+    
 }
 
 .slide-video-container {
@@ -45,14 +82,14 @@
 }
 
 .objective {
-    font-size: 18px;
+    font-size: 1.2em;
     display: inline-block;
     width: 80%;
 
 }
 
 .lobjectives-title {
-    font-size: 18px;
+    font-size: 1.2em;
     padding-bottom: 10px;
     border-bottom: solid #5AAF7F 5px;
     font-weight: 400;
@@ -60,7 +97,7 @@
 }
 
 .mapplications-title {
-    font-size: 18px;
+    font-size: 1.2em;
     padding-bottom: 10px;
     font-weight: 400;
 }
@@ -79,7 +116,7 @@
 }
 
 .module-case-studies-title {
-    font-size: 24px;
+    font-size: 1.75em;
     font-weight: 400;
     color: $lightTextColour;
     text-align: center;
@@ -89,13 +126,15 @@
 .narratives-container {
     text-align: center;
     width: 100%;
-    margin-top: 20%;
+    // margin-top: 20%;
+    font-size: 9px;
+    transform: translateY(50%);
 }
 
 .narrative {
     display: inline-block;
-    width: 200px;
-    height: 240px;
+    width: 12.5em;
+    height: 15em;
     background-color: $primaryColour;
     margin-left: 10px;
     margin-right: 10px;
@@ -103,7 +142,7 @@
     // border-radius: 5px;
     color: #fff;
     text-decoration: none;
-
+    // font-size: 2em;
     &:hover {
         color: #fff;
     }
@@ -112,6 +151,34 @@
         width: 100%;
         // border-radius: 5px;
     }
+}
+
+@include larger-than(phone){
+
+    .narratives-container{
+        font-size: 12px;
+    }
+}
+
+@include larger-than(tablet){
+
+    .narratives-container{
+        font-size: 13px;
+    }
+}
+
+@include larger-than(desktop){
+    .narratives-container{
+        font-size: 14px;
+    }
+    
+}
+
+@include larger-than(desktophd){
+    .narratives-container{
+        font-size: 16px;
+    }
+    
 }
   
 
