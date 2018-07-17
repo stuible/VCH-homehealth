@@ -963,12 +963,18 @@ body {
 
 .narrative-answers {
   color: #fff;
-  margin-top: 50px; }
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  min-height: 125px; }
+  .narrative-answers a {
+    display: block; }
 
 .narrative-answer {
-  background-color: #5AAF7F;
   color: #fff;
-  border: none;
+  border: #5AAF7F 2px solid;
   display: inline-block;
   /* height: 38px; */
   margin-bottom: 15px;
@@ -987,7 +993,7 @@ body {
   box-sizing: border-box; }
   .narrative-answer:hover {
     color: #fff;
-    background-color: #28523b; }
+    background-color: #5AAF7F; }
 
 .narrative-secondary, .narrative-tertiary {
   display: none; }

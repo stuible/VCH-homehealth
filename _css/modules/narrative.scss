@@ -8,13 +8,20 @@
 
 .narrative-answers {
     color: $lightTextColour;
+    width: max-content;
+    margin: 0 auto;
     margin-top: 50px;
+    min-height: 125px;
+
+    a {
+        display: block;
+    }
 }
 
 .narrative-answer {
-    background-color: $primaryColour;
+    // background-color: $primaryColour;
     color: $lightTextColour;
-    border: none;
+    border: $primaryColour 2px solid;
     // width: 100%;
 
     display: inline-block;
@@ -32,7 +39,7 @@
 
     &:hover {
         color: #fff;
-        background-color: #28523b;
+        background-color: $primaryColour;
     }
 }
 

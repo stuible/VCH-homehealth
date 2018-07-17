@@ -25,11 +25,11 @@ layout: branching-narrative
                     </div>
                     <div class="narrative-answers">
                                 {% for answer in question.answers %}
-                                <div class="row">
+
                                     <a href="{{ answer.link }}" class="narrative-answer no-barba">
                                         {{ answer.text }}
                                     </a>
-                                </div>
+
                                 {% endfor %}
                     </div>
                 </div>
@@ -41,7 +41,9 @@ layout: branching-narrative
                         <div class="narrative-question">
                             {{ answer.feedback}}
                          </div>
+                         
                          {% assign currentPage = page.title | append: "/" | prepend: "/" %}
+                         
                         <a href="{{ page.url | remove: currentPage | append: "#case-studies" }}" class="button narrative-back" style="display: none">
                             Back to Scenarios
                         </a>
