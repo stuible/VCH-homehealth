@@ -36,29 +36,32 @@ layout: intro
                                                 <div class="six columns lobjectives-title">
                                                     Learning Objectives
                                                 </div>
-                                                <div class="six columns mapplications-title">
-                                                    Measurable Applications
-                                                </div>
                                             </div>
-                                            {% for objective in page.objectives %}
                                             <div class="row objective-row">
-                                            <div class="six columns">
+                                                {% for objective in page.objectives %}
+                                                
+                                                    {% assign mod = forloop.index | modulo: 2 %}
+            
+                                                    {% if mod == 0 %}
                                                     <div class="row">
-                                                        <div class="objective-number">{{ forloop.index }}</div>
-                                                            <div class="objective">{{objective.objective}}</div>
-                                                    </div>
-                                            </div>
-                                            <div class="six columns">
-                                                        <div class="row">
-                                                        <p>{{objective.application}}</p>
+                                                    {% endif %}
+                                                
+                                                        <div class="six columns">
+                                                                <div class="row">
+                                                                    <div class="objective-number">{{ forloop.index }}</div>
+                                                                        <div class="objective">{{objective.objective}}</div>
+                                                                </div>
                                                         </div>
+            
+                                                    {% if mod == 0 %}
+                                                    </div>
+                                                    {% endif %}
+                                                {% endfor %}
                                                 </div>
-                                            </div>
-                                            {% endfor %}
                                         </div>
 
-                                        {% include scrollindicator.html %}
                                 </div>
+                                {% include scrollindicator.html %}
                         </div>
                         <div class="intro-swiper-slide" data-hash="case-studies">
                                 <div class="container">
@@ -73,8 +76,8 @@ layout: intro
 
                                             </div>
                                         </div>
-                                        {% include scrollindicator.html %}
                                     </div>
+                                {% include scrollindicator.html %}
                         </div>
                         <div class="intro-swiper-slide" data-hash="more-on-topic">
                             <div class="container">

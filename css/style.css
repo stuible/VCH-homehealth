@@ -398,6 +398,9 @@ body {
   margin-top: -15px; }
 
 /* INTRODUCTION PAGE */
+.intro-swiper-slide {
+  position: relative; }
+
 .intro-swiper-container {
   max-height: 100vh;
   overflow: hidden; }
