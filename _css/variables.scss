@@ -1,6 +1,25 @@
+@import "mixins";
+
+// COLOURS
+
 $primaryColour: #5AAF7F;
 $secondaryColour: #281746;
 $backgroundColour: rgb(22, 22, 22);
 $lightTextColour: #fff;
+
+
+// FONTS
+
 $font: 'IBM Plex Sans', sans-serif;
 $serifFont: 'Perpetua', serif;
+
+
+// MEDIA QUERRIES
+
+$breakpoints: (
+    phone: 400px,
+    phablet: 550px,
+    tablet: 750px,
+    desktop: 1000px,
+    desktophd: 1200px
+);

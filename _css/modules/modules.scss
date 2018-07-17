@@ -33,6 +33,7 @@ $modulesBorderRadius: 10px;
     margin: 0.5625vw auto;
     margin-left: 25px;
     margin-right: 25px;
+    font-size: 10px;
 
     a {
         text-decoration: none;
@@ -57,7 +58,8 @@ $modulesBorderRadius: 10px;
 
 .slide-title {
     color: $lightTextColour;
-    font-size: 28px;
+    font-size: 2em;
+    font-weight: 400;
     flex: 0 0 100%;
     height: auto !important;
 }
@@ -66,6 +68,34 @@ $modulesBorderRadius: 10px;
     flex: 0 0 100%;
     height: auto !important;
     /* margin-top: -200px; */
+}
+
+@include larger-than(phone){
+
+    .swiper-slide{
+        font-size: 13px;
+    }
+}
+
+@include larger-than(tablet){
+
+    .swiper-slide{
+        font-size: 16px;
+    }
+}
+
+@include larger-than(desktop){
+    .swiper-slide{
+        font-size: 16px;
+    }
+    
+}
+
+@include larger-than(desktophd){
+    .swiper-slide{
+        font-size: 19px;
+    }
+    
 }
 
 .swiper-pagination-bullet {
@@ -104,6 +134,9 @@ $modulesBorderRadius: 10px;
 
 .before-begin-button {
     box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
+    font-size: 0.8em;
+    padding: 0.25em 2em;
+    height: auto;
 }
 
 .module-button-container {
