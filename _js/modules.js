@@ -39,7 +39,7 @@ function instantiateSlider() {
       },
     });
 
-    hideMenu();
+    showMenu();
     // clearBackground();
     darkBackground(true);
     setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));

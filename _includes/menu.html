@@ -99,7 +99,47 @@
                       //  }); 
             }
         </script>
-        <div class="menu-name">Modules</div>
+        {% assign pageurl_first_char = page.url | split: '' | first %}
+        {% assign pageurl = page.url %}
+
+        {% if pageurl_first_char == "/" %}
+            {% assign pageurl = pageurl | slice: 1, pageurl.size %}
+        {% endif %}
+
+        {% assign pageurl_array = pageurl | split: "/" %}
+        {% assign breadcrumb_text_array = '' | split: "****"%}
+        {% assign breadcrumb_url_array = '' | split: "****"%}
+                        {% for section in pageurl_array %}
+
+                                {% assign sectionInArrayForm = section | replace: "-", " " | split: '****' %}
+                                {% assign breadcrumb_text_array = breadcrumb_text_array | concat: sectionInArrayForm %}
+
+                                {% assign breadcrumb_url = page.url | split: section %}
+                                {% if forloop.last %}
+                                {% assign urlInArrayForm = "#" | split: '****' %}
+                                {% else %}
+                                {% assign urlInArrayForm = breadcrumb_url[0] | append: section | split: '****' %}
+                                {% endif %}
+                                
+                                {% assign breadcrumb_url_array = breadcrumb_url_array | concat: urlInArrayForm %}
+
+                        {% endfor %}
+
+        {% assign breadcrumb_text_json = breadcrumb_text_array | jsonify %}
+        {% assign breadcrumb_url_json = breadcrumb_url_array | jsonify %}
+            
+        {% comment %}{% raw %}
+        {{ breadcrumb_text_array | size | prepend: 'text array size: ' }}<br>
+        {{ pageurl_array | size | prepend: 'page url array size: ' }}<br>
+        {{ breadcrumb_url_array | size | prepend: 'url array size: ' }}<br>
+        {{ pageurl }}<br>
+        {{ breadcrumb_text_json }} <br>
+        {{ breadcrumb_url_json }}
+        {% endraw %}{% endcomment %}
+
+        
     </a>
+        <div class="menu-name">   </div>
+    
     <div class="menu-support">Support</div>    
 </div>

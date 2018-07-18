@@ -12,6 +12,8 @@ $().ready(function () {
       //   }
       // });
 
+      setBreadcrumbs($('.barba-container'));
+
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
     onEnter: function () {
@@ -200,6 +202,10 @@ introduction.init();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
 
+    setBreadcrumbs(container);
+
+    //$(".menu-name").text(navText[0]);
+
   });
   
 
@@ -210,6 +216,26 @@ function getLastPart(url) {
   return (url.lastIndexOf('/') !== url.length - 1
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
+}
+
+function setBreadcrumbs(containerEl){
+    console.log($(containerEl).data('nav-text'));
+    console.log($(containerEl).data('nav-url'));
+
+    var navText = $(containerEl).data('nav-text');
+    var navUrl = $(containerEl).data('nav-url');
+
+    $(".menu-name").empty();
+
+    jQuery.each(navText, function(i) {
+      if(i == navText.length - 1) {
+        $(".menu-name").append('<a href="' + navUrl[i] + '">' + this +'</a>');
+      }
+      else {
+        $(".menu-name").append('<a href="' + navUrl[i] + '">' + this +'</a><span> > </span>');
+      }
+      
+    });
 }
 //Functions for instantiating main Modules Carousel Page
 
@@ -252,7 +278,7 @@ function instantiateSlider() {
       },
     });
 
-    hideMenu();
+    showMenu();
     // clearBackground();
     darkBackground(true);
     setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
