@@ -9,10 +9,14 @@ var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+var gm = require('gulp-gm');
+var newer = require('gulp-newer');
 
 
 const cssFiles = '_css/**/*.?(s)css';
 const jsFiles = '_js/';
+const imageFiles = '_image/**/**/*.*';
 const siteRoot = '_site';
 
 var jsSources = [
@@ -55,6 +59,17 @@ gulp.task('js', () => {
         .pipe(uglify())
         .pipe(gulp.dest('js'));
   });
+
+// gulp.task('images', () =>
+//   gulp.src(imageFiles)
+//   .pipe(newer('image'))
+//   .pipe(gm(function(gmfile) {
+//     gmfile.setFormat('jpg').quality(90);
+//     return gmfile.resize(2000, 2000);
+//   }))
+//   .pipe(imagemin())
+// 		.pipe(gulp.dest('image'))
+// );
 
 
 gulp.task('jekyll', () => {

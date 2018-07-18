@@ -22,13 +22,13 @@ questions:
 
   - question: I know this is not ideal but I it is an emergency. To make the washroom safe to use I...
     link: 1a
-    background: toilet/q2-washroom-client.jpg
+    background: toilet/3.jpg
     answers:
       - answer:
         text: Place paper on the toilet seat and sanitise my hands after use
         feedback: Paper does not offer a safe barrier to bacteria on the toilet seat. If you have no choice but to use a client’s washroom please avoid sitting or touching if and when possible.
         link: 2a
-        background: toilet/2a.jpg
+        background: toilet/q2.jpg
    
       - answer:
         text: Avoid sitting and touching anything I need not touch
