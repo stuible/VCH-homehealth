@@ -9,9 +9,9 @@ var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
-const imagemin = require('gulp-imagemin');
-var gm = require('gulp-gm');
-var newer = require('gulp-newer');
+// const imagemin = require('gulp-imagemin');
+// var gm = require('gulp-gm');
+// var newer = require('gulp-newer');
 
 
 const cssFiles = '_css/**/*.?(s)css';
