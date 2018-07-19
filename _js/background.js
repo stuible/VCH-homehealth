@@ -92,8 +92,8 @@ function darkMenu(){
 }
 
 function hideMenu(){
-    $('.module-menu').fadeOut()
+    // $('.module-menu').fadeOut();
 }
 function showMenu(){
-    $('.module-menu').fadeIn()
+    $('.module-menu').fadeIn();
 }

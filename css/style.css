@@ -98,7 +98,6 @@ body {
   height: auto;
   width: auto;
   display: inline-block;
-  display: none;
   cursor: pointer !important; }
   .module-menu :hover {
     cursor: pointer; }

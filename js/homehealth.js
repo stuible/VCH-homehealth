@@ -228,11 +228,15 @@ function setBreadcrumbs(containerEl){
     $(".menu-name").empty();
 
     jQuery.each(navText, function(i) {
+      var classText = ""
+      if(i == 0){
+        classText = " class=\"module-menu\" ";
+      }
       if(i == navText.length - 1) {
-        $(".menu-name").append('<a href="' + navUrl[i] + '">' + this +'</a>');
+        $(".menu-name").append('<a ' + classText +'href="' + navUrl[i] + '">' + this +'</a>');
       }
       else {
-        $(".menu-name").append('<a href="' + navUrl[i] + '">' + this +'</a><span> > </span>');
+        $(".menu-name").append('<a ' + classText +'href="' + navUrl[i] + '">' + this +'</a><span> > </span>');
       }
       
     });
@@ -685,8 +689,8 @@ function darkMenu(){
 }
 
 function hideMenu(){
-    $('.module-menu').fadeOut()
+    // $('.module-menu').fadeOut();
 }
 function showMenu(){
-    $('.module-menu').fadeIn()
+    $('.module-menu').fadeIn();
 }
