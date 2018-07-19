@@ -52,7 +52,7 @@ layout: module
                             {% include scrollindicator.html %}
                         </div>
                         <div class="module-swiper-slide" data-hash="case-study">
-                                <div class="container">
+                                <div class="container center-center">
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
                                                     <div class="module-case-studies-title">
@@ -72,17 +72,21 @@ layout: module
                                     {% include scrollindicator.html %}
                         </div>
                         <div class="module-swiper-slide" data-hash="more-on-topic">
-                            <div class="container">
+                            <div class="container center-center">
                                     <div class="narratives-parent-container">
                                         <div class="narratives-container">
-                                                <!-- <div class="module-case-studies-title">
-                                                        Pick the case study that your team has been assigned
-                                                </div> -->
+                                                <div class="module-case-studies-title">
+                                                        More On This Topic
+                                                </div>
                                             {% for item in page.more %}
-                                                <a class="more-on-topic" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
+                                                <!--<a class="more-on-topic" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
                                                     <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
                                                     <div class="more-on-topic-name">{{ item.title }}</div>
-                                                </a>
+                                                </a>-->
+                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
+                                                        <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
+                                                        <div class="narrative-name">{{ item.title }}</div>
+                                                    </a>
                                             {% endfor %}
 
                                         </div>

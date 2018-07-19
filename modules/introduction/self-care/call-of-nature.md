@@ -8,7 +8,7 @@ image:
 questions: 
   - question: A medical emergency occurred while I was with my client Ms. Smith leading to a longer than anticipated visit. Mrs. Smith is safe now and I am desperately in need of using the washroom.  I...
     link: 1
-    background: toilet/q1-portrait.jpg
+    background: toilet/q1.jpeg
     answers:
       - answer:
         text: Use the washroom at Mrs. Smith’s house
@@ -22,35 +22,35 @@ questions:
 
   - question: I know this is not ideal but I it is an emergency. To make the washroom safe to use I...
     link: 1a
-    background: toilet/3.jpg
+    background: toilet/q2.jpeg
     answers:
       - answer:
         text: Place paper on the toilet seat and sanitise my hands after use
         feedback: Paper does not offer a safe barrier to bacteria on the toilet seat. If you have no choice but to use a client’s washroom please avoid sitting or touching if and when possible.
         link: 2a
-        background: toilet/q2.jpg
+        background: toilet/2a.jpeg
    
       - answer:
         text: Avoid sitting and touching anything I need not touch
         feedback: Using a client’s washroom is a last resort. You are right that if you have no choice but to do then to avoid sitting or touching if and when possible.
         link: 2b
-        background: toilet/2b-touch.jpg
+        background: toilet/2b.jpeg
 
 
   - question: I would look for an alternative at...
     link: 1b
-    background: toilet/q3-car.jpg
+    background: toilet/q3.jpeg
     answers:
       - answer:
         text: The nearest coffee shop
         feedback: This is the best alternative if a café is close by. It also offers the option to recharge with a drink or snack in preparation for your next client visit. Using a client’s washroom is not recommended. The nearest coffee shop or clean washroom is generally the safest option.
         link: 3a
-        background: toilet/3a-washroom-cafe2.jpg
+        background: toilet/3a.jpeg
    
       - answer:
         text: The nearest public washroom
         feedback: A clean and safe public washroom is a good alternative. Using a client’s washroom is not recommended. The nearest coffee shop or clean washroom is generally the safest option.
         link: 3b
-        background: toilet/3b-washroom-sign.jpg
+        background: toilet/3b.jpeg
 
 ---

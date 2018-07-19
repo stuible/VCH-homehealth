@@ -29,6 +29,7 @@ layout: case-study
                     </div>
             </div>
             <div class="container case-study-container">
+                <!--
                 <div class="row">
                     <div class="case-study-section-title">
                         Background
@@ -37,30 +38,59 @@ layout: case-study
                 <div class="row">
                 <div class="six columns">
                         <div class="case-study-section">
-                                
                                 <div class="case-study-section-content">
                                     {% assign contentSplit = content | split: '</p>' -%}
                                     {{ contentSplit[0] }}
                                     {{ contentSplit[1] }}
                                 </div>
                         </div>
-                        <!-- <div class="case-study-section margin top twenty">
-                                <div class="case-study-section-title">
-                                    Medications
-                                </div>
-                                <div class="case-study-section-content">
-                                    {% for medication in page.medications %}
-                                        {{ medication }} <br/>
-                                    {% endfor %}
-                                </div>
-                        </div> -->
                 </div>
+
                 {% if contentNoReturns != ""  %}
                 <div class="six columns case-study-section-content">
                         {{ contentSplit[2] }}
                 </div>
                 {% endif %}
                 </div>
+                -->
+
+                {% for background in page.background %}
+                    {% assign mod = forloop.index | modulo: 2 %}
+
+                    <div class="row case-study-section">
+                        {% if mod != 0 %}
+                        <div class="six columns">
+                                <div class="case-study-section-title">
+                                        {{ background.title }}
+                                    </div>
+                                <div class="case-study-section">
+                                        <div class="case-study-section-content">
+                                                {{ background.text }}
+                                        </div>
+                                </div>
+                        </div>
+                        {% endif %}
+                            
+
+                            <div class="six columns">
+                                <img src="{{site.baseurl}}/image/case-studies/{{ background.image }}" alt="">
+                            </div>
+
+                            {% if mod == 0 %}
+                            <div class="six columns">
+                                    <div class="case-study-section-title">
+                                            {{ background.title }}
+                                        </div>
+                                    <div class="case-study-section">
+                                            <div class="case-study-section-content">
+                                                    {{ background.text }}
+                                            </div>
+                                    </div>
+                            </div>
+                            {% endif %}
+                    </div>
+                {% endfor %}
+
                 <div class="row">
                         <div class="case-study-section accordion">
                                 <div class="case-study-section-title">
