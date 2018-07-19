@@ -11,6 +11,16 @@ sections:
       text: Part of person centred care is assessing the person as a whole.  This includes not only assessing them physically but all aspects including
       circles: [ 'Emotional', 'Spiritual', 'Cultural',  'Cognitive', 'Development', 'Environmental', 'Social']
 
+    # - part: full
+    #   circles:
+    #     - Emotional: image.jpeg
+    #     - Spiritual: image.jpeg
+    #     - Cultural: image.jpeg
+    #     - Cognitive: image.jpeg
+    #     - Development: image.jpeg
+    #     - Environmental: image.jpeg
+    #     - Social: image.jpeg
+
     - part: right
       title: Reflection
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.

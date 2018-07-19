@@ -46,7 +46,12 @@ layout: more
                             {% if part.part == 'full' %}
                             <div class="twelve columns">
                                 {% for components in part %}
-                                    {{ components }} </br>
+
+                                {% MoreInfoComponent 
+                                    type: component[0] 
+                                    side: part.part 
+                                    text: component[1] %}
+
                                 {% endfor %}
                             </div>
                             {% endif %}

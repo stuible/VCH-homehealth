@@ -8,16 +8,6 @@ modules:
     pagename: introduction
     video: intro.mp4
     background: intro.jpeg
-    before-beginning:
-      - link: http://google.com
-        link-text: Link
-        text: textext
-      - link: http://google.com
-        link-text: Link
-        text: textext
-      - link: http://google.com
-        link-text: Link
-        text: textext
   - name: Person Centered Care
     pagename: person-centered-care
     video: PatientCenteredCare-HHsmall.mp4

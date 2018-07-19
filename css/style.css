@@ -179,9 +179,9 @@ body {
   background-color: #fff;
   width: 34px;
   height: 200px;
-  position: absolute;
+  position: fixed;
   right: 0px;
-  top: 100%;
+  top: 40%;
   overflow: hidden;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
