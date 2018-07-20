@@ -6,7 +6,7 @@ title: modules
 modules:
   - name: Introduction
     pagename: introduction
-    video: intro.mp4
+    video: intro-HHsmall.mp4
     background: intro.jpeg
   - name: Person Centered Care
     pagename: person-centered-care
@@ -24,7 +24,7 @@ modules:
         text: textext
   - name: Wound Care
     pagename: wound-care
-    video: wound.mp4
+    video: wound-HHsmall.mp4
     background: wound.jpeg
     before-beginning:
       - link: http://google.com
@@ -38,7 +38,7 @@ modules:
         text: textext
   - name: IV Therapy
     pagename: iv-therapy
-    video: IV.mp4
+    video: IV-HHsmall.mp4
     background: iv.jpeg
     before-beginning:
       - link: http://google.com
