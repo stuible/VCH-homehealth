@@ -5,16 +5,16 @@ video: CaseStudy1-HHsmall.mp4
 background: intro.jpeg
 
 objectives:
-  - objective: Learners will analyze the components of primary health care, and beliefs/values of community health nurses
+  - objective: Learners will analyze the components of primary health care
     application: Identifies differences between community heath settings and acute/residential practice settings
 
-  - objective: Learners will analyze how social determinants of health affect clients
+  - objective: Learners will differentiate between hazards and risks and potential mitigation strategies
     application: Adapts nursing practice to address unique health care needs of diverse HH clients.
     
-  - objective: Learners will apply principles of autonomy to foster critical thinking in home health nursing practice
+  - objective: Learners will identify diverse practice settings
     application: Provides professional safe, competent, and ethical care when working autonomously or with multiples stakeholders in home/community setting.
 
-  - objective: Learners will perform safe and effective nursing care in diverse home health practice settings
+  - objective: Learners will reflect on the role of the community health nurse, their role within the interprofessional team and ways of team communication
     application: Demonstrates the ability to focus on providing care in multiple home environments and settings with potential for multiples distractions and interruptions (e.g. noisy, multiples family members interrupting, pets, other hazards).
 
 cases:
