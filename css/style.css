@@ -116,7 +116,8 @@ body {
   .menu-name :hover {
     opacity: 1; }
   .menu-name a {
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: capitalize; }
 
 .menu-support {
   float: right;
