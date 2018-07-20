@@ -57,7 +57,7 @@ body {
   z-index: 11;
   font-weight: 400; }
   .menubar a {
-    color: #ffffff; }
+    color: unset; }
 
 .menu {
   /* position: absolute; */
@@ -134,6 +134,20 @@ body {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px; }
+
+.vex-dialog-message {
+  text-align: center;
+  font-size: 25px;
+  border-bottom: solid #5AAF7F 5px;
+  padding-bottom: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 25px; }
+
+.vex-custom-field-wrapper {
+  margin-bottom: 25px; }
 
 .accordion-icon {
   float: right;
