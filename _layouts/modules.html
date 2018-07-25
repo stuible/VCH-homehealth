@@ -28,7 +28,7 @@
                                 </div></a>
                                 {% if item.before-beginning %}
                                 <div class="module-button-container">
-                                    <a data-href="{{site.baseurl}}/modules/{{ item.pagename }}" class="button more-info-button before-begin-button" data-content='{{ item.before-beginning | json_parse }}'>Before I Begin</a>
+                                    <a data-href="{{site.baseurl}}/modules/{{ item.pagename }}" class="button more-info-button before-begin-button" data-content='{{ item.before-beginning | jsonify }}'>Before I Begin</a>
                                 </div>
                                 {% endif %}
                                 

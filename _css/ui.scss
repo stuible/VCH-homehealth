@@ -10,15 +10,30 @@
 .vex-dialog-message {
     text-align: center;
     font-size: 25px;
-    border-bottom: solid #5AAF7F 5px;
+    border-bottom: solid #5AAF7F 3px;
     padding-bottom: 5px;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 25px;
 }
 
 .vex-custom-field-wrapper {
     margin-bottom: 25px;
+}
+
+.vex-custom-field-wrapper a{
+    cursor: pointer;
+}
+
+.vex-duration{
+    margin-top: 25px;
+    color: #838383;
+    font-size: 0.8em;
+}
+
+.vex-title{
+    color: #000;
+    font-weight: 700;
+    // font-size: 1px;
 }
 
 .accordion-icon {

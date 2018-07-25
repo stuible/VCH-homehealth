@@ -86,33 +86,25 @@ function instantiateSlider() {
     vex.dialog.buttons.NO.text = 'Cancel'
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
-      var content = $(this).data('content');
-      // var json = JSON.parse($(this).data('content'));
+      var prereqs = $(this).data('content');
 
-      // for (prereq in json)
-      // {
-      //   console.log(content[prereq].title);
-      // }
+      console.log(prereqs);
+
+
+      var beforeBeginningHTML = '<div class="vex-custom-field-wrapper">';
+      for (prereq in prereqs)
+      {
+        beforeBeginningHTML += '<div class="vex-duration">' + prereqs[prereq].duration +'</div>';
+        beforeBeginningHTML += '<a href="' + prereqs[prereq].link +'" class="vex-title">' + prereqs[prereq].linktext +'</a>';
+        beforeBeginningHTML += '<div class="vex-custom-input-wrapper">';
+        beforeBeginningHTML += '<div class="vex-notes">' + prereqs[prereq].text +'</div>';
+        beforeBeginningHTML += '</div>';
+      }
+      beforeBeginningHTML += '</div>';
 
       vex.dialog.open({
         message: 'Before I Begin',
-        input: [
-          '<div class="vex-custom-field-wrapper">',
-          '<label for="date">Clinical Care Plan e-learning</label>',
-          '<div class="vex-custom-input-wrapper">',
-          '(6 modules)',
-          '</div>',
-          '</div>',
-          '<div class="vex-custom-field-wrapper">',
-          '<label for="color">Wound Management</label>',
-          '<div class="vex-custom-input-wrapper">',
-          'Online x 4 modules (6 modules)',
-          '</div>',
-          '<div class="vex-custom-input-wrapper">',
-          '(If unable to use direct links to any of the wound management, please use CLWK website',
-          '</div>',
-          '</div>'
-        ].join(''),
+        input: beforeBeginningHTML,
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, {
             text: 'Begin',
