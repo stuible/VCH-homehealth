@@ -21,6 +21,7 @@ const siteRoot = '_site';
 
 var jsSources = [
     jsFiles + 'barba.js',
+    jsFiles + 'cookies.js',
     jsFiles + 'modules.js',
     jsFiles + 'module.js',
     jsFiles + 'branching.js',

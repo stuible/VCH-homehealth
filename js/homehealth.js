@@ -1,5 +1,7 @@
 $().ready(function () {
 
+  if(Cookies.get(progressCookieName) === undefined) createProgress();
+
       //Enable lazy loading
       // $('.lazy').Lazy({
       //   // your configuration goes here
@@ -241,13 +243,54 @@ function setBreadcrumbs(containerEl){
       
     });
 }
-//Functions for instantiating main Modules Carousel Page
+var progressCookieName = 'module-progress';
 
-$().ready(function () {   
-  
-});
+function getProgress(){
+    return Cookies.getJSON(progressCookieName); // => { foo: 'bar' }
+}
+function updateProgress(modulename, component, element, status){
+    var object = Cookies.getJSON(progressCookieName);
+    object[modulename].components[component].element[element].status = status;
+    return object;
+    Cookies.set(progressCookieName, object);
+}
+
+function createProgress(){
+    
+    var pcc = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    var wound = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    
+
+    var progress = {'pcc' : pcc, 'wound' : wound };
+    Cookies.set(progressCookieName, progress);
+}
+
+function module(components)
+{
+   this.components=components;
+}
+function component(element){
+    this.element=element;
+}
+function element(status){
+    this.status=status;
+}
+//Functions for instantiating main Modules Carousel Page
+var introInstantiated = false;
 
 function instantiateSlider() {
+
+  if(introInstantiated !== true){
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -323,7 +366,14 @@ function instantiateSlider() {
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
     });
-  
+    
+      instantiatePopups();
+      introInstantiated = true;
+    }
+    
+  }
+
+  function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
     vex.dialog.buttons.YES.text = 'Begin'
     vex.dialog.buttons.NO.text = 'Cancel'
@@ -379,7 +429,6 @@ function instantiateSlider() {
         // }
       });
     });
-  
   }
 //functions for instantiating Introdunction and individual module pages
 
@@ -442,7 +491,45 @@ function instantiateModule() {
     });
 }
 
+function getProgress(){
+    return Cookies.getJSON('module-progress'); // => { foo: 'bar' }
+}
+function updateProgress(modulename, component, element, status){
+    var object = Cookies.getJSON('module-progress');
+    object[modulename].components[component].element[element].status = status;
+    return object;
+    // Cookies.set('module-progress', 'value');
+}
 
+function createProgress(){
+    var pcc = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    var wound = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    
+
+    var progress = {'pcc' : pcc, 'wound' : wound };
+    Cookies.set('module-progress', progress);
+}
+
+function module(components)
+{
+   this.components=components;
+}
+function component(element){
+    this.element=element;
+}
+function element(status){
+    this.status=status;
+}
 
 
 // $().ready(function() {

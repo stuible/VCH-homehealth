@@ -1,5 +1,7 @@
 $().ready(function () {
 
+  if(Cookies.get(progressCookieName) === undefined) createProgress();
+
       //Enable lazy loading
       // $('.lazy').Lazy({
       //   // your configuration goes here

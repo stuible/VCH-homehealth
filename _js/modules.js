@@ -1,10 +1,9 @@
 //Functions for instantiating main Modules Carousel Page
-
-$().ready(function () {   
-  
-});
+var introInstantiated = false;
 
 function instantiateSlider() {
+
+  if(introInstantiated !== true){
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -80,7 +79,14 @@ function instantiateSlider() {
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
     });
-  
+    
+      instantiatePopups();
+      introInstantiated = true;
+    }
+    
+  }
+
+  function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
     vex.dialog.buttons.YES.text = 'Begin'
     vex.dialog.buttons.NO.text = 'Cancel'
@@ -136,5 +142,4 @@ function instantiateSlider() {
         // }
       });
     });
-  
   }

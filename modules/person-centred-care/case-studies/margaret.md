@@ -12,7 +12,7 @@ background:
   - title: Diagnosis
     image: margaret/2.png
     text: Margaret was diagnosed a few years ago with ALS and is now developing increasing symptoms requiring more care. Her husband is abrupt in some of the communication with his wife and children and always feels tired. He is working fulltime and is now taking on more responsibilities with the children.
-  - title: Pains
+  - title: Concerns
     image: margaret/3.png
     text: Margaret is afraid of how the symptoms will develop and is really upset about her diagnosis. She feels like she is losing control physically and mentally, and cries often when she alone. Margaret wants to be a good wife, mother and take care of the family, but is not able to fulfill these roles. She is starting to get a pressure sore on her coccyx from sitting for long periods. She is having harder time with swallowing and occasionally panics that she cannot breathe. Pain is also starting to be an issue, as it gets worse the more she stays in one position because her limbs and joints get stiff. She is now experiencing urinary retention and may require a foley catheter. Margaret has been seeing a traditional Chinese medicine practitioner who does acupuncture and supplies traditional Chinese medicine to cure her disease.
 

@@ -59,7 +59,45 @@ function instantiateModule() {
     });
 }
 
+function getProgress(){
+    return Cookies.getJSON('module-progress'); // => { foo: 'bar' }
+}
+function updateProgress(modulename, component, element, status){
+    var object = Cookies.getJSON('module-progress');
+    object[modulename].components[component].element[element].status = status;
+    return object;
+    // Cookies.set('module-progress', 'value');
+}
 
+function createProgress(){
+    var pcc = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    var wound = new module({
+        'more-on-topic' : new component({
+            'holistic' : new element(false),
+            'olderadult' : new element(false),
+        }
+    )});
+    
+
+    var progress = {'pcc' : pcc, 'wound' : wound };
+    Cookies.set('module-progress', progress);
+}
+
+function module(components)
+{
+   this.components=components;
+}
+function component(element){
+    this.element=element;
+}
+function element(status){
+    this.status=status;
+}
 
 
 // $().ready(function() {
