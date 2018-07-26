@@ -100,6 +100,16 @@
                       //  }); 
             }
         </script>
+        <script>
+        //Script to add module names to array for cookie creation
+        var modules = [];
+        {% assign modules_page = site.pages | where: 'layout', 'modules' %}
+
+
+        {% for item in modules_page.first.modules %}
+        modules.push("{{ item.name | downcase | replace: " ", "" | replace: "-", "" }}");
+        {% endfor %}
+        </script>
         {% assign pageurl_first_char = page.url | split: '' | first %}
         {% assign pageurl = page.url %}
 
@@ -128,8 +138,13 @@
 
         {% assign breadcrumb_text_json = breadcrumb_text_array | jsonify %}
         {% assign breadcrumb_url_json = breadcrumb_url_array | jsonify %}
+
+
+        {% assign prevIndex = breadcrumb_text_array.size | minus: 2 %}
+        {% assign module_parent = breadcrumb_text_array[prevIndex] | downcase | replace: " ", "" | replace: "-", ""%}
             
         {% comment %}{% raw %}
+        DOES NOTHING JUST A COMMENT
         {{ breadcrumb_text_array | size | prepend: 'text array size: ' }}<br>
         {{ pageurl_array | size | prepend: 'page url array size: ' }}<br>
         {{ breadcrumb_url_array | size | prepend: 'url array size: ' }}<br>

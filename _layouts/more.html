@@ -10,7 +10,7 @@ layout: more
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container" data-namespace="more-on-topic" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+        <div class="barba-container" data-namespace="more-on-topic" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}' data-module-parent='{{module_parent}}' data-name='{{ page.title | downcase | replace: " ", "" | replace: "-", ""}}'>
             <div class="center-align container more-title">{{ page.title }}</div>
             {% for section in page.sections %}
                 <section class="more-section">

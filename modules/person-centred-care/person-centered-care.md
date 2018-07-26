@@ -1,5 +1,6 @@
 --- 
 layout: module
+title: Person Centered Care
 permalink: "/modules/person-centered-care/"
 background: personcenteredcare.jpeg
 
@@ -34,7 +35,7 @@ more:
   - title: Holistic Care
     image: hands.jpg
     url: holistic
-  - title: Older Adult Care
+  - title: Care of an Older Adult
     image: lady.jpg
     url: older-adult
   - title: Chronic Conditions

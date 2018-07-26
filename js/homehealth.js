@@ -64,6 +64,7 @@ var moduleView = Barba.BaseView.extend({
   },
   onEnterCompleted: function () {
     setBackground($('.barba-container').data('background'));
+    updateMoreOnTopicUI();
   }
 });
 
@@ -76,6 +77,9 @@ var moreView = Barba.BaseView.extend({
       instantiateMore();
       lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  },
+  onEnterCompleted: function () {
+    updateProgress($('.barba-container').data('module-parent'), 'more-on-topic', $('.barba-container').data('name'), true);
   }
 });
 
@@ -245,33 +249,57 @@ function setBreadcrumbs(containerEl){
 }
 var progressCookieName = 'module-progress';
 
-function getProgress(){
-    return Cookies.getJSON(progressCookieName); // => { foo: 'bar' }
+function getProgress(modulename, component, element){
+
+    var object = Cookies.getJSON(progressCookieName);
+
+    if (component === undefined){
+        return object[modulename];
+    }
+    else if (element === undefined){
+        return object[modulename].components[component];
+    }
+    else {
+        return object[modulename].components[component].element[element].status;
+    }
 }
+
 function updateProgress(modulename, component, element, status){
     var object = Cookies.getJSON(progressCookieName);
     object[modulename].components[component].element[element].status = status;
-    return object;
     Cookies.set(progressCookieName, object);
+    return object;
 }
 
+//Set up cookie "Schema"
 function createProgress(){
-    
-    var pcc = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
-        }
-    )});
-    var wound = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
-        }
-    )});
-    
 
-    var progress = {'pcc' : pcc, 'wound' : wound };
+    var progress = {};
+
+    for (var i = 0; i < modules.length; i++) {
+        
+        progress[modules[i]] = new module({
+            'objectives' : new component({
+                'objectives' : new element(false),
+            }),
+            'case-study' : new component({
+                'margret' : new element(false),
+                'franny' : new element(false),
+                'luigi' : new element(false),
+                'agit' : new element(false),
+            }),
+            'more-on-topic' : new component({
+                'holisticcare' : new element(false),
+                'careofanolderadult' : new element(false),
+                'chronicconditions' : new element(false),
+                'careplanning' : new element(false),
+                'deliverables&quiz' : new element(false),
+            })
+    });
+
+    }
+
+    // var progress = {'pcc' : pcc, 'wound' : wound };
     Cookies.set(progressCookieName, progress);
 }
 
@@ -491,44 +519,14 @@ function instantiateModule() {
     });
 }
 
-function getProgress(){
-    return Cookies.getJSON('module-progress'); // => { foo: 'bar' }
-}
-function updateProgress(modulename, component, element, status){
-    var object = Cookies.getJSON('module-progress');
-    object[modulename].components[component].element[element].status = status;
-    return object;
-    // Cookies.set('module-progress', 'value');
-}
-
-function createProgress(){
-    var pcc = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
+function updateMoreOnTopicUI(){
+    $('.more-on-topic').each(function(){
+        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name')));
+        if(getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))){
+            $(this).children('.narrative-name').css('background-color', "blue");
         }
-    )});
-    var wound = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
-        }
-    )});
-    
-
-    var progress = {'pcc' : pcc, 'wound' : wound };
-    Cookies.set('module-progress', progress);
-}
-
-function module(components)
-{
-   this.components=components;
-}
-function component(element){
-    this.element=element;
-}
-function element(status){
-    this.status=status;
+        
+    });
 }
 
 

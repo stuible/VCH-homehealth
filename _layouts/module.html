@@ -10,7 +10,11 @@ layout: module
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container" data-namespace="module" data-background="{{site.baseurl}}/image/modules/{{ page.background }}" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+        <div class="barba-container"    data-namespace="module" 
+                                        data-background="{{site.baseurl}}/image/modules/{{ page.background }}" 
+                                        data-nav-text='{{ breadcrumb_text_json }}' 
+                                        data-nav-url='{{ breadcrumb_url_json }}'
+                                        data-module="{{ page.title | downcase | replace: " ", "" | replace: "-", "" }}">
             <!-- Swiper -->
             <div class="module-swiper-container">
                     <div class="swiper-wrapper">
@@ -18,11 +22,6 @@ layout: module
                             <div class="container">
                                 <div class="course-objectives row">
                                     <div class="objectives-title">Objectives</div>
-                                    <!--<div class="row objective-row">
-                                                <div class="six columns lobjectives-title">
-                                                    Learning Objectives
-                                                </div>
-                                            </div>-->
 
                                     <div class="row objective-row">
                                     {% for objective in page.objectives %}
@@ -83,7 +82,7 @@ layout: module
                                                     <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
                                                     <div class="more-on-topic-name">{{ item.title }}</div>
                                                 </a>-->
-                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
+                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.title | downcase | replace: " ", "" | replace: "-", ""}}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.title }}</div>
                                                     </a>

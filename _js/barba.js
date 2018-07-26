@@ -64,6 +64,7 @@ var moduleView = Barba.BaseView.extend({
   },
   onEnterCompleted: function () {
     setBackground($('.barba-container').data('background'));
+    updateMoreOnTopicUI();
   }
 });
 
@@ -76,6 +77,9 @@ var moreView = Barba.BaseView.extend({
       instantiateMore();
       lightBackground(true);
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  },
+  onEnterCompleted: function () {
+    updateProgress($('.barba-container').data('module-parent'), 'more-on-topic', $('.barba-container').data('name'), true);
   }
 });
 

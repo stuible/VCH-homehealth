@@ -59,44 +59,14 @@ function instantiateModule() {
     });
 }
 
-function getProgress(){
-    return Cookies.getJSON('module-progress'); // => { foo: 'bar' }
-}
-function updateProgress(modulename, component, element, status){
-    var object = Cookies.getJSON('module-progress');
-    object[modulename].components[component].element[element].status = status;
-    return object;
-    // Cookies.set('module-progress', 'value');
-}
-
-function createProgress(){
-    var pcc = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
+function updateMoreOnTopicUI(){
+    $('.more-on-topic').each(function(){
+        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name')));
+        if(getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))){
+            $(this).children('.narrative-name').css('background-color', "blue");
         }
-    )});
-    var wound = new module({
-        'more-on-topic' : new component({
-            'holistic' : new element(false),
-            'olderadult' : new element(false),
-        }
-    )});
-    
-
-    var progress = {'pcc' : pcc, 'wound' : wound };
-    Cookies.set('module-progress', progress);
-}
-
-function module(components)
-{
-   this.components=components;
-}
-function component(element){
-    this.element=element;
-}
-function element(status){
-    this.status=status;
+        
+    });
 }
 
 
