@@ -49,7 +49,6 @@ function instantiateSlider() {
       if(currentPage == 'modules'){
         lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
-        // console.log($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
       
     });
@@ -79,7 +78,7 @@ function instantiateSlider() {
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
     });
-    
+
       instantiatePopups();
       introInstantiated = true;
     }

@@ -19,12 +19,13 @@ $().ready(function () {
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
     onEnter: function () {
-      darkBackground(true);
       instantiateSlider();
+      darkBackground(true);
+      
       $(".module-menu").attr("href", "#");
     },
     onEnterCompleted: function () {
-      // clearBackground();
+      
     }
 });
 
@@ -183,16 +184,15 @@ introduction.init();
   //Check to see if the page we're loading has swiper on it before trying to initialize
   Barba.Dispatcher.on('newPageReady', function (currentStatus, prevStatus, container) {
     var newpage = getLastPart(currentStatus.url.split("#")[0]);
+    introInstantiated = false;
     console.log('new page is being set to: ' + newpage);
     currentPage = newpage;
     // newpage = newpage.split("/").pop().replace(".html","");
     // initializeBranching(); 
     if (newpage == 'modules') {
-      // instantiateSlider();
       $(".module-menu").attr("href", "#");
     }
     else if (newpage == 'introduction') {
-      // instantiateIntro();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else if (newpage == 'person-centered-care' ||
@@ -201,7 +201,6 @@ introduction.init();
       newpage == 'iv-therapy' ||
       newpage == 'pallative-care') {
 
-      // instantiateModule();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
     }
     else {
@@ -209,8 +208,6 @@ introduction.init();
     }
 
     setBreadcrumbs(container);
-
-    //$(".menu-name").text(navText[0]);
 
   });
   
@@ -364,7 +361,6 @@ function instantiateSlider() {
       if(currentPage == 'modules'){
         lastmoduleSlide = $(mySwiper.slides[mySwiper.activeIndex]).data('hash');
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
-        // console.log($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
       
     });
@@ -394,7 +390,7 @@ function instantiateSlider() {
         setBackground($(mySwiper.slides[mySwiper.activeIndex]).data('background'));
       }
     });
-    
+
       instantiatePopups();
       introInstantiated = true;
     }
