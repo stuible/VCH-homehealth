@@ -67,19 +67,23 @@ $sectionTitleBoarderBottom: 5px;
         margin-top: 0px;
     }
 
+    .six.columns:nth-of-type(odd){
+        margin-left: 0px;
+    }
+
     &:nth-of-type(odd){
         background-color: #ffffff;
 
-        .more-left-title {
-            border-bottom: $sectionTitleBoarderBottom solid $primaryColour;
+        .more-subtitle {
+            border-bottom: 5px solid $primaryColour;
         }
     }
     &:nth-of-type(even){
         background-color: $primaryColour;
         color: #ffffff;
 
-        .more-left-title {
-            border-bottom: $sectionTitleBoarderBottom solid #ffffff;
+        .more-subtitle {
+            border-bottom: 5px solid #fff;
         }
     }
 }
