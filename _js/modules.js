@@ -15,7 +15,7 @@ function instantiateSlider() {
       // spaceBetween: '50',
       mousewheel: false,
       threshold: 20,
-      hashNavigation: true,
+      // hashNavigation: true,
       hashNavigation: {
         watchState: true,
         replaceState: true,
@@ -87,8 +87,8 @@ function instantiateSlider() {
 
   function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
-    vex.dialog.buttons.YES.text = 'Begin'
-    vex.dialog.buttons.NO.text = 'Cancel'
+    vex.dialog.buttons.YES.text = 'Begin';
+    vex.dialog.buttons.NO.text = 'Cancel';
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
       var prereqs = $(this).data('content');

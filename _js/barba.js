@@ -173,7 +173,7 @@ introduction.init();
     if ($(element).attr('href') && $(element).attr('href').indexOf('#') > -1)
       return true;
     else
-      return Barba.Pjax.originalPreventCheck(evt, element)
+      return Barba.Pjax.originalPreventCheck(evt, element);
   };
 
   Barba.Dispatcher.on('linkClicked', function (el) {
@@ -231,7 +231,7 @@ function setBreadcrumbs(containerEl){
     $(".menu-name").empty();
 
     jQuery.each(navText, function(i) {
-      var classText = ""
+      var classText = "";
       if(i == 0){
         classText = " class=\"module-menu\" ";
       }
