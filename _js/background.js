@@ -27,7 +27,7 @@ function lightBackground(menu){
 function setBackground(image, presence){
     presence = (presence !== undefined) ? presence : 'low';
     var currentBG = $( ".background" ).first().css('background-image');
-    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
+    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^/]+/, ''); //used to be replace(/^.*\/\/[^\/]+/, '')
 
     // console.log("Current Image: " + currentBG);
     // console.log("Future Image: " + image);
@@ -69,7 +69,7 @@ function setBackground(image, presence){
 function clearBackground(){
     showBackgroundImage = false;
     $(".background").stop( true, false ).fadeOut(function(){
-        $(this).css({"background-image":"unset"})
+        $(this).css({"background-image":"unset"});
     });
     $(".background").not(':last').remove();
 }
