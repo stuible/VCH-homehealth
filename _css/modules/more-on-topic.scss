@@ -6,40 +6,53 @@ $sectionTitlePaddingBottom: 5px;
 $sectionTitleBoarderBottom: 5px;
 
 .more-title{
-    font-size: 45px;
+    font-size: 4em;
     font-family: $serifFont;
 }
 
-.more-left-title {
-    font-size: 26px;
-    letter-spacing: 0.25px;
-    padding-bottom: $sectionTitlePaddingBottom;
-    margin-bottom: $sectionTitleMarginBottom;
-    height: $sectionTitleHeight;
-    font-family: $serifFont;
-}
-
-.more-left-text {
-    font-size: 16px;
+.more-subtitle {
+    font-size: 1.5em;
     font-weight: 400;
+    border-bottom: 5px solid $primaryColour;
+    width: fit-content;
     margin-bottom: 25px;
 }
 
-.more-right-text {
-    font-weight: 400;
-    margin-bottom: 25px;
+.more-text {
+    font-size: 1.15em;
+    // margin-bottom: 25px;
 }
 
-.more-right-title {
-    font-size: 24px;
-    font-family: $serifFont;
-    letter-spacing: 0.25px;
-    height: $sectionTitleHeight;
-    margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom - 2px;
-    padding-bottom: $sectionTitlePaddingBottom;
+// .more-left-title {
+//     font-size: 26px;
+//     letter-spacing: 0.25px;
+//     padding-bottom: $sectionTitlePaddingBottom;
+//     margin-bottom: $sectionTitleMarginBottom;
+//     height: $sectionTitleHeight;
+//     font-family: $serifFont;
+// }
 
-    padding-top: 2px;
-}
+// .more-left-text {
+//     font-size: 16px;
+//     font-weight: 400;
+//     margin-bottom: 25px;
+// }
+
+// .more-right-text {
+//     font-weight: 400;
+//     margin-bottom: 25px;
+// }
+
+// .more-right-title {
+//     font-size: 24px;
+//     font-family: $serifFont;
+//     letter-spacing: 0.25px;
+//     height: $sectionTitleHeight;
+//     margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom - 2px;
+//     padding-bottom: $sectionTitlePaddingBottom;
+
+//     padding-top: 2px;
+// }
 
 .more-questions {
     font-size: 24px;
@@ -72,19 +85,29 @@ $sectionTitleBoarderBottom: 5px;
 }
 
 //Circles
-.more-circle-container{
-    display: inline-block;
-    // width: 10px;
+.more-circles {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-// Small Circles
-.more-small-circle {
-    height: 75px;
-    width: 75px;
-    background-color: bisque;
+.more-circle-container{
+    // width: 10px;
+    flex: 1; 
+    text-align: center;
+}
+
+.more-circle {
+    margin: 0 auto;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 75%;
+    height: auto;
+}
+
+.more-circle-text {
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
 }
 
 .more-small-circle-container {
@@ -93,7 +116,7 @@ $sectionTitleBoarderBottom: 5px;
     margin-bottom: 15px;
 }
 
-.more-small-circle-text{
+.more-small-text{
     text-align: center;
     margin-top: 5px;
 }

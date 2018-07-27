@@ -13,7 +13,7 @@ module Jekyll
 
       if type == 'title'
         output = %Q[
-          <div class="more-title #{size}">
+          <div class="more-subtitle #{size}">
             #{text}
           </div>
         ]
@@ -31,7 +31,7 @@ module Jekyll
           element.each {|key, value| 
           output << %Q[
             <div class="more-circle-container">
-              <div class="more-circle"><img src="image/#{value}"></div>
+              <img class="more-circle" src="/image/#{value}">
                 <div class="more-circle-text">
                 #{key}
               </div>

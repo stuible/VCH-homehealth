@@ -18,7 +18,14 @@ layout: more
                         {% for part in section.section %}
 
                             {% if part.part == 'half' %}
+
+                            {% if forloop.first %}
                             <div class="five columns">
+                            {% else %}
+                            <div class="five columns margin top fifty">
+                            {% endif %}
+                            
+                            
                                 {% for component in part %}
 
                                     {% MoreInfoComponent 
@@ -31,7 +38,13 @@ layout: more
                             {% endif %}
 
                             {% if part.part == 'full' %}
+
+                            {% if forloop.first %}
                             <div class="twelve columns">
+                            {% else %}
+                            <div class="twelve columns margin top fifty">
+                            {% endif %}
+
                                 {% for component in part %}
 
                                 {% MoreInfoComponent 

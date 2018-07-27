@@ -6,22 +6,21 @@ title: Holistic Care
 sections:
   - section:
 
-    - part: half
+    - part: full
       title: Holistic Assessment
-      text: Part of person centred care is assessing the person as a whole.  This includes not only assessing them physically but all aspects including
-      # circles: [ 'Emotional', 'Spiritual', 'Cultural',  'Cognitive', 'Development', 'Environmental', 'Social']
+      text: "Part of person centred care is assessing the person as a whole.  This includes not only assessing them physically but all aspects including:"
 
     - part: full
       circles:
-        - Emotional: image.jpeg
-        - Spiritual: image.jpeg
-        - Cultural: image.jpeg
-        - Cognitive: image.jpeg
-        - Development: image.jpeg
-        - Environmental: image.jpeg
-        - Social: image.jpeg
+        - Emotional: modules/pcc/more-on-topic/holistic/emotion.png
+        - Spiritual: modules/pcc/more-on-topic/holistic/spiritual.png
+        - Cultural: modules/pcc/more-on-topic/holistic/cultural.png
+        - Cognitive: modules/pcc/more-on-topic/holistic/cognitive.png
+        - Development: modules/pcc/more-on-topic/holistic/deleopment.png
+        - Environmental: modules/pcc/more-on-topic/holistic/enviromental.png
+        - Social: modules/pcc/more-on-topic/holistic/social.png
 
-    - part: half
+    - part: full
       title: Reflection
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
       questions: ['How did you feel?', 'What were the ramifications?']
