@@ -20,25 +20,32 @@ sections:
         - Environmental: modules/pcc/more-on-topic/holistic/enviromental.png
         - Social: modules/pcc/more-on-topic/holistic/social.png
 
-    - part: full
+    - part: half
       title: Reflection
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
-      questions: ['How did you feel?', 'What were the ramifications?']
 
-    - part: full
-      text: test
+    - part: half
+      questions: ['How did you feel?', 'What were the ramifications?']
 
   
   - section:
 
     - part: half
       title: Cultural Connection
-      text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients. 
+      text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
+      # title: Personal Reflection
+      # text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
     - part: half
+      # title: Personal Reflection
+      # text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
+      video: sample.mp4
+
+    - part: half
+      # title: Cultural Connection
+      # text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
       title: Personal Reflection
       text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
-      video: sample.mp4
 
 
   - section:

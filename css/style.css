@@ -965,15 +965,17 @@ body {
   padding-bottom: 50px; }
   .more-section .container {
     margin-top: 0px; }
+  .more-section .six.columns:nth-of-type(odd) {
+    margin-left: 0px; }
   .more-section:nth-of-type(odd) {
     background-color: #ffffff; }
-    .more-section:nth-of-type(odd) .more-left-title {
+    .more-section:nth-of-type(odd) .more-subtitle {
       border-bottom: 5px solid #5AAF7F; }
   .more-section:nth-of-type(even) {
     background-color: #5AAF7F;
     color: #ffffff; }
-    .more-section:nth-of-type(even) .more-left-title {
-      border-bottom: 5px solid #ffffff; }
+    .more-section:nth-of-type(even) .more-subtitle {
+      border-bottom: 5px solid #fff; }
 
 .more-circles {
   display: -webkit-box;
