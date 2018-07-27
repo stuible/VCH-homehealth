@@ -42,12 +42,14 @@
     <script href="{{site.baseurl}}/library/polyfill/calc.min.js" type="text/javascript"></script>
 
     <script>
+            
             //Script to add module names to array for cookie creation
             var modules = [];
             {% assign modules_page = site.pages | where: 'layout', 'modules' %}
             {% for item in modules_page.first.modules %}
             modules.push("{{ item.name | downcase | replace: " ", "" | replace: "-", "" }}");
             {% endfor %}
+            /* eslint-enable */
     </script>
 
     {% if site.use-minified != true %}

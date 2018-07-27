@@ -1,7 +1,7 @@
 ---
 layout: more
 permalink: "/modules/person-centered-care/older-adult/"
-title: Care of an Older Adult
+title: Care of Older Adults
 
 sections:
   - section:

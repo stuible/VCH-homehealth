@@ -22,6 +22,9 @@ module.exports = {
         "no-console": ["warn"],
         
     },
+    "plugins": [
+        "html"
+    ]
     // "globals": {
     //     "Barba": false,
     //     "Cookies": false,

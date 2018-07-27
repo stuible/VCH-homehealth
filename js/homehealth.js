@@ -670,6 +670,7 @@ function instantiateMore() {
 }
 //Global variable that states whaether or not a backgorund image should be displayed
 var showBackgroundImage = false;
+var menuIsLight = true;
 
 //Function for changing the Homehealth background during async page loads
 function darkBackground(menu){
@@ -728,11 +729,6 @@ function setBackground(image, presence){
     else {
         // console.log('correct image already set, chill out');
     }
-
-    
-    
-    
-    // $('.background').css({"background-image":"url(" + image +")"});
     
 }
 
@@ -747,6 +743,7 @@ function clearBackground(){
 function lightMenu(){
     $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
     $(".menu-icon").children().children().children().attr("stroke","#fff");
+    menuIsLight = true;
     // if(allRects){
     //     allRects.animate({ stroke: "#fff" }, 500);
     // }
@@ -756,6 +753,7 @@ function lightMenu(){
 function darkMenu(){
     $('.menubar, .menubar a').animate({color: '#000'}, 'z');
     $(".menu-icon").children().children().children().attr("stroke","#000");
+    menuIsLight = false;
     // if(allRects){
     //     allRects.animate({ stroke: "#000" }, 500);
     // }

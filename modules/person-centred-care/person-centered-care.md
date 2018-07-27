@@ -18,9 +18,9 @@ objectives:
     application: Develops mutually agreed upon care plans with associated interventions that are clients specific and individualized.
 
 cases:
-  - name: Margaret
+  - name: May
     image: MargaretPortrait2.jpeg
-    url: margaret
+    url: may
   - name: Franny
     image: FrannyPortrait.jpeg
     url: franny
@@ -35,16 +35,16 @@ more:
   - title: Holistic Care
     image: hands.jpg
     url: holistic
-  - title: Care of an Older Adult
+  - title: Care of Older Adults
     image: lady.jpg
     url: older-adult
   - title: Chronic Conditions
     image: pills.jpg
     url: chronic
-  - title: Care Planning
+  - title: Med Management
     image: plan.jpg
     url: care
-  - title: Deliverables & Quiz
+  - title: Deliverables
     image: plan.jpg
     url: deliverables
 ---

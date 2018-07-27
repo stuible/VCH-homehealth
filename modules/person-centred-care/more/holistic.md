@@ -33,17 +33,11 @@ sections:
     - part: half
       title: Cultural Connection
       text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
-      # title: Personal Reflection
-      # text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
     - part: half
-      # title: Personal Reflection
-      # text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
-      video: sample.mp4
+      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
 
     - part: half
-      # title: Cultural Connection
-      # text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
       title: Personal Reflection
       text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
@@ -57,6 +51,14 @@ sections:
     - part: half
       title: Action
       text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
+      quiz: caregiverexperience
 
+caregiverexperience:
+  type: multiple choice
+  questions:
+    - question:
+      correct: false
+    - questions:
+      correct: true
 
 ---
