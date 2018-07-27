@@ -17,39 +17,26 @@ layout: more
                     <div class="container">
                         {% for part in section.section %}
 
-                            {% if part.part == 'left' %}
+                            {% if part.part == 'half' %}
                             <div class="five columns">
                                 {% for component in part %}
 
                                     {% MoreInfoComponent 
                                         type: component[0] 
-                                        side: part.part 
+                                        size: part.part 
                                         text: component[1] %}
 
                                 {% endfor %}
                             </div>
                             {% endif %}
 
-                            {% if part.part == 'right' %}
-                            <div class="five columns offset-by-one">
-                                    {% for component in part %}
-
-                                        {% MoreInfoComponent 
-                                            type: component[0] 
-                                            side: part.part 
-                                            text: component[1] %}
-
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-
                             {% if part.part == 'full' %}
                             <div class="twelve columns">
-                                {% for components in part %}
+                                {% for component in part %}
 
                                 {% MoreInfoComponent 
                                     type: component[0] 
-                                    side: part.part 
+                                    size: part.part 
                                     text: component[1] %}
 
                                 {% endfor %}

@@ -173,7 +173,7 @@ introduction.init();
     if ($(element).attr('href') && $(element).attr('href').indexOf('#') > -1)
       return true;
     else
-      return Barba.Pjax.originalPreventCheck(evt, element)
+      return Barba.Pjax.originalPreventCheck(evt, element);
   };
 
   Barba.Dispatcher.on('linkClicked', function (el) {
@@ -231,7 +231,7 @@ function setBreadcrumbs(containerEl){
     $(".menu-name").empty();
 
     jQuery.each(navText, function(i) {
-      var classText = ""
+      var classText = "";
       if(i == 0){
         classText = " class=\"module-menu\" ";
       }
@@ -327,7 +327,7 @@ function instantiateSlider() {
       // spaceBetween: '50',
       mousewheel: false,
       threshold: 20,
-      hashNavigation: true,
+      // hashNavigation: true,
       hashNavigation: {
         watchState: true,
         replaceState: true,
@@ -399,8 +399,8 @@ function instantiateSlider() {
 
   function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
-    vex.dialog.buttons.YES.text = 'Begin'
-    vex.dialog.buttons.NO.text = 'Cancel'
+    vex.dialog.buttons.YES.text = 'Begin';
+    vex.dialog.buttons.NO.text = 'Cancel';
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
       var prereqs = $(this).data('content');
@@ -697,7 +697,7 @@ function lightBackground(menu){
 function setBackground(image, presence){
     presence = (presence !== undefined) ? presence : 'low';
     var currentBG = $( ".background" ).first().css('background-image');
-    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^\/]+/, '');
+    currentBG = currentBG.replace('url("','').replace('")','').replace(/^.*\/\/[^/]+/, ''); //used to be replace(/^.*\/\/[^\/]+/, '')
 
     // console.log("Current Image: " + currentBG);
     // console.log("Future Image: " + image);
@@ -739,7 +739,7 @@ function setBackground(image, presence){
 function clearBackground(){
     showBackgroundImage = false;
     $(".background").stop( true, false ).fadeOut(function(){
-        $(this).css({"background-image":"unset"})
+        $(this).css({"background-image":"unset"});
     });
     $(".background").not(':last').remove();
 }

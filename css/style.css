@@ -989,6 +989,9 @@ body {
     .more-section:nth-of-type(even) .more-left-title {
       border-bottom: 5px solid #ffffff; }
 
+.more-circle-container {
+  display: inline-block; }
+
 .more-small-circle {
   height: 75px;
   width: 75px;

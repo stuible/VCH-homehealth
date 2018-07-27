@@ -6,36 +6,41 @@ module Jekyll
       # Declare props as variables
       # Not necessary, but highly recommended
       type = @props["type"]
-      side = @props["side"]
+      size = @props["size"]
       text = @props["text"]
 
       output = ''
 
       if type == 'title'
         output = %Q[
-          <div class="more-#{side}-title">
+          <div class="more-title #{size}">
             #{text}
           </div>
         ]
+
       elsif type == 'text'
         output = %Q[
-          <div class="more-#{side}-text">
+          <div class="more-text #{size}">
             #{text}
           </div>
         ]
+
       elsif type == 'circles'
-        output = %Q[<div class="more-small-circles">]
+        output = %Q[<div class="more-circles #{size}">]
         for element in text do
+          element.each {|key, value| 
           output << %Q[
-            <div class="more-small-circle-container">
-              <div class="more-small-circle"></div>
-                <div class="more-small-circle-text">
-                #{element}
+            <div class="more-circle-container">
+              <div class="more-circle"><img src="image/#{value}"></div>
+                <div class="more-circle-text">
+                #{key}
               </div>
             </div>
           ]
+        }
         end
         output << %Q[</div>]
+
       elsif type == 'questions'
         output = %Q[<div class="more-questions">]
         for element in text do
@@ -46,6 +51,7 @@ module Jekyll
           ]
         end
         output << %Q[</div>]
+
       elsif type == 'video'
         output = %Q[
           <div class="more-video">
