@@ -1,23 +1,23 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
-const concat = require('gulp-concat');
-const sass = require('gulp-sass');
-const child = require('child_process');
-const gutil = require('gulp-util');
+var concat = require('gulp-concat');
+var sass = require('gulp-sass');
+var child = require('child_process');
+var gutil = require('gulp-util');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
-const autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 // const imagemin = require('gulp-imagemin');
 // var gm = require('gulp-gm');
 // var newer = require('gulp-newer');
 
 
-const cssFiles = '_css/**/*.?(s)css';
-const jsFiles = '_js/';
-const imageFiles = '_image/**/**/*.*';
-const siteRoot = '_site';
+var cssFiles = '_css/**/*.?(s)css';
+var jsFiles = '_js/';
+var imageFiles = '_image/**/**/*.*';
+var siteRoot = '_site';
 
 var jsSources = [
     jsFiles + 'barba.js',
@@ -38,7 +38,7 @@ var jsSources = [
 // gulp.task('build', shell.task(['bundle exec jekyll serve --force_polling']));
 
 //CSS Concatonation
-gulp.task('css', () => {
+gulp.task('css', function() {
     gulp.src(cssFiles)
         .pipe(sass({outputStyle: 'nested'}))
         .pipe(concat('style.css'))
@@ -49,10 +49,10 @@ gulp.task('css', () => {
         .pipe(gulp.dest('css'))
         .pipe(rename('style.min.css'))
         .pipe(csso())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('css'));
   });
 
-gulp.task('js', () => {
+gulp.task('js', function() {
     gulp.src(jsSources)
         .pipe(concat('homehealth.js'))
         .pipe(gulp.dest('js'))
@@ -73,25 +73,25 @@ gulp.task('js', () => {
 // );
 
 
-gulp.task('jekyll', () => {
-    const jekyll = child.spawn('jekyll', ['build',
+gulp.task('jekyll', function() {
+    var jekyll = child.spawn('jekyll', ['build',
       '--watch',
       '--incremental',
       '--drafts',
       // '--config _config.yml,dev.config.yml'
     ]);
   
-    const jekyllLogger = (buffer) => {
+    var jekyllLogger = function(buffer) {
       buffer.toString()
         .split(/\n/)
-        .forEach((message) => gutil.log('Jekyll: ' + message));
+        .forEach(function(message){ gutil.log('Jekyll: ' + message);});
     };
   
     jekyll.stdout.on('data', jekyllLogger);
     jekyll.stderr.on('data', jekyllLogger);
   });
 
-  gulp.task('serve', () => {
+  gulp.task('serve', function() {
     browserSync.init({
       files: [siteRoot + '/**'],
       port: 4000,
