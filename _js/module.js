@@ -32,6 +32,11 @@ function instantiateIntro() {
             el: '.swiper-pagination',
             clickable: true,
         },
+        on: {
+            init: function () {
+                $('.module-swiper-container').addClass('initialized');
+            },
+          },
     });
 }
 
@@ -56,6 +61,11 @@ function instantiateModule() {
             el: '.swiper-pagination',
             clickable: true,
         },
+        on: {
+            init: function () {
+                $('.module-swiper-container').addClass('initialized');
+            },
+          },
     });
 }
 

@@ -78,10 +78,6 @@ layout: module
                                                         More On This Topic
                                                 </div>
                                             {% for item in page.more %}
-                                                <!--<a class="more-on-topic" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
-                                                    <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
-                                                    <div class="more-on-topic-name">{{ item.title }}</div>
-                                                </a>-->
                                                 <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.title | downcase | replace: " ", "" | replace: "-", ""}}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="narrative-name">{{ item.title }}</div>

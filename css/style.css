@@ -553,7 +553,14 @@ body {
 
 .module-swiper-container {
   max-height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out; }
+  .module-swiper-container.initialized {
+    opacity: 1; }
 
 .course-objectives {
   color: #fff;

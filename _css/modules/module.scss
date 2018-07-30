@@ -29,6 +29,12 @@
 .module-swiper-container {
     max-height:100vh;
     overflow: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    
+    &.initialized{
+        opacity: 1;
+    }
 }
 
 .course-objectives {
