@@ -12,6 +12,7 @@ function instantiateSlider() {
       loop: true,
       slidesPerView: 'auto',
       centeredSlides: true,
+      updateOnImagesReady: true,
       // spaceBetween: '50',
       mousewheel: false,
       threshold: 20,
@@ -35,6 +36,24 @@ function instantiateSlider() {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      on: {
+        init: function () {
+          var videosWeNeedLoaded = [];
+          $('.module-video').each(function(index){
+            if(index == 0 || index == 1 || index == $('.module-video').length - 1){
+              // alert('setting up load listener on video: ' + index);
+              this.addEventListener('loadeddata', function() {
+                // alert('have finished loading video ' + index);
+                videosWeNeedLoaded.push(this);
+                if(videosWeNeedLoaded.length == 3){
+                  $('.swiper-container').addClass('initialized');
+                }
+            }, false);
+            }
+            
+          });
+        },
       },
     });
 

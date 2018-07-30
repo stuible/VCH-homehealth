@@ -826,7 +826,14 @@ body {
 /* MAIN CAROUSEL */
 .swiper-container {
   width: 100%;
-  margin-top: 18vh !important; }
+  margin-top: 18vh !important;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out; }
+  .swiper-container.initialized {
+    opacity: 1; }
 
 .swiper-slide {
   width: 60vw !important;

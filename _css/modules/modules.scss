@@ -16,10 +16,23 @@ $modulesBorderRadius: 10px;
 .swiper-container {
     width: 100%;
     margin-top: 18vh !important;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
     // position: absolute;
     // top: 50%;
     // transform: translateY(-50%);
+    &.initialized{
+        opacity: 1;
+    }
 }
+
+// .swiper-wrapper {
+//     visibility: hidden;
+// }
+
+// .slick-initialized { 
+//     visibility: visible; 
+// }
 
 // .modules-container{
 //     // position: absolute;
