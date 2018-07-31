@@ -71,14 +71,13 @@ module Jekyll
                   <div class="quiz question">#{value}</div>
                   <div class="quiz answers">
             ]
-            elsif key == false
+            elsif key == false || key == true
                 output << %Q[
                   <div class="quiz answer">
                     <input type="checkbox" name="multiple-select-quiz" data-correct="#{key}" value="#{value.delete(" \t\r\n")}">
                     <label for="#{value.delete(" \t\r\n")}">#{value}</label>
                   </div>
               ]
-            elsif key == true
             else
               output << %Q[
                   Wrong Prefix: #{value}

@@ -52,11 +52,11 @@ sections:
       text: Select the correct answers
       quiz-multiple-select:
         - question: "Caregivers can experience:"
-        - false: Changes in sleep pattersn
+        - true: Changes in sleep pattersn
         - false: Increased irritability and moodiness
-        - false: Changed in appetite / weight
+        - true: Changed in appetite / weight
         - false: Reduced enjoyment in usual activities
-        - false: Changes in physical health
+        - true: Changes in physical health
 
 caregiverexperience:
   type: multiple choice

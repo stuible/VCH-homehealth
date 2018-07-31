@@ -690,21 +690,28 @@ function instantiateMore() {
         }
         else {
             console.log('you slected at least one asnwer');
-            $("input[name=multiple-select-quiz]").each(function(){
+            var incorrectAnwers = [];
+            $("input[name=multiple-select-quiz]").each(function(i){
                 
                 if($(this).is(':checked') && $(this).data('correct') == true){
-                    console.log('Answer was: ' + $(this).data('correct') );
-                }
-                else if($(this).is(':checked') && $(this).data('correct') == false){
-                    console.log('Answer was: ' + $(this).data('correct') );
+                    console.log('For Quesiton ' + i + ': U WAS RIGHT');
                 }
                 else if(!$(this).is(':checked') && $(this).data('correct') == false){
-                    console.log('Answer was: ' + $(this).data('correct') );
+                    console.log('For Quesiton ' + i + ': U WAS RIGHT');
                 }
-                else if(!$(this).is(':checked') && $(this).data('correct') == true){
-                    console.log('Answer was: ' + $(this).data('correct') );
+                else {
+                    console.log('For Quesiton ' + i + ': U WAS WRONG');
+                    incorrectAnwers.push(this);
                 }
             });
+            if(incorrectAnwers.length > 0){
+                console.log('YOU FAILED');
+                $('.quiz.feedback').addClass('incorrect');
+            }
+            else {
+                console.log('YOU NAILED IT');
+                $('.quiz.feedback').addClass('correct');
+            }
         }
     });
 
