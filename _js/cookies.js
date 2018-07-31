@@ -2,6 +2,8 @@ var progressCookieName = 'module-progress';
 
 function getProgress(modulename, component, element){
 
+    console.log("getting progress for " + modulename + ": " + component + " | " + element);
+
     var object = Cookies.getJSON(progressCookieName);
 
     if (component === undefined){
@@ -41,10 +43,10 @@ function createProgress(){
             }),
             'more-on-topic' : new component({
                 'holisticcare' : new element(false),
-                'careofanolderadult' : new element(false),
+                'careofolderadults' : new element(false),
                 'chronicconditions' : new element(false),
-                'careplanning' : new element(false),
-                'deliverables&quiz' : new element(false),
+                'medmanagement' : new element(false),
+                'deliverables' : new element(false),
             })
     });
 
