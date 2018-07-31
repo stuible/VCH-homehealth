@@ -457,19 +457,6 @@ function instantiateSlider() {
             text: 'Cancel'
           })
         ],
-        // callback: function (data) {
-        //     if (!data) {
-        //         return console.log('Cancelled')
-        //     }
-        //     console.log('Date', data.date, 'Color', data.color)
-        //     $('.demo-result-custom-vex-dialog').show().html([
-        //         '<h4>Result</h4>',
-        //         '<p>',
-        //             'Date: <b>' + data.date + '</b><br/>',
-        //             'Color: <input type="color" value="' + data.color + '" readonly />',
-        //         '</p>'
-        //     ].join(''))
-        // }
       });
     });
   }
@@ -695,6 +682,31 @@ function finalizeCaseStudy(){
 function instantiateMore() { 
 
     showMenu();
+
+    $('.quiz.button').click(function(){
+        //Check if user didn't make a selection
+        if(!$("input[name=multiple-select-quiz]").is(':checked')){
+            vex.dialog.alert("Please chose at least one answer");
+        }
+        else {
+            console.log('you slected at least one asnwer');
+            $("input[name=multiple-select-quiz]").each(function(){
+                
+                if($(this).is(':checked') && $(this).data('correct') == true){
+                    console.log('Answer was: ' + $(this).data('correct') );
+                }
+                else if($(this).is(':checked') && $(this).data('correct') == false){
+                    console.log('Answer was: ' + $(this).data('correct') );
+                }
+                else if(!$(this).is(':checked') && $(this).data('correct') == false){
+                    console.log('Answer was: ' + $(this).data('correct') );
+                }
+                else if(!$(this).is(':checked') && $(this).data('correct') == true){
+                    console.log('Answer was: ' + $(this).data('correct') );
+                }
+            });
+        }
+    });
 
 }
 //Global variable that states whaether or not a backgorund image should be displayed

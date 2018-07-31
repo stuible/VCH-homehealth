@@ -18,7 +18,28 @@ module Jekyll
           </div>
         ]
 
+      elsif type == 'title-2'
+          output = %Q[
+            <div class="more-subtitle #{size} margin top fifty">
+              #{text}
+            </div>
+        ]
+
+      elsif type == 'spacer-title'
+          output = %Q[
+            <div class="more-subtitle #{size}" style="visibility: hidden">
+              #{text}
+            </div>
+        ]
+
       elsif type == 'text'
+        output = %Q[
+          <div class="more-text #{size}">
+            #{text}
+          </div>
+        ]
+
+      elsif type == 'text-2'
         output = %Q[
           <div class="more-text #{size}">
             #{text}
@@ -39,6 +60,42 @@ module Jekyll
           ]
         }
         end
+        output << %Q[</div>]
+
+      elsif type == 'quiz-multiple-select'
+        output = %Q[<div class="quiz #{size}">]
+        for element in text do
+          element.each {|key, value| 
+            if key == 'question'
+              output << %Q[
+                  <div class="quiz question">#{value}</div>
+                  <div class="quiz answers">
+            ]
+            elsif key == false
+                output << %Q[
+                  <div class="quiz answer">
+                    <input type="checkbox" name="multiple-select-quiz" data-correct="#{key}" value="#{value.delete(" \t\r\n")}">
+                    <label for="#{value.delete(" \t\r\n")}">#{value}</label>
+                  </div>
+              ]
+            elsif key == true
+            else
+              output << %Q[
+                  Wrong Prefix: #{value}
+              ]
+            end
+          }
+        end
+        output << %Q[<div class="quiz feedback">
+          <div class="response-title">Title</div>
+          <div class="response-description">wkqefhb wqhebf kqwhefb</div>
+        </div>]
+        output << %Q[</div>]
+        output << %Q[
+          <div class="quiz button-container">
+            <a class="quiz button" data-type="multiple-select-quiz">Submit</a>
+          </div>
+        ]
         output << %Q[</div>]
 
       elsif type == 'questions'

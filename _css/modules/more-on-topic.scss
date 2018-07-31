@@ -132,3 +132,134 @@ $sectionTitleBoarderBottom: 5px;
     }
 
 }
+
+// Multi Select Quiz
+
+.quiz.question{
+    margin-bottom: 10px;
+}
+
+.quiz.answers{
+    position: relative;
+}
+
+.quiz.answer{
+    margin-bottom: 10px;
+    background-color: $primaryColour;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.quiz.button-container{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.quiz.button{
+    // margin: 0 auto;
+}
+
+.quiz.feedback{
+    position: absolute;
+    display: none;
+    padding: 25px;
+    top: 0;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    color: #fff;
+
+    &.correct{
+        background-color: green;
+        display: block;
+    }
+    &.incorrect{
+        background-color: red;
+        display: block;
+    }
+
+    .response-title {
+        font-size: 2em;
+    }
+
+    .response-description {
+        font-size: 1.25em;
+    }
+}
+
+//Custom Checkbox
+.quiz.answer>input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 7px;
+    z-index: 1;
+    transform: scale(2)
+}
+
+.quiz.answer>label {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: 27px;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 40px;
+    min-height: 27px;
+}
+
+.quiz.answer>label::before,
+.quiz.answer>label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.quiz.answer>label::before{
+    height: 23px;
+    width: 23px;
+    
+    border: 2px solid;
+    border-radius: 50%;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 0px;
+}
+
+/*Checkmark of the fake checkbox*/
+.quiz.answer>label::after {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    
+    // transform: rotate(-45deg);
+    
+    left: 6px;
+    top: 6px;
+}
+
+/*Hide the checkmark by default*/
+.quiz.answer>input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.quiz.answer>input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.quiz.answer>input[type="checkbox"]:focus + label::before {
+    // outline: rgb(59, 153, 252) auto 5px;
+}

@@ -145,19 +145,6 @@ function instantiateSlider() {
             text: 'Cancel'
           })
         ],
-        // callback: function (data) {
-        //     if (!data) {
-        //         return console.log('Cancelled')
-        //     }
-        //     console.log('Date', data.date, 'Color', data.color)
-        //     $('.demo-result-custom-vex-dialog').show().html([
-        //         '<h4>Result</h4>',
-        //         '<p>',
-        //             'Date: <b>' + data.date + '</b><br/>',
-        //             'Color: <input type="color" value="' + data.color + '" readonly />',
-        //         '</p>'
-        //     ].join(''))
-        // }
       });
     });
   }

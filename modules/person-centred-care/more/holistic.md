@@ -25,6 +25,7 @@ sections:
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
 
     - part: half
+      spacer-title: Reflection
       questions: ['How did you feel?', 'What were the ramifications?']
 
   
@@ -33,13 +34,11 @@ sections:
     - part: half
       title: Cultural Connection
       text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
+      title-2: Personal Reflection
+      text-2: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
     - part: half
       youtube: https://www.youtube.com/embed/xw9BBb8LhYw
-
-    - part: half
-      title: Personal Reflection
-      text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
 
   - section:
@@ -50,8 +49,14 @@ sections:
 
     - part: half
       title: Action
-      text: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
-      quiz: caregiverexperience
+      text: Select the correct answers
+      quiz-multiple-select:
+        - question: "Caregivers can experience:"
+        - false: Changes in sleep pattersn
+        - false: Increased irritability and moodiness
+        - false: Changed in appetite / weight
+        - false: Reduced enjoyment in usual activities
+        - false: Changes in physical health
 
 caregiverexperience:
   type: multiple choice
