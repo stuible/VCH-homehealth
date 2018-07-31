@@ -92,7 +92,7 @@ module Jekyll
         output << %Q[</div>]
         output << %Q[
           <div class="quiz button-container">
-            <a class="quiz button" data-type="multiple-select-quiz">Submit</a>
+            <a class="quiz button submit" data-type="multiple-select-quiz">Submit</a>
           </div>
         ]
         output << %Q[</div>]
