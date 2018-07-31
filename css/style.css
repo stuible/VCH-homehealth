@@ -1074,13 +1074,14 @@ body {
   border-radius: 8px;
   color: #fff; }
   .quiz.feedback.correct {
-    background-color: green;
+    background-color: #5AAF7F;
     display: block; }
   .quiz.feedback.incorrect {
-    background-color: red;
+    background-color: #C04F4D;
     display: block; }
   .quiz.feedback .response-title {
-    font-size: 2em; }
+    font-size: 2em;
+    line-height: initial; }
   .quiz.feedback .response-description {
     font-size: 1.25em; }
 

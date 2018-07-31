@@ -248,6 +248,8 @@ var progressCookieName = 'module-progress';
 
 function getProgress(modulename, component, element){
 
+    console.log("getting progress for " + modulename + ": " + component + " | " + element);
+
     var object = Cookies.getJSON(progressCookieName);
 
     if (component === undefined){
@@ -287,10 +289,10 @@ function createProgress(){
             }),
             'more-on-topic' : new component({
                 'holisticcare' : new element(false),
-                'careofanolderadult' : new element(false),
+                'careofolderadults' : new element(false),
                 'chronicconditions' : new element(false),
-                'careplanning' : new element(false),
-                'deliverables&quiz' : new element(false),
+                'medmanagement' : new element(false),
+                'deliverables' : new element(false),
             })
     });
 
@@ -683,7 +685,7 @@ function instantiateMore() {
 
     showMenu();
 
-    $('.quiz.button').click(function(){
+    $('.button-container').on("click",'.quiz.button.submit', function(){
         //Check if user didn't make a selection
         if(!$("input[name=multiple-select-quiz]").is(':checked')){
             vex.dialog.alert("Please chose at least one answer");
@@ -706,15 +708,38 @@ function instantiateMore() {
             });
             if(incorrectAnwers.length > 0){
                 console.log('YOU FAILED');
-                $('.quiz.feedback').addClass('incorrect');
+                // $('.quiz.feedback').addClass('incorrect');
+                showQuizScreen('.quiz', 'incorrect', 'Wrong', 'You were wrong', 'again', 'Try Again');
             }
             else {
                 console.log('YOU NAILED IT');
-                $('.quiz.feedback').addClass('correct');
+                // $('.quiz.feedback').addClass('correct');
+                showQuizScreen('.quiz', 'correct', 'Correct', 'You was right', 'back', 'Back');
             }
         }
     });
 
+    $('.button-container').on("click",'.quiz.button.again', function(){
+        hideQuizScreen('.quiz', 'incorrect', 'again');
+    });
+    $('.button-container').on("click",'.quiz.button.back', function(){
+        hideQuizScreen('.quiz', 'correct', 'back');
+    });
+    
+
+}
+
+function showQuizScreen(quiz, screen, title, description, button, buttonText){
+
+    $(quiz).children('.response-title').text(title);
+    $(quiz).children('.response-description').text(description);
+    $(quiz).children('.quiz.feedback').addClass(screen);
+    $(quiz).children('.quiz.button.submit').removeClass('submit').addClass(button).text(buttonText);
+}
+
+function hideQuizScreen(quiz, screen, button){
+    $(quiz).children('.quiz.feedback').removeClass(screen);
+    $(quiz).children('.quiz.button.' + button).removeClass(button).addClass('submit').text('Submit');
 }
 //Global variable that states whaether or not a backgorund image should be displayed
 var showBackgroundImage = false;
