@@ -23,37 +23,6 @@ $sectionTitleBoarderBottom: 5px;
     // margin-bottom: 25px;
 }
 
-// .more-left-title {
-//     font-size: 26px;
-//     letter-spacing: 0.25px;
-//     padding-bottom: $sectionTitlePaddingBottom;
-//     margin-bottom: $sectionTitleMarginBottom;
-//     height: $sectionTitleHeight;
-//     font-family: $serifFont;
-// }
-
-// .more-left-text {
-//     font-size: 16px;
-//     font-weight: 400;
-//     margin-bottom: 25px;
-// }
-
-// .more-right-text {
-//     font-weight: 400;
-//     margin-bottom: 25px;
-// }
-
-// .more-right-title {
-//     font-size: 24px;
-//     font-family: $serifFont;
-//     letter-spacing: 0.25px;
-//     height: $sectionTitleHeight;
-//     margin-bottom: $sectionTitleMarginBottom + $sectionTitleBoarderBottom - 2px;
-//     padding-bottom: $sectionTitlePaddingBottom;
-
-//     padding-top: 2px;
-// }
-
 .more-questions {
     font-size: 24px;
 }
@@ -171,16 +140,17 @@ $sectionTitleBoarderBottom: 5px;
     color: #fff;
 
     &.correct{
-        background-color: green;
+        background-color: $primaryColour;
         display: block;
     }
     &.incorrect{
-        background-color: red;
+        background-color: #C04F4D;
         display: block;
     }
 
     .response-title {
         font-size: 2em;
+        line-height: initial;
     }
 
     .response-description {
