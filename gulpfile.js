@@ -9,9 +9,6 @@ var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
-// const imagemin = require('gulp-imagemin');
-// var gm = require('gulp-gm');
-// var newer = require('gulp-newer');
 
 
 var cssFiles = '_css/**/*.?(s)css';
@@ -30,14 +27,7 @@ var jsSources = [
     jsFiles + 'background.js'
 ];
 
-// Task for building blog when something changed:
-//gulp.task('build', shell.task(['bundle exec jekyll serve --config _config.yml,dev.config.yml']));
-// If you don't use bundle:
-// gulp.task('build', shell.task(['jekyll serve']));
-// If you use  Windows Subsystem for Linux (thanks @SamuliAlajarvela):
-// gulp.task('build', shell.task(['bundle exec jekyll serve --force_polling']));
-
-//CSS Concatonation
+//CSS Concatonation and Minification
 gulp.task('css', function() {
     gulp.src(cssFiles)
         .pipe(sass({outputStyle: 'nested'}))
@@ -52,6 +42,7 @@ gulp.task('css', function() {
         .pipe(gulp.dest('css'));
   });
 
+//JS Concatonations and Minification
 gulp.task('js', function() {
     gulp.src(jsSources)
         .pipe(concat('homehealth.js'))
@@ -61,24 +52,32 @@ gulp.task('js', function() {
         .pipe(gulp.dest('js'));
   });
 
-// gulp.task('images', () =>
-//   gulp.src(imageFiles)
-//   .pipe(newer('image'))
-//   .pipe(gm(function(gmfile) {
-//     gmfile.setFormat('jpg').quality(90);
-//     return gmfile.resize(2000, 2000);
-//   }))
-//   .pipe(imagemin())
-// 		.pipe(gulp.dest('image'))
-// );
-
 
 gulp.task('jekyll', function() {
     var jekyll = child.spawn('jekyll', ['build',
       '--watch',
       '--incremental',
       '--drafts',
-      // '--config _config.yml,dev.config.yml'
+      // '--config deploy.config.yml',
+    ]);
+  
+    var jekyllLogger = function(buffer) {
+      buffer.toString()
+        .split(/\n/)
+        .forEach(function(message){ gutil.log('Jekyll: ' + message);});
+    };
+  
+    jekyll.stdout.on('data', jekyllLogger);
+    jekyll.stderr.on('data', jekyllLogger);
+  });
+
+  gulp.task('jekyll-deploy', function() {
+    var jekyll = child.spawn('jekyll', ['build',
+      // '--watch',
+      // '--incremental',
+      // '--drafts',
+      '--config deploy.config.yml',
+      'deploy.config.yml',
     ]);
   
     var jekyllLogger = function(buffer) {
@@ -105,3 +104,4 @@ gulp.task('jekyll', function() {
   
 
 gulp.task('default', ['css', 'js', 'jekyll', 'serve']);
+gulp.task('deploy', ['css', 'js', 'jekyll-deploy']);
