@@ -8,6 +8,7 @@ module Jekyll
       type = @props["type"]
       size = @props["size"]
       text = @props["text"]
+      baseurl = @props["baseurl"]
 
       output = ''
 
@@ -52,7 +53,7 @@ module Jekyll
           element.each {|key, value| 
           output << %Q[
             <div class="more-circle-container">
-              <img class="more-circle" src="/image/#{value}">
+              <img class="more-circle" src="#{baseurl}/image/#{value}">
                 <div class="more-circle-text">
                 #{key}
               </div>
