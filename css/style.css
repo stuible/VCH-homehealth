@@ -931,10 +931,13 @@ body {
 .coming-soon {
   width: 100%;
   text-align: center;
-  font-size: 48px;
   color: #fff;
-  font-weight: 500;
   margin-top: 40%; }
+  .coming-soon .title {
+    font-size: 52px;
+    font-weight: 500; }
+  .coming-soon .description {
+    font-size: 28px; }
 
 .modules-logo {
   background-image: url("../image/logos/homehealthlogo.svg");
