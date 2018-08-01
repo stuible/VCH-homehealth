@@ -17,6 +17,7 @@ var imageFiles = '_image/**/**/*.*';
 var siteRoot = '_site';
 
 var jsSources = [
+    jsFiles + 'menu.js',
     jsFiles + 'barba.js',
     jsFiles + 'cookies.js',
     jsFiles + 'modules.js',

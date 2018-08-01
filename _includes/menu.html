@@ -25,9 +25,12 @@
 
                     var allRects = s.group(mainRect,rightRect, leftRect, farleftRect);
 
+                    if(menuIsLight) var strokeColour = '#fff';
+                    else var strokeColour = '#000';
+
                     mainRect.attr({
                         fill: "none",
-                        stroke: "#fff",
+                        stroke: strokeColour,
                         strokeWidth: 2,
                         "vector-effect": "non-scaling-stroke"
 
@@ -35,21 +38,21 @@
 
                     rightRect.attr({
                         fill: "none",
-                        stroke: "#fff",
+                        stroke: strokeColour,
                         strokeWidth: 2,
                         "vector-effect": "non-scaling-stroke"
                     });
 
                     leftRect.attr({
                         fill: "none",
-                        stroke: "#fff",
+                        stroke: strokeColour,
                         strokeWidth: 2,
                         "vector-effect": "non-scaling-stroke"
                     });
 
                     farleftRect.attr({
                         fill: "none",
-                        stroke: "#fff",
+                        stroke: strokeColour,
                         strokeWidth: 2,
                         "vector-effect": "non-scaling-stroke"
                     });

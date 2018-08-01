@@ -220,27 +220,3 @@ function getLastPart(url) {
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
 }
-
-function setBreadcrumbs(containerEl){
-    console.log($(containerEl).data('nav-text'));
-    console.log($(containerEl).data('nav-url'));
-
-    var navText = $(containerEl).data('nav-text');
-    var navUrl = $(containerEl).data('nav-url');
-
-    $(".menu-name").empty();
-
-    jQuery.each(navText, function(i) {
-      var classText = "";
-      if(i == 0){
-        classText = " class=\"module-menu\" ";
-      }
-      if(i == navText.length - 1) {
-        $(".menu-name").append('<a ' + classText +'href="' + navUrl[i] + '">' + this +'</a>');
-      }
-      else {
-        $(".menu-name").append('<a ' + classText +'href="' + navUrl[i] + '">' + this +'</a><span> > </span>');
-      }
-      
-    });
-}

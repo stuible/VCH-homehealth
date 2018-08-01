@@ -18,10 +18,10 @@ function lightBackground(menu){
     // clearBackground();
     $('body').animate({backgroundColor: '#ffffff'}, 'slow');
     if(menu){
-        darkMenu();
+        setMenu('white');
     }
     else {
-        lightMenu();
+        // lightMenu();
     }
 }
 
@@ -68,29 +68,4 @@ function clearBackground(){
         $(this).css({"background-image":"unset"});
     });
     $(".background").not(':last').remove();
-}
-
-function lightMenu(){
-    $('.menubar, .menubar a').animate({color: '#fff'}, 'fast');
-    $(".menu-icon").children().children().children().attr("stroke","#fff");
-    menuIsLight = true;
-    // if(allRects){
-    //     allRects.animate({ stroke: "#fff" }, 500);
-    // }   
-}
-
-function darkMenu(){
-    $('.menubar, .menubar a').animate({color: '#000'}, 'z');
-    $(".menu-icon").children().children().children().attr("stroke","#000");
-    menuIsLight = false;
-    // if(allRects){
-    //     allRects.animate({ stroke: "#000" }, 500);
-    // }
-}
-
-function hideMenu(){
-    // $('.module-menu').fadeOut();
-}
-function showMenu(){
-    $('.module-menu').fadeIn();
 }
