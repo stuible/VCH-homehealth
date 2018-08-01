@@ -76,7 +76,7 @@ gulp.task('jekyll', function() {
       // '--watch',
       // '--incremental',
       // '--drafts',
-      '--config deploy.config.yml',
+      '--config',
       'deploy.config.yml',
     ]);
   
