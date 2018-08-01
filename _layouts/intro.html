@@ -60,15 +60,24 @@ layout: intro
                                     </div>
                                 {% include scrollindicator.html %}
                         </div>
-                        <div class="intro-swiper-slide" data-hash="more-on-topic">
-                            <div class="container">
+                        <div class="module-swiper-slide" data-hash="more-on-topic">
+                            <div class="container center-center">
                                     <div class="narratives-parent-container">
                                         <div class="narratives-container">
+                                                <div class="module-case-studies-title">
+                                                        More On This Topic
+                                                </div>
                                             {% for item in page.more %}
-                                                <a class="more-on-topic" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
-                                                    <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.title }}">
-                                                    <div class="more-on-topic-name">{{ item.title }}</div>
-                                                </a>
+                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.title | downcase | replace: " ", "" | replace: "-", ""}}">
+                                                        <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
+                                                        <div class="overlay">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                                                <circle class="path circle" fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                                                                <polyline class="path check" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                                              </svg>
+                                                        </div>
+                                                        <div class="narrative-name">{{ item.title }}</div>
+                                                    </a>
                                             {% endfor %}
 
                                         </div>
