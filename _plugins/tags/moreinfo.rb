@@ -121,8 +121,8 @@ module Jekyll
       elsif type == 'youtube'
         output = %Q[
           <div class="more-video">
-            <iframe width="560" 
-            height="315" 
+            <iframe width="100%" 
+            height="300" 
             src="#{text}" 
             frameborder="0" 
             allow="autoplay; encrypted-media" 
