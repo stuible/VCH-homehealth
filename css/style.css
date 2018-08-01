@@ -708,6 +708,20 @@ body {
     border-radius: 5px 5px 0px 0px;
     -o-object-fit: cover;
     object-fit: cover; }
+  .more-on-topic .overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    height: 260px;
+    width: 100%;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    opacity: 0.7;
+    bottom: 25px;
+    background-color: #5AAF7F; }
+  .more-on-topic.done .overlay {
+    display: block; }
 
 .more-on-topic-name {
   margin-top: 5px; }

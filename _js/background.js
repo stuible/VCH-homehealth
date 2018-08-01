@@ -76,8 +76,7 @@ function lightMenu(){
     menuIsLight = true;
     // if(allRects){
     //     allRects.animate({ stroke: "#fff" }, 500);
-    // }
-    
+    // }   
 }
 
 function darkMenu(){

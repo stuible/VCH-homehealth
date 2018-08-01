@@ -80,6 +80,7 @@ layout: module
                                             {% for item in page.more %}
                                                 <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.title | downcase | replace: " ", "" | replace: "-", ""}}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
+                                                        <div class="overlay"></div>
                                                         <div class="narrative-name">{{ item.title }}</div>
                                                     </a>
                                             {% endfor %}
