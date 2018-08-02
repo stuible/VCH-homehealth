@@ -1072,6 +1072,31 @@ body {
   height: auto !important;
   margin-top: -20%; }
 
+.prereq-image {
+  height: 150px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.prereq-image-placeholder {
+  height: 150px;
+  top: 0;
+  width: 100%;
+  left: 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0; }
+
 .more-title {
   font-size: 4em;
   font-family: "Perpetua", serif; }

@@ -26,20 +26,6 @@ $modulesBorderRadius: 10px;
     }
 }
 
-// .swiper-wrapper {
-//     visibility: hidden;
-// }
-
-// .slick-initialized { 
-//     visibility: visible; 
-// }
-
-// .modules-container{
-//     // position: absolute;
-//     // top: 50%;
-//     // transform: translateY(-50%);
-// }
-
 .swiper-slide {
     width: 60vw !important;
     height: 36vw !important;
@@ -155,4 +141,26 @@ $modulesBorderRadius: 10px;
 .module-button-container {
     height: auto !important;
     margin-top: -20%;
+}
+
+$prereqImageHeight: 150px;
+
+.prereq-image {
+    height: $prereqImageHeight;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.prereq-image-placeholder {
+    height: $prereqImageHeight;
+    top: 0;
+    width: 100%;
+    left: 0;
+    border-radius: 5px 5px 0 0;
 }

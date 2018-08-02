@@ -30,4 +30,21 @@ cases:
   - name: Burnt Out
     image: burnout.jpg
     url: burnt-out
+
+more:
+  - title: Primary Health Care
+    image: pcc/HolisticCare2.jpg
+    url: holistic
+  - title: Primary Care
+    image: pcc/CareoftheOlderAdult.jpg
+    url: older-adult
+  - title: Health Determinants
+    image: pcc/ManagingChronicConditions.jpg
+    url: chronic
+  - title: Care Management
+    image: pcc/CarePlanning.jpg
+    url: care
+  - title: Deliverables
+    image: pcc/Deliverable.jpg
+    url: deliverables
 ---

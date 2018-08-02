@@ -116,8 +116,11 @@ function instantiateSlider() {
 
 
       var beforeBeginningHTML = '<div class="vex-custom-field-wrapper">';
+      var imageURL;
       for (prereq in prereqs)
       {
+        if(prereqs[prereq].image) imageURL = prereqs[prereq].image;
+
         beforeBeginningHTML += '<div class="vex-duration">' + prereqs[prereq].duration +'</div>';
         beforeBeginningHTML += '<a href="' + prereqs[prereq].link +'" class="vex-title">' + prereqs[prereq].linktext +'</a>';
         beforeBeginningHTML += '<div class="vex-custom-input-wrapper">';
@@ -146,5 +149,7 @@ function instantiateSlider() {
           })
         ],
       });
+      $('.vex-content').prepend('<div class="prereq-image" style="background-image: url(\'../' + baseurl + 'image/modules/' + imageURL +'\')"></div><div class="prereq-image-placeholder"></div>');
     });
+    
   }

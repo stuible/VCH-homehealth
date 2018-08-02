@@ -15,6 +15,7 @@ modules:
     background: personcenteredcare.jpeg
     before-beginning:
       - link: https://learninghub.phsa.ca/Courses/10806/medication-reconciliation-online-vch
+        image: pcc/BeforeWeBegin.jpg
         duration: 15 minutes
         linktext: Medication Reconciliation
         text: Online Course
