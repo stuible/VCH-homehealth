@@ -205,28 +205,20 @@ body {
   background-color: #5AAF7F;
   color: #fff;
   font-size: 21.5px;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  -o-transition: -o-transform 300ms;
+  -moz-transition: transform 300ms, -moz-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
 
 .ui-accordion-header-active > .accordion-icon {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  -o-transition: -o-transform 300ms;
-  -moz-transition: transform 300ms, -moz-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
-
-.ui-accordion-header-collapsed > .accordion-icon {
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  -o-transition: -o-transform 300ms;
-  -moz-transition: transform 300ms, -moz-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms; }
+  transform: rotate(45deg); }
 
 .flyout-container {
   width: 100%;

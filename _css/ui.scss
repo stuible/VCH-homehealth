@@ -55,15 +55,14 @@
     color: #fff;
     font-size: 21.5px;
     text-align: center;
+    transition: transform 300ms;
 }
 
 .ui-accordion-header-active>.accordion-icon {
     transform: rotate(45deg);
-    transition: transform 300ms;
 }
 
 .ui-accordion-header-collapsed>.accordion-icon {
-    transition: transform 300ms;
 }
 
 .flyout-container {
