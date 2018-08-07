@@ -6,6 +6,9 @@
     border: none;
     border-radius: 20px;
     transition: all 300ms linear;
+    height: unset;
+    padding: 2px;
+    font-size: 1em;
 
     &:hover {
         background-color: #fff;
