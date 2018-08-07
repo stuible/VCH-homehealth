@@ -81,10 +81,11 @@
     z-index: 5;
     background-color: #fff;
     width: 34px;
-    height: 200px;;
+    height: 200px;
     position: fixed;
     right: 0px;
     top: 40%;
+    border-radius: 5px 0 0 5px;
     overflow: hidden;
     transition: transform 300ms;
     transition: width 500ms ease-in-out;
