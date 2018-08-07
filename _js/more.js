@@ -31,7 +31,7 @@ function instantiateMore() {
             else {
                 console.log('YOU NAILED IT');
                 // $('.quiz.feedback').addClass('correct');
-                showQuizScreen('.quiz', 'correct', 'Correct', 'You was right', 'back', 'Back');
+                showQuizScreen('.quiz', 'correct', 'Correct', 'You were right', 'back', 'Back');
             }
         }
     });

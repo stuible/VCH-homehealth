@@ -22,7 +22,7 @@ modules:
 
   - name: Wound Care
     pagename: wound-care
-    video: wound-HHsmall.mp4
+    video: Wound-HHsmall.mp4
     background: wound.jpeg
     before-beginning:
       - link: https://learninghub.phsa.ca/Courses/16224/wound-management-for-nurses-provincial-curriculum-online

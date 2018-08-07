@@ -88,7 +88,7 @@ module Jekyll
         end
         output << %Q[<div class="quiz feedback">
           <div class="response-title">Title</div>
-          <div class="response-description">wkqefhb wqhebf kqwhefb</div>
+          <div class="response-description">Feedback</div>
         </div>]
         output << %Q[</div>]
         output << %Q[

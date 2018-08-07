@@ -58,12 +58,5 @@ sections:
         - false: Reduced enjoyment in usual activities
         - true: Changes in physical health
 
-caregiverexperience:
-  type: multiple choice
-  questions:
-    - question:
-      correct: false
-    - questions:
-      correct: true
 
 ---
