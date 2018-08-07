@@ -2,6 +2,13 @@ function instantiateMore() {
 
     showMenu();
 
+    $('.quiz.answer').on("click", function(){
+        console.log('clicked answer: ');
+        console.log($(this).children('input').prop( "checked", !$(this).children('input').prop( "checked") ));
+        $(this).children('input').change();
+
+    });
+
     $('.button-container').on("click",'.quiz.button.submit', function(){
         //Check if user didn't make a selection
         if(!$("input[name=multiple-select-quiz]").is(':checked')){

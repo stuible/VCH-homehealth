@@ -194,6 +194,9 @@ body {
   color: #000;
   font-weight: 700; }
 
+.ui-accordion-header {
+  cursor: pointer; }
+
 .accordion-icon {
   float: right;
   -webkit-border-radius: 50%;
@@ -433,8 +436,7 @@ body {
   padding-bottom: 4px;
   font-size: 36px;
   font-family: "Perpetua", serif;
-  margin-bottom: 25px;
-  cursor: pointer; }
+  margin-bottom: 25px; }
   .case-study-section-title:focus {
     outline: none; }
 
@@ -1207,7 +1209,8 @@ body {
   padding: 5px 10px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
 .quiz.button-container {
   text-align: center;
@@ -1242,7 +1245,7 @@ body {
   position: absolute;
   margin-left: 7px;
   margin-top: 7px;
-  z-index: 1;
+  z-index: 0;
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
   -ms-transform: scale(2);
@@ -1258,7 +1261,8 @@ body {
   line-height: 27px;
   /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
   padding-left: 40px;
-  min-height: 27px; }
+  min-height: 27px;
+  cursor: pointer; }
 
 .quiz.answer > label::before,
 .quiz.answer > label::after {

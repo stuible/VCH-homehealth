@@ -17,15 +17,15 @@
 }
 
 .case-study-title {
-position: absolute;
-width: 100%;
-color: #fff;
-text-align: center;
-/* height: 20%; */
-margin-top: 25%;
-font-size: 65px;
-font-family: $serifFont;
-text-shadow: 0px 0px 20px #0000009c;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* height: 20%; */
+    margin-top: 25%;
+    font-size: 65px;
+    font-family: $serifFont;
+    text-shadow: 0px 0px 20px #0000009c;
 }
 
 .case-study-section-title {
@@ -34,7 +34,7 @@ text-shadow: 0px 0px 20px #0000009c;
     font-size: 36px;
     font-family: $serifFont;
     margin-bottom: 25px;
-    cursor: pointer;
+    // cursor: pointer;
 
     &:focus {
         outline: none;
