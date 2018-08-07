@@ -122,7 +122,7 @@ function instantiateSlider() {
         if(prereqs[prereq].image) imageURL = prereqs[prereq].image;
 
         beforeBeginningHTML += '<div class="vex-duration">' + prereqs[prereq].duration +'</div>';
-        beforeBeginningHTML += '<a href="' + prereqs[prereq].link +'" class="vex-title">' + prereqs[prereq].linktext +'</a>';
+        beforeBeginningHTML += '<a href="' + prereqs[prereq].link +'" class="vex-title" target="_blank">' + prereqs[prereq].linktext +'</a>';
         beforeBeginningHTML += '<div class="vex-custom-input-wrapper">';
         beforeBeginningHTML += '<div class="vex-notes">' + prereqs[prereq].text +'</div>';
         beforeBeginningHTML += '</div>';
