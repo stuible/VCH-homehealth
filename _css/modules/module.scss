@@ -43,8 +43,9 @@
 }
 
 .objective-number {
-    font-size: 3em;
+    font-size: 3.5em;
     float: left;
+    margin-top: 5px;
     margin-right: 15px;
     line-height: 45px;
 }
@@ -104,7 +105,7 @@
 }
 
 .objective {
-    font-size: 1.2em;
+    font-size: 1.3em;
     display: inline-block;
     width: 80%;
 
@@ -172,6 +173,11 @@
     img {
         width: 100%;
         // border-radius: 5px;
+    }
+
+    .narrative-name {
+        font-size: 1.25em;
+        margin-top: -4px;
     }
 }
 
