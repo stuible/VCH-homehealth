@@ -5,6 +5,15 @@
     color: white;
     border: none;
     border-radius: 20px;
+    transition: all 300ms linear;
+
+    &:hover {
+        background-color: #fff;
+        color: rgb(26, 26, 26);
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.25);
+        border: #e7e7e7 2px solid inset;
+    }
 }
 
 .vex-dialog-message {
