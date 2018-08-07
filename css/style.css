@@ -258,6 +258,8 @@ body {
     -o-transition: width 500ms ease-in-out;
     -moz-transition: width 500ms ease-in-out;
     transition: width 500ms ease-in-out; }
+  .flyout .content-wrapper {
+    width: 300px; }
 
 .flyout-button {
   background-color: #5AAF7F;

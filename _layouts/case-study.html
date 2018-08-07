@@ -22,11 +22,14 @@ layout: case-study
             </video>
             <div class="flyout">
                     <div class="flyout-button">Medications</div>
-                    <div class="flyout-content">
-                        {% for medication in page.medications %}
-                            {{ medication }} <br/><br/>
-                        {% endfor %}
+                    <div class="content-wrapper">
+                        <div class="flyout-content">
+                            {% for medication in page.medications %}
+                                {{ medication }} <br/><br/>
+                            {% endfor %}
+                        </div>
                     </div>
+                    
             </div>
             <div class="container case-study-container">
                 <!--
