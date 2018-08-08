@@ -56,8 +56,7 @@ function createProgress(){
     Cookies.set(progressCookieName, progress);
 }
 
-function module(components)
-{
+function module(components){
    this.components=components;
 }
 function component(element){
