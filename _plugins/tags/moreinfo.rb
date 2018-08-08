@@ -119,6 +119,40 @@ module Jekyll
           </div>
         ]
 
+      elsif type == 'html'
+        output = %Q[
+          #{text}
+        ]
+
+      elsif type == 'bullets'
+        output = %Q[<ul class="more-bullets #{size}">]
+        for bullet in text do
+          output << %Q[
+            <li class="more-bullet">
+            #{bullet}
+            </li>
+          ]
+        end
+        output << %Q[</ul>]
+
+      elsif type == 'posters-three'
+        output = %Q[<div class="more-posters #{size}">]
+        index = 1;
+        for item in text do
+          item.each {|key, value| 
+          output << %Q[
+            <div class="four columns">
+              <div class="more-poster-text">
+                0#{index}: #{key}
+              </div>
+              <img class="more-poster" src="#{baseurl}/image/#{value}">
+            </div>
+          ]
+        }
+        index += 1
+        end
+        output << %Q[</div>]
+
       elsif type == 'youtube'
         output = %Q[
           <div class="more-video">

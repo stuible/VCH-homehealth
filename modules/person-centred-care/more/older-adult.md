@@ -17,7 +17,7 @@ sections:
       text: Hover over each part of the image to discover the physical changes.
 
     - part: half
-      html: "test"
+      html: "<strong>test</strong>"
 
   
   - section:
@@ -40,7 +40,7 @@ sections:
       text: "Home Health nurses can support frail elderly by:"
 
     - part: full
-      three-posters:
+      posters-three:
         - Regularly assessing and communicating with the health care team: image.png
         - Educating the older adult and caregivers: image.png
         - Delaying decline by addressing strengths and physical abilities, reinforcing andpromoting health behaviours: image.png
