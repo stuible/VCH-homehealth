@@ -36,11 +36,14 @@ function instantiateIntro() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
-            slideChange: function () {
-                lastmoduleSection = $(introSwiper.slides[introSwiper.activeIndex]).data('hash');
-                console.log('last module section was: ' + lastmoduleSection);
-            }
-          },
+        },
+    });
+
+    //Update variable with the last slide the user saw on the module page
+    introSwiper.on('slideChange', function () {
+        lastmoduleSection = $(introSwiper.slides[introSwiper.activeIndex]).data('hash');
+        console.log('last module section was: ' + lastmoduleSection);
+
     });
 }
 
@@ -58,9 +61,9 @@ function instantiateModule() {
             invert: false,
         },
         hashNavigation: {
-          watchState: true,
-          replaceState: true,
-      },
+            watchState: true,
+            replaceState: true,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -69,21 +72,24 @@ function instantiateModule() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
-            slideChange: function () {
-                lastmoduleSection = $(moduleSwiper.slides[moduleSwiper.activeIndex]).data('hash');
-                console.log('last module section was: ' + lastmoduleSection);
-            }
-          },
+        },
+    });
+
+    //Update variable with the last slide the user saw on the module page
+    moduleSwiper.on('slideChange', function () {
+        lastmoduleSection = $(moduleSwiper.slides[moduleSwiper.activeIndex]).data('hash');
+        console.log('last module section was: ' + lastmoduleSection);
+
     });
 }
 
-function updateMoreOnTopicUI(){
-    $('.more-on-topic').each(function(){
+function updateMoreOnTopicUI() {
+    $('.more-on-topic').each(function () {
         console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name')));
-        if(getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))){
+        if (getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))) {
             $(this).addClass('done');
         }
-        
+
     });
 }
 
@@ -92,7 +98,7 @@ function updateMoreOnTopicUI(){
 //     // Init
 //     var container = $('.narrative'),
 //         inner = $('.narrative>img');
-  
+
 //     // Mouse
 //     var mouse = {
 //       _x: 0,
@@ -112,36 +118,36 @@ function updateMoreOnTopicUI(){
 //         return "(" + this.x + ", " + this.y + ")";
 //       }
 //     };
-  
+
 //     // Track the mouse position relative to the center of the container.
 //     mouse.setOrigin(container);
-  
+
 //     //----------------------------------------------------
-  
+
 //     var counter = 0;
 //     var refreshRate = 10;
 //     var isTimeToUpdate = function() {
 //       return counter++ % refreshRate === 0;
 //     };
-  
+
 //     //----------------------------------------------------
-  
+
 //     var onMouseEnterHandler = function(event) {
 //       update(event);
 //     };
-  
+
 //     var onMouseLeaveHandler = function() {
 //       inner.style = "";
 //     };
-  
+
 //     var onMouseMoveHandler = function(event) {
 //       if (isTimeToUpdate()) {
 //         update(event);
 //       }
 //     };
-  
+
 //     //----------------------------------------------------
-  
+
 //     var update = function(event) {
 //       mouse.updatePosition(event);
 //       updateTransformStyle(
@@ -149,7 +155,7 @@ function updateMoreOnTopicUI(){
 //         (mouse.x / inner.offsetWidth / 2).toFixed(2)
 //       );
 //     };
-  
+
 //     var updateTransformStyle = function(x, y) {
 //       var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
 //       inner.style.transform = style;
@@ -158,9 +164,9 @@ function updateMoreOnTopicUI(){
 //       inner.style.msTransform = style;
 //       inner.style.oTransform = style;
 //     };
-  
+
 //     //--------------------------------------------------------
-  
+
 //     container.onmousemove = onMouseMoveHandler;
 //     container.onmouseleave = onMouseLeaveHandler;
 //     container.onmouseenter = onMouseEnterHandler;
