@@ -36,6 +36,10 @@ function instantiateIntro() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
+            slideChange: function () {
+                lastmoduleSection = $(introSwiper.slides[introSwiper.activeIndex]).data('hash');
+                console.log('last module section was: ' + lastmoduleSection);
+            }
           },
     });
 }
@@ -65,6 +69,10 @@ function instantiateModule() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
+            slideChange: function () {
+                lastmoduleSection = $(moduleSwiper.slides[moduleSwiper.activeIndex]).data('hash');
+                console.log('last module section was: ' + lastmoduleSection);
+            }
           },
     });
 }

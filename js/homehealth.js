@@ -1,9 +1,109 @@
 //Global Variable for last viewed slide on modules page
 var lastmoduleSlide = "";
+var lastmoduleSection = "";
 var allRects = null;
 
 window.onload = function () {
+    drawModulesIcon();
+};
 
+function lightMenu() {
+    setMenu('light');
+}
+
+function darkMenu() {
+    setMenu('dark');
+}
+
+function setMenu(menu) {
+
+    switch (menu) {
+        case 'dark':
+
+            $('.menubar').removeClass('white');
+            $('.menubar, .menubar a').animate({ color: '#000' }, 'z');
+            $(".menu-icon").children().children().children().attr("stroke", "#000");
+            menuIsLight = false;
+
+            break;
+
+        case 'light':
+
+            $('.menubar').removeClass('white');
+            $('.menubar, .menubar a').animate({ color: '#fff' }, 'fast');
+            $(".menu-icon").children().children().children().attr("stroke", "#fff");
+            menuIsLight = true;
+
+            break;
+
+        case 'white':
+
+            setMenu('dark');
+            $('.menubar').addClass('white');
+            addMenuDropshadowWaypoint();
+
+            break;
+
+        default:
+            break;
+    }
+
+}
+
+function hideMenu() {
+    // $('.module-menu').fadeOut();
+}
+function showMenu() {
+    $('.module-menu').fadeIn();
+}
+
+function setBreadcrumbs(containerEl) {
+    console.log($(containerEl).data('nav-text'));
+    console.log($(containerEl).data('nav-url'));
+
+    var navText = $(containerEl).data('nav-text');
+    var navUrl = $(containerEl).data('nav-url');
+
+    $(".menu-name").empty();
+
+    jQuery.each(navText, function (i) {
+        var classText = "";
+        if (i == 0) classText = " class=\"module-menu\" ";
+
+        //Check if last breadcrumb
+        if (i == navText.length - 1) {
+            //If last, then don't add breadcrum '>' symbol
+            if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a>');
+            else $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '">' + this + '</a>');
+        }
+        else {
+            //If not, then add '>' symbol
+            if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a><span> > </span>');
+            else if(i == 1) $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '#' + lastmoduleSection +'">' + this + '</a><span> > </span>');
+            else  $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '">' + this + '</a><span> > </span>');
+        }
+
+    });
+}
+
+function addMenuDropshadowWaypoint() {
+    var menuWaypoint = new Waypoint({
+        element: $('.menubar'),
+        handler: function (direction) {
+
+            if (direction == 'down') $('.menubar').addClass('shadow');
+            else $('.menubar').removeClass('shadow');
+
+        },
+        offset: '-20px'
+    });
+}
+
+function removeMenuDropshadowWaypoint() {
+    $('.menubar').waypoint('destroy');
+}
+
+function drawModulesIcon(){
     //Draw modules icon
     var s = Snap();
     var mainRect = s.rect(18, 5, 20, 20, 2);
@@ -94,101 +194,6 @@ window.onload = function () {
     // mainRect.animate({ry:1}, 220, function(){
     //  mainRect.animate({ry: 90}, 300);
     //  }); 
-};
-
-function lightMenu() {
-    setMenu('light');
-}
-
-function darkMenu() {
-    setMenu('dark');
-}
-
-function setMenu(menu) {
-
-    switch (menu) {
-        case 'dark':
-
-            $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#000' }, 'z');
-            $(".menu-icon").children().children().children().attr("stroke", "#000");
-            menuIsLight = false;
-
-            break;
-
-        case 'light':
-
-            $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#fff' }, 'fast');
-            $(".menu-icon").children().children().children().attr("stroke", "#fff");
-            menuIsLight = true;
-
-            break;
-
-        case 'white':
-
-            setMenu('dark');
-            $('.menubar').addClass('white');
-            addMenuDropshadowWaypoint();
-
-            break;
-
-        default:
-            break;
-    }
-
-}
-
-function hideMenu() {
-    // $('.module-menu').fadeOut();
-}
-function showMenu() {
-    $('.module-menu').fadeIn();
-}
-
-function setBreadcrumbs(containerEl) {
-    console.log($(containerEl).data('nav-text'));
-    console.log($(containerEl).data('nav-url'));
-
-    var navText = $(containerEl).data('nav-text');
-    var navUrl = $(containerEl).data('nav-url');
-
-    $(".menu-name").empty();
-
-    jQuery.each(navText, function (i) {
-        var classText = "";
-        if (i == 0) classText = " class=\"module-menu\" ";
-
-        //Check if last breadcrumb
-        if (i == navText.length - 1) {
-            //If last, then don't add breadcrum '>' symbol
-            if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a>');
-            else $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '">' + this + '</a>');
-        }
-        else {
-            //If not, then add '>' symbol
-            if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a><span> > </span>');
-            else  $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '">' + this + '</a><span> > </span>');
-        }
-
-    });
-}
-
-function addMenuDropshadowWaypoint() {
-    var menuWaypoint = new Waypoint({
-        element: $('.menubar'),
-        handler: function (direction) {
-
-            if (direction == 'down') $('.menubar').addClass('shadow');
-            else $('.menubar').removeClass('shadow');
-
-        },
-        offset: '-20px'
-    });
-}
-
-function removeMenuDropshadowWaypoint() {
-    $('.menubar').waypoint('destroy');
 }
 $().ready(function () {
 
@@ -672,6 +677,10 @@ function instantiateIntro() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
+            slideChange: function () {
+                lastmoduleSection = $(introSwiper.slides[introSwiper.activeIndex]).data('hash');
+                console.log('last module section was: ' + lastmoduleSection);
+            }
           },
     });
 }
@@ -701,6 +710,10 @@ function instantiateModule() {
             init: function () {
                 $('.module-swiper-container').addClass('initialized');
             },
+            slideChange: function () {
+                lastmoduleSection = $(moduleSwiper.slides[moduleSwiper.activeIndex]).data('hash');
+                console.log('last module section was: ' + lastmoduleSection);
+            }
           },
     });
 }
