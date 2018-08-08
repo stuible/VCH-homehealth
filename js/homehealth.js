@@ -855,13 +855,13 @@ function finalizeCaseStudy(){
         handler: function(direction) {
             console.log(direction);
             if(direction == 'down'){
-                darkMenu();
+                setMenu('white');
             }
             else {
                 lightMenu();
             }          
         },
-        offset: -10 
+        offset: -5
       });
 
       //Set up case study accordions
