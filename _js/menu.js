@@ -21,8 +21,8 @@ function setMenu(menu) {
         case 'dark':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#000' }, 'z');
-            $(".menu-icon").children().children().children().attr("stroke", "#000");
+            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#000' }, 'z');
+            $(".menu-icon").children().stop( true, false ).children().children().attr("stroke", "#000");
             menuIsLight = false;
 
             break;
@@ -30,7 +30,7 @@ function setMenu(menu) {
         case 'light':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#fff' }, 'fast');
+            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#fff' }, 'fast');
             $(".menu-icon").children().children().children().attr("stroke", "#fff");
             menuIsLight = true;
 
