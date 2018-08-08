@@ -48,11 +48,11 @@ layout: more
 
                                 {% for component in part %}
 
-                                {% MoreInfoComponent 
-                                    baseurl: site.baseurl
-                                    type: component[0] 
-                                    size: part.part 
-                                    text: component[1] %}
+                                    {% MoreInfoComponent 
+                                        baseurl: site.baseurl
+                                        type: component[0] 
+                                        size: part.part 
+                                        text: component[1] %}
 
                                 {% endfor %}
                             </div>
