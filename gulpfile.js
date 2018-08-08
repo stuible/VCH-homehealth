@@ -79,6 +79,8 @@ gulp.task('jekyll', function() {
       // '--drafts',
       '--config',
       'deploy.config.yml',
+      '--destination',
+      '_deploy'
     ]);
   
     var jekyllLogger = function(buffer) {

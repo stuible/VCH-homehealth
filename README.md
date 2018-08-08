@@ -58,7 +58,7 @@ This will build the debugging version of the site and launch browsersync which i
 When you are ready to deploy run the following command which uses a seperate deployemnt config file and build to _deploy
 
 ```bash
-$ jekyll build --config deploy.config.yml --destination _deploy
+$ gulp deploy
 ```
 
 
