@@ -21,8 +21,8 @@ function setMenu(menu) {
         case 'dark':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#000' }, 'z');
-            $(".menu-icon").children().children().children().attr("stroke", "#000");
+            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#000' }, 'z');
+            $(".menu-icon").children().stop( true, false ).children().children().attr("stroke", "#000");
             menuIsLight = false;
 
             break;
@@ -30,7 +30,7 @@ function setMenu(menu) {
         case 'light':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').animate({ color: '#fff' }, 'fast');
+            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#fff' }, 'fast');
             $(".menu-icon").children().children().children().attr("stroke", "#fff");
             menuIsLight = true;
 
@@ -490,6 +490,7 @@ var introInstantiated = false;
 function instantiateSlider() {
 
   if(introInstantiated !== true){
+    Waypoint.destroyAll();
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
@@ -649,6 +650,7 @@ function instantiateIntro() {
 
     console.log('instantiating intro');
     showMenu();
+    Waypoint.destroyAll();
     darkBackground(true);
 
     introSwiper = new Swiper('.intro-swiper-container', {
@@ -843,6 +845,7 @@ function initializeCaseStudy(){
 
     console.log('instantiating case study');
 
+    Waypoint.destroyAll();
     lightBackground(false);
     showMenu();
 
@@ -850,16 +853,21 @@ function initializeCaseStudy(){
 
 function finalizeCaseStudy(){
     console.log('finalizing case study');
+    var prevDirection = "";
     var caseStudyContainerWaypoint = new Waypoint({
         element: $('.case-study-container'),
         handler: function(direction) {
             console.log(direction);
-            if(direction == 'down'){
-                setMenu('white');
-            }
-            else {
-                lightMenu();
-            }          
+            if(direction != prevDirection){
+                if(direction == 'down'){
+                    prevDirection = 'down';
+                    setMenu('white');
+                }
+                else {
+                    prevDirection = 'up';
+                    lightMenu();
+                }
+            }         
         },
         offset: -5
       });
@@ -875,6 +883,7 @@ function finalizeCaseStudy(){
 function instantiateMore() { 
 
     showMenu();
+    Waypoint.destroyAll();
 
     $('.quiz.answer').on("click", function(){
         console.log('clicked answer: ');

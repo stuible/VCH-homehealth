@@ -8,6 +8,7 @@ function instantiateIntro() {
 
     console.log('instantiating intro');
     showMenu();
+    Waypoint.destroyAll();
     darkBackground(true);
 
     introSwiper = new Swiper('.intro-swiper-container', {

@@ -1,6 +1,7 @@
 function instantiateMore() { 
 
     showMenu();
+    Waypoint.destroyAll();
 
     $('.quiz.answer').on("click", function(){
         console.log('clicked answer: ');

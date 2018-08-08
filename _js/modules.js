@@ -4,6 +4,7 @@ var introInstantiated = false;
 function instantiateSlider() {
 
   if(introInstantiated !== true){
+    Waypoint.destroyAll();
 
     //Instantiate Swiper (Carousel)
     var mySwiper = new Swiper('.swiper-container', {
