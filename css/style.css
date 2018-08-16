@@ -1319,6 +1319,29 @@ body {
   content: ""; }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
+.matching-circle.target {
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: dashed 3px #b4b4b4; }
+
+.matching-circle.answer {
+  height: 75px;
+  width: 75px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: antiquewhite; }
+
+.matching-answer {
+  margin-bottom: 25px; }
+
+.matching-option {
+  margin-bottom: 25px; }
+  .matching-option.correct .matching-circle.target {
+    border-color: darkolivegreen; }
 
 .narrative-question {
   color: #fff;

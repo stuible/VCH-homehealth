@@ -68,12 +68,11 @@ sections:
       text: "Indicate which signs/symptoms below by drag and drop"
 
     - part: full
-      matching-circles:
-        - category: Depression
-        - category: Delirium
-        - category: Dementia
+      quiz-matching:
+        - categories: [Depression, Delirium, Dementia]
+
         - Depression: ['Sudden Onset', 'image.png']
-        - Delirium: ['Loss if interest in activities', 'image.png']
+        - Delirium: ['Loss of interest in activities', 'image.png']
         - Delirium: ['Medical Emergency', 'image.png']
         - Depression: ['Wandering', 'image.png']
         - Dementia: ['Memory disturbances', 'image.png']

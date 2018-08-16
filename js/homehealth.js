@@ -933,11 +933,77 @@ function instantiateMore() {
         hideQuizScreen('.quiz', 'correct', 'back');
     });
     
+    var dropped = false;
 
+    //$( ".matching-answer" ).draggable({ revert: "invalid", zIndex: 2 });
+
+    // $( "body" ).on( ".matching-answer dragstart", 
+    //     function( event, ui ) {
+    //         dropped = false;
+    //         // console.log('1');
+    //         ui.helper.before(ui.helper.clone().css('position', 'absolute').draggable({ revert: "invalid", zIndex: 2 }));                                         
+    //     } 
+    // );
+
+    // $( "body" ).on( ".matching-answer dragstop", 
+    //     function( event, ui ) {
+    //         if(dropped)
+    //             ui.helper.draggable('destroy');
+    //         else
+    //             ui.helper.remove(); 
+    //     } 
+    // ); 
+
+    //Counter
+    counter = 0;
+    //Make element draggable
+    $(".matching-answer").draggable({
+        helper: 'clone',
+        containment: 'frame',
+        revert: "invalid",
+        //When first dragged
+        start: function( event, ui ) {
+            $(ui.helper).children('.seven').remove();
+        },
+        stop: function (ev, ui) {
+            
+            var pos = $(ui.helper).offset();
+            objName = "#clonediv" + counter;
+            $(objName).css({
+                "left": pos.left,
+                "top": pos.top
+            });
+            $(objName).removeClass("drag");
+            //When an existiung object is dragged
+            $(objName).draggable({
+                containment: 'parent',
+                stop: function (ev, ui) {
+                    var pos = $(ui.helper).offset();
+                    console.log($(this).attr("id"));
+                    console.log(pos.left);
+                    console.log(pos.top);
+                }
+            });
+        }
+    });
+
+    $('.matching-option').droppable({
+        accept: '.matching-answer',
+        drop: function(event, ui ) {
+            var category = $(ui.draggable).data('category');
+            console.log(category);
+            console.log($(this).data('category'));
+            if($(this).data('category') == category){
+                console.log('correct');
+                $(this).addClass('correct');
+                dropped = true;  
+            }
+            
+        }
+    });
 }
 
 function showQuizScreen(quiz, screen, title, description, button, buttonText){
-
     $(quiz).children('.response-title').text(title);
     $(quiz).children('.response-description').text(description);
     $(quiz).children('.quiz.feedback').addClass(screen);
