@@ -19,43 +19,43 @@ layout: more
 
                             {% if part.part == 'half' %}
 
-                            {% if forloop.index <= 2 %}
-                            <div class="six columns">
-                            {% else %}
-                            <div class="six columns margin top fifty">
-                            {% endif %}
-                            
-                            
-                                {% for component in part %}
+                                {% if forloop.index <= 2 %}
+                                <div class="six columns">
+                                {% else %}
+                                <div class="six columns margin top fifty">
+                                {% endif %}
+                                
+                                
+                                    {% for component in part %}
 
-                                    {% MoreInfoComponent 
-                                        baseurl: site.baseurl
-                                        type: component[0] 
-                                        size: part.part 
-                                        text: component[1] %}
+                                        {% MoreInfoComponent 
+                                            baseurl: site.baseurl
+                                            type: component[0] 
+                                            size: part.part 
+                                            text: component[1] %}
 
-                                {% endfor %}
-                            </div>
-                            {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
 
                             {% if part.part == 'full' %}
 
-                            {% if forloop.first %}
-                            <div class="twelve columns">
-                            {% else %}
-                            <div class="twelve columns margin top fifty">
-                            {% endif %}
+                                {% if forloop.first %}
+                                <div class="twelve columns">
+                                {% else %}
+                                <div class="twelve columns margin top fifty">
+                                {% endif %}
 
-                                {% for component in part %}
+                                    {% for component in part %}
 
-                                    {% MoreInfoComponent 
-                                        baseurl: site.baseurl
-                                        type: component[0] 
-                                        size: part.part 
-                                        text: component[1] %}
+                                        {% MoreInfoComponent 
+                                            baseurl: site.baseurl
+                                            type: component[0] 
+                                            size: part.part 
+                                            text: component[1] %}
 
-                                {% endfor %}
-                            </div>
+                                    {% endfor %}
+                                </div>
                             {% endif %}
 
 
