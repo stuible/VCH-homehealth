@@ -72,6 +72,21 @@ gulp.task('jekyll', function() {
     jekyll.stderr.on('data', jekyllLogger);
   });
 
+  gulp.task('jekyll-full', function() {
+    var jekyll = child.spawn('jekyll', ['build',
+      '--drafts',
+    ]);
+  
+    var jekyllLogger = function(buffer) {
+      buffer.toString()
+        .split(/\n/)
+        .forEach(function(message){ gutil.log('Jekyll: ' + message);});
+    };
+  
+    jekyll.stdout.on('data', jekyllLogger);
+    jekyll.stderr.on('data', jekyllLogger);
+  });
+
   gulp.task('jekyll-deploy', function() {
     var jekyll = child.spawn('jekyll', ['build',
       // '--watch',
@@ -103,6 +118,8 @@ gulp.task('jekyll', function() {
     });
     gulp.watch(cssFiles, ['css']);
     gulp.watch(jsSources, ['js']);
+    gulp.watch(['_plugins/**/*.rb'], ['jekyll-full', 'jekyll']);
+    
   });
   
 
