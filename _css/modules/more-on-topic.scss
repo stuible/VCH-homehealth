@@ -253,6 +253,13 @@ $sectionTitleBoarderBottom: 5px;
     // border: dashed 3px rgb(180, 180, 180);
 }
 
+.matching-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+}
+
 .matching-answer{
     margin-bottom: 25px;
 }
