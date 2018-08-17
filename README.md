@@ -113,8 +113,8 @@ sections:
   #declare a section like this, you can have as many sections as you want
   - section:
 
-    #Sections can have either just one full part, a left part and a right part, or all three parts.  
-    - part: left | right | full #must be one of these 3 types
+    #Sections can have either just one full part, 2 half parts, or all three parts.  
+    - part: half | full #must be one of these 2 types
 
       #title of part
       title: A Great Title 
@@ -122,11 +122,45 @@ sections:
       #Text block that will appear in the part
       text: lots of great information
 
-      # A block that takes in an array and displays mutiple small circles containing images
-      circles: ['thing', 'thing', 'thing'] 
+      #Display an embedded youtube video, just input youtube embed url
+      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+
+      #display a locally hosted video, just input the file path
+      video: folder/video.mp4
+
+      #lazy way add padding
+      spacer-title: asdfasdfadf
+
+      #due to limitations with YAML Frontmatter, I have created duplicate title and text blocks with the suffix '-2' so you
+      #can use more then one per part if needed (you can only use on of a block type per part)
+      title-2: A Title
+      text-2: Some text
+
+      # A block that takes in a list and displays circles containing images
+      circles:
+        - Title: image.png
+        - Spiritual: modules/pcc/more-on-topic/holistic/spiritual.png
+        - Cultural: modules/pcc/more-on-topic/holistic/cultural.png
 
       # A block that takes in an array and displays mutiple questions
       questions: ['How did you feel?', 'What were the ramifications?'] 
+
+      # A block that creates a matching quiz (this whole layout thing is such a hack so I apologies for these janky blocks)
+      quiz-matching:
+        # first you define category names and images to represent them
+        - category: [Depression, more-on-topic/deppression.jpg]
+        - category: [Delirium, more-on-topic/delirium.jpg]
+        - category: [Dementia, more-on-topic/dementia.jpg]
+
+        #You then define items that fall under your define categories, the user will have to match them up
+        - Depression: 'Sudden Onset'
+        - Delirium: 'Medical Emergency'
+        - Depression: 'Wandering'
+        - Dementia: 'Memory disturbances'
+        - Dementia: 'Hopelessness'
+        
+
+      
  
 ```
 </details><br>
