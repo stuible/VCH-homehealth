@@ -45,7 +45,7 @@ function createProgress(){
                 'holisticcare' : new element(false),
                 'careofolderadults' : new element(false),
                 'chronicconditions' : new element(false),
-                'medmanagement' : new element(false),
+                'med-management' : new element(false),
                 'deliverables' : new element(false),
             })
     });
