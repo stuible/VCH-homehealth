@@ -107,10 +107,15 @@ $modulesBorderRadius: 10px;
 .modules-pagination {
     width: 100%;
     text-align: center;
+    display: none;
 
     > .swiper-pagination-bullet {
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    &.initialized {
+        display: block;
     }
 }
 

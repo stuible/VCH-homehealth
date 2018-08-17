@@ -49,6 +49,7 @@ function instantiateSlider() {
                 videosWeNeedLoaded.push(this);
                 if(videosWeNeedLoaded.length == 3){
                   $('.swiper-container').addClass('initialized');
+                  $('.modules-pagination').addClass('initialized');
                 }
             }, false);
             }
