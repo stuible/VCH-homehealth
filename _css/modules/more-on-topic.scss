@@ -62,12 +62,16 @@ $sectionTitleBoarderBottom: 5px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .more-circle-container{
     // width: 10px;
     flex: 1; 
     text-align: center;
+    /* width: 0; */
+    min-width: 100px;
+    max-width: 100px;
 }
 
 .more-circle {
