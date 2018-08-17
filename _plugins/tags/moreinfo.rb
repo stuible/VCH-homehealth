@@ -119,7 +119,7 @@ module Jekyll
                       <div class="matching-circle target"></div>
                     </div>
                     <div class="eight columns">
-                      <div class="matching-text">#{value[0]}</div>
+                      <div class="matching-text">#{value}</div>
                     </div>
                   </div>
                 </div>
@@ -189,6 +189,7 @@ module Jekyll
 
       elsif type == 'posters-three'
         output = %Q[<div class="more-posters #{size}">]
+        output << %Q[<div class="row">]
         index = 1;
         for item in text do
           item.each {|key, value| 
@@ -197,12 +198,25 @@ module Jekyll
               <div class="more-poster-text">
                 0#{index}: #{key}
               </div>
-              <img class="more-poster" src="#{baseurl}/image/#{value}">
             </div>
           ]
         }
         index += 1
         end
+        output << %Q[</div>]
+
+        output << %Q[<div class="row">]
+        for item in text do
+          item.each {|key, value| 
+          output << %Q[
+            <div class="four columns">
+              <img class="more-poster" src="#{baseurl}/image/#{value}">
+            </div>
+          ]
+        }
+        end
+        output << %Q[</div>]
+
         output << %Q[</div>]
 
       elsif type == 'youtube'

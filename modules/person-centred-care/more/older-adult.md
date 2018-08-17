@@ -69,16 +69,15 @@ sections:
 
     - part: full
       quiz-matching:
-        # - categories: [Depression, Delirium, Dementia]
         - category: [Depression, more-on-topic/deppression.jpg]
         - category: [Delirium, more-on-topic/delirium.jpg]
         - category: [Dementia, more-on-topic/dementia.jpg]
 
-        - Depression: ['Sudden Onset', 'image.png']
-        - Delirium: ['Loss of interest in activities', 'image.png']
-        - Delirium: ['Medical Emergency', 'image.png']
-        - Depression: ['Wandering', 'image.png']
-        - Dementia: ['Memory disturbances', 'image.png']
-        - Dementia: ['Hopelessness', 'image.png']
+        - Depression: 'Sudden Onset'
+        - Delirium: 'Loss of interest in activities'
+        - Delirium: 'Medical Emergency'
+        - Depression: 'Wandering'
+        - Dementia: 'Memory disturbances'
+        - Dementia: 'Hopelessness'
 
 ---

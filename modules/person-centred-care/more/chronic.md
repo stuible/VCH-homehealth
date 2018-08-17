@@ -49,16 +49,17 @@ sections:
   - section:
     - part: full
       quiz-matching:
-        - categories: [Depression, Anxiety]
+        - category: [Depression, more-on-topic/deppression.jpg] 
+        - category: [Anxiety, more-on-topic/delirium.jpg]
 
-        - Depression: ['Lack of interest in activities', 'image.png']
-        - Depression: ['Depressive mood', 'image.png']
-        - Depression: ['Excessive worry', 'image.png']
-        - Depression: ['Lack of energy', 'image.png']
-        - Anxiety: ['Restlessness', 'image.png']
-        - Anxiety: ['Muscle tension', 'image.png']
-        - Anxiety: ['Feelings of worthlessness', 'image.png']
-        - Anxiety: ['Irritability', 'image.png']
+        - Depression: 'Lack of interest in activities'
+        - Depression: 'Depressive mood'
+        - Depression: 'Excessive worry'
+        - Depression: 'Lack of energy'
+        - Anxiety: 'Restlessness'
+        - Anxiety: 'Muscle tension'
+        - Anxiety: 'Feelings of worthlessness'
+        - Anxiety: 'Irritability'
 
 
 ---

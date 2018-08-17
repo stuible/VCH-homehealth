@@ -1361,7 +1361,7 @@ body {
 .matching-option {
   margin-bottom: 25px; }
   .matching-option.correct .matching-circle.target {
-    border-color: darkolivegreen; }
+    border: solid 3px #5AAF7F; }
 
 .narrative-question {
   color: #fff;

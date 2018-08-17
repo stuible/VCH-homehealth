@@ -979,6 +979,7 @@ function instantiateMore() {
                 console.log('correct');
                 $(this).addClass('correct');
                 console.log($(this).children().first().children().first().children('.matching-circle'));
+                $(this).children().first().children().first().children('.matching-circle').css('background-image', 'url(' + background + ')');
                 dropped = true;  
             }
             
