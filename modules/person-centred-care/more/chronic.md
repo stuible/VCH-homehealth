@@ -6,12 +6,8 @@ title: Chronic Conditions
 sections:
   - section:
 
-    - part: full
-      title: Self management support
-
-    - part: full
-
     - part: half
+      title: Self management support
       text: "The home health team can support client’s in managing their chronic conditions by:"
       bullets:
         - Assessment and monitoring
@@ -23,6 +19,7 @@ sections:
     - part: half
       title: Take Action
       text: Please watch the ‘Self Managing and Self Management Support’ video
+      spacer-title: asdfasdfadf
       youtube: https://www.youtube.com/embed/xw9BBb8LhYw
 
   - section:
@@ -52,14 +49,14 @@ sections:
         - category: [Depression, more-on-topic/deppression.jpg] 
         - category: [Anxiety, more-on-topic/delirium.jpg]
 
-        - Depression: 'Lack of interest in activities'
-        - Depression: 'Depressive mood'
-        - Depression: 'Excessive worry'
-        - Depression: 'Lack of energy'
-        - Anxiety: 'Restlessness'
-        - Anxiety: 'Muscle tension'
-        - Anxiety: 'Feelings of worthlessness'
-        - Anxiety: 'Irritability'
+        - Depression: Lack of interest in activities
+        - Depression: Depressive mood
+        - Depression: Excessive worry
+        - Depression: Lack of energy
+        - Anxiety: Restlessness
+        - Anxiety: Muscle tension
+        - Anxiety: Feelings of worthlessness
+        - Anxiety: Irritability
 
 
 ---
