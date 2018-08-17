@@ -975,6 +975,78 @@ body {
   /* background-attachment: fixed; */
   background-position: center; }
 
+.modules-loader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  margin-top: 18vh !important;
+  overflow: hidden;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out; }
+  .modules-loader .faux-slide-container {
+    width: 3000px; }
+    .modules-loader .faux-slide-container .faux-slide-wrapper {
+      display: table; }
+    .modules-loader .faux-slide-container .faux-slide {
+      display: inline-block;
+      width: 60vw !important;
+      height: 33.7vw !important;
+      margin: 0.5625vw auto;
+      margin-left: 25px;
+      margin-right: 25px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: solid 5px white;
+      -webkit-animation: pulse 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both;
+      -moz-animation: pulse 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both;
+      -o-animation: pulse 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both;
+      animation: pulse 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite alternate both; }
+      .modules-loader .faux-slide-container .faux-slide.one {
+        -webkit-animation-delay: 0ms;
+        -moz-animation-delay: 0ms;
+        -o-animation-delay: 0ms;
+        animation-delay: 0ms; }
+      .modules-loader .faux-slide-container .faux-slide.two {
+        -webkit-animation-delay: 200ms;
+        -moz-animation-delay: 200ms;
+        -o-animation-delay: 200ms;
+        animation-delay: 200ms; }
+      .modules-loader .faux-slide-container .faux-slide.three {
+        -webkit-animation-delay: 400ms;
+        -moz-animation-delay: 400ms;
+        -o-animation-delay: 400ms;
+        animation-delay: 400ms; }
+  .modules-loader.initialized {
+    opacity: 0; }
+
+@-webkit-keyframes pulse {
+  0% {
+    background: #ffffff; }
+  100% {
+    background: #ffffff00; } }
+
+@-moz-keyframes pulse {
+  0% {
+    background: #ffffff; }
+  100% {
+    background: #ffffff00; } }
+
+@-o-keyframes pulse {
+  0% {
+    background: #ffffff; }
+  100% {
+    background: #ffffff00; } }
+
+@keyframes pulse {
+  0% {
+    background: #ffffff; }
+  100% {
+    background: #ffffff00; } }
+
 /* MAIN CAROUSEL */
 .swiper-container {
   width: 100%;
@@ -1069,8 +1141,7 @@ body {
 
 .modules-pagination {
   width: 100%;
-  text-align: center;
-  display: none; }
+  text-align: center; }
   .modules-pagination > .swiper-pagination-bullet {
     margin-left: 5px;
     margin-right: 5px; }

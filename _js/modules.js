@@ -3,6 +3,8 @@ var introInstantiated = false;
 
 function instantiateSlider() {
 
+  centerLoader();
+
   if(introInstantiated !== true){
     Waypoint.destroyAll();
 
@@ -50,6 +52,7 @@ function instantiateSlider() {
                 if(videosWeNeedLoaded.length == 3){
                   $('.swiper-container').addClass('initialized');
                   $('.modules-pagination').addClass('initialized');
+                  $('.modules-loader').addClass('initialized');
                 }
             }, false);
             }
@@ -104,6 +107,11 @@ function instantiateSlider() {
       introInstantiated = true;
     }
     
+  }
+
+  function centerLoader(){
+    var loaderWidth = $('.faux-slide-wrapper').width();
+    $('.faux-slide-wrapper').css("transform", "translate(-" + (loaderWidth - $(document).width()) / 2 + "px,0)");
   }
 
   function instantiatePopups(){

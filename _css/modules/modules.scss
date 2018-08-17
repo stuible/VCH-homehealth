@@ -11,6 +11,66 @@ $modulesBorderRadius: 10px;
     background-position: center; 
 }
 
+// LOADER
+
+.modules-loader {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    margin-top: 18vh !important;
+    // z-index: 2;
+    overflow: hidden;
+    transition: opacity 500ms ease-in-out;
+
+    .faux-slide-container {
+
+        width: 3000px;
+
+        .faux-slide-wrapper {
+            display: table;
+        }
+
+        .faux-slide {
+            display: inline-block;
+            width: 60vw !important;
+            height: 33.7vw !important;
+            margin: 0.5625vw auto;
+            margin-left: 25px;
+            margin-right: 25px;
+            border-radius: $modulesBorderRadius;
+            border: solid 5px white;
+            animation: pulse 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite alternate both;
+
+            &.one{
+                animation-delay: 0ms;
+            }
+            &.two{
+                animation-delay: 200ms;
+            }
+            &.three{
+                animation-delay: 400ms;
+            }
+        }
+
+    }
+
+    &.initialized {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      background: #ffffff;
+    }
+    100% {
+      background: #ffffff00;
+    }
+  }
+  
+
+
 /* MAIN CAROUSEL */
 
 .swiper-container {
@@ -107,7 +167,7 @@ $modulesBorderRadius: 10px;
 .modules-pagination {
     width: 100%;
     text-align: center;
-    display: none;
+    // display: none;
 
     > .swiper-pagination-bullet {
         margin-left: 5px;
