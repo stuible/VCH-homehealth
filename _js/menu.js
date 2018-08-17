@@ -3,10 +3,6 @@ var lastmoduleSlide = "";
 var lastmoduleSection = "";
 var allRects = null;
 
-window.onload = function () {
-    drawModulesIcon();
-};
-
 function lightMenu() {
     setMenu('light');
 }
