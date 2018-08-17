@@ -43,7 +43,7 @@ more:
     url: chronic
   - title: Med Management
     image: pcc/CarePlanning.jpg
-    url: care
+    url: med-management
   - title: Deliverables
     image: pcc/Deliverable.jpg
     url: deliverables

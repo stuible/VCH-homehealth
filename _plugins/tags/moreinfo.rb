@@ -99,15 +99,17 @@ module Jekyll
         output << %Q[</div>]
 
       elsif type == 'quiz-matching'
-        categories = ''
+        categories = []
+        images = []
         output << %Q[
           <div class="quiz matching">
             <div class="eight columns">
         ]
         for element in text do
           element.each {|key, value| 
-            if key == 'categories'
-              categories = value
+            if key == 'category'
+              categories.push(value[0])
+              images.push(value[1])
               #output << %Q[#{key} : #{value}]
             elsif categories.include? key
               output << %Q[
@@ -130,11 +132,11 @@ module Jekyll
         output << %Q[</div>]
 
         output << %Q[<div class="four columns">]
-        for category in categories do
+        categories.each_with_index do |category, index|
           output << %Q[
-            <div class="row matching-answer" data-category="#{category}">
+            <div class="row matching-answer" data-category="#{category}" data-background="#{baseurl}/image/#{images[index]}">
               <div class="five columns">
-                <div style="background-image: url(#{baseurl}/image/)" class="matching-circle answer"></div>
+                <div style="background-image: url('#{baseurl}/image/#{images[index]}')" class="matching-circle answer"></div>
                 </div>
                 <div class="seven columns">
                   <div class="matching-text">#{category}</div>
