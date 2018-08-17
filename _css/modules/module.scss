@@ -236,14 +236,15 @@ $moreOnTopicCardHeight: 260px;
 
     .overlay {
         position: absolute;
-        display: none;
+        // display: none;
         top: 0;
         height: $moreOnTopicCardHeight;
         width: 100%;
         border-radius: 5px 5px 0px 0px;
-        opacity: 0.7;
+        opacity: 0;
         bottom: 25px;
         background-color: $primaryColour;
+        transition: opacity 400ms linear;
 
         svg {
             margin: 0 45px;
@@ -307,7 +308,8 @@ $moreOnTopicCardHeight: 260px;
     }
 
     &.done .overlay{
-        display: block;
+        // display: block;
+        opacity: 0.7;
     }
 
 }
