@@ -53,25 +53,6 @@ function instantiateMore() {
     
     var dropped = false;
 
-    //$( ".matching-answer" ).draggable({ revert: "invalid", zIndex: 2 });
-
-    // $( "body" ).on( ".matching-answer dragstart", 
-    //     function( event, ui ) {
-    //         dropped = false;
-    //         // console.log('1');
-    //         ui.helper.before(ui.helper.clone().css('position', 'absolute').draggable({ revert: "invalid", zIndex: 2 }));                                         
-    //     } 
-    // );
-
-    // $( "body" ).on( ".matching-answer dragstop", 
-    //     function( event, ui ) {
-    //         if(dropped)
-    //             ui.helper.draggable('destroy');
-    //         else
-    //             ui.helper.remove(); 
-    //     } 
-    // ); 
-
     //Counter
     counter = 0;
     //Make element draggable
@@ -109,11 +90,13 @@ function instantiateMore() {
         accept: '.matching-answer',
         drop: function(event, ui ) {
             var category = $(ui.draggable).data('category');
+            var background = $(ui.draggable).data('background');
             console.log(category);
             console.log($(this).data('category'));
             if($(this).data('category') == category){
                 console.log('correct');
                 $(this).addClass('correct');
+                console.log($(this).children().first().children().first().children('.matching-circle'));
                 dropped = true;  
             }
             
