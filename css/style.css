@@ -362,7 +362,11 @@ body {
   bottom: 50px;
   left: -webkit-calc(50% - 75px);
   left: -moz-calc(50% - 75px);
-  left: calc(50% - 75px); }
+  left: calc(50% - 75px);
+  cursor: pointer; }
+  .scroll-btn button {
+    all: initial;
+    cursor: pointer; }
 
 .scroll-btn > * {
   line-height: 18px;

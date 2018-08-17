@@ -662,6 +662,7 @@ function instantiateIntro() {
         direction: 'vertical',
         slideClass: 'intro-swiper-slide',
         setWrapperSize: true,
+        init: false,
         // touchReleaseOnEdges: true,
         // mousewheelSensitivity: 0,
         // mousewheelReleaseOnEdges: true,
@@ -682,7 +683,7 @@ function instantiateIntro() {
         },
         on: {
             init: function () {
-                $('.module-swiper-container').addClass('initialized');
+                $('.intro-swiper-container').addClass('initialized');
             },
         },
     });
@@ -693,6 +694,10 @@ function instantiateIntro() {
         console.log('last module section was: ' + lastmoduleSection);
 
     });
+    introSwiper.on('init', function () {
+        introSwiper.update();
+    });
+    introSwiper.init();
 }
 
 function instantiateModule() {
@@ -705,6 +710,7 @@ function instantiateModule() {
         direction: 'vertical',
         slideClass: 'module-swiper-slide',
         speed: 400,
+        init: false,
         mousewheel: {
             invert: false,
         },
@@ -729,6 +735,10 @@ function instantiateModule() {
         console.log('last module section was: ' + lastmoduleSection);
 
     });
+    moduleSwiper.on('init', function () {
+        moduleSwiper.update();
+    });
+    moduleSwiper.init();
 }
 
 function updateMoreOnTopicUI() {
