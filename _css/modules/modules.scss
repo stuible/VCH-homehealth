@@ -25,7 +25,8 @@ $modulesBorderRadius: 10px;
 
     .faux-slide-container {
 
-        width: 3000px;
+        // width: 3000px;
+        white-space: nowrap;
 
         .faux-slide-wrapper {
             display: table;

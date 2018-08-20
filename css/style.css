@@ -989,7 +989,7 @@ body {
   -moz-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out; }
   .modules-loader .faux-slide-container {
-    width: 3000px; }
+    white-space: nowrap; }
     .modules-loader .faux-slide-container .faux-slide-wrapper {
       display: table; }
     .modules-loader .faux-slide-container .faux-slide {
