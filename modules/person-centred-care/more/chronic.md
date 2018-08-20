@@ -19,7 +19,6 @@ sections:
     - part: half
       title: Take Action
       text: Please watch the ‘Self Managing and Self Management Support’ video
-      spacer-title: asdfasdfadf
       youtube: https://www.youtube.com/embed/xw9BBb8LhYw
 
   - section:
@@ -44,6 +43,9 @@ sections:
       youtube: https://www.youtube.com/embed/xw9BBb8LhYw
 
   - section:
+    - part: half
+      title: Anxiety and Depression
+      text: Indicate which signs and symptoms go with the underlying issue by dragging and dropping
     - part: full
       quiz-matching:
         - category: [Depression, more-on-topic/deppression.jpg] 
@@ -57,6 +59,23 @@ sections:
         - Anxiety: Muscle tension
         - Anxiety: Feelings of worthlessness
         - Anxiety: Irritability
+
+  - section:
+    - part: half
+      title: Medication Management
+      text: Ensuring the right medications are taken at the right time in the right way is a part of managing chronic disease. Community health nurses can assist clients with this by first doing a Best Possible Medication History. Once the history is done and documented, reconcilation should be done with the MRP.
+      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+    - part: half
+      title: Take Action
+      text: Review images of strategies you can use to help support taking their medication properly. Click an image to expand.
+      gallery:
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+      
 
 
 ---

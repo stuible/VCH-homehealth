@@ -219,6 +219,33 @@ module Jekyll
 
         output << %Q[</div>]
 
+      elsif type == 'gallery'
+        output = %Q[<div class="more-gallery #{size}">]
+        index = 1
+        rowCounter = 1
+        for item in text do
+          if rowCounter == 1
+            output << %Q[<div class="row">]
+          end
+          item.each {|key, value| 
+          output << %Q[
+            <div class="four columns">
+                <img src="#{baseurl}/image/#{value}">
+
+            </div>
+          ]
+          }
+          if rowCounter == 3
+            output << %Q[</div>]
+            rowCounter = 1
+          else
+            rowCounter += 1
+          end
+          index += 1
+          
+        end
+        output << %Q[</div>]
+
       elsif type == 'youtube'
         output = %Q[
           <div class="more-video">
