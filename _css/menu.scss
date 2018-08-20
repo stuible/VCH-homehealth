@@ -91,6 +91,10 @@
     line-height: 70px;
     margin-left: 85px;
     float: left;
+    width: 75px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     :hover {
         opacity: 1;    
@@ -100,7 +104,13 @@
         text-decoration: none;
         text-transform:capitalize;
     }
+    
+    @include larger-than(tablet){
+    
+        width: auto;
+    }
 }
+
 
 .menu-support {
     // color: #ffffffbf;
