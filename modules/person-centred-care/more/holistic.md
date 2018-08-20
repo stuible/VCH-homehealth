@@ -52,10 +52,12 @@ sections:
       text: Select the correct answers
       quiz-multiple-select:
         - question: "Caregivers can experience:"
+        - feedback: ['Incorrect', 'You were right, but there are more...', 'You got them all!']
+
         - true: Changes in sleep pattersn
-        - false: Increased irritability and moodiness
+        - true: Increased irritability and moodiness
         - true: Changed in appetite / weight
-        - false: Reduced enjoyment in usual activities
+        - true: Reduced enjoyment in usual activities
         - true: Changes in physical health
 
 

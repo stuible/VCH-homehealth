@@ -65,6 +65,7 @@ module Jekyll
 
       elsif type == 'quiz-multiple-select'
         output = %Q[<div class="quiz #{size}">]
+        feedback = '';
         for element in text do
           element.each {|key, value| 
             if key == 'question'
@@ -79,6 +80,8 @@ module Jekyll
                     <label for="#{value.delete(" \t\r\n")}">#{value}</label>
                   </div>
               ]
+            elsif key == 'feedback'
+              feedback = value
             else
               output << %Q[
                   Wrong Prefix: #{value}
@@ -86,7 +89,7 @@ module Jekyll
             end
           }
         end
-        output << %Q[<div class="quiz feedback">
+        output << %Q[<div class="quiz feedback" data-feedback='#{feedback.to_json}'>
           <div class="response-title">Title</div>
           <div class="response-description">Feedback</div>
         </div>]

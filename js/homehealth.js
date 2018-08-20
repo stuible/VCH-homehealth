@@ -906,6 +906,26 @@ function instantiateMore() {
 }
 
 function instantiateMultipleChoiceQuiz() {
+
+    var correctText = "You were correct";
+    var partialText = "You were partially correct";
+    var wrongText = "You were wrong";
+
+    var customFeedback = $('.quiz.feedback').data('feedback');
+
+
+    if(customFeedback.length == 2){
+    
+        wrongText = customFeedback[0];
+        correctText = customFeedback[1];
+
+    }
+    else if (customFeedback.length == 3){
+        wrongText = customFeedback[0];
+        partialText = customFeedback[1];
+        correctText = customFeedback[2];
+    }
+
     $('.quiz.answer').on("click", function () {
         console.log('clicked answer: ');
         console.log($(this).children('input').prop("checked", !$(this).children('input').prop("checked")));
@@ -921,10 +941,12 @@ function instantiateMultipleChoiceQuiz() {
         else {
             console.log('you slected at least one asnwer');
             var incorrectAnwers = [];
+            var partiallyCorrect = false;
             $("input[name=multiple-select-quiz]").each(function (i) {
 
                 if ($(this).is(':checked') && $(this).data('correct') == true) {
                     console.log('For Quesiton ' + i + ': U WAS RIGHT');
+                    partiallyCorrect = true;
                 }
                 else if (!$(this).is(':checked') && $(this).data('correct') == false) {
                     console.log('For Quesiton ' + i + ': U WAS RIGHT');
@@ -935,14 +957,22 @@ function instantiateMultipleChoiceQuiz() {
                 }
             });
             if (incorrectAnwers.length > 0) {
-                console.log('YOU FAILED');
-                // $('.quiz.feedback').addClass('incorrect');
-                showQuizScreen('.quiz', 'incorrect', 'Wrong', 'You were wrong', 'again', 'Try Again');
+                if(!partiallyCorrect){
+                    console.log('YOU FAILED');
+                    // $('.quiz.feedback').addClass('incorrect');
+                    showQuizScreen('.quiz', 'incorrect', 'Wrong', wrongText, 'again', 'Try Again');
+                }
+                else {
+                    console.log('YOU WERE PARTIALLY RIGHT');
+                    // $('.quiz.feedback').addClass('incorrect');
+                    showQuizScreen('.quiz', 'incorrect', 'Partially Correct', partialText, 'again', 'Try Again');
+                }
+                
             }
             else {
                 console.log('YOU NAILED IT');
                 // $('.quiz.feedback').addClass('correct');
-                showQuizScreen('.quiz', 'correct', 'Correct', 'You were right', 'back', 'Back');
+                showQuizScreen('.quiz', 'correct', 'Correct', correctText, 'back', 'Back');
             }
         }
     });
