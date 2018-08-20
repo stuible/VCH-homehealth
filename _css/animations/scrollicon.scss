@@ -1,3 +1,5 @@
+@import "../variables";
+
 @-webkit-keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -71,6 +73,7 @@
         cursor: pointer;
     }
     
+    display: none;
     height: 75px;
     width: 150px;
     text-align: center;
@@ -83,6 +86,9 @@
     left: calc(50% - 75px);
     cursor: pointer;
 
+    @include larger-than(phone){
+        display: block;
+    }
     
 }
 
