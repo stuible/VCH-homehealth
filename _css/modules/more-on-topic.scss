@@ -272,7 +272,7 @@ $sectionTitleBoarderBottom: 5px;
     margin-bottom: 25px;
 
     &.correct .matching-circle.target{
-        border: solid 3px $primaryColour;
+        border: solid 3px $primaryColour !important;
     }
 }
 

@@ -129,12 +129,20 @@ body {
   opacity: 0.8;
   line-height: 70px;
   margin-left: 85px;
-  float: left; }
+  float: left;
+  width: 75px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
   .menu-name :hover {
     opacity: 1; }
   .menu-name a {
     text-decoration: none;
     text-transform: capitalize; }
+  @media (min-width: 750px) {
+    .menu-name {
+      width: auto; } }
 
 .menu-support {
   float: right;
@@ -351,6 +359,7 @@ body {
     top: 29%; } }
 
 .scroll-btn {
+  display: none;
   height: 75px;
   width: 150px;
   text-align: center;
@@ -367,6 +376,9 @@ body {
   .scroll-btn button {
     all: initial;
     cursor: pointer; }
+  @media (min-width: 400px) {
+    .scroll-btn {
+      display: block; } }
 
 .scroll-btn > * {
   line-height: 18px;
@@ -604,7 +616,7 @@ body {
 
 .course-objectives {
   color: #fff;
-  font-size: 13px; }
+  font-size: 12px; }
 
 .objective-number {
   font-size: 3.5em;
@@ -1067,7 +1079,7 @@ body {
   margin: 0.5625vw auto;
   margin-left: 25px;
   margin-right: 25px;
-  font-size: 10px; }
+  font-size: 9px; }
   .swiper-slide a {
     text-decoration: none; }
   .swiper-slide div {
@@ -1122,7 +1134,7 @@ body {
 
 @media (min-width: 400px) {
   .swiper-slide {
-    font-size: 13px; } }
+    font-size: 12px; } }
 
 @media (min-width: 750px) {
   .swiper-slide {
@@ -1156,6 +1168,12 @@ body {
 .swiper-button-prev {
   left: 15% !important; }
 
+.swiper-button-next, .swiper-button-prev {
+  display: none; }
+  @media (min-width: 400px) {
+    .swiper-button-next, .swiper-button-prev {
+      display: block; } }
+
 .module-video {
   position: absolute;
   z-index: -1;
@@ -1168,13 +1186,20 @@ body {
   -webkit-box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
   -moz-box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
   box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
-  font-size: 0.8em;
-  padding: 0.25em 2em;
+  font-size: 1.1em;
+  padding: 0.1em 2em;
   height: auto; }
+  @media (min-width: 400px) {
+    .before-begin-button {
+      font-size: 0.8em;
+      padding: 0.25em 2em; } }
 
 .module-button-container {
   height: auto !important;
-  margin-top: -20%; }
+  margin-top: -30%; }
+  @media (min-width: 400px) {
+    .module-button-container {
+      margin-top: -20%; } }
 
 .prereq-image {
   height: 150px;
@@ -1446,7 +1471,7 @@ body {
 .matching-option {
   margin-bottom: 25px; }
   .matching-option.correct .matching-circle.target {
-    border: solid 3px #5AAF7F; }
+    border: solid 3px #5AAF7F !important; }
 
 .more-bullets {
   margin-top: 50px;

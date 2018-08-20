@@ -895,32 +895,38 @@ function finalizeCaseStudy(){
         icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
       });
 }
-function instantiateMore() { 
+function instantiateMore() {
 
     showMenu();
     Waypoint.destroyAll();
 
-    $('.quiz.answer').on("click", function(){
+    instantiateMultipleChoiceQuiz();
+    instantiateMatchingQuiz();
+
+}
+
+function instantiateMultipleChoiceQuiz() {
+    $('.quiz.answer').on("click", function () {
         console.log('clicked answer: ');
-        console.log($(this).children('input').prop( "checked", !$(this).children('input').prop( "checked") ));
+        console.log($(this).children('input').prop("checked", !$(this).children('input').prop("checked")));
         $(this).children('input').change();
 
     });
 
-    $('.button-container').on("click",'.quiz.button.submit', function(){
+    $('.button-container').on("click", '.quiz.button.submit', function () {
         //Check if user didn't make a selection
-        if(!$("input[name=multiple-select-quiz]").is(':checked')){
+        if (!$("input[name=multiple-select-quiz]").is(':checked')) {
             vex.dialog.alert("Please chose at least one answer");
         }
         else {
             console.log('you slected at least one asnwer');
             var incorrectAnwers = [];
-            $("input[name=multiple-select-quiz]").each(function(i){
-                
-                if($(this).is(':checked') && $(this).data('correct') == true){
+            $("input[name=multiple-select-quiz]").each(function (i) {
+
+                if ($(this).is(':checked') && $(this).data('correct') == true) {
                     console.log('For Quesiton ' + i + ': U WAS RIGHT');
                 }
-                else if(!$(this).is(':checked') && $(this).data('correct') == false){
+                else if (!$(this).is(':checked') && $(this).data('correct') == false) {
                     console.log('For Quesiton ' + i + ': U WAS RIGHT');
                 }
                 else {
@@ -928,7 +934,7 @@ function instantiateMore() {
                     incorrectAnwers.push(this);
                 }
             });
-            if(incorrectAnwers.length > 0){
+            if (incorrectAnwers.length > 0) {
                 console.log('YOU FAILED');
                 // $('.quiz.feedback').addClass('incorrect');
                 showQuizScreen('.quiz', 'incorrect', 'Wrong', 'You were wrong', 'again', 'Try Again');
@@ -941,13 +947,15 @@ function instantiateMore() {
         }
     });
 
-    $('.button-container').on("click",'.quiz.button.again', function(){
+    $('.button-container').on("click", '.quiz.button.again', function () {
         hideQuizScreen('.quiz', 'incorrect', 'again');
     });
-    $('.button-container').on("click",'.quiz.button.back', function(){
+    $('.button-container').on("click", '.quiz.button.back', function () {
         hideQuizScreen('.quiz', 'correct', 'back');
     });
-    
+}
+
+function instantiateMatchingQuiz() {
     var dropped = false;
 
     //Counter
@@ -956,13 +964,13 @@ function instantiateMore() {
     $(".matching-answer").draggable({
         helper: 'clone',
         containment: 'frame',
-        revert: "invalid",
+        revert: true,
         //When first dragged
-        start: function( event, ui ) {
+        start: function (event, ui) {
             $(ui.helper).children('.seven').remove();
         },
         stop: function (ev, ui) {
-            
+
             var pos = $(ui.helper).offset();
             objName = "#clonediv" + counter;
             $(objName).css({
@@ -985,31 +993,43 @@ function instantiateMore() {
 
     $('.matching-option').droppable({
         accept: '.matching-answer',
-        drop: function(event, ui ) {
+        drop: function (event, ui) {
             var category = $(ui.draggable).data('category');
             var background = $(ui.draggable).data('background');
+            var droppableCircle = $(this).children().first().children().first().children('.matching-circle');
             console.log(category);
             console.log($(this).data('category'));
-            if($(this).data('category') == category){
+            if ($(this).data('category') == category) {
+                $(ui.helper).remove();
                 console.log('correct');
                 $(this).addClass('correct');
-                console.log($(this).children().first().children().first().children('.matching-circle'));
-                $(this).children().first().children().first().children('.matching-circle').css('background-image', 'url(' + background + ')');
-                dropped = true;  
+                console.log(droppableCircle);
+                $(droppableCircle).css('background-image', 'url(' + background + ')');
+                dropped = true;
             }
-            
+            else {
+                console.log('incorrect');
+                var originalColour = $(droppableCircle).css("border-color");
+                $(droppableCircle)  .animate({"border-color" : "red"})
+                                    .effect('shake', {distance: 7, times: 3  })
+                                    .animate({"border-color" : originalColour});
+                $(droppableCircle).css("border-color", "");
+                                    
+            }
+
+
         }
     });
 }
 
-function showQuizScreen(quiz, screen, title, description, button, buttonText){
+function showQuizScreen(quiz, screen, title, description, button, buttonText) {
     $(quiz).children('.response-title').text(title);
     $(quiz).children('.response-description').text(description);
     $(quiz).children('.quiz.feedback').addClass(screen);
     $(quiz).children('.quiz.button.submit').removeClass('submit').addClass(button).text(buttonText);
 }
 
-function hideQuizScreen(quiz, screen, button){
+function hideQuizScreen(quiz, screen, button) {
     $(quiz).children('.quiz.feedback').removeClass(screen);
     $(quiz).children('.quiz.button.' + button).removeClass(button).addClass('submit').text('Submit');
 }
