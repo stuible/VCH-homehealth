@@ -93,7 +93,7 @@ $modulesBorderRadius: 10px;
     margin: 0.5625vw auto;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 10px;
+    font-size: 9px;
 
     a {
         text-decoration: none;
@@ -133,7 +133,7 @@ $modulesBorderRadius: 10px;
 @include larger-than(phone){
 
     .swiper-slide{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
@@ -189,6 +189,14 @@ $modulesBorderRadius: 10px;
     left: 15% !important;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+
+    @include larger-than(phone){
+        display: block;
+    }
+}
+
 .module-video {
     position: absolute;
     z-index: -1;
@@ -199,15 +207,25 @@ $modulesBorderRadius: 10px;
 
 .before-begin-button {
     box-shadow: 0px 0px 109px -15px rgba(0, 0, 0, 0.747);
-    font-size: 0.8em;
-    padding: 0.25em 2em;
+    font-size: 1.1em;
+    padding: 0.1em 2em;
     height: auto;
+
+    @include larger-than(phone){
+        font-size: 0.8em;
+        padding: 0.25em 2em;
+    }
 }
 
 .module-button-container {
     height: auto !important;
-    margin-top: -20%;
+    margin-top: -30%;
+
+    @include larger-than(phone){
+        margin-top: -20%;
+    }
 }
+
 
 $prereqImageHeight: 150px;
 
