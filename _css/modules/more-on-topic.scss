@@ -63,6 +63,7 @@ $sectionTitleBoarderBottom: 5px;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .more-circle-container{
@@ -71,7 +72,9 @@ $sectionTitleBoarderBottom: 5px;
     text-align: center;
     /* width: 0; */
     min-width: 100px;
-    max-width: 100px;
+    max-width: 150px;
+    margin-bottom: 20px;
+    
 }
 
 .more-circle {

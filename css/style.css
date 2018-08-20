@@ -1283,7 +1283,12 @@ body {
   align-items: stretch;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .more-circle-container {
   -webkit-box-flex: 1;
@@ -1294,7 +1299,8 @@ body {
   text-align: center;
   /* width: 0; */
   min-width: 100px;
-  max-width: 100px; }
+  max-width: 150px;
+  margin-bottom: 20px; }
 
 .more-circle {
   margin: 0 auto;
