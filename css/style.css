@@ -490,7 +490,9 @@ body {
 
 /* LANDING */
 .landing {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 4em;
+  height: auto; }
   .landing .background {
     background-image: url("../image/minimalistic-gaussian-blur-dark.jpg");
     width: 100%;
@@ -541,6 +543,17 @@ body {
     font-weight: 300; }
   .landing .actions {
     margin-top: 50px; }
+  .landing .logos {
+    bottom: 2em;
+    padding: 4em;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: 0 auto; }
+    .landing .logos img {
+      height: 4em;
+      margin: 0 1em;
+      width: auto; }
 
 .landing-button {
   width: 13em; }

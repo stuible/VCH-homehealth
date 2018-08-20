@@ -5,6 +5,8 @@
 .landing {
     // z-index: -1;
     text-align: center;
+    padding-bottom: 4em;
+    height: auto;
 
     .background {
         background-image: url("../image/minimalistic-gaussian-blur-dark.jpg");
@@ -63,6 +65,20 @@
     
     .actions {
         margin-top: 50px;
+    }
+
+    .logos {
+        bottom: 2em;
+        padding: 4em;
+        right: 0;
+        left: 0;
+        position: absolute;
+        margin: 0 auto;
+        img {
+            height: 4em;
+            margin: 0 1em;
+            width: auto;
+        }
     }
 }
 
