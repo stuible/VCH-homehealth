@@ -14,20 +14,24 @@ function instantiateMultipleChoiceQuiz() {
     var partialText = "You were partially correct";
     var wrongText = "You were wrong";
 
-    var customFeedback = $('.quiz.feedback').data('feedback');
+    if($('.quiz.feedback').data('feedback')){
+        
+        var customFeedback = $('.quiz.feedback').data('feedback');
 
+        if(customFeedback.length == 2){
+        
+            wrongText = customFeedback[0];
+            correctText = customFeedback[1];
 
-    if(customFeedback.length == 2){
+        }
+        else if (customFeedback.length == 3){
+            wrongText = customFeedback[0];
+            partialText = customFeedback[1];
+            correctText = customFeedback[2];
+        }
+
+    }
     
-        wrongText = customFeedback[0];
-        correctText = customFeedback[1];
-
-    }
-    else if (customFeedback.length == 3){
-        wrongText = customFeedback[0];
-        partialText = customFeedback[1];
-        correctText = customFeedback[2];
-    }
 
     $('.quiz.answer').on("click", function () {
         console.log('clicked answer: ');
