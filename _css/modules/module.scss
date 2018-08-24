@@ -156,8 +156,9 @@
 
 .narrative {
     display: inline-block;
-    width: 12.5em;
-    height: 15em;
+    width: 100%;
+    width: -webkit-fill-available;
+    height: 5em;
     background-color: $primaryColour;
     margin-left: 10px;
     margin-right: 10px;
@@ -172,32 +173,42 @@
 
     img {
         width: 100%;
+        display: none;
         // border-radius: 5px;
     }
 
     .narrative-name {
         font-size: 1.25em;
-        margin-top: -4px;
+        // margin-top: -4px;
     }
 }
 
 @include larger-than(phone){
 
     .narratives-container{
-        font-size: 12px;
+        font-size: 14.5px;
     }
+    
 }
 
 @include larger-than(tablet){
 
     .narratives-container{
-        font-size: 13px;
+        font-size: 10px;
+    }
+    .narrative {
+        height: 15em;
+        width: 12.5em;
+
+        img {
+            display: block;
+        }
     }
 }
 
 @include larger-than(desktop){
     .narratives-container{
-        font-size: 11px;
+        font-size: 14px;
     }
     
 }
