@@ -197,7 +197,7 @@
 
 @include larger-than(desktop){
     .narratives-container{
-        font-size: 14px;
+        font-size: 11px;
     }
     
 }
@@ -213,8 +213,9 @@ $moreOnTopicCardHeight: 260px;
 
 .more-on-topic {
     display: inline-block;
-    width: 160px;
-    height: $moreOnTopicCardHeight + 40;
+    width: inherit;
+    width: -webkit-fill-available;
+    // height: 40px;
     background-color: $primaryColour;
     margin-left: 10px;
     margin-right: 10px;
@@ -222,6 +223,7 @@ $moreOnTopicCardHeight: 260px;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
+    padding: 10px;
 
     &:hover {
         color: #fff;
@@ -232,11 +234,32 @@ $moreOnTopicCardHeight: 260px;
         height: $moreOnTopicCardHeight;
         border-radius: 5px 5px 0px 0px;
         object-fit: cover;
+        display: none;
+    }
+
+    @include larger-than(phone){
+        // width: inherit;
+        
+    }
+    
+    @include larger-than(tablet){
+        width: 95px;
+        height: $moreOnTopicCardHeight + 40;
+        img { display: block; }
+        padding: 0;
+    }
+    
+    @include larger-than(desktop){
+        width: 125px;
+    }
+    
+    @include larger-than(desktophd){
+        width: 160px;
     }
 
     .overlay {
         position: absolute;
-        // display: none;
+        display: none;
         top: 0;
         height: $moreOnTopicCardHeight;
         width: 100%;
@@ -245,6 +268,10 @@ $moreOnTopicCardHeight: 260px;
         bottom: 25px;
         background-color: $primaryColour;
         transition: opacity 400ms linear;
+
+        @include larger-than(tablet){
+            display: block;
+        }
 
         svg {
             margin: 0 45px;
@@ -345,30 +372,30 @@ body{
   text-align: center;
   
   
-  .color-overlay{
-    /* Rectangle 11: */
-    background: rgba(84,104,110,0.4);
-    width: $card-width;
-    height: $card-height;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transition: background .3s cubic-bezier(.33,.66,.66,1);
-  }
-  .gradient-overlay{
-    /* bg-gradient: */
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
-    background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
-    background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
-    background-image: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
-    width: $card-width;
-    height: $card-height;
-    position: absolute;
-    top: 350px;
-    left: 0;
-    z-index: 15;
-  }
+//   .color-overlay{
+//     /* Rectangle 11: */
+//     background: rgba(84,104,110,0.4);
+//     width: $card-width;
+//     height: $card-height;
+//     position: absolute;
+//     z-index: 10;
+//     top: 0;
+//     left: 0;
+//     transition: background .3s cubic-bezier(.33,.66,.66,1);
+//   }
+//   .gradient-overlay{
+//     /* bg-gradient: */
+//     background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+//     background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+//     background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+//     background-image: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+//     width: $card-width;
+//     height: $card-height;
+//     position: absolute;
+//     top: 350px;
+//     left: 0;
+//     z-index: 15;
+//   }
   
   &:hover{
     

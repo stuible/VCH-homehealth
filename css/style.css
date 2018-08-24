@@ -752,7 +752,7 @@ body {
 
 @media (min-width: 1000px) {
   .narratives-container {
-    font-size: 14px; } }
+    font-size: 11px; } }
 
 @media (min-width: 1200px) {
   .narratives-container {
@@ -760,8 +760,8 @@ body {
 
 .more-on-topic {
   display: inline-block;
-  width: 160px;
-  height: 300px;
+  width: inherit;
+  width: -webkit-fill-available;
   background-color: #5AAF7F;
   margin-left: 10px;
   margin-right: 10px;
@@ -770,7 +770,8 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 10px; }
   .more-on-topic:hover {
     color: #fff; }
   .more-on-topic img {
@@ -780,9 +781,24 @@ body {
     -moz-border-radius: 5px 5px 0px 0px;
     border-radius: 5px 5px 0px 0px;
     -o-object-fit: cover;
-    object-fit: cover; }
+    object-fit: cover;
+    display: none; }
+  @media (min-width: 750px) {
+    .more-on-topic {
+      width: 95px;
+      height: 300px;
+      padding: 0; }
+      .more-on-topic img {
+        display: block; } }
+  @media (min-width: 1000px) {
+    .more-on-topic {
+      width: 125px; } }
+  @media (min-width: 1200px) {
+    .more-on-topic {
+      width: 160px; } }
   .more-on-topic .overlay {
     position: absolute;
+    display: none;
     top: 0;
     height: 260px;
     width: 100%;
@@ -796,6 +812,9 @@ body {
     -o-transition: opacity 400ms linear;
     -moz-transition: opacity 400ms linear;
     transition: opacity 400ms linear; }
+    @media (min-width: 750px) {
+      .more-on-topic .overlay {
+        display: block; } }
     .more-on-topic .overlay svg {
       margin: 0 45px;
       margin-top: 100px; }
@@ -904,32 +923,6 @@ body {
   -moz-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.171);
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.171);
   text-align: center; }
-  .blog-card .color-overlay {
-    /* Rectangle 11: */
-    background: rgba(84, 104, 110, 0.4);
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    -webkit-transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-    -o-transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-    -moz-transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-    transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
-  .blog-card .gradient-overlay {
-    /* bg-gradient: */
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(21%, rgba(0, 0, 0, 0.6)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    top: 350px;
-    left: 0;
-    z-index: 15; }
   .blog-card:hover .card-info {
     opacity: 1;
     bottom: 120px; }
