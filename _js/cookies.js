@@ -18,6 +18,7 @@ function getProgress(modulename, component, element){
 }
 
 function updateProgress(modulename, component, element, status){
+    console.log(component + " | " + element + " | " + status);
     var object = Cookies.getJSON(progressCookieName);
     object[modulename].components[component].element[element].status = status;
     Cookies.set(progressCookieName, object);
@@ -45,7 +46,7 @@ function createProgress(){
                 'holisticcare' : new element(false),
                 'careofolderadults' : new element(false),
                 'chronicconditions' : new element(false),
-                'medicationmanagement' : new element(false),
+                'medmanagement' : new element(false),
                 'deliverables' : new element(false),
             })
     });

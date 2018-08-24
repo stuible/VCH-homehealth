@@ -1,7 +1,7 @@
 ---
 layout: more
 permalink: "/modules/person-centered-care/med-management/"
-title: Medication Management
+title: Med Management
 
 sections:
   - section:
