@@ -32,16 +32,16 @@ cases:
     url: burnt-out
 
 more:
-  - title: Primary Health Care
+  - title: Introduction
     image: pcc/HolisticCare2.jpg
-    url: holistic
-  - title: Primary Care
+    url: intro
+  - title: Community Health Clinicians
     image: pcc/CareoftheOlderAdult.jpg
     url: older-adult
-  - title: Health Determinants
+  - title: Environment
     image: pcc/ManagingChronicConditions.jpg
     url: chronic
-  - title: Care Management
+  - title: Hand Hygiene
     image: pcc/CarePlanning.jpg
     url: care
   - title: Deliverables

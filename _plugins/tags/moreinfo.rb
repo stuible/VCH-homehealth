@@ -153,6 +153,58 @@ module Jekyll
           </div>
         ]
 
+      elsif type == 'quiz-matching-equal'
+        categories = []
+        images = []
+        output << %Q[
+          <div class="quiz matching">
+            <div class="six columns">
+        ]
+        for element in text do
+          element.each {|key, value| 
+            if key == 'category'
+              categories.push(value[0])
+              images.push(value[1])
+              #output << %Q[#{key} : #{value}]
+            elsif categories.include? key
+              output << %Q[
+                <div class="row matching-option" data-category="#{key}">
+                  <div class="drop circle">
+                    <div class="four columns">
+                      <div class="matching-circle target"></div>
+                    </div>
+                    <div class="eight columns">
+                      <div class="matching-text">#{value}</div>
+                    </div>
+                  </div>
+                </div>
+              ]
+            else 
+              output << %Q[<br/> #{key} is not found in your list of categories]
+            end
+          }
+        end
+        output << %Q[</div>]
+
+        output << %Q[<div class="six columns">]
+        categories.each_with_index do |category, index|
+          output << %Q[
+            <div class="row matching-answer" data-category="#{category}" data-background="#{baseurl}/image/#{images[index]}">
+              <div class="five columns">
+                <div style="background-image: url('#{baseurl}/image/#{images[index]}')" class="matching-circle answer"></div>
+                </div>
+                <div class="seven columns">
+                  <div class="matching-text">#{category}</div>
+              </div>
+            </div>
+          ]
+        end
+        output << %Q[</div>]
+
+        output << %Q[
+          </div>
+        ]
+
       elsif type == 'questions'
         output = %Q[<div class="more-questions">]
         for element in text do
@@ -249,7 +301,7 @@ module Jekyll
         end
         output << %Q[</div>]
 
-      elsif type == 'youtube'
+      elsif type == 'youtube' || type == 'youtube-2'
         output = %Q[
           <div class="more-video">
             <iframe width="100%" 
