@@ -789,7 +789,9 @@ body {
       height: 300px;
       padding: 0; }
       .more-on-topic img {
-        display: block; } }
+        display: block; }
+      .more-on-topic .narrative-name {
+        margin-top: 5px; } }
   @media (min-width: 1000px) {
     .more-on-topic {
       width: 125px; } }

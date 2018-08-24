@@ -237,6 +237,7 @@ $moreOnTopicCardHeight: 260px;
         display: none;
     }
 
+
     @include larger-than(phone){
         // width: inherit;
         
@@ -245,8 +246,13 @@ $moreOnTopicCardHeight: 260px;
     @include larger-than(tablet){
         width: 95px;
         height: $moreOnTopicCardHeight + 40;
-        img { display: block; }
         padding: 0;
+
+        img { display: block; }
+
+        .narrative-name {
+            margin-top: 5px;
+        }
     }
     
     @include larger-than(desktop){
