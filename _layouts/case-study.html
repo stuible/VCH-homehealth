@@ -32,30 +32,6 @@ layout: case-study
                     
             </div>
             <div class="container case-study-container">
-                <!--
-                <div class="row">
-                    <div class="case-study-section-title">
-                        Background
-                    </div>
-                </div>
-                <div class="row">
-                <div class="six columns">
-                        <div class="case-study-section">
-                                <div class="case-study-section-content">
-                                    {% assign contentSplit = content | split: '</p>' -%}
-                                    {{ contentSplit[0] }}
-                                    {{ contentSplit[1] }}
-                                </div>
-                        </div>
-                </div>
-
-                {% if contentNoReturns != ""  %}
-                <div class="six columns case-study-section-content">
-                        {{ contentSplit[2] }}
-                </div>
-                {% endif %}
-                </div>
-                -->
 
                 {% for background in page.background %}
                     {% assign mod = forloop.index | modulo: 2 %}
