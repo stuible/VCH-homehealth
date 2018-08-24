@@ -100,6 +100,10 @@ layout: case-study
                                 </div>
                                 <div class="case-study-section-content">
                                     {% for reflection in page.reflection %}
+                                    {% assign mod = forloop.index | modulo: 2 %}
+                                    {% if mod != 0 %}
+                                    <div class="row">
+                                    {% endif %}
                                     <div class="six columns reflection-item">
                                         <div class="two columns case-study-number">
                                             0{{ forloop.index }}
@@ -108,6 +112,9 @@ layout: case-study
                                                 {{ reflection }}
                                         </div>
                                     </div>
+                                    {% if mod == 0 %}
+                                    </div>
+                                    {% endif %}
                                     {% endfor %}
                                 </div>
                         </div>
