@@ -1534,6 +1534,11 @@ body {
 .more-gallery img {
   width: 100%; }
 
+.deliverable {
+  margin-bottom: 25px; }
+  .deliverable a {
+    color: #000; }
+
 .narrative-question {
   color: #fff;
   font-size: 28px;

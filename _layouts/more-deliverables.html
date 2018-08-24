@@ -1,0 +1,37 @@
+---
+layout: more-deliverables
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+<div class="background"></div>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container" data-namespace="more-on-topic" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}' data-module-parent='{{module_parent}}' data-name='{{ page.title | downcase | replace: " ", "" | replace: "-", ""}}'>
+            <div class="center-align container more-title">{{ page.title }}</div>
+            <div class="container">
+            <div class="more-subtitle full">Quiz</div>
+            {% for deliverable in page.deliverables %}
+                <div class="deliverable row">
+                    <div class="nine columns">
+                        <a href="{{ deliverable.link }}">
+                            {{ deliverable.text }}
+                        </a>
+                    </div>
+                    <div class="three columns"> {{ deliverable.duration }} </div>
+                </div>
+                    
+            {% endfor %}
+            </div>
+            <div class="container more-back margin top fifty" style="margin-bottom: 25px">
+                <a href="{{ breadcrumb_url_array[1] }}#more-on-topic" class="button">← More On This Topic</a>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
