@@ -36,9 +36,8 @@ layout: more
 
                                     {% endfor %}
                                 </div>
-                                {% endif %}
 
-                            {% if part.part == 'full' %}
+                            {% elsif part.part == 'full' %}
 
                                 {% if forloop.first %}
                                 <div class="twelve columns">
@@ -56,6 +55,8 @@ layout: more
 
                                     {% endfor %}
                                 </div>
+                            {% elsif part.part == 'spacer' %}
+                                <div class=""></div>
                             {% endif %}
 
 

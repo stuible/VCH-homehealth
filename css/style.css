@@ -1,5 +1,5 @@
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "hkgrotesk-regular", sans-serif;
   font-weight: 300;
   background-color: #161616; }
 
@@ -40,11 +40,37 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'hkgrotesk-bold';
+  src: url("../fonts/hkgrotesk/hkgrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk/hkgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hkgrotesk-medium';
+  src: url("../fonts/hkgrotesk/hkgrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk/hkgrotesk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hkgrotesk-regular';
+  src: url("../fonts/hkgrotesk/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk/hkgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'hkgrotesk-light';
+  src: url("../fonts/hkgrotesk/hkgrotesk-light-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk/hkgrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /* TOP MENU */
 .menubar {
   width: 100%;
   color: #ffffff;
   position: fixed;
+  font-family: "hkgrotesk-light", sans-serif;
+  letter-spacing: 0.005em;
   height: 75px;
   top: 0px;
   background-color: #00000000;
@@ -636,7 +662,8 @@ body {
   font-size: 12px; }
 
 .objective-number {
-  font-size: 3.5em;
+  font-size: 4em;
+  font-family: "hkgrotesk-light", sans-serif;
   float: left;
   margin-top: 5px;
   margin-right: 15px;
@@ -683,7 +710,8 @@ body {
   height: auto; }
 
 .objective {
-  font-size: 1.3em;
+  font-family: "hkgrotesk-light", sans-serif;
+  font-size: 1.2em;
   display: inline-block;
   width: 80%; }
 
@@ -1133,7 +1161,8 @@ body {
 .slide-title {
   color: #fff;
   font-size: 2em;
-  font-weight: 400;
+  font-family: "hkgrotesk-bold", sans-serif;
+  letter-spacing: 0.05em;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
   -moz-box-flex: 0;

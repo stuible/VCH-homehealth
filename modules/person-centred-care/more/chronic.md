@@ -19,7 +19,7 @@ sections:
     - part: half
       title: Take Action
       text: Please watch the ‘Self Managing and Self Management Support’ video
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      youtube: https://www.youtube.com/embed/uRQ853sRt0o
 
   - section:
     - part: half
@@ -40,7 +40,7 @@ sections:
     - part: half
       title: Self Reflection
       text: Not all chronic health challenges are physical. Watch the Living with Mental Health video and reflect.
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      youtube: https://www.youtube.com/embed/zI2W32yNg8
 
   - section:
     - part: half

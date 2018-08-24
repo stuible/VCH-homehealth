@@ -27,7 +27,6 @@ medications:
   - Allopurinol 200 mg po OD
 
 
-
 initial-visit: Ajit is orientated to his name and date of birth. He knows he is at home but not sure of the address and does not know the date. You ask if he has pain and he says yes but is unable to quantify the pain. Ajit said he tripped last night and fell. He has a large bruise on his left eye and left arm. He wasn’t sure when he last ate but states he is not hungry and you note there is minimal food in the fridge. There are dishes in the sink, an empty bottle of whisky on the table and medication bottles scattered on his the table. His clothes are wrinkled, dirty and appeared too big for him. There is a strong smell of urine in the house. Ajit indicates that his son Rohit has gone to the bank for him. 
 
 reflection:

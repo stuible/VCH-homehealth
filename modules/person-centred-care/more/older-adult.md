@@ -10,7 +10,7 @@ sections:
       title: Physical Changes
       text: As we age, our body changes
 
-    - part: full
+    - part: spacer
 
     - part: half
       title: Take Action
@@ -30,7 +30,7 @@ sections:
         - "Aging is associated with increased risk of chronic diseases and with functional decline, which can affect a person’s ability to perform: ADLs and IADLs"
 
     - part: half
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      youtube: https://www.youtube.com/embed/6B84HfTzdA4
 
 
   - section:
@@ -56,10 +56,10 @@ sections:
       text: Please watch the videos ‘Communicating with People Living with Dementia’ and ‘Segment on Elderly Depression 
 
     - part: half
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      youtube: https://www.youtube.com/embed/jhSFA_ib48U
 
     - part: half
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      youtube: https://www.youtube.com/embed/h-lsyKBzuZo
 
 
   - section: 
