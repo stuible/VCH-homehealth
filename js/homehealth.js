@@ -903,6 +903,7 @@ function instantiateMore() {
 
     instantiateMultipleChoiceQuiz();
     instantiateMatchingQuiz();
+    instantiateVideoGallery();
 
 }
 
@@ -1067,6 +1068,18 @@ function showQuizScreen(quiz, screen, title, description, button, buttonText) {
 function hideQuizScreen(quiz, screen, button) {
     $(quiz).children('.quiz.feedback').removeClass(screen);
     $(quiz).children('.quiz.button.' + button).removeClass(button).addClass('submit').text('Submit');
+}
+
+function instantiateVideoGallery() {
+    $('.video.gallery .name').first().addClass('active');
+    $('.video.gallery iframe').attr('src', $('.video.gallery .name').first().data('video'));
+
+    $('.video.gallery .name').on("click", function () {
+        $('.video.gallery .name').removeClass('active');
+        $(this).addClass('active');
+        $('.video.gallery iframe').attr('src', $(this).data('video'));
+    });
+
 }
 //Global variable that states whaether or not a backgorund image should be displayed
 var showBackgroundImage = false;
