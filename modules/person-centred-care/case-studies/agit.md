@@ -6,13 +6,13 @@ title: Ajit’s Story
 
 background:
   - title: Background
-    image: margaret/1.png
+    image: ajit/1.png
     text: Ajit is a 72 year old man whose, primary language is Tamil and he is able to communicate with simple verbal and written English. He escaped to Canada with his family when the war broke out in Sri Lanka and many members of his extended family were killed.  Unfortunately, Ajit was driving when he also lost his 10 year old son in a car accident. Not long after the tragic accident, he started drinking which lead to him losing his job. His wife initiated a divorce close to 15 years ago and he has two remaining daughters and one son. 
   - title: Diagnosis
-    image: margaret/2.png
+    image: ajit/2.png
     text: Aljit lives alone in senior’s social housing and can no longer drive, so has been using public transport. Since his divorce, he has been drinking more and is struggling with his IADLs. He has also been diagnosed with atrial fibrillation, alcoholic dementia, gout, previous MI with stenting, and CRD.  Recently Ajit fell, fractured his hip, and consequently spent an extended time in the hospital. Ajit persuaded the doctor and the occupational therapist that he could return home and his son, who had been visiting Ajit in hospital, indicated that he will be able to help after the discharge.
   - title: Concerns
-    image: margaret/3.png
+    image: ajit/3.png
     text: In the hospital, Ajit had his right hip pinned, that was further complicated by post-op delirium tremors and pneumonia. He also developed a DVT in his right leg which he is now on warfarin and requires regular blood work. Ajit has significant arthritis in his hands, which makes it difficult to open pill bottles and do actions requiring fine motor skills.
 
 

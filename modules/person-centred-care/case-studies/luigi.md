@@ -6,13 +6,13 @@ title: Luigi’s Story
 
 background:
   - title: Background
-    image: margaret/1.png
+    image: luigi/1.png
     text: Luigi is an 82 year old man from Italy who came to Canada in his early 20’s with his wife of 57 years, Rosa. They have 4 adult children and 12 grandchildren, most of them living locally. Luigi is a retired, previously self-employed, bricklayer who enjoys spending time with his garden as well as making wine from the grapes he grows.  Luigi has an active social life visiting friends and family.  Luigi and Rosa would attend their local community center twice weekly to swim. On Sunday’s they would attend church services followed by having family and friends over for dinner.
   - title: Diagnosis
-    image: margaret/2.png
+    image: luigi/2.png
     text: Luigi has COPD, GERD, HTN, CAD, high cholesterol, PVD, cataract surgery to both eyes, stage C heart failure and type 2 diabetes which has led to frequent hospitalizations over the past four years. Most recently he suffered from a right brain CVA resulting in left sided weakness, unclear speech and difficulties swallowing resulting in seven weeks of hospitalization.  Luigi’s medical condition is now stable, and he was discharged home. He is currently total care, and PT has been working with him on strengthening exercises, but progression is slow and he’s losing hope he will be able to work in his garden again.
   - title: Concerns
-    image: margaret/3.png
+    image: luigi/3.png
     text: Luigi wants to eat the great food Rosa cooks, but did not pass the swallowing assessment prior to discharge. He currently is receiving nutritional intake via a PEG tube. Luigi is not ambulating so needs a mechanical lift to get into the wheelchair. He is also incontinent of urine and has sensation with his bowels so can use a commode.
 
 
