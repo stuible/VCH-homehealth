@@ -35,12 +35,12 @@ more:
   - title: Introduction
     image: pcc/HolisticCare2.jpg
     url: intro
-  - title: Community Health Clinicians
+  - title: Community Health
     image: pcc/CareoftheOlderAdult.jpg
-    url: older-adult
+    url: clinicians
   - title: Environment
     image: pcc/ManagingChronicConditions.jpg
-    url: chronic
+    url: environment
   - title: Hand Hygiene
     image: pcc/CarePlanning.jpg
     url: care
