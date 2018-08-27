@@ -301,3 +301,22 @@ $sectionTitleBoarderBottom: 5px;
         color: #000;
     }
 }
+
+// VIDEO GALLERY
+
+.video.gallery {
+    .name {
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #000000;
+        margin-bottom: 15px;
+        text-align: center;
+        cursor: pointer;
+
+        &.active {
+            background-color: $primaryColour;
+            color: #fff;
+            border-color: $primaryColour;
+        }
+    }
+}

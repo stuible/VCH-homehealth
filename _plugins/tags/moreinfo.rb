@@ -33,14 +33,7 @@ module Jekyll
             </div>
         ]
 
-      elsif type == 'text'
-        output = %Q[
-          <div class="more-text #{size}">
-            #{text}
-          </div>
-        ]
-
-      elsif type == 'text-2'
+      elsif type == 'text' || type == 'text-2' || type == 'text-3' || type == 'text-4'
         output = %Q[
           <div class="more-text #{size}">
             #{text}
@@ -226,6 +219,40 @@ module Jekyll
           </div>
         ]
 
+      elsif type == 'image'
+        output = %Q[
+          <img class="more-image" src="#{text}">
+        ]
+
+      elsif type == 'video-gallery'
+        output << %Q[<div class="video gallery">]
+        output << %Q[<div class="four columns">]
+        for element in text do
+          element.each {|title, url| 
+            output << %Q[
+              <div class="name" data-video="#{url}">
+              #{title}
+              </div>
+            ]
+          }
+        end
+        output << %Q[</div>]
+
+        output << %Q[<div class="eight columns">]
+        output << %Q[
+          <div class="more-video">
+            <iframe width="100%" 
+            height="300" 
+            src="" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen></iframe>
+          </div>
+        ]
+        output << %Q[</div>]
+
+        output << %Q[</div>]
+
       elsif type == 'html'
         output = %Q[
           #{text}
@@ -285,8 +312,8 @@ module Jekyll
           item.each {|key, value| 
           output << %Q[
             <div class="four columns">
-                <img src="#{baseurl}/image/#{value}">
 
+                <a data-fancybox="gallery" class="no-barba" href="#{baseurl}/image/#{value}"><img src="#{baseurl}/image/#{value}"></a>
             </div>
           ]
           }
@@ -298,6 +325,22 @@ module Jekyll
           end
           index += 1
           
+        end
+        output << %Q[</div>]
+
+      elsif type == 'resources'
+        output << %Q[<div class="more-resources">]
+        for item in text do
+          item.each {|key, value| 
+          output << %Q[
+            <div class="two columns">
+              <a class="resource" href="#{value}">
+                <img src="/">
+                <div class="name">#{key}</div>
+              </a>
+            </div>
+          ]
+          }
         end
         output << %Q[</div>]
 
