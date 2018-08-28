@@ -11,11 +11,29 @@ $sectionTitleBoarderBottom: 5px;
 }
 
 .more-subtitle {
-    font-size: 1.5em;
-    font-weight: 400;
-    border-bottom: 5px solid $primaryColour;
+    font-size: 1.75em;
+    // font-weight: 400;
+    border-bottom-style: solid;
+    // border-bottom: 5px solid $primaryColour;
     width: fit-content;
     margin-bottom: 25px;
+
+    &:first-child{
+        
+    }
+}
+
+.six.columns:first-child, .twelve.columns{
+    .more-subtitle{
+        border-bottom-width: 5px;
+    }
+}
+.six.columns:not(:first-child){
+    .more-subtitle{
+        border-bottom-width: 2px;
+        font-size: 1.25em;
+        margin-top: 15px;
+    }
 }
 
 .more-text {
@@ -43,16 +61,16 @@ $sectionTitleBoarderBottom: 5px;
     &:nth-of-type(odd){
         background-color: #ffffff;
 
-        .more-subtitle {
-            border-bottom: 5px solid $primaryColour;
+        .more-subtitle{
+            border-bottom-color: $primaryColour;
         }
     }
     &:nth-of-type(even){
         background-color: $primaryColour;
         color: #ffffff;
 
-        .more-subtitle {
-            border-bottom: 5px solid #fff;
+        .more-subtitle{
+            border-bottom-color: #fff;
         }
     }
 }
@@ -264,7 +282,11 @@ $sectionTitleBoarderBottom: 5px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 50px;
+    min-height: 50px;
+
+    &.equal {
+        min-height: 75px;
+    }
 }
 
 .matching-answer{
