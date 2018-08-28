@@ -31,6 +31,21 @@ $().ready(function () {
 
 modules.init();
 
+var glossary = Barba.BaseView.extend({
+  namespace: 'glossary',
+  onEnter: function () {
+    clearBackground();
+    instantiateGlossary();
+    lightBackground(true);
+    
+  },
+  onEnterCompleted: function () {
+    
+  }
+});
+
+glossary.init();
+
 var narrative = Barba.BaseView.extend({
   namespace: 'narrative',
   onEnter: function () {

@@ -1,0 +1,4 @@
+--- 
+layout: glossary
+permalink: "/glossary/"
+---
