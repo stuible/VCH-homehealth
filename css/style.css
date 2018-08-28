@@ -83,7 +83,8 @@ body {
   z-index: 11;
   font-weight: 400; }
   .menubar a {
-    color: unset; }
+    color: unset;
+    text-decoration: none; }
   .menubar.white {
     background: unset;
     background-color: #ffffff;
