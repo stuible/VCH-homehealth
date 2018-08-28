@@ -1,20 +1,39 @@
----
+--- 
+
 layout: glossary
+
 ---
 <!DOCTYPE html>
 <html>
 {% include header.html %}
 
 <body>
-<div class="background"></div>
+    <div class="background"></div>
     {% include menu.html %}
 
     <div id="barba-wrapper">
-            <div class="barba-container" data-namespace="glossary" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+        <div class="barba-container" data-namespace="glossary" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+            <div class="center-align container more-title">{{ page.title }}</div>
+            {% assign glossary_json = page.glossary | jsonify %}
+            <div class="container glossary" data-glossary='{{glossary_json}}'>
+                <div id="search">
+                    <div class="input fuzzy-search">
+                        <div class="define">Define</div>
+                        <!-- <div class="word">Type here...</div> -->
+                        <input type="text" class="word" name="word" placeholder="Type here...">
+                    </div>
+                    <div class="results">
+                        <ul class="list">
 
-                
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+
+        </div>
     </div>
     {% include footer.html %}
 </body>
+
 </html>

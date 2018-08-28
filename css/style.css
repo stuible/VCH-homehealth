@@ -528,6 +528,26 @@ body {
   color: #cfcfcf;
   margin-top: -15px; }
 
+.glossary .input {
+  font-size: 2.75em;
+  font-family: "Perpetua", serif; }
+  .glossary .input .define {
+    display: inline-block;
+    color: #9e9e9e; }
+  .glossary .input .word {
+    display: inline-block;
+    border: none; }
+  .glossary .input input {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+
+.glossary .results ul {
+  list-style-type: none;
+  font-size: 1.25em; }
+  .glossary .results ul p {
+    margin-bottom: 0; }
+
 /* INTRODUCTION PAGE */
 .intro-swiper-slide {
   position: relative; }

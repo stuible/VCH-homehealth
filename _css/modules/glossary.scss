@@ -1,0 +1,34 @@
+@import "../variables";
+
+.glossary {
+
+    .input {
+        font-size: 2.75em;
+        font-family: $serifFont;
+
+        .define {
+            display: inline-block;
+            color: #9e9e9e;
+        }
+    
+        .word {
+            display: inline-block;
+            border: none;
+        }
+
+        input {
+            box-sizing: content-box;
+        }
+    }
+
+    .results {
+        ul {
+            list-style-type: none;
+            font-size: 1.25em;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
