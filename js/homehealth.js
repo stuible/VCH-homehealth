@@ -287,6 +287,7 @@ var introduction = Barba.BaseView.extend({
   },
   onEnterCompleted: function () {
     setBackground($('.barba-container').data('background'));
+    updateMoreOnTopicUI();
   }
 });
 
@@ -445,7 +446,40 @@ function createProgress(){
 
     var progress = {};
 
+    var introMoreOnTopic = {
+        'intro' : new element(false),
+        'clinicians' : new element(false),
+        'environment' : new element(false),
+        'care' : new element(false),
+        'deliverables' : new element(false),
+    };
+
+    var PCCMoreOnTopic = {
+        'holistic' : new element(false),
+        'older-adult' : new element(false),
+        'chronic' : new element(false),
+        'med-management' : new element(false),
+        'deliverables' : new element(false),
+    };
+
+    pushToProgress(progress, [introMoreOnTopic, PCCMoreOnTopic]);
+
+    Cookies.set(progressCookieName, progress);
+}
+
+function pushToProgress(progress, moreOnTopicArray){
     for (var i = 0; i < modules.length; i++) {
+
+        var moreOnTopic = {
+                '0' : new element(false),
+                '1' : new element(false),
+                '2' : new element(false),
+                '3' : new element(false),
+                '4' : new element(false),
+        };
+        if(moreOnTopicArray[i]){
+            moreOnTopic = moreOnTopicArray[i];
+        }
         
         progress[modules[i]] = new module({
             'objectives' : new component({
@@ -457,19 +491,10 @@ function createProgress(){
                 'luigi' : new element(false),
                 'agit' : new element(false),
             }),
-            'more-on-topic' : new component({
-                'holisticcare' : new element(false),
-                'careofolderadults' : new element(false),
-                'chronicconditions' : new element(false),
-                'medmanagement' : new element(false),
-                'deliverables' : new element(false),
-            })
+            'more-on-topic' : new component(moreOnTopic)
     });
 
     }
-
-    // var progress = {'pcc' : pcc, 'wound' : wound };
-    Cookies.set(progressCookieName, progress);
 }
 
 function module(components){
