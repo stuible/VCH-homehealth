@@ -167,7 +167,7 @@ module Jekyll
                       <div class="matching-circle target"></div>
                     </div>
                     <div class="eight columns">
-                      <div class="matching-text">#{value}</div>
+                      <div class="matching-text equal">#{value}</div>
                     </div>
                   </div>
                 </div>
