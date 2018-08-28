@@ -2,6 +2,7 @@
 layout: more
 permalink: "/modules/introduction/intro/"
 title: Primary Health Care
+id: intro
 
 sections:
   - section:
@@ -53,9 +54,11 @@ sections:
     - part: half
       title: Take Action
       text: "Watch the videos and reflect on the following questions:"
+      bullets:
+        - 'Which determinants of health are evident in these videos?'
+        - 'How do you see the determinants of health impacting the clients you will care for in the community?'
       youtube: https://www.youtube.com/embed/zI2W32yNg8
       youtube-2: https://www.youtube.com/embed/zI2W32yNg8
-      questions: ['Which determinants of health are evident in these videos?', 'How do you see the determinants of health impacting the clients you will care for in the community?']
       
 
   - section:

@@ -2,6 +2,7 @@
 layout: more
 permalink: "/modules/person-centered-care/holistic/"
 title: Holistic Care
+id: holistic
 
 sections:
   - section:

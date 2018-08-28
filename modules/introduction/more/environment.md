@@ -2,6 +2,7 @@
 layout: more
 permalink: "/modules/introduction/environment/"
 title: Community & Home Environment
+id: environment
 
 sections:
   - section:
@@ -12,22 +13,53 @@ sections:
 
     - part: full
       title: Take Action
-      text: Match the 7 standards of CHNC with the appropriate definition
-      quiz-matching-equal:
-        - category: [Health Promotion, more-on-topic/deppression.jpg] 
-        - category: [Prevention and Health Protection, more-on-topic/deppression.jpg] 
-        - category: ["Health Maintenance, Restoration and Palliation", more-on-topic/deppression.jpg] 
-        - category: [Professional Relationships, more-on-topic/deppression.jpg] 
-        - category: [Capacity Building, more-on-topic/deppression.jpg] 
-        - category: [Access and Equity, more-on-topic/deppression.jpg] 
-        - category: [Professional Responsibility and Accountability, more-on-topic/deppression.jpg] 
+      text: "Review the following pictures:"
+      gallery:
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
 
-        - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities.
-        - Prevention and Health Protection: Develop and distribute information for clients and families on identifying and reducing risk factors
-        - Health Maintenance, Restoration and Palliation: Collaborate with the client to adapt the care provided based on clients’ choices, their own personal skills, and the resources available
-        - Professional Relationships: Provide ‘continuity of care’ and build trust with the client and their family leading to better health
-        - Capacity Building: Teach and support clients and their families to self manage goals of care in the home
-        - Access and Equity: Advocate for families caring for ill loved ones. Seek and provide resources to clients, and caregivers for higher levels of care
-        - Professional Responsibility and Accountability: Explore reasons for clients’ requests that affect ethical decision making by reaching out to the local health care team
+  - section: 
+    - part: full
+      title: Consent
+      text: Obtaining and documenting consent is an important part of working with clients and should be done when the client is admitted to the program. Clients should also know they have the right to decline services. 
+      text-2: You may come across clients who decline services but it may not be in their best interests nor are they capable of making that decision for themselves.
+
+  - section:
+    - part: half
+      title: Hazards & Risks
+      text: Community health nurses come across a variety of risks and hazards in the settings they work in. Community Risk Screening ensures mitigation of potential risk for staff and clients receiving services.  It promotes improved documentation and communication of risk among clinicians in all community programs. 
+    - part: half
+      title: Take Action
+      text: Please review the photos and determine what the risks and hazards exist in each environment
+      gallery:
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/holistic/social.png
+
+  - section:
+    - part: half
+      title: The Car as Worksite
+      text: The nurse’s car is a tool home care nurses use.
+    - part: half
+      title: Take Action
+      text: Examine the pircure to determine what could be done better.  Hover over the picture of the car for answers.
+
+  - section:
+    - part: half
+      title: Infection Control
+      text: "To control infection:"
+      bullets: 
+        - Minimize the items you bring in to the clients’ homes (e.g., only  the necessary supplies, client’s chart if needed, etc.)
+        - Have PPE packed for each specific client and bring it in a separate bag into the clients’ homes
+        - Do not bring left over supplies back to the car or to the unit after they have been in the clients’ home
+        - Safely wrap/seal non-disposable soiled utensils/instruments used in clients’ home and return to the ‘dirty utility’ room for autoclaving
+        - Do not transport used sharps unless safely sealed and locked in sharps container 
+        - Do not transport bio-hazardous fluids (e.g., fluids drained, urine samples, etc)
+    - part: half
+      title: Take Action
+      text: Please review the photos and determine what the risks and hazards exist in each environment
+
 
 ---

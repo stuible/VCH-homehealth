@@ -2,6 +2,7 @@
 layout: more-deliverables
 permalink: "/modules/person-centered-care/deliverables/"
 title: Deliverables
+id: deliverables
 
 deliverables:
   - text: Please complete the module on cultural connectedness

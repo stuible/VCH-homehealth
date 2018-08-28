@@ -10,7 +10,11 @@ layout: intro
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container" data-namespace="introduction" data-background="{{site.baseurl}}/image/modules/{{ page.background }}" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+        <div class="barba-container"    data-namespace="introduction" 
+                                        data-background="{{site.baseurl}}/image/modules/{{ page.background }}" 
+                                        data-nav-text='{{ breadcrumb_text_json }}' 
+                                        data-nav-url='{{ breadcrumb_url_json }}'
+                                        data-module="{{ page.title | downcase | replace: " ", "" | replace: "-", "" }}">
             <!-- Swiper -->
             <div class="intro-swiper-container">
                     <div class="swiper-wrapper">
@@ -68,7 +72,7 @@ layout: intro
                                                         More On This Topic
                                                 </div>
                                             {% for item in page.more %}
-                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.title | downcase | replace: " ", "" | replace: "-", ""}}">
+                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.url }}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/more-on-topic/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="overlay">
                                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">

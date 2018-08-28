@@ -94,6 +94,7 @@ var introduction = Barba.BaseView.extend({
   },
   onEnterCompleted: function () {
     setBackground($('.barba-container').data('background'));
+    updateMoreOnTopicUI();
   }
 });
 

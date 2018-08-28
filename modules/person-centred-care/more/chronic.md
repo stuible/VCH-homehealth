@@ -2,6 +2,7 @@
 layout: more
 permalink: "/modules/person-centered-care/chronic/"
 title: Chronic Conditions
+id: chronic
 
 sections:
   - section:
