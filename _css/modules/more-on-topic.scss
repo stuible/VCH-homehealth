@@ -17,9 +17,11 @@ $sectionTitleBoarderBottom: 5px;
     // border-bottom: 5px solid $primaryColour;
     width: fit-content;
     margin-bottom: 25px;
+    border-bottom-width: 5px;
 
-    &:first-child{
-        
+    &.full{
+        border-bottom-color: $primaryColour;
+
     }
 }
 

@@ -1284,7 +1284,10 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  border-bottom-width: 5px; }
+  .more-subtitle.full {
+    border-bottom-color: #5AAF7F; }
 
 .six.columns:first-child .more-subtitle, .twelve.columns .more-subtitle {
   border-bottom-width: 5px; }
