@@ -1,5 +1,6 @@
 --- 
 layout: intro
+title: introduction
 permalink: "/modules/introduction/"
 video: CaseStudy1-HHsmall.mp4
 background: intro.jpeg
