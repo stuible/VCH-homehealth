@@ -2,6 +2,7 @@
 layout: more
 permalink: "/modules/introduction/clinicians/"
 title: Community Health Clinicians
+id: clinicians
 
 sections:
   - section:
