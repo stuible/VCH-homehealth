@@ -153,11 +153,6 @@ function drawModulesIcon(){
             mainRect.animate({ transform: 's0.5,0.5' }, 700, mina.bounce);
             leftRect.animate({ transform: 's2,2' }, 700, mina.bounce);
         }
-        else {
-            //mainRect.animate({ transform: 's1.4,1.4' }, 700,  mina.bounce);
-            //leftRect.animate({ opacity: '0' }, 500);
-            //rightRect.animate({ opacity: '0' }, 500);
-        }
     });
 
     //Animate icon back on mouse leave
@@ -166,11 +161,6 @@ function drawModulesIcon(){
             allRects.animate({ transform: 'translate(0,0)' }, 700, mina.bounce);
             mainRect.animate({ transform: 's1,1' }, 700, mina.bounce);
             leftRect.animate({ transform: 's1,1' }, 700, mina.bounce);
-        }
-        else {
-            //mainRect.animate({ transform: 's1,1' }, 700,  mina.bounce);
-            //leftRect.animate({ opacity: '1' }, 500);
-            //rightRect.animate({ opacity: '1' }, 500);
         }
     });
 
@@ -183,11 +173,4 @@ function drawModulesIcon(){
         rightRect.animate({ opacity: '1' }, 500);
     });
 
-
-    //mainRect.animate({ transform:'translateX(-5)'}, 700, mina.bounce );
-    //mainRect.animate({ transform:'translateY(-5)'}, 700, mina.bounce );
-
-    // mainRect.animate({ry:1}, 220, function(){
-    //  mainRect.animate({ry: 90}, 300);
-    //  }); 
 }
