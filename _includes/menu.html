@@ -45,5 +45,12 @@
     </a>
         <div class="menu-name">   </div>
     
-    <div class="menu-support"><a href="{{site.baseurl}}/resources/">Resources</a> &nbsp; &nbsp; &nbsp; <a href="{{site.baseurl}}/glossary/">Glossary</a></div>    
+    <div class="menu-support"><a class="resources" href="{{site.baseurl}}/resources/">Resources</a> &nbsp; &nbsp; &nbsp; <a href="{{site.baseurl}}/glossary/">Glossary</a></div>   
+    <div class="resources-dropdown">
+            {% for page in site.pages %}
+            {% if page.layout == 'resources' %}  
+              <div class="resource">{{ page.title }}</div>
+            {% endif %}
+          {% endfor %}
+    </div> 
 </div>

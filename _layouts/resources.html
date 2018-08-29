@@ -1,0 +1,24 @@
+--- 
+layout: resources
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+    <div class="background"></div>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container" data-namespace="glossary" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+            <div class="center-align container more-title">Resources</div>
+            <div class="container resources">
+
+            </div>
+
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
