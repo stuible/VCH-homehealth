@@ -42,19 +42,8 @@
         {% assign prevIndex = breadcrumb_text_array.size | minus: 2 %}
         {% assign module_parent = breadcrumb_text_array[prevIndex] | downcase | replace: " ", "" | replace: "-", ""%}
             
-        {% comment %}{% raw %}
-        DOES NOTHING JUST A COMMENT
-        {{ breadcrumb_text_array | size | prepend: 'text array size: ' }}<br>
-        {{ pageurl_array | size | prepend: 'page url array size: ' }}<br>
-        {{ breadcrumb_url_array | size | prepend: 'url array size: ' }}<br>
-        {{ pageurl }}<br>
-        {{ breadcrumb_text_json }} <br>
-        {{ breadcrumb_url_json }}
-        {% endraw %}{% endcomment %}
-
-        
     </a>
         <div class="menu-name">   </div>
     
-    <div class="menu-support"><a href="{{site.baseurl}}/resourses/">Resources</a> &nbsp; &nbsp; &nbsp; <a href="{{site.baseurl}}/glossary/">Glossary</a></div>    
+    <div class="menu-support"><a href="{{site.baseurl}}/resources/">Resources</a> &nbsp; &nbsp; &nbsp; <a href="{{site.baseurl}}/glossary/">Glossary</a></div>    
 </div>
