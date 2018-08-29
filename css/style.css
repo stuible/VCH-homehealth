@@ -542,11 +542,23 @@ body {
     -moz-box-sizing: content-box;
     box-sizing: content-box; }
 
-.glossary .results ul {
-  list-style-type: none;
-  font-size: 1.25em; }
-  .glossary .results ul p {
-    margin-bottom: 0; }
+.glossary .results {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 2px solid #5AAF7F;
+  padding: 25px;
+  margin-top: 25px; }
+  .glossary .results ul {
+    list-style-type: none;
+    font-size: 1.25em; }
+    .glossary .results ul li {
+      color: #4e4e4e; }
+      .glossary .results ul li:hover {
+        color: #000000; }
+    .glossary .results ul div {
+      margin-bottom: 0;
+      cursor: pointer; }
 
 /* INTRODUCTION PAGE */
 .intro-swiper-slide {
