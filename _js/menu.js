@@ -3,6 +3,11 @@ var lastmoduleSlide = "";
 var lastmoduleSection = "";
 var allRects = null;
 
+function instantiateMenu(){
+    setBreadcrumbs($('.barba-container'));
+
+}
+
 function lightMenu() {
     setMenu('light');
 }

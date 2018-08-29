@@ -14,7 +14,7 @@ $().ready(function () {
       //   }
       // });
 
-      setBreadcrumbs($('.barba-container'));
+  instantiateMenu();
 
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
@@ -203,8 +203,6 @@ introduction.init();
     introInstantiated = false;
     console.log('new page is being set to: ' + newpage);
     currentPage = newpage;
-    // newpage = newpage.split("/").pop().replace(".html","");
-    // initializeBranching(); 
     if (newpage == 'modules') {
       $(".module-menu").attr("href", "#");
     }
