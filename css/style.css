@@ -531,6 +531,9 @@ body {
 .glossary .input {
   font-size: 2.75em;
   font-family: "Perpetua", serif; }
+  .glossary .input .clear {
+    color: #a7a7a7;
+    cursor: pointer; }
   .glossary .input .define {
     display: inline-block;
     color: #9e9e9e; }
@@ -559,6 +562,10 @@ body {
     .glossary .results ul div {
       margin-bottom: 0;
       cursor: pointer; }
+
+.glossary .definition {
+  font-size: 1.15em;
+  margin-left: 0; }
 
 /* INTRODUCTION PAGE */
 .intro-swiper-slide {

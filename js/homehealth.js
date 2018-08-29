@@ -1045,6 +1045,7 @@ function instantiateVideoGallery() {
 //functions for instantiating Glossary pages
 
 var glossary;
+var wordList;
 
 function instantiateGlossary() {
 
@@ -1057,13 +1058,19 @@ function instantiateGlossary() {
         $('.glossary .results>.list').append('<li><div class="term">' + value['term'] +'</div></li>');
       });
 
-      var wordList = new List('search', { 
+      wordList = new List('search', { 
         valueNames: ['term']
       });
 
     $('.glossary').on("click", '.term', function () {
         console.log($(this).text());
         glossaryDefine($(this).text());
+    });
+
+    $('.glossary').on("click", '.clear', function () {
+        $('.glossary .input input').val("");
+        glossaryViewMode('terms');
+        wordList.search();
     });
 
 }
