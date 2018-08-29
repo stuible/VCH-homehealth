@@ -36,20 +36,34 @@
     .resources-dropdown {
         float: right;
         background-color: #ffffff;
-        color: #000;
+        
         padding: 25px;
         border-radius: 15px;
         position: absolute;
         right: 50px;
         top: $menuHeight;
-        display: none;
+        // display: none;
     
 
         .resource {
             margin-bottom: 15px;
+            padding: 15px 25px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center; 
+            display: block;
 
             &:last-child {
                 margin-bottom: 0;
+            }
+
+            div {
+                color: #fff !important;
+                // font-family: $fontBold;
+                font-size: 1.1em;
+                letter-spacing: 2px;
             }
         }
     }
