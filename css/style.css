@@ -102,6 +102,22 @@ body {
       -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.05);
       -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.05);
       box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.05); }
+  .menubar .resources-dropdown {
+    float: right;
+    background-color: #ffffff;
+    color: #000;
+    padding: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    display: none; }
+    .menubar .resources-dropdown .resource {
+      margin-bottom: 15px; }
+      .menubar .resources-dropdown .resource:last-child {
+        margin-bottom: 0; }
 
 .menu {
   /* position: absolute; */

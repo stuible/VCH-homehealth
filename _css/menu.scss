@@ -8,7 +8,7 @@
     position: fixed;
     font-family: $fontLight;
     letter-spacing: 0.005em;
-    height: 75px;
+    height: $menuHeight;
     top: 0px;
     background-color: #00000000; /* For browsers that do not support gradients */
     background: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.3)); 
@@ -31,6 +31,27 @@
             box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.05);
         }
         
+    }
+
+    .resources-dropdown {
+        float: right;
+        background-color: #ffffff;
+        color: #000;
+        padding: 25px;
+        border-radius: 15px;
+        position: absolute;
+        right: 50px;
+        top: $menuHeight;
+        display: none;
+    
+
+        .resource {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
