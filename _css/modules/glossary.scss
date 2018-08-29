@@ -22,12 +22,26 @@
     }
 
     .results {
+        border-radius: 25px;
+        border: 2px solid $primaryColour;
+        padding: 25px;
+        margin-top: 25px;
+
         ul {
             list-style-type: none;
             font-size: 1.25em;
 
-            p {
+            li {
+                color: #4e4e4e;
+
+                &:hover {
+                    color: #000000;
+                }
+            }
+
+            div {
                 margin-bottom: 0;
+                cursor: pointer;
             }
         }
     }
