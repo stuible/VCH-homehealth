@@ -6,6 +6,13 @@ var allRects = null;
 function instantiateMenu(){
     setBreadcrumbs($('.barba-container'));
 
+    $('a.resources').mouseover(function(){
+        $('.resources-dropdown').show();
+    });
+    $('.menubar').mouseleave(function(){
+        $('.resources-dropdown').hide();
+    });
+
 }
 
 function lightMenu() {
