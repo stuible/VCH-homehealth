@@ -24,11 +24,18 @@ function instantiateGlossary() {
     });
 
     $('.glossary').on("click", '.clear', function () {
-        $('.glossary .input input').val("");
-        glossaryViewMode('terms');
-        wordList.search();
+        glossaryReset();
+    });
+    $('.glossary').on("click", 'input.word', function () {
+        glossaryReset();
     });
 
+}
+
+function glossaryReset(){
+    $('.glossary .input input').val("");
+    glossaryViewMode('terms');
+    wordList.search();
 }
 
 function glossaryDefine(word){
