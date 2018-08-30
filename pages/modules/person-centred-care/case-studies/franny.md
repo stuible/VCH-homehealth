@@ -28,7 +28,8 @@ medications:
   - Ranitidine 150 mg po BID
 
 
-initial-visit: Franny appears pale and tired. She is having problems eating due to the nausea. She has been missing taking her medications because of the nausea and Paula worries that this may contribute to a change in her mental health. Most recently, Franny had an emergency appendectomy and the surgical incision has dehisced.
+visit: 
+  Initial Visit: Franny appears pale and tired. She is having problems eating due to the nausea. She has been missing taking her medications because of the nausea and Paula worries that this may contribute to a change in her mental health. Most recently, Franny had an emergency appendectomy and the surgical incision has dehisced.
 
 reflection:
   - Do you have any preconceived ideas when caring for clients with mental health challenges or substance use disorder? What are they?

@@ -30,7 +30,8 @@ medications:
   - Tylenol as needed
 
 
-initial-visit: Luigi’s legs are swelling more and he hit his leg on the wheelchair and now has a large open area to his right lower leg. Rosa is feeling overwhelmed with trying to keep track of his blood sugars, medications, and tube feeds. Luigi desperately wants to have something to eat and he admits he has had some pasta. Their children have been taking turns visiting daily and Rosa insists on making dinner for everyone.
+visit: 
+  Initial Visit: Luigi’s legs are swelling more and he hit his leg on the wheelchair and now has a large open area to his right lower leg. Rosa is feeling overwhelmed with trying to keep track of his blood sugars, medications, and tube feeds. Luigi desperately wants to have something to eat and he admits he has had some pasta. Their children have been taking turns visiting daily and Rosa insists on making dinner for everyone.
 
 reflection:
   - What might you ask Luigi to contribute to your holistic assessment of his health and situation? 
