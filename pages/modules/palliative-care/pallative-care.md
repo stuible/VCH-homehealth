@@ -31,21 +31,4 @@ cases:
     image: AjitPortrait.jpeg
     url: agit
 
-more:
-  - title: Holistic Care
-    image: pcc/HolisticCare2.jpg
-    url: holistic
-  - title: Care of Older Adults
-    image: pcc/CareoftheOlderAdult.jpg
-    url: older-adult
-  - title: Chronic Conditions
-    image: pcc/ManagingChronicConditions.jpg
-    url: chronic
-  - title: Med Management
-    image: pcc/CarePlanning.jpg
-    url: med-management
-  - title: Deliverables
-    image: pcc/Deliverable.jpg
-    url: deliverables
 ---
-#### Before you do the Pallative Care I'm going to need you to do this...
