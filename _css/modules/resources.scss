@@ -1,0 +1,18 @@
+@import "../variables";
+
+/* RESOURCES PAGE */
+
+.resources {
+    ul {
+        // font-family: $fontBold;
+        list-style: none;
+
+        ul {
+            list-style: disc;
+        }
+        a {
+            color: black;
+            // font-family: $font;
+        }
+    }
+}
