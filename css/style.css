@@ -1653,6 +1653,9 @@ iframe.storyline {
   height: 350px;
   border: none; }
 
+.more-image {
+  width: 100%; }
+
 .narrative-question {
   color: #fff;
   font-size: 28px;
