@@ -18,7 +18,7 @@ sections:
       text: Hover over each part of the image to discover the physical changes.
 
     - part: half
-      html: "<strong>test</strong>"
+      storyline: HH_grandparents
 
   
   - section:

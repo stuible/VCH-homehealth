@@ -60,6 +60,7 @@ sections:
     - part: half
       title: Take Action
       text: Please review the photos and determine what the risks and hazards exist in each environment
+      storyline: carWorkSite
 
 
 ---

@@ -40,6 +40,11 @@ module Jekyll
           </div>
         ]
 
+      elsif type == 'storyline'
+        output = %Q[
+          <iframe class="storyline" src="#{baseurl}/storyline/#{text}/story.html"></iframe>
+        ]
+
       elsif type == 'circles'
         output = %Q[<div class="more-circles #{size}">]
         for element in text do
