@@ -15,13 +15,13 @@ sections:
       title: Take Action
       text: Match the 7 standards of CHNC with the appropriate definition
       quiz-matching-equal:
-        - category: [Health Promotion, more-on-topic/deppression.jpg] 
-        - category: [Prevention and Health Protection, more-on-topic/deppression.jpg] 
-        - category: ["Health Maintenance, Restoration and Palliation", more-on-topic/deppression.jpg] 
-        - category: [Professional Relationships, more-on-topic/deppression.jpg] 
-        - category: [Capacity Building, more-on-topic/deppression.jpg] 
-        - category: [Access and Equity, more-on-topic/deppression.jpg] 
-        - category: [Professional Responsibility and Accountability, more-on-topic/deppression.jpg] 
+        - category: [Health Promotion, more-on-topic/intro/clinicians/1a.jpg] 
+        - category: [Prevention and Health Protection, more-on-topic/intro/clinicians/2a.jpg] 
+        - category: ["Health Maintenance, Restoration and Palliation", more-on-topic/intro/clinicians/3a.jpg] 
+        - category: [Professional Relationships, more-on-topic/intro/clinicians/4a.jpg] 
+        - category: [Capacity Building, more-on-topic/intro/clinicians/5a.jpg] 
+        - category: [Access and Equity, more-on-topic/intro/clinicians/6a.jpg] 
+        - category: [Professional Responsibility and Accountability, more-on-topic/intro/clinicians/7a.jpg] 
 
         - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities.
         - Prevention and Health Protection: Develop and distribute information for clients and families on identifying and reducing risk factors
@@ -37,12 +37,12 @@ sections:
       text: "According to the Community Health Nurses (CHNs) of Canada, the community nurse values:"
     - part: full
       circles:
-        - Caring: modules/pcc/more-on-topic/holistic/emotion.png
-        - Principles of Primary Health Care: modules/pcc/more-on-topic/holistic/spiritual.png
-        - Multiple Ways of Knowing: modules/pcc/more-on-topic/holistic/cultural.png
-        - Individual and Community Settings: modules/pcc/more-on-topic/holistic/cognitive.png
-        - Empowerment: modules/pcc/more-on-topic/holistic/deleopment.png
-        - Social Justice: modules/pcc/more-on-topic/holistic/enviromental.png
+        - Caring: more-on-topic/intro/clinicians/1b.jpg
+        - Principles of Primary Health Care: more-on-topic/intro/clinicians/2b.jpg
+        - Multiple Ways of Knowing: more-on-topic/intro/clinicians/3b.jpg
+        - Individual and Community Settings: more-on-topic/intro/clinicians/4b.jpg
+        - Empowerment: more-on-topic/intro/clinicians/5b.jpg
+        - Social Justice: more-on-topic/intro/clinicians/6b.jpg
     - part: half
       title: Take Action
       text: Reflect on the list above. How might you incorporate these values into your everyday practice as a CHN ? Are there values and beliefs missing? What are they?
