@@ -3,6 +3,7 @@ layout: case-study
 permalink: "/modules/pallative-care/franny/"
 video: CaseStudy2.mp4
 title: Franny’s Story
+collapse-backstory: true
 
 background:
   - title: Background

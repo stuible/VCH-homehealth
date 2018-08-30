@@ -1,9 +1,9 @@
 --- 
 layout: case-study
 permalink: "/modules/pallative-care/may/"
-
 video: CaseStudy1.mp4
 title: May’s Story
+collapse-backstory: true
 
 background:
   - title: Background
