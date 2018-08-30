@@ -13,7 +13,23 @@ layout: resources
         <div class="barba-container" data-namespace="glossary" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
             <div class="center-align container more-title">Resources</div>
             <div class="container resources">
-
+                <div class="more-subtitle full">{{ page.title }}</div>
+                <div class="twelve columns">
+                <ul>
+                {% for resource in page.resources %}
+                            {% if resource[1].first %}
+                                <li>{{ resource[0] }}</li>
+                                <ul>
+                                {% for subresource in resource[1] %}
+                                    <li><a href="{{ subresource.first[1] }}">{{ subresource.first[0] }}</a></li>   
+                                {% endfor %}
+                                </ul>
+                            {% else %}
+                                <li><a href="{{ resource[1] }}">{{ resource[0] }}</a></li>
+                            {% endif %} 
+                {% endfor %}
+                </ul>
+                </div>
             </div>
 
         </div>
