@@ -7,10 +7,10 @@ function instantiateMenu(){
     setBreadcrumbs($('.barba-container'));
 
     $('a.resources').mouseover(function(){
-        $('.resources-dropdown').show();
+        $('.resources-dropdown').addClass('active');
     });
     $('.menubar').mouseleave(function(){
-        $('.resources-dropdown').hide();
+        $('.resources-dropdown').removeClass('active');
     });
 
 }
