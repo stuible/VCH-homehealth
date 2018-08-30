@@ -21,11 +21,29 @@ layout: resources
                                 <li>{{ resource[0] }}</li>
                                 <ul>
                                 {% for subresource in resource[1] %}
-                                    <li><a href="{{ subresource.first[1] }}">{{ subresource.first[0] }}</a></li>   
+                                    {% capture processed_link %}
+                                        {% if  subresource.first[1] contains '://'  
+                                            or subresource.first[1] contains 'www.' 
+                                            or subresource.first[1] contains '.com' 
+                                            or subresource.first[1] contains '.ca' 
+                                        %}
+                                        {{ subresource.first[1] }}{% else %}{{ site.baseurl }}/{{ subresource.first[1] }}
+                                        {% endif %}
+                                    {% endcapture%}
+                                    <li><a href="{{ processed_link }}" target="_blank" class="no-barba">{{ subresource.first[0] }}</a></li>   
                                 {% endfor %}
                                 </ul>
                             {% else %}
-                                <li><a href="{{ resource[1] }}">{{ resource[0] }}</a></li>
+                            {% capture processed_link %}
+                                {% if  resource[1] contains '://'  
+                                    or resource[1] contains 'www.' 
+                                    or resource[1] contains '.com' 
+                                    or resource[1] contains '.ca' 
+                                %}
+                                {{ resource[1] }}{% else %}{{ site.baseurl }}/{{ resource[1] }}
+                                {% endif %}
+                            {% endcapture%}
+                                <li><a href="{{ processed_link }}" target="_blank" class="no-barba">{{ resource[0] }}</a></li>
                             {% endif %} 
                 {% endfor %}
                 </ul>
