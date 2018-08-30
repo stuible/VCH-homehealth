@@ -226,7 +226,7 @@ module Jekyll
 
       elsif type == 'image'
         output = %Q[
-          <img class="more-image" src="#{text}">
+          <img class="more-image" src="#{baseurl}/image/#{text}">
         ]
 
       elsif type == 'video-gallery'
