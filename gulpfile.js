@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var stripDebug = require('gulp-strip-debug');
 
 
 var cssFiles = '_css/**/*.?(s)css';
@@ -51,6 +52,7 @@ gulp.task('js', function() {
         .pipe(concat('homehealth.js'))
         .pipe(gulp.dest('js'))
         .pipe(rename('homehealth.min.js'))
+        .pipe(stripDebug())
         .pipe(uglify())
         .pipe(gulp.dest('js'));
   });
