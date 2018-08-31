@@ -34,7 +34,7 @@ function createProgress(){
         'intro' : new element(false),
         'clinicians' : new element(false),
         'environment' : new element(false),
-        'care' : new element(false),
+        'hand-hygiene' : new element(false),
         'deliverables' : new element(false),
     };
 
