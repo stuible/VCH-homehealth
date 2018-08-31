@@ -15,10 +15,10 @@ sections:
       title: Take Action
       text: "Review the following pictures:"
       gallery:
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/intro/more-on-topic/environment/AssistedLiving.jpg
+        - Image: modules/intro/more-on-topic/environment/IndependentSeniorsLiving.jpg
+        - Image: modules/intro/more-on-topic/environment/AmbulatoryCareClinic.jpg
+        - Image: modules/intro/more-on-topic/environment/SocialHousing1.jpg
 
   - section: 
     - part: full

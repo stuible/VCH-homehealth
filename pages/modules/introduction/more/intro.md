@@ -14,11 +14,11 @@ sections:
     - part: full
       title: Take Action
       quiz-matching-equal:
-        - category: [Accessibility, more-on-topic/intro/intro/1.jpg] 
-        - category: [Public Participation, more-on-topic/intro/intro/2.jpg] 
-        - category: [Health Promotion, more-on-topic/intro/intro/3.jpg] 
-        - category: [Appropriate Technology, more-on-topic/intro/intro/4.jpg] 
-        - category: [Intersectoral Cooperation, more-on-topic/intro/intro/5.jpg] 
+        - category: [Accessibility, modules/intro/more-on-topic/intro/1.jpg] 
+        - category: [Public Participation, modules/intro/more-on-topic/intro/2.jpg] 
+        - category: [Health Promotion, modules/intro/more-on-topic/intro/3.jpg] 
+        - category: [Appropriate Technology, modules/intro/more-on-topic/intro/4.jpg] 
+        - category: [Intersectoral Cooperation, modules/intro/more-on-topic/intro/5.jpg] 
 
         - Accessibility: Supply of essential health responsibility to all people with no unreasonable geographic or financial barriers
         - Public Participation: Right and responsibility to be active partners in making decisions about one’s health care and the health
@@ -31,7 +31,7 @@ sections:
       title: Primary Care
       text: VCH operates primary care clinics whereby people who meet the mandate can access services; primary care clinics use a PHC approach.
     - part: half
-      image: more-on-topic/intro/intro/PrimaryCare.jpg
+      image: modules/intro/more-on-topic/intro/PrimaryCare.jpg
 
   - section:
     - part: half

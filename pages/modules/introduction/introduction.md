@@ -34,18 +34,18 @@ cases:
 
 more:
   - title: Introduction
-    image: pcc/HolisticCare2.jpg
+    image: modules/pcc/more-on-topic/HolisticCare2.jpg
     url: intro
   - title: Community Health
-    image: pcc/CareoftheOlderAdult.jpg
+    image: modules/pcc/more-on-topic/CareoftheOlderAdult.jpg
     url: clinicians
   - title: Environment
-    image: pcc/ManagingChronicConditions.jpg
+    image: modules/pcc/more-on-topic/ManagingChronicConditions.jpg
     url: environment
   - title: Hand Hygiene
-    image: pcc/CarePlanning.jpg
+    image: modules/pcc/more-on-topic/CarePlanning.jpg
     url: care
   - title: Deliverables
-    image: pcc/Deliverable.jpg
+    image: modules/pcc/more-on-topic/Deliverable.jpg
     url: deliverables
 ---
