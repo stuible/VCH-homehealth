@@ -13,7 +13,6 @@ function instantiateMenu() {
         $('.resources-dropdown').removeClass('active');
     });
 
-
     $(".menubar").mousemove(function (event) {
         var resourcesMenuItem = $('a.resources');
 
