@@ -57,8 +57,8 @@ sections:
       bullets:
         - 'Which determinants of health are evident in these videos?'
         - 'How do you see the determinants of health impacting the clients you will care for in the community?'
-      youtube: https://www.youtube.com/embed/zI2W32yNg8
-      youtube-2: https://www.youtube.com/embed/zI2W32yNg8
+      youtube: https://www.youtube.com/embed/aJbpRt4r5cE
+      youtube-2: https://www.youtube.com/embed/l2pBNoqYbjY
       
 
   - section:
@@ -70,12 +70,12 @@ sections:
       text: Before we walk along side our clients, we have to understand where they are coming from.
       title: Take Action
       text-2: "1. Please watch the introduction to: Hope that Helps: Trauma Informed Care"
-      youtube: https://www.youtube.com/embed/zI2W32yNg8
+      youtube: https://www.youtube.com/embed/KODThTB-rHc
     - part: half
       text: It is important to walk along side our clients on their journey to optimize their health.
       title: Take Action
       text-2: "2. Review the following video and write down how you can support clients to transition from one point of care to another."
-      youtube: https://www.youtube.com/embed/zI2W32yNg8
+      youtube: https://www.youtube.com/embed/51KrAku6awE
 
   - section:
 ---
