@@ -77,11 +77,12 @@ sections:
       title: Take Action
       text: Watch the following videos
       video-gallery:
-        - Community Health Nurse (CHN): https://www.youtube.com/embed/0T3QxwVhtSs
-        - Occupational Therapist (OT): https://www.youtube.com/embed/pTW9pVtPeYQ
-        - Physiotherapist (PT): https://www.youtube.com/embed/yJeDncdWdb8
-        - Registered Dietitan(RD): https://www.youtube.com/embed/0T3QxwVhtSs
-        - Community Health Worker (CHW): https://www.youtube.com/embed/pTW9pVtPeYQ
+        - Community Health Nurse (CHN): https://www.youtube.com/embed/SARX7DhzOjQ
+        - Occupational Therapist (OT): https://www.youtube.com/embed/M40HwqLHsBY
+        - Physiotherapist (PT): https://www.youtube.com/embed/TxerT7oycd0
+        - Registered Dietitan(RD): https://www.youtube.com/embed/zlLlMGomVj8
+        - Community Health Worker (CHW): https://www.youtube.com/embed/vrPqlRpTIxo
+        - Case Manager (CM): https://www.youtube.com/embed/uPvaHH30eYk
 
   - section:
     - part: half
@@ -91,7 +92,7 @@ sections:
     - part: half
       title: Take Action
       text: Watch the video and reflect on the model of interprofessional collaboration, What are your strengths and areas for growth when it comes to collobarating with a team?
-      youtube: https://www.youtube.com/embed/pTW9pVtPeYQ
+      youtube: https://www.youtube.com/embed/8_2KXroUKRQ
 
   - section:
     - part: full
@@ -114,7 +115,7 @@ sections:
     - part: half
       title: Take Action
       text-2: Watch the video and decide which of the 10 C’s of care planning is often missed and why
-      youtube: https://www.youtube.com/embed/pTW9pVtPeYQ
+      youtube: https://www.youtube.com/embed/Xe_69r1Dl0w
 
   - section:
 
