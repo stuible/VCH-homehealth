@@ -3,14 +3,24 @@ var lastmoduleSlide = "";
 var lastmoduleSection = "";
 var allRects = null;
 
-function instantiateMenu(){
+function instantiateMenu() {
     setBreadcrumbs($('.barba-container'));
 
-    $('a.resources').mouseover(function(){
+    $('a.resources').mouseover(function () {
         $('.resources-dropdown').addClass('active');
     });
-    $('.menubar').mouseleave(function(){
+    $('.menubar').mouseleave(function () {
         $('.resources-dropdown').removeClass('active');
+    });
+
+
+    $(".menubar").mousemove(function (event) {
+        var resourcesMenuItem = $('a.resources');
+
+        if( event.pageX < $(resourcesMenuItem).offset().left - 100  ||
+            event.pageX > $(resourcesMenuItem).offset().left + $(resourcesMenuItem).width() + 25){
+            $('.resources-dropdown').removeClass('active');
+        }
     });
 
 }
@@ -29,8 +39,8 @@ function setMenu(menu) {
         case 'dark':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#000' }, 'z');
-            $(".menu-icon").children().stop( true, false ).children().children().attr("stroke", "#000");
+            $('.menubar, .menubar a').stop(true, false).animate({ color: '#000' }, 'z');
+            $(".menu-icon").children().stop(true, false).children().children().attr("stroke", "#000");
             menuIsLight = false;
 
             break;
@@ -38,7 +48,7 @@ function setMenu(menu) {
         case 'light':
 
             $('.menubar').removeClass('white');
-            $('.menubar, .menubar a').stop( true, false ).animate({ color: '#fff' }, 'fast');
+            $('.menubar, .menubar a').stop(true, false).animate({ color: '#fff' }, 'fast');
             $(".menu-icon").children().children().children().attr("stroke", "#fff");
             menuIsLight = true;
 
@@ -86,9 +96,9 @@ function setBreadcrumbs(containerEl) {
         }
         else {
             //If not, then add '>' symbol
-            if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a><span> > </span>');
-            else if(i == 1) $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '#' + lastmoduleSection +'">' + this + '</a><span> > </span>');
-            else  $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '">' + this + '</a><span> > </span>');
+            if (i == 0) $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') + '">' + this + '</a><span> > </span>');
+            else if (i == 1) $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '#' + lastmoduleSection + '">' + this + '</a><span> > </span>');
+            else $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '">' + this + '</a><span> > </span>');
         }
 
     });
@@ -111,7 +121,7 @@ function removeMenuDropshadowWaypoint() {
     $('.menubar').waypoint('destroy');
 }
 
-function drawModulesIcon(){
+function drawModulesIcon() {
     //Draw modules icon
     var s = Snap();
     var mainRect = s.rect(18, 5, 20, 20, 2);
