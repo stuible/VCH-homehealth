@@ -310,19 +310,30 @@ module Jekyll
         output = %Q[<div class="more-gallery #{size}">]
         index = 1
         rowCounter = 1
+
+        # Default column size
+        columnNumberString = 'four'
+        columnNumber = 3;
+
+        #If your image count can be devided by 4, but them in rows of 4 instead of 3
+        if text.size % 4 == 0
+          columnNumberString = 'three'
+          columnNumber = 4;
+        end
+
         for item in text do
           if rowCounter == 1
             output << %Q[<div class="row">]
           end
           item.each {|key, value| 
           output << %Q[
-            <div class="four columns">
+            <div class="#{columnNumberString} columns">
 
                 <a data-fancybox="gallery" class="no-barba" href="#{baseurl}/image/#{value}"><img src="#{baseurl}/image/#{value}"></a>
             </div>
           ]
           }
-          if rowCounter == 3
+          if rowCounter == columnNumber
             output << %Q[</div>]
             rowCounter = 1
           else
