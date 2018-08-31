@@ -44,7 +44,7 @@ more:
     url: environment
   - title: Hand Hygiene
     image: modules/pcc/more-on-topic/CarePlanning.jpg
-    url: care
+    url: hand-hygiene
   - title: Deliverables
     image: modules/pcc/more-on-topic/Deliverable.jpg
     url: deliverables
