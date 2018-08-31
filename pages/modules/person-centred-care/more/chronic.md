@@ -37,11 +37,14 @@ sections:
     - part: half
       title: Types of Conditions
       text: Home health nurses can be involved with clients with chronic conditions such as Chronic Obstructive Pulmonary Disease (COPD) or heart failure. There are many chronic health challenges people live with for many years.
+      text-2: Do you have any preconceived notions about people with mental health challenges?
+      text-3: What kind of questions can you ask to find out about a person’s mental health?
 
     - part: half
       title: Self Reflection
       text: Not all chronic health challenges are physical. Watch the Living with Mental Health video and reflect.
-      youtube: https://www.youtube.com/embed/zI2W32yNg8
+      youtube: https://www.youtube.com/embed/ezI2W32yNg8
+
 
   - section:
     - part: half
@@ -49,8 +52,8 @@ sections:
       text: Indicate which signs and symptoms go with the underlying issue by dragging and dropping
     - part: full
       quiz-matching:
-        - category: [Depression, more-on-topic/deppression.jpg] 
-        - category: [Anxiety, more-on-topic/delirium.jpg]
+        - category: [Depression, modules/pcc/more-on-topic/chronic/depression.jpg] 
+        - category: [Anxiety, modules/pcc/more-on-topic/chronic/anxiety.jpg]
 
         - Depression: Lack of interest in activities
         - Depression: Depressive mood
@@ -65,17 +68,19 @@ sections:
     - part: half
       title: Medication Management
       text: Ensuring the right medications are taken at the right time in the right way is a part of managing chronic disease. Community health nurses can assist clients with this by first doing a Best Possible Medication History. Once the history is done and documented, reconcilation should be done with the MRP.
-      youtube: https://www.youtube.com/embed/xw9BBb8LhYw
+      resources:
+        - file: file
+        - file: file
     - part: half
       title: Take Action
       text: Review images of strategies you can use to help support taking their medication properly. Click an image to expand.
       gallery:
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/pcc/more-on-topic/chronic/clock.jpg
+        - Image: modules/pcc/more-on-topic/chronic/notepad.jpg
+        - Image: modules/pcc/more-on-topic/chronic/pillcase.jpg
+        - Image: modules/pcc/more-on-topic/chronic/binder.jpg
+        - Image: modules/pcc/more-on-topic/chronic/help.jpg
+        - Image: modules/pcc/more-on-topic/chronic/case.jpg
       
 
 
