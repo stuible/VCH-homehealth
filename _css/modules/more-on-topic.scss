@@ -265,6 +265,14 @@ $sectionTitleBoarderBottom: 5px;
 
 
 //Drag and Drop Quiz
+
+.matching-circle {
+    background-repeat: no-repeat;
+    // background-attachment: 
+    background-size: cover;
+    background-position: center; 
+}
+
 .matching-circle.target{
     height: 50px;
     width: 50px;
@@ -356,5 +364,11 @@ iframe.storyline {
 //Image
 
 .more-image {
+    width: 100%;
+}
+
+// Image Posters
+
+img.more-poster {
     width: 100%;
 }

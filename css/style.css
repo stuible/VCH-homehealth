@@ -1588,6 +1588,14 @@ body {
   content: ""; }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
+.matching-circle {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
 .matching-circle.target {
   height: 50px;
   width: 50px;
@@ -1666,6 +1674,9 @@ iframe.storyline {
   border: none; }
 
 .more-image {
+  width: 100%; }
+
+img.more-poster {
   width: 100%; }
 
 .narrative-question {
