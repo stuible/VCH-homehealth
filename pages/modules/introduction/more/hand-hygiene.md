@@ -2,6 +2,7 @@
 layout: branching-narrative
 permalink: "/modules/introduction/hand-hygiene/"
 title: hand-hygiene
+more-on-topic: true
 
 #FIRST LEVEL
 questions: 

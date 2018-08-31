@@ -43,9 +43,19 @@ layout: branching-narrative
                          </div>
                          
                          {% assign currentPage = page.title | append: "/" | prepend: "/" %}
+
+                         {% if page.more-on-topic == true %}
+                         {% assign weCameFrom = "#more-on-topic" %}
+                         {% assign backButtonText = "Back to Module" %}
+
+                         {% else %}
+                         {% assign weCameFrom = "#case-studies" %}
+                         {% assign backButtonText = "Back to Scenarios" %}
+
+                         {% endif %}
                          
-                        <a href="{{ page.url | remove: currentPage | append: "#case-studies" }}" class="button narrative-back" style="display: none">
-                            Back to Scenarios
+                        <a href="{{ page.url | remove: currentPage | append: weCameFrom }}" class="button narrative-back" style="display: none">
+                            {{ backButtonText }}
                         </a>
                     </div>
                     {% endfor %}
