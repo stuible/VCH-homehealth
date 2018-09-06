@@ -49,7 +49,7 @@
     <div class="resources-dropdown">
             {% for page in site.pages %}
             {% if page.layout == 'resources' %}  
-                <a class="resource" style="background-image:url('{{site.baseurl}}/image/{{ page.thumbnail }}')" href="{{ page.url }}">
+                <a class="resource" style="background-image:url('{{site.baseurl}}/image/{{ page.thumbnail }}')" href="{{site.baseurl}}{{ page.url }}">
                   <div>{{ page.title }}</div>
                 </a>
             {% endif %}
