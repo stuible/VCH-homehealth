@@ -67,14 +67,14 @@ sections:
       text: Part of partnering in the client’s journey is accepting their wishes for future health care when they are no longer able to communicate for themselves. 
     - part: spacer
     - part: half
-      text: Before we walk along side our clients, we have to understand where they are coming from.
       title: Take Action
+      text: Before we walk along side our clients, we have to understand where they are coming from.
       text-2: "1. Please watch the introduction to: Hope that Helps: Trauma Informed Care"
       youtube: https://www.youtube.com/embed/KODThTB-rHc
     - part: half
-      text: It is important to walk along side our clients on their journey to optimize their health.
       title: Take Action
-      text-2: "2. Review the following video and write down how you can support clients to transition from one point of care to another."
+      text: It is important to walk along side our clients on their journey to optimize their health.
+      text-2: "2. Watch the video and write down how you can support clients’ transition from one point of care to another."
       youtube: https://www.youtube.com/embed/51KrAku6awE
 
   - section:
