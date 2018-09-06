@@ -51,6 +51,6 @@ modules:
         text: Youtube Series
       - link: https://learninghub.phsa.ca/Courses/7729/medical-assistance-in-dying-maid-for-registered-nurses
         duration: 2 hours
-        linktext: Medical Assistance in Dying for Registered Nurses
+        linktext: Medical Assistance in Dying for RNs
         text: Online Course
 ---
