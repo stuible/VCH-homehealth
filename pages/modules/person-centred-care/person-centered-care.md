@@ -33,18 +33,18 @@ cases:
 
 more:
   - title: Holistic Care
-    image: modules/pcc/more-on-topic/HolisticCare2.jpg
+    image: modules/pcc/topic/HolisticCare2.jpg
     url: holistic
   - title: Care of Older Adults
-    image: modules/pcc/more-on-topic/CareoftheOlderAdult.jpg
+    image: modules/pcc/topic/CareoftheOlderAdult.jpg
     url: older-adult
   - title: Chronic Conditions
-    image: modules/pcc/more-on-topic/ManagingChronicConditions.jpg
+    image: modules/pcc/topic/ManagingChronicConditions.jpg
     url: chronic
   - title: Med Management
-    image: modules/pcc/more-on-topic/CarePlanning.jpg
+    image: modules/pcc/topic/CarePlanning.jpg
     url: med-management
   - title: Deliverables
-    image: modules/pcc/more-on-topic/Deliverable.jpg
+    image: modules/pcc/topic/Deliverable.jpg
     url: deliverables
 ---

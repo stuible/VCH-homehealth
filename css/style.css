@@ -890,7 +890,7 @@ body {
   .narratives-container {
     font-size: 16px; } }
 
-.more-on-topic {
+.topic {
   display: inline-block;
   width: inherit;
   width: -webkit-fill-available;
@@ -904,9 +904,9 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 10px; }
-  .more-on-topic:hover {
+  .topic:hover {
     color: #fff; }
-  .more-on-topic img {
+  .topic img {
     width: 100%;
     height: 260px;
     -webkit-border-radius: 5px 5px 0px 0px;
@@ -916,21 +916,21 @@ body {
     object-fit: cover;
     display: none; }
   @media (min-width: 750px) {
-    .more-on-topic {
+    .topic {
       width: 95px;
       height: 300px;
       padding: 0; }
-      .more-on-topic img {
+      .topic img {
         display: block; }
-      .more-on-topic .narrative-name {
+      .topic .narrative-name {
         margin-top: 5px; } }
   @media (min-width: 1000px) {
-    .more-on-topic {
+    .topic {
       width: 125px; } }
   @media (min-width: 1200px) {
-    .more-on-topic {
+    .topic {
       width: 160px; } }
-  .more-on-topic .overlay {
+  .topic .overlay {
     position: absolute;
     display: none;
     top: 0;
@@ -947,15 +947,15 @@ body {
     -moz-transition: opacity 400ms linear;
     transition: opacity 400ms linear; }
     @media (min-width: 750px) {
-      .more-on-topic .overlay {
+      .topic .overlay {
         display: block; } }
-    .more-on-topic .overlay svg {
+    .topic .overlay svg {
       margin: 0 45px;
       margin-top: 100px; }
-      .more-on-topic .overlay svg .path {
+      .topic .overlay svg .path {
         stroke-dasharray: 1000;
         stroke-dashoffset: 0; }
-        .more-on-topic .overlay svg .path.circle {
+        .topic .overlay svg .path.circle {
           -webkit-animation: dash 1s ease-in-out;
           -moz-animation: dash 1s ease-in-out;
           -o-animation: dash 1s ease-in-out;
@@ -964,7 +964,7 @@ body {
           -moz-animation-delay: 2s;
           -o-animation-delay: 2s;
           animation-delay: 2s; }
-        .more-on-topic .overlay svg .path.line {
+        .topic .overlay svg .path.line {
           stroke-dashoffset: 1000;
           -webkit-animation: dash 1s .35s ease-in-out forwards;
           -moz-animation: dash 1s .35s ease-in-out forwards;
@@ -974,7 +974,7 @@ body {
           -moz-animation-delay: 1s;
           -o-animation-delay: 1s;
           animation-delay: 1s; }
-        .more-on-topic .overlay svg .path.check {
+        .topic .overlay svg .path.check {
           stroke-dashoffset: -100;
           -webkit-animation: dash-check 1s .35s ease-in-out forwards;
           -moz-animation: dash-check 1s .35s ease-in-out forwards;
@@ -1032,10 +1032,10 @@ body {
     stroke-dashoffset: -100; }
   100% {
     stroke-dashoffset: 900; } }
-  .more-on-topic.done .overlay {
+  .topic.done .overlay {
     opacity: 0.7; }
 
-.more-on-topic-name {
+.topic-name {
   margin-top: 5px; }
 
 * {

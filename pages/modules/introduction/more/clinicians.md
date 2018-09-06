@@ -15,13 +15,13 @@ sections:
       title: Take Action
       text: Match the 7 standards of CHNC with the appropriate definition
       quiz-matching-equal:
-        - category: [Health Promotion, modules/intro/more-on-topic/clinicians/1a.jpg] 
-        - category: [Prevention and Health Protection, modules/intro/more-on-topic/clinicians/2a.jpg] 
-        - category: ["Health Maintenance, Restoration and Palliation", modules/intro/more-on-topic/clinicians/3a.jpg] 
-        - category: [Professional Relationships, modules/intro/more-on-topic/clinicians/4a.jpg] 
-        - category: [Capacity Building, modules/intro/more-on-topic/clinicians/5a.jpg] 
-        - category: [Access and Equity, modules/intro/more-on-topic/clinicians/6a.jpg] 
-        - category: [Professional Responsibility and Accountability, modules/intro/more-on-topic/clinicians/7a.jpg] 
+        - category: [Health Promotion, modules/intro/topic/clinicians/1a.jpg] 
+        - category: [Prevention and Health Protection, modules/intro/topic/clinicians/2a.jpg] 
+        - category: ["Health Maintenance, Restoration and Palliation", modules/intro/topic/clinicians/3a.jpg] 
+        - category: [Professional Relationships, modules/intro/topic/clinicians/4a.jpg] 
+        - category: [Capacity Building, modules/intro/topic/clinicians/5a.jpg] 
+        - category: [Access and Equity, modules/intro/topic/clinicians/6a.jpg] 
+        - category: [Professional Responsibility and Accountability, modules/intro/topic/clinicians/7a.jpg] 
 
         - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities.
         - Prevention and Health Protection: Develop and distribute information for clients and families on identifying and reducing risk factors
@@ -37,12 +37,12 @@ sections:
       text: "According to the Community Health Nurses (CHNs) of Canada, the community nurse values:"
     - part: full
       circles:
-        - Caring: modules/intro/more-on-topic/clinicians/1b.jpg
-        - Principles of Primary Health Care: modules/intro/more-on-topic/clinicians/2b.jpg
-        - Multiple Ways of Knowing: modules/intro/more-on-topic/clinicians/3b.jpg
-        - Individual and Community Settings: modules/intro/more-on-topic/clinicians/4b.jpg
-        - Empowerment: modules/intro/more-on-topic/clinicians/5b.jpg
-        - Social Justice: modules/intro/more-on-topic/clinicians/6b.jpg
+        - Caring: modules/intro/topic/clinicians/1b.jpg
+        - Principles of Primary Health Care: modules/intro/topic/clinicians/2b.jpg
+        - Multiple Ways of Knowing: modules/intro/topic/clinicians/3b.jpg
+        - Individual and Community Settings: modules/intro/topic/clinicians/4b.jpg
+        - Empowerment: modules/intro/topic/clinicians/5b.jpg
+        - Social Justice: modules/intro/topic/clinicians/6b.jpg
     - part: half
       title: Take Action
       text: Reflect on the list above. How might you incorporate these values into your everyday practice as a CHN ? Are there values and beliefs missing? What are they?
@@ -88,7 +88,8 @@ sections:
     - part: half
       title: Interprofessional Collaboration
       text: "According to the Community Health Nurses (CHNs) of Canada, the community nurse values:"
-      image: modules/intro/more-on-topic/clinicians/InterprofessionalCollaboration.svg
+      link: 
+      image: modules/intro/topic/clinicians/InterprofessionalCollaboration.svg
     - part: half
       title: Take Action
       text: Watch the video and reflect on the model of interprofessional collaboration, What are your strengths and areas for growth when it comes to collobarating with a team?

@@ -13,13 +13,13 @@ sections:
 
     - part: full
       circles:
-        - Emotional: modules/pcc/more-on-topic/holistic/emotion.png
-        - Spiritual: modules/pcc/more-on-topic/holistic/spiritual.png
-        - Cultural: modules/pcc/more-on-topic/holistic/cultural.png
-        - Cognitive: modules/pcc/more-on-topic/holistic/cognitive.png
-        - Development: modules/pcc/more-on-topic/holistic/deleopment.png
-        - Environmental: modules/pcc/more-on-topic/holistic/enviromental.png
-        - Social: modules/pcc/more-on-topic/holistic/social.png
+        - Emotional: modules/pcc/topic/holistic/emotion.png
+        - Spiritual: modules/pcc/topic/holistic/spiritual.png
+        - Cultural: modules/pcc/topic/holistic/cultural.png
+        - Cognitive: modules/pcc/topic/holistic/cognitive.png
+        - Development: modules/pcc/topic/holistic/deleopment.png
+        - Environmental: modules/pcc/topic/holistic/enviromental.png
+        - Social: modules/pcc/topic/holistic/social.png
 
     - part: half
       title: Reflection

@@ -75,7 +75,7 @@ function pushToProgress(progress, moreOnTopicArray){
                 'luigi' : new element(false),
                 'agit' : new element(false),
             }),
-            'more-on-topic' : new component(moreOnTopic)
+            'topic' : new component(moreOnTopic)
     });
 
     }

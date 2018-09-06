@@ -64,7 +64,7 @@ layout: intro
                                     </div>
                                 {% include scrollindicator.html onClick = 'introSwiper.slideNext()' %}
                         </div>
-                        <div class="intro-swiper-slide" data-hash="more-on-topic">
+                        <div class="intro-swiper-slide" data-hash="topic">
                             <div class="container center-center">
                                     <div class="narratives-parent-container">
                                         <div class="narratives-container">
@@ -72,7 +72,7 @@ layout: intro
                                                     Let's Learn
                                                 </div>
                                             {% for item in page.more %}
-                                                <a class="more-on-topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.url }}">
+                                                <a class="topic hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}" data-name="{{ item.url }}">
                                                         <img class="lazy" src="{{site.baseurl}}/image/{{ item.image }}" alt="{{ item.name }}">
                                                         <div class="overlay">
                                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">

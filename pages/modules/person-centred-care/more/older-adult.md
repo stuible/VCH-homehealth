@@ -42,9 +42,9 @@ sections:
 
     - part: full
       posters-three:
-        - Regularly assessing and communicating with the health care team: modules/pcc/more-on-topic/older-adult/ipad.jpg
-        - Educating the older adult and caregivers: modules/pcc/more-on-topic/older-adult/care.jpg
-        - Delaying decline by addressing strengths and physical abilities, reinforcing andpromoting health behaviours: modules/pcc/more-on-topic/older-adult/excercise.jpg
+        - Regularly assessing and communicating with the health care team: modules/pcc/topic/older-adult/ipad.jpg
+        - Educating the older adult and caregivers: modules/pcc/topic/older-adult/care.jpg
+        - Delaying decline by addressing strengths and physical abilities, reinforcing andpromoting health behaviours: modules/pcc/topic/older-adult/excercise.jpg
 
   - section:
 
@@ -70,9 +70,9 @@ sections:
 
     - part: full
       quiz-matching:
-        - category: [Depression, modules/pcc/more-on-topic/older-adult/depression.jpg]
-        - category: [Delirium, modules/pcc/more-on-topic/older-adult/delirium.jpg]
-        - category: [Dementia, modules/pcc/more-on-topic/older-adult/dementia.jpg]
+        - category: [Depression, modules/pcc/topic/older-adult/depression.jpg]
+        - category: [Delirium, modules/pcc/topic/older-adult/delirium.jpg]
+        - category: [Dementia, modules/pcc/topic/older-adult/dementia.jpg]
 
         - Depression: 'Sudden Onset'
         - Delirium: 'Loss of interest in activities'

@@ -218,7 +218,7 @@ module Jekyll
         output = %Q[
           <div class="more-video">
             <video controls>
-              <source src="/video/more-on-topic/#{text}" type="video/mp4">
+              <source src="/video/topic/#{text}" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>

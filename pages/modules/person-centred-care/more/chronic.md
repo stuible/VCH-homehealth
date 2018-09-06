@@ -52,8 +52,8 @@ sections:
       text: Indicate which signs and symptoms go with the underlying issue by dragging and dropping
     - part: full
       quiz-matching:
-        - category: [Depression, modules/pcc/more-on-topic/chronic/depression.jpg] 
-        - category: [Anxiety, modules/pcc/more-on-topic/chronic/anxiety.jpg]
+        - category: [Depression, modules/pcc/topic/chronic/depression.jpg] 
+        - category: [Anxiety, modules/pcc/topic/chronic/anxiety.jpg]
 
         - Depression: Lack of interest in activities
         - Depression: Depressive mood
@@ -75,12 +75,12 @@ sections:
       title: Take Action
       text: Review images of strategies you can use to help support taking their medication properly. Click an image to expand.
       gallery:
-        - Image: modules/pcc/more-on-topic/chronic/clock.jpg
-        - Image: modules/pcc/more-on-topic/chronic/notepad.jpg
-        - Image: modules/pcc/more-on-topic/chronic/pillcase.jpg
-        - Image: modules/pcc/more-on-topic/chronic/binder.jpg
-        - Image: modules/pcc/more-on-topic/chronic/help.jpg
-        - Image: modules/pcc/more-on-topic/chronic/case.jpg
+        - Image: modules/pcc/topic/chronic/clock.jpg
+        - Image: modules/pcc/topic/chronic/notepad.jpg
+        - Image: modules/pcc/topic/chronic/pillcase.jpg
+        - Image: modules/pcc/topic/chronic/binder.jpg
+        - Image: modules/pcc/topic/chronic/help.jpg
+        - Image: modules/pcc/topic/chronic/case.jpg
       
 
 

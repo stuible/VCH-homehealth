@@ -15,10 +15,10 @@ sections:
       title: Take Action
       text: "Review the following pictures:"
       gallery:
-        - Image: modules/intro/more-on-topic/environment/AssistedLiving.jpg
-        - Image: modules/intro/more-on-topic/environment/IndependentSeniorsLiving.jpg
-        - Image: modules/intro/more-on-topic/environment/AmbulatoryCareClinic.jpg
-        - Image: modules/intro/more-on-topic/environment/SocialHousing1.jpg
+        - Image: modules/intro/topic/environment/AssistedLiving.jpg
+        - Image: modules/intro/topic/environment/IndependentSeniorsLiving.jpg
+        - Image: modules/intro/topic/environment/AmbulatoryCareClinic.jpg
+        - Image: modules/intro/topic/environment/SocialHousing1.jpg
 
   - section: 
     - part: full
@@ -34,9 +34,9 @@ sections:
       title: Take Action
       text: Please review the photos and determine what the risks and hazards exist in each environment
       gallery:
-        - Image: modules/intro/more-on-topic/environment/HazardsRisks2.jpg
-        - Image: modules/intro/more-on-topic/environment/HazardsRisks1.jpg
-        - Image: modules/intro/more-on-topic/environment/HazardsRisks3.jpg
+        - Image: modules/intro/topic/environment/HazardsRisks2.jpg
+        - Image: modules/intro/topic/environment/HazardsRisks1.jpg
+        - Image: modules/intro/topic/environment/HazardsRisks3.jpg
 
   - section:
     - part: half

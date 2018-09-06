@@ -98,7 +98,7 @@ var moduleView = Barba.BaseView.extend({
 moduleView.init();
 
 var moreView = Barba.BaseView.extend({
-  namespace: 'more-on-topic',
+  namespace: 'topic',
   onEnter: function () {
       clearBackground();
       instantiateMore();
@@ -106,7 +106,7 @@ var moreView = Barba.BaseView.extend({
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
   },
   onEnterCompleted: function () {
-    updateProgress($('.barba-container').data('module-parent'), 'more-on-topic', $('.barba-container').data('name'), true);
+    updateProgress($('.barba-container').data('module-parent'), 'topic', $('.barba-container').data('name'), true);
   }
 });
 

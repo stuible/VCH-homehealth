@@ -2,7 +2,7 @@
 layout: branching-narrative
 permalink: "/modules/person-centered-care/med-management/"
 title: med-management
-more-on-topic: true
+topic: true
 
 #FIRST LEVEL
 questions: 

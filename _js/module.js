@@ -95,9 +95,9 @@ function instantiateModule() {
 }
 
 function updateMoreOnTopicUI() {
-    $('.more-on-topic').each(function () {
-        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name')));
-        if (getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))) {
+    $('.topic').each(function () {
+        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'topic', $(this).data('name')));
+        if (getProgress($('.barba-container').data('module'), 'topic', $(this).data('name'))) {
             $(this).addClass('done');
         }
 

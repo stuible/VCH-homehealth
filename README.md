@@ -139,8 +139,8 @@ sections:
       # A block that takes in a list and displays circles containing images
       circles:
         - Title: image.png
-        - Spiritual: modules/pcc/more-on-topic/holistic/spiritual.png
-        - Cultural: modules/pcc/more-on-topic/holistic/cultural.png
+        - Spiritual: modules/pcc/topic/holistic/spiritual.png
+        - Cultural: modules/pcc/topic/holistic/cultural.png
 
       # A block that takes in an array and displays mutiple questions
       questions: ['How did you feel?', 'What were the ramifications?'] 
@@ -148,9 +148,9 @@ sections:
       # A block that creates a matching quiz (this whole layout thing is such a hack so I apologies for these janky blocks)
       quiz-matching:
         # first you define category names and images to represent them
-        - category: [Depression, more-on-topic/deppression.jpg]
-        - category: [Delirium, more-on-topic/delirium.jpg]
-        - category: [Dementia, more-on-topic/dementia.jpg]
+        - category: [Depression, topic/deppression.jpg]
+        - category: [Delirium, topic/delirium.jpg]
+        - category: [Dementia, topic/dementia.jpg]
 
         #You then define items that fall under your define categories, the user will have to match them up
         - Depression: 'Sudden Onset'

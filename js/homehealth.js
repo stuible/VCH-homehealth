@@ -294,7 +294,7 @@ var moduleView = Barba.BaseView.extend({
 moduleView.init();
 
 var moreView = Barba.BaseView.extend({
-  namespace: 'more-on-topic',
+  namespace: 'topic',
   onEnter: function () {
       clearBackground();
       instantiateMore();
@@ -302,7 +302,7 @@ var moreView = Barba.BaseView.extend({
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
   },
   onEnterCompleted: function () {
-    updateProgress($('.barba-container').data('module-parent'), 'more-on-topic', $('.barba-container').data('name'), true);
+    updateProgress($('.barba-container').data('module-parent'), 'topic', $('.barba-container').data('name'), true);
   }
 });
 
@@ -518,7 +518,7 @@ function pushToProgress(progress, moreOnTopicArray){
                 'luigi' : new element(false),
                 'agit' : new element(false),
             }),
-            'more-on-topic' : new component(moreOnTopic)
+            'topic' : new component(moreOnTopic)
     });
 
     }
@@ -795,9 +795,9 @@ function instantiateModule() {
 }
 
 function updateMoreOnTopicUI() {
-    $('.more-on-topic').each(function () {
-        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name')));
-        if (getProgress($('.barba-container').data('module'), 'more-on-topic', $(this).data('name'))) {
+    $('.topic').each(function () {
+        console.log($(this).data('name') + " done: " + getProgress($('.barba-container').data('module'), 'topic', $(this).data('name')));
+        if (getProgress($('.barba-container').data('module'), 'topic', $(this).data('name'))) {
             $(this).addClass('done');
         }
 

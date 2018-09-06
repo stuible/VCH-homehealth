@@ -44,8 +44,8 @@ layout: branching-narrative
                          
                          {% assign currentPage = page.title | append: "/" | prepend: "/" %}
 
-                         {% if page.more-on-topic == true %}
-                         {% assign weCameFrom = "#more-on-topic" %}
+                         {% if page.topic == true %}
+                         {% assign weCameFrom = "#topic" %}
                          {% assign backButtonText = "Back to Module" %}
 
                          {% else %}
