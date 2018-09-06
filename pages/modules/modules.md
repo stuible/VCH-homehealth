@@ -26,6 +26,7 @@ modules:
     background: wound.jpeg
     before-beginning:
       - link: https://learninghub.phsa.ca/Courses/16224/wound-management-for-nurses-provincial-curriculum-online
+        image: wound/BeforeWeBegin.jpg
         duration: 4hrs 30 minutes
         linktext: Wound Management for Nurses
         text: All chapters are compulsory. Chapter 3a is optional.
@@ -36,6 +37,7 @@ modules:
     background: iv.jpeg
     before-beginning:
       - link: https://learninghub.phsa.ca/Courses/9898/central-venous-lines-cvc-care-and-maintenance-online-vch
+        image: iv/BeforeWeBegin.jpg
         duration: 45 minutes
         linktext: Central Venous Lines Care & Maintenance
         text: Online Course
@@ -46,6 +48,7 @@ modules:
     background: pallative.jpeg
     before-beginning:
       - link: https://www.pbs.org/wgbh/frontline/film/being-mortal/
+        image: pallative/BeforeWeBegin.jpg
         duration: 55 minutes
         linktext: Being Mortal
         text: Youtube Series
