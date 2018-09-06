@@ -350,8 +350,8 @@ module Jekyll
           item.each {|key, value| 
           output << %Q[
             <div class="two columns">
-              <a class="resource" href="#{value}">
-                <img src="/">
+              <a class="resource" href="#{baseurl}#{value}">
+                <img src="#{baseurl}/image/icons/pdf.svg">
                 <div class="name">#{key}</div>
               </a>
             </div>

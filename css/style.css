@@ -1682,6 +1682,9 @@ iframe.storyline {
 img.more-poster {
   width: 100%; }
 
+.resource > img {
+  max-width: 40px; }
+
 .narrative-question {
   color: #fff;
   font-size: 28px;

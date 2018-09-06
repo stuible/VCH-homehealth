@@ -104,9 +104,9 @@ sections:
       title: Take Action
       text: Review the three resources and consider what other tools might support communication between Interdisciplinary Partners in Care.
       resources:
-        - Document One: http://google.com
-        - Document Two: http://google.com
-        - Document Three: http://google.com
+        - GPCC Info Bulletin: intro/GPCC Info Bulletin.pdf
+        - GPCC Casenote: intro/GPCC Casenote.pdf
+        - GPCC fax cover sheet: intro/GPCC fax cover sheet.pdf
 
   - section:
     - part: half
