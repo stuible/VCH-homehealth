@@ -54,7 +54,7 @@ layout: branching-narrative
 
                          {% endif %}
                          
-                        <a href="{{ page.url | remove: currentPage | append: weCameFrom }}" class="button narrative-back" style="display: none">
+                        <a href="{{ site.baseurl }}{{ page.url | remove: currentPage | append: weCameFrom }}" class="button narrative-back" style="display: none">
                             {{ backButtonText }}
                         </a>
                     </div>
