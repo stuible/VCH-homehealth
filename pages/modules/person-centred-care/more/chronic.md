@@ -69,8 +69,8 @@ sections:
       title: Medication Management
       text: Ensuring the right medications are taken at the right time in the right way is a part of managing chronic disease. Community health nurses can assist clients with this by first doing a Best Possible Medication History. Once the history is done and documented, reconcilation should be done with the MRP.
       resources:
-        - file: file
-        - file: file
+        - Best Possible Medication History: files/pcc/Best Possible Medication History.pdf
+        - Chronic Medication Reconciliation: files/pcc/Chronic Medication Reconciliation.pdf
     - part: half
       title: Take Action
       text: Review images of strategies you can use to help support taking their medication properly. Click an image to expand.
