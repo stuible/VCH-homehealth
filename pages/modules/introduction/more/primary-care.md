@@ -1,8 +1,8 @@
 ---
 layout: more
-permalink: "/modules/introduction/intro/"
+permalink: "/modules/introduction/primary-care/"
 title: Primary Health Care
-id: intro
+id: primary-care
 
 sections:
   - section:

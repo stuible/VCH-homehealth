@@ -33,9 +33,9 @@ cases:
     url: burnt-out
 
 more:
-  - title: Introduction
+  - title: Primary Care
     image: modules/pcc/topic/HolisticCare2.jpg
-    url: intro
+    url: primary-care
   - title: Community Health
     image: modules/pcc/topic/CareoftheOlderAdult.jpg
     url: clinicians

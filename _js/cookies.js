@@ -31,7 +31,7 @@ function createProgress(){
     var progress = {};
 
     var introMoreOnTopic = {
-        'intro' : new element(false),
+        'primary-care' : new element(false),
         'clinicians' : new element(false),
         'environment' : new element(false),
         'hand-hygiene' : new element(false),
