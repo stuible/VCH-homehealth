@@ -88,7 +88,7 @@ sections:
     - part: half
       title: Interprofessional Collaboration
       text: "According to the Community Health Nurses (CHNs) of Canada, the community nurse values:"
-      image: modules/pcc/more-on-topic/holistic/emotion.png
+      image: modules/intro/more-on-topic/clinicians/InterprofessionalCollaboration.svg
     - part: half
       title: Take Action
       text: Watch the video and reflect on the model of interprofessional collaboration, What are your strengths and areas for growth when it comes to collobarating with a team?
