@@ -16,6 +16,17 @@ $().ready(function () {
 
   instantiateMenu();
 
+  var landing = Barba.BaseView.extend({
+    namespace: 'landing',
+    onEnter: function () {
+      darkBackground(true);
+    },
+    onEnterCompleted: function () {
+    }
+});
+
+landing.init();
+
   var modules = Barba.BaseView.extend({
     namespace: 'modules',
     onEnter: function () {
