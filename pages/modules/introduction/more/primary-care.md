@@ -11,8 +11,13 @@ sections:
       title: What is it?
       text: The Primary Health Care approach means being attentive to and addressing the many factors in the social, economic, and physical environments that affect health. It places citizens and patients on an equal footing with health professionals in respect to decision making about health issues through five principles.
 
-    - part: full
+    - part: spacer
+
+    - part: half
       title: Take Action
+      text:  Drag and drop to match the term with the definition
+
+    - part: full
       quiz-matching-equal:
         - category: [Accessibility, modules/intro/topic/intro/1.jpg] 
         - category: [Public Participation, modules/intro/topic/intro/2.jpg] 

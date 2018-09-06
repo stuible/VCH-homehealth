@@ -11,9 +11,13 @@ sections:
       title: Community Health Nurses of Canada (CHNC)
       text: Community Health Nurses of Canada are expected to meet the requirements in knowledge, skills, and abilities as outlined in the 7 Standards of CHNC.
 
-    - part: full
+    - part: spacer
+
+    - part: half
       title: Take Action
       text: Match the 7 standards of CHNC with the appropriate definition
+
+    - part: full
       quiz-matching-equal:
         - category: [Health Promotion, modules/intro/topic/clinicians/1a.jpg] 
         - category: [Prevention and Health Protection, modules/intro/topic/clinicians/2a.jpg] 
@@ -73,9 +77,13 @@ sections:
     - part: full
       title: Interdisciplinary Teams - Roles & Responsibilities
       text: Interprofessional collaboration and partnership development are essential in community health nursing practice. The following videos describe different roles. 
-    - part: full
+
+    - part: spacer
+    - part: half
       title: Take Action
       text: Watch the following videos
+
+    - part: full
       video-gallery:
         - Community Health Nurse (CHN): https://www.youtube.com/embed/SARX7DhzOjQ
         - Occupational Therapist (OT): https://www.youtube.com/embed/M40HwqLHsBY
@@ -101,9 +109,14 @@ sections:
       text: Vancouver Coastal Health (VCH) is committed in supporting integrated and coordinated primary/community care to assist the most responsible practitioners (MRP) and their clients.  Care conferences bring physicians, nurse practitioners, VCH staff, clients and caregivers together to exchange information and collaborate on the care planning for clients.  
       text-2: The goal is to collaborate on providing a holistic approach to care, and assist in the development of a shared care plan that is co-created with clients. Verbal discussions are the most effective way to provide timely and appropriate care for the clients. Effective communication can potentially reduce unnecessary hospital admissions and builds lasting relationships with the clients and their MRP. 
       text-3: Though it is best to have face to face communication with the MRP, there are times when it may be necessary to communicate by fax to clarify or request specific orders or consults.
-    - part: full
+
+    - part: spacer
+
+    - part: half
       title: Take Action
       text: Review the three resources and consider what other tools might support communication between Interdisciplinary Partners in Care.
+
+    - part: full
       resources:
         - GPCC Info Bulletin: files/intro/GPCC Info Bulletin.pdf
         - GPCC Casenote: files/intro/GPCC Casenote.pdf
