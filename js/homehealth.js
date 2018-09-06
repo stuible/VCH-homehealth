@@ -90,8 +90,7 @@ function setBreadcrumbs(containerEl) {
         //Check if last breadcrumb
         if (i == navText.length - 1) {
             //If last, then don't add breadcrum '>' symbol
-            // if(i == 0) $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '#' + navText[i + 1].replace(/\s+/g, '-') +'">' + this + '</a>');
-            $(".menu-name").append('<a ' + classText + 'href="' + baseurl + navUrl[i] + '">' + this + '</a>');
+            $(".menu-name").append('<a ' + classText + 'href="' + navUrl[i] + '">' + this + '</a>');
         }
         else {
             //If not, then add '>' symbol
