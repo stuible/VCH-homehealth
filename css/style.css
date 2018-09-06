@@ -271,6 +271,9 @@ body {
   width: fit-content;
   margin: 0 auto; }
 
+.vex-dialog-button-primary {
+  background-color: #5AAF7F !important; }
+
 .vex-custom-field-wrapper {
   margin-bottom: 25px; }
 
