@@ -159,7 +159,7 @@ function instantiateSlider() {
           })
         ],
       });
-      $('.vex-content').prepend('<div class="prereq-image" style="background-image: url(\'../' + baseurl + 'image/modules/' + imageURL +'\')"></div><div class="prereq-image-placeholder"></div>');
+      $('.vex-content').prepend('<div class="prereq-image" style="background-image: url(\'../' + 'image/modules/' + imageURL +'\')"></div><div class="prereq-image-placeholder"></div>');
     });
     
   }
