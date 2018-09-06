@@ -34,9 +34,9 @@ sections:
       title: Take Action
       text: Please review the photos and determine what the risks and hazards exist in each environment
       gallery:
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
-        - Image: modules/pcc/more-on-topic/holistic/social.png
+        - Image: modules/intro/more-on-topic/environment/HazardsRisks2.jpg
+        - Image: modules/intro/more-on-topic/environment/HazardsRisks1.jpg
+        - Image: modules/intro/more-on-topic/environment/HazardsRisks3.jpg
 
   - section:
     - part: half
