@@ -22,7 +22,7 @@ sections:
         - Social: modules/pcc/topic/holistic/social.png
 
     - part: half
-      title: Reflection
+      title: Self Reflection
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
 
     - part: half
