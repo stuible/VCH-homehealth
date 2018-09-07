@@ -128,7 +128,7 @@ layout: case-study
                                 {% assign parent_url = parent_url | concat: sectionInArrayForm %}
                             {% endif %}
                         {% endfor %}
-                        <a href="/{{ parent_url | join: "/"}}#topic" class="button">More on this topic</a>
+                        <a href="{{ site.baseurl }}/{{ parent_url | join: "/"}}#topic" class="button">Let's Learn</a>
                 </div>
             </div>
 
