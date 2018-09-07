@@ -32,7 +32,7 @@ sections:
       text: Community health nurses come across a variety of risks and hazards in the settings they work in. Community Risk Screening ensures mitigation of potential risk for staff and clients receiving services.  It promotes improved documentation and communication of risk among clinicians in all community programs. 
     - part: half
       title: Take Action
-      text: Please review the photos and determine what the risks and hazards exist in each environment
+      text: Please click on the photos to review and determine what risks and hazards exist in each environment
       gallery:
         - Image: modules/intro/topic/environment/HazardsRisks2.jpg
         - Image: modules/intro/topic/environment/HazardsRisks1.jpg
