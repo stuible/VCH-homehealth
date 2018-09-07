@@ -32,7 +32,7 @@ visit:
   Initial Visit: Franny appears pale and tired. She is having problems eating due to the nausea. She has been missing taking her medications because of the nausea and Paula worries that this may contribute to a change in her mental health. Most recently, Franny had an emergency appendectomy and the surgical incision has dehisced.
 
 reflection:
-  - Do you have any preconceived ideas when caring for clients with mental health challenges or substance use disorder? What are they?
+  - What are your preconceived ideas when caring for clients with mental health challenges or substance use disorder?
   - Are there any potential implications with clients using cannabis? 
   - What might you ask Franny to contribute to your holistic assessment of her health and situation?
   - How might you engage  with Franny and Paula to support the care needs they identify?
