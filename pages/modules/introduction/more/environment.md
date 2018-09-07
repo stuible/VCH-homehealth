@@ -45,6 +45,7 @@ sections:
     - part: half
       title: Take Action
       text: Examine the pircure to determine what could be done better.  Hover over the picture of the car for answers.
+      storyline: carWorkSite
 
   - section:
     - part: half
@@ -58,9 +59,6 @@ sections:
         - Do not transport used sharps unless safely sealed and locked in sharps container 
         - Do not transport bio-hazardous fluids (e.g., fluids drained, urine samples, etc)
     - part: half
-      title: Take Action
-      text: Please review the photos and determine what the risks and hazards exist in each environment
-      storyline: carWorkSite
 
 
 ---
