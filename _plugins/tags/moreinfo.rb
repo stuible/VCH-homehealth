@@ -368,7 +368,7 @@ module Jekyll
         for item in text do
           item.each {|key, value| 
           output << %Q[
-            <div class="two columns">
+            <div class="resource-container">
               <a class="resource" href="/#{baseurl}#{value}" target="_blank">
                 <img src="#{baseurl}/image/icons/pdf.svg">
                 <div class="name">#{key}</div>

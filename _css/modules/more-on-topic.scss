@@ -389,10 +389,22 @@ img.more-poster {
     width: 100%;
 }
 
-.resource {
 
-    >img{
-        max-width: 40px;
+//Resources
+
+
+.more-resources {
+
+    .resource-container {
+        display: inline-block;
+        max-width: 150px;
     }
-    
+
+    .resource {
+
+        >img{
+            max-width: 40px;
+        }
+        
+    }
 }

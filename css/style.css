@@ -1694,7 +1694,11 @@ iframe.storyline {
 img.more-poster {
   width: 100%; }
 
-.resource > img {
+.more-resources .resource-container {
+  display: inline-block;
+  max-width: 150px; }
+
+.more-resources .resource > img {
   max-width: 40px; }
 
 .narrative-question {

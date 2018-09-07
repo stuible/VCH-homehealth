@@ -47,9 +47,10 @@ sections:
 
 
   - section:
-    - part: half
+    - part: full
       title: Anxiety and Depression
       text: Indicate which signs and symptoms go with the underlying issue by dragging and dropping
+      spacer: ""
     - part: full
       quiz-matching:
         - category: [Depression, modules/pcc/topic/chronic/depression.jpg] 
