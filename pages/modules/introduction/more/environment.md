@@ -15,10 +15,10 @@ sections:
       title: Take Action
       text: "Review the following pictures:"
       gallery:
-        - Image: modules/intro/topic/environment/AssistedLiving.jpg
-        - Image: modules/intro/topic/environment/IndependentSeniorsLiving.jpg
-        - Image: modules/intro/topic/environment/AmbulatoryCareClinic.jpg
-        - Image: modules/intro/topic/environment/SocialHousing1.jpg
+        - Assisted Living-a housing model that includes assistance with personal care and hospitality services to clients living at risk or who can no longer be supported in their own home (photo of Clarendon court): modules/intro/topic/environment/AssistedLiving.jpg
+        - Independent Seniors living- Privately run facilities that provide housing and sometimes activities to seniors (photo of Shannon Oaks): modules/intro/topic/environment/IndependentSeniorsLiving.jpg
+        - Ambulatory Care Clinic-AC should be the first place home health clients come to get care. All services are provided and more clients can be seen when they come to the clinic than driving to individual homes (picture of AC clinic): modules/intro/topic/environment/AmbulatoryCareClinic.jpg
+        - Social housing- Partners such as BC Housing and other non-profit organizations help provide housing to marginalized populations (picture of SRO): modules/intro/topic/environment/SocialHousing1.jpg
 
   - section: 
     - part: full
