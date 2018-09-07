@@ -22,7 +22,7 @@ sections:
         - Social: modules/pcc/topic/holistic/social.png
 
     - part: half
-      title: Self Reflection
+      sub-title: Self Reflection
       text: Reflect on a time in your personal life or that of someone close to you when a health care professional did not use a whole person approach.
 
     - part: half
@@ -35,7 +35,7 @@ sections:
     - part: half
       title: Cultural Connection
       text: Being culturally connected is also part of person centred care. It helps health professionals establish cross cultural skills to work with diverse clients.
-      title-2: Personal Reflection
+      sub-title: Personal Reflection
       text-2: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
     - part: half
