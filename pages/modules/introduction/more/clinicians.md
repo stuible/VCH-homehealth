@@ -27,12 +27,12 @@ sections:
         - category: [Professional Responsibility and Accountability, modules/intro/topic/clinicians/7a.jpg] 
 
         - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities.
-        - Prevention and Health Protection: Develop and distribute information for clients and families on identifying and reducing risk factors
+        - Access and Equity: Advocate for families caring for ill loved ones. Seek and provide resources to clients, and caregivers for higher levels of care
         - Health Maintenance, Restoration and Palliation: Collaborate with the client to adapt the care provided based on clients’ choices, their own personal skills, and the resources available
         - Professional Relationships: Provide ‘continuity of care’ and build trust with the client and their family leading to better health
-        - Capacity Building: Teach and support clients and their families to self manage goals of care in the home
-        - Access and Equity: Advocate for families caring for ill loved ones. Seek and provide resources to clients, and caregivers for higher levels of care
+        - Prevention and Health Protection: Develop and distribute information for clients and families on identifying and reducing risk factors
         - Professional Responsibility and Accountability: Explore reasons for clients’ requests that affect ethical decision making by reaching out to the local health care team
+        - Capacity Building: Teach and support clients and their families to self manage goals of care in the home
 
   - section:
     - part: full
