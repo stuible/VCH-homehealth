@@ -40,7 +40,7 @@ sections:
       posters-three:
         - Regularly assessing and communicating with the health care team: modules/pcc/topic/older-adult/ipad.jpg
         - Educating the older adult and caregivers: modules/pcc/topic/older-adult/care.jpg
-        - Delaying decline by addressing strengths and physical abilities, reinforcing andpromoting health behaviours: modules/pcc/topic/older-adult/excercise.jpg
+        - Addressing strengths and physical abilities, and reinforcing health behaviours: modules/pcc/topic/older-adult/excercise.jpg
 
   - section:
 
@@ -49,7 +49,7 @@ sections:
       text: "Dementia, depression and delirium can significantly impact an older adult"
 
     - part: full
-      title: Take Action
+      sub-title: Take Action
       text: Please watch the videos ‘Communicating with People Living with Dementia’ and ‘Segment on Elderly Depression 
 
     - part: half
@@ -61,8 +61,8 @@ sections:
 
   - section: 
     - part: full
-      title: The 3 D's
       text: "Indicate which signs/symptoms below by drag and drop"
+      spacer: ""
 
     - part: full
       quiz-matching:
