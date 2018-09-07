@@ -33,6 +33,18 @@ module Jekyll
           </div>
       ]
 
+      elsif type == 'spacer-small'
+        output = %Q[
+          <div class="margin top twenty">
+          </div>
+      ]
+
+      elsif type == 'spacer'
+        output = %Q[
+          <div class="margin top fifty">
+          </div>
+      ]
+
       elsif type == 'spacer-title'
           output = %Q[
             <div class="more-subtitle #{size}" style="visibility: hidden">
