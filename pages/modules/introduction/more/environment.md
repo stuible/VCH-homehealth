@@ -34,9 +34,9 @@ sections:
       title: Take Action
       text: Please click on the photos to review and determine what risks and hazards exist in each environment
       gallery:
-        - Image: modules/intro/topic/environment/HazardsRisks2.jpg
-        - Image: modules/intro/topic/environment/HazardsRisks1.jpg
-        - Image: modules/intro/topic/environment/HazardsRisks3.jpg
+        - Remove clutter to make space and provide care: modules/intro/topic/environment/HazardsRisks2.jpg
+        - Remind clients to keep stairs & ramps free of clutter and objects: modules/intro/topic/environment/HazardsRisks1.jpg
+        - Ensure items are safely stacked to prevent injuring care staff: modules/intro/topic/environment/HazardsRisks3.jpg
 
   - section:
     - part: half
