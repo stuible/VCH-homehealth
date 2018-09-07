@@ -1394,6 +1394,15 @@ body {
   font-size: 1.25em;
   margin-top: 15px; }
 
+.more-sub-subtitle {
+  font-size: 1.25em;
+  margin-top: 15px;
+  border-bottom: 2px solid #5AAF7F;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 25px; }
+
 .more-text {
   font-size: 1.15em;
   margin-bottom: 25px; }
