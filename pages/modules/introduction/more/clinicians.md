@@ -81,7 +81,7 @@ sections:
     - part: spacer
     - part: half
       title: Take Action
-      text: Watch the following videos
+      text: Select the Interdisciplinary role below to watch the matching video interview.
 
     - part: full
       video-gallery:
