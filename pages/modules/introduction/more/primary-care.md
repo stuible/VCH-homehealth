@@ -25,11 +25,12 @@ sections:
         - category: [Appropriate Technology, modules/intro/topic/intro/4.jpg] 
         - category: [Intersectoral Cooperation, modules/intro/topic/intro/5.jpg] 
 
-        - Accessibility: Supply of essential health responsibility to all people with no unreasonable geographic or financial barriers
         - Public Participation: Right and responsibility to be active partners in making decisions about one’s health care and the health
         - Health Promotion: Process of enabling people to increase control over and improve their health
+        - Intersectoral Cooperation: Commitment from all sectors (government, community and health) for meaningful action on health determinents
         - Appropriate Technology: Methods of care, service delivery, procedures and equipment that are socially acceptable and affordable
-        - Intersectoral Cooperation: Commitment from all sectors (government, community and health) for meaningful action on health determinents 
+        - Accessibility: Supply of essential health responsibility to all people with no unreasonable geographic or financial barriers
+        
 
   - section:
     - part: half
