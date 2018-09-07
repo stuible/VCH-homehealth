@@ -28,8 +28,8 @@ visit:
 
 reflection:
   - What are some things to consider when using family or friends to help translate?
-  - What are some strategies to have effective communication when using a translation services?
+  - What are some strategies for effective communication when using translation services?
   - What might you ask May to contribute to your holistic assessment of her health and situation? 
-  - How might you engage  with May, David and the children to support the care needs they identify?
+  - How might you engage with May and her family to support the care needs they identify?
  
 ---
