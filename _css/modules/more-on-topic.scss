@@ -38,14 +38,6 @@ $sectionTitleBoarderBottom: 5px;
     }
 }
 
-.more-sub-subtitle {
-    font-size: 1.25em;
-    margin-top: 15px;
-    border-bottom: 2px solid $primaryColour;
-    width: fit-content;
-    margin-bottom: 25px;
-}
-
 .more-text {
     font-size: 1.15em;
     margin-bottom: 25px;
@@ -68,10 +60,22 @@ $sectionTitleBoarderBottom: 5px;
         margin-left: 0px;
     }
 
+    .more-sub-subtitle {
+        font-size: 1.25em;
+        margin-top: 15px;
+        border-bottom: 2px solid $primaryColour;
+        width: fit-content;
+        margin-bottom: 25px;
+    }
+
     &:nth-of-type(odd){
         background-color: #ffffff;
 
         .more-subtitle{
+            border-bottom-color: $primaryColour;
+        }
+
+        .more-sub-subtitle {
             border-bottom-color: $primaryColour;
         }
     }
@@ -80,6 +84,10 @@ $sectionTitleBoarderBottom: 5px;
         color: #ffffff;
 
         .more-subtitle{
+            border-bottom-color: #fff;
+        }
+
+        .more-sub-subtitle {
             border-bottom-color: #fff;
         }
     }
