@@ -7,15 +7,11 @@ id: older-adult
 sections:
   - section:
 
-    - part: full
+    - part: half
       title: Physical Changes
       text: As we age, our body changes
-
-    - part: spacer
-
-    - part: half
-      title: Take Action
-      text: Hover over each part of the image to discover the physical changes.
+      sub-title: Take Action
+      text-2: Hover over each part of the image to discover the physical changes.
 
     - part: half
       storyline: HH_grandparents
