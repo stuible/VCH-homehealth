@@ -105,7 +105,7 @@ sections:
 
   - section:
     - part: full
-      title: Interdisciplinary Teams - Roles & Responsibilities
+      title: Interdisciplinary Partners in Care
       text: Vancouver Coastal Health (VCH) is committed in supporting integrated and coordinated primary/community care to assist the most responsible practitioners (MRP) and their clients.  Care conferences bring physicians, nurse practitioners, VCH staff, clients and caregivers together to exchange information and collaborate on the care planning for clients.  
       text-2: The goal is to collaborate on providing a holistic approach to care, and assist in the development of a shared care plan that is co-created with clients. Verbal discussions are the most effective way to provide timely and appropriate care for the clients. Effective communication can potentially reduce unnecessary hospital admissions and builds lasting relationships with the clients and their MRP. 
       text-3: Though it is best to have face to face communication with the MRP, there are times when it may be necessary to communicate by fax to clarify or request specific orders or consults.
