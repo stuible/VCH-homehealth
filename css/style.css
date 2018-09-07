@@ -1394,15 +1394,6 @@ body {
   font-size: 1.25em;
   margin-top: 15px; }
 
-.more-sub-subtitle {
-  font-size: 1.25em;
-  margin-top: 15px;
-  border-bottom: 2px solid #5AAF7F;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 25px; }
-
 .more-text {
   font-size: 1.15em;
   margin-bottom: 25px; }
@@ -1417,14 +1408,26 @@ body {
     margin-top: 0px; }
   .more-section .six.columns:nth-of-type(odd) {
     margin-left: 0px; }
+  .more-section .more-sub-subtitle {
+    font-size: 1.25em;
+    margin-top: 15px;
+    border-bottom: 2px solid #5AAF7F;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 25px; }
   .more-section:nth-of-type(odd) {
     background-color: #ffffff; }
     .more-section:nth-of-type(odd) .more-subtitle {
+      border-bottom-color: #5AAF7F; }
+    .more-section:nth-of-type(odd) .more-sub-subtitle {
       border-bottom-color: #5AAF7F; }
   .more-section:nth-of-type(even) {
     background-color: #5AAF7F;
     color: #ffffff; }
     .more-section:nth-of-type(even) .more-subtitle {
+      border-bottom-color: #fff; }
+    .more-section:nth-of-type(even) .more-sub-subtitle {
       border-bottom-color: #fff; }
 
 .more-circles {
