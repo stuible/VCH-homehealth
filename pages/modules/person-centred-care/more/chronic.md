@@ -8,7 +8,7 @@ sections:
   - section:
 
     - part: half
-      title: Self management support
+      title: Self Management Support
       text: "The home health team can support client’s in managing their chronic conditions by:"
       bullets:
         - Assessment and monitoring
