@@ -12,7 +12,7 @@ sections:
       text: Community health nurses care for clients in a multitude of settings.
 
     - part: full
-      title: Take Action
+      sub-title: Take Action
       text: "Review the following pictures:"
       gallery:
         - Assisted Living-a housing model that includes assistance with personal care and hospitality services to clients living at risk or who can no longer be supported in their own home (photo of Clarendon court): modules/intro/topic/environment/AssistedLiving.jpg
