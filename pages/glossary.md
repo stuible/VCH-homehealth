@@ -1,6 +1,6 @@
 --- 
 layout: glossary
-permalink: "/glossary/"
+permalink: "/modules/glossary/"
 title: Glossary
 
 glossary:
