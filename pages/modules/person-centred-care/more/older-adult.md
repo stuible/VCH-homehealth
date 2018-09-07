@@ -70,11 +70,11 @@ sections:
         - category: [Delirium, modules/pcc/topic/older-adult/delirium.jpg]
         - category: [Dementia, modules/pcc/topic/older-adult/dementia.jpg]
 
-        - Depression: 'Sudden Onset'
-        - Delirium: 'Loss of interest in activities'
+        - Delirium: 'Sudden Onset'
+        - Depression: 'Loss of interest in activities'
         - Delirium: 'Medical Emergency'
-        - Depression: 'Wandering'
+        - Dementia: 'Wandering'
         - Dementia: 'Memory disturbances'
-        - Dementia: 'Hopelessness'
+        - Depression: 'Hopelessness'
 
 ---
