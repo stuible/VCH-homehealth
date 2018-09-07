@@ -348,7 +348,9 @@ module Jekyll
           output << %Q[
             <div class="#{columnNumberString} columns">
 
-                <a data-fancybox="gallery" class="no-barba" href="#{baseurl}/image/#{value}"><img src="#{baseurl}/image/#{value}"></a>
+                <a data-fancybox="gallery" class="no-barba" href="#{baseurl}/image/#{value}" data-caption="#{key}">
+                  <img src="#{baseurl}/image/#{value}">
+                </a>
             </div>
           ]
           }
