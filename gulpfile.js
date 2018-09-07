@@ -52,7 +52,7 @@ gulp.task('js', function() {
         .pipe(concat('homehealth.js'))
         .pipe(gulp.dest('js'))
         .pipe(rename('homehealth.min.js'))
-        .pipe(stripDebug())
+        // .pipe(stripDebug())
         .pipe(uglify())
         .pipe(gulp.dest('js'));
   });

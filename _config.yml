@@ -25,6 +25,8 @@ plugins:
   # - jekyll-feed
   # - jekyll-compress-images
 
+use-minified: false
+
 # compress_images:
 #   images_path: "_site/image/**/**/*.{gif,png,jpg,jpeg,svg}"
 #   imageoptim:
