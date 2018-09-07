@@ -58,11 +58,11 @@ sections:
 
         - Depression: Lack of interest in activities
         - Depression: Depressive mood
-        - Depression: Excessive worry
+        - Anxiety: Excessive worry
         - Depression: Lack of energy
         - Anxiety: Restlessness
         - Anxiety: Muscle tension
-        - Anxiety: Feelings of worthlessness
+        - Depression: Feelings of worthlessness
         - Anxiety: Irritability
 
   - section:
