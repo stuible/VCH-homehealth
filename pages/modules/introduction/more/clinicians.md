@@ -11,13 +11,12 @@ sections:
       title: Community Health Nurses of Canada (CHNC)
       text: Community Health Nurses of Canada are expected to meet the requirements in knowledge, skills, and abilities as outlined in the 7 Standards of CHNC.
 
-    - part: spacer
-
-    - part: half
-      title: Take Action
+    - part: full
+      sub-title: Take Action
       text: Match the 7 standards of CHNC with the appropriate definition
 
     - part: full
+      spacer: ""
       quiz-matching-equal:
         - category: [Health Promotion, modules/intro/topic/clinicians/1a.jpg] 
         - category: [Prevention and Health Protection, modules/intro/topic/clinicians/2a.jpg] 
