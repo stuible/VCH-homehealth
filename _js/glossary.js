@@ -7,8 +7,6 @@ function instantiateGlossary() {
 
     glossary = $('.glossary.container').data('glossary');
 
-
-
     $.each( glossary, function( key, value ) {
         console.log( value['term'] );
         $('.glossary .results>.list').append('<li><div class="term">' + value['term'] +'</div></li>');
@@ -21,14 +19,47 @@ function instantiateGlossary() {
     $('.glossary').on("click", '.term', function () {
         console.log($(this).text());
         glossaryDefine($(this).text());
+        updateSize($('.width-dynamic'));
     });
 
     $('.glossary').on("click", '.clear', function () {
         glossaryReset();
+        updateSize($('.width-dynamic'));
     });
     $('.glossary').on("click", 'input.word', function () {
         glossaryReset();
+        updateSize($('.width-dynamic'));
     });
+
+    $.fn.textWidth = function(text, font) {
+    
+        if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
+        
+        $.fn.textWidth.fakeEl.text(text || this.val() || this.text() || this.attr('placeholder')).css('font', font || this.css('font'));
+        
+        return $.fn.textWidth.fakeEl.width();
+    };
+    
+    $('.width-dynamic').on('input', function() {
+        updateSize(this);
+    }).trigger('input');
+
+    function updateSize(element){
+        var inputWidth = $(element).textWidth();
+        $(element).css({
+            width: inputWidth
+        });
+    }
+    
+    
+    function inputWidth(elem, minW, maxW) {
+        elem = $(this);
+        console.log(elem);
+    }
+    
+    var targetElem = $('.width-dynamic');
+    
+    inputWidth(targetElem);
 
 }
 
