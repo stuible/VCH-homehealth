@@ -27,8 +27,8 @@ visit:
   Initial Visit: Using a translator to help communicate, May shares she is experiencing increased fatigue, pain and decreased appetite. May is staying in bed for longer periods during the day. You notice her grimace when she turns in bed and she winces as she sits up. May states that up until a month ago she had been feeling very well. Her mood is low and she is crying at times throughout the day, although never in front of the children.  She became tearful when speaking about David’s love and the responsibilities that he has taken over from her. She is not able to actively participate in her faith community. She no longer feels she is able to be the mother to her children that she wants to be.  David has left you a note asking you to text or email him about how is wife is doing.
 
 reflection:
-  - What are some things to consider when using family or friends to help translate?
-  - What are some strategies for effective communication when using translation services?
+  - What are some strategies for effective communication when using family, friends or services for translation?
+  - Under what circumstances can text or email be used when communicating with clients and families?
   - What might you ask May to contribute to your holistic assessment of her health and situation? 
   - How might you engage with May and her family to support the care needs they identify?
  
