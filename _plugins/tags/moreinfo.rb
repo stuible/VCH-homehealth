@@ -28,7 +28,7 @@ module Jekyll
 
       elsif type == 'sub-title'
         output = %Q[
-          <div class="more-sub-subtitle margin top fifty">
+          <div class="more-sub-subtitle">
             #{text}
           </div>
       ]
