@@ -5,12 +5,23 @@ layout: branching-narrative
 <html>
 {% include header.html %}
 
+{% if page.topic == true %}
+    {% assign isTopic = true %}
+{% else %}
+    {% assign isTopic = false %}
+{% endif %}
+
 <body>
 <div class="background"></div>
     {% include menu.html %}
 
     <div id="barba-wrapper">
-        <div class="barba-container" data-namespace="narrative" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+        <div class="barba-container"    data-namespace="narrative" 
+                                        data-nav-text='{{ breadcrumb_text_json }}' 
+                                        data-nav-url='{{ breadcrumb_url_json }}'
+                                        data-topic='{{ isTopic }}'
+                                        data-name='{{ page.id }}'
+                                        data-module-parent='{{module_parent}}'>
             <div class="container narrative-container top-padding center-align">
                 {% for question in page.questions %}
 

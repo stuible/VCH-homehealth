@@ -63,6 +63,11 @@ var narrative = Barba.BaseView.extend({
       darkBackground(true);
       initializeBranching();
       $(".module-menu").attr("href", baseurl + '/modules/#' + lastmoduleSlide);
+  },
+  onEnterCompleted: function () {
+    if($('.barba-container').data('topic')){
+      updateProgress($('.barba-container').data('module-parent'), 'topic', $('.barba-container').data('name'), true);
+    }
   }
 });
 

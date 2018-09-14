@@ -1,7 +1,3 @@
-$().ready(function () {   
-    
-});
-
 function initializeBranching() { 
     console.log('instantiating branching');
 
