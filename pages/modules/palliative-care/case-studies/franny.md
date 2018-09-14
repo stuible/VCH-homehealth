@@ -30,7 +30,7 @@ medications:
 
 
 visit: 
-  Follow-up Visit: Service update and post surgical consult, from a recent hospitalization for emergency appendectomy, indicated that Franny has stage IV metastases to her bowels. When you called to schedule follow up appointment, client’s partner Paula is very worried  stating that client can no longer walk up the four flights of stairs.
+  Follow-up Visit: A service update and post-surgical consult from a recent hospitalization for an emergency appendectomy is sent to your unit indicating that Franny now has stage IV metastases to her bowels. When you call to schedule a follow-up appointment, Franny’s partner Paula is very worried stating that Franny can no longer walk up the four flights of stairs to get in and out of their apartment.
 
 reflection:
   - What are your priorities for your next visit and what concerns might you identify in advance?
