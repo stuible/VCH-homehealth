@@ -651,7 +651,7 @@ function instantiateSlider() {
 
   function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
-    vex.dialog.buttons.YES.text = 'Begin';
+    vex.dialog.buttons.YES.text = 'Start';
     vex.dialog.buttons.NO.text = 'Cancel';
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
@@ -679,7 +679,7 @@ function instantiateSlider() {
         input: beforeBeginningHTML,
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, {
-            text: 'Begin',
+            text: 'Start',
             click: function ($vexContent, event) {
               // $vexContent.data().vex.value = 'yes';
               // vex.close($vexContent.data().vex.id);
