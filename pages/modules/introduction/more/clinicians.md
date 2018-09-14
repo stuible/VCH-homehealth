@@ -65,9 +65,10 @@ sections:
       text: "Although community nurses are part of a team, they are expected to maintain professional autonomy in their practice. Themes of practicing autonomously include:"
       bullets:
         - Having a holistic view
-        - To know your client
-        - To know that you know
-        - To dare
+        - Understanding your client
+        - Knowing that you know
+        - Taking initiative 
+
     - part: half
       title: Self-reflection
       text: Reflect on how you might demonstrate autonomy in your practice
