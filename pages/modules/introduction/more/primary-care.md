@@ -25,7 +25,7 @@ sections:
         - category: [Appropriate Technology, modules/intro/topic/intro/4.jpg] 
         - category: [Intersectoral Cooperation, modules/intro/topic/intro/5.jpg] 
 
-        - Public Participation: Right and responsibility to be active partners in making decisions about one’s health care and the health
+        - Public Participation: Right and responsibility to be active partners in making decisions about one’s health care and their health
         - Health Promotion: Process of enabling people to increase control over and improve their health
         - Intersectoral Cooperation: Commitment from all sectors (government, community and health) for meaningful action on health determinents
         - Appropriate Technology: Methods of care, service delivery, procedures and equipment that are socially acceptable and affordable
