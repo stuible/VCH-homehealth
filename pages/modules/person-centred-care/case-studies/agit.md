@@ -16,7 +16,7 @@ background:
     text: In the hospital, Ajit had his right hip pinned, that was further complicated by post-op delirium tremors and pneumonia. He also developed a DVT in his right leg which he is now on warfarin and requires regular blood work. Ajit has significant arthritis in his hands, which makes it difficult to open pill bottles and do actions requiring fine motor skills.
 
 
-supports:  Ajit is not close with his two daughters or their children who live out of town and the relationship with his son, Rohit, has been strained for many years with periods when they were not speaking. Rohit has a history of substance use disorder and no permanent address so usually sleeps in his car or crashes on friend’s couch. Ajit has a few friends who check in on him once and a while. There was a referral made when he left the hospital for daily home support to possibly assist him with remembering to take his medications. 
+supports:  Ajit is not close with his two daughters or their children who live out of town and the relationship with his son, Rohit, has been strained for many years with periods when they were not speaking. Rohit has a history of substance use disorder and no permanent address so usually sleeps in his car or crashes on a friend’s couch. Ajit has a few friends who check in on him once and a while. There was a referral made when he left the hospital for daily home support to possibly assist him with remembering to take his medications. 
 
 medications:
   - Aricept 5 mg po OD
