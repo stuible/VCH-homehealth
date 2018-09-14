@@ -47,7 +47,7 @@ sections:
         - Empowerment: modules/intro/topic/clinicians/5b.jpg
         - Social Justice: modules/intro/topic/clinicians/6b.jpg
     - part: half
-      title: Take Action
+      title: Self-reflection
       text: Reflect on the list above. How might you incorporate these values into your everyday practice as a CHN ? Are there values and beliefs missing? What are they?
 
   - section:
