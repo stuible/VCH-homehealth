@@ -55,7 +55,11 @@ layout: module
                                         <div class="narratives-parent-container">
                                             <div class="narratives-container">
                                                     <div class="module-case-studies-title">
-                                                        Review the case study your team has been assigned
+                                                            {% if page.cases %}
+                                                            Review the case study your team has been assigned
+                                                            {% else %}
+                                                            Content Coming Soon
+                                                            {% endif %}
                                                     </div>
                                                     {% for item in page.cases %}
                                                     <a class="blog-card spring-fever narrative hvr-float-shadow" href="{{site.baseurl}}{{ page.url }}{{ item.url | downcase }}">
@@ -67,8 +71,11 @@ layout: module
                                         </div>
                                         
                                     </div>
-                                    {% include scrollindicator.html onClick = 'moduleSwiper.slideNext()' %}
+                                    {% if page.more %}
+                                        {% include scrollindicator.html onClick = 'moduleSwiper.slideNext()' %}
+                                    {% endif %}
                         </div>
+                        {% if page.cases %}
                         <div class="module-swiper-slide" data-hash="topic">
                             <div class="container center-center">
                                     <div class="narratives-parent-container">
@@ -97,6 +104,7 @@ layout: module
                                     </div>
                                 </div>
                         </div>
+                        {% endif %}
                     </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination module-bullets"></div>
