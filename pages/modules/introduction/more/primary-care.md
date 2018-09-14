@@ -44,18 +44,18 @@ sections:
       title: Determinants of Health
       text: "According to the Public Health Agency of Canada, there are key determinants of health that affect the health of the  clients we care for. They are:"
       bullets:
-        - Assessment and monitoring
-        - Assessment and monitoring
-        - Managing emergencies
-        - Teaching client to prevent/manage acute exacerbation
-        - MRP care conferencing
-        - Medication management
-        - Assessment and monitoring
-        - Assessment and monitoring
-        - Managing emergencies
-        - Teaching client to prevent/manage acute exacerbation
-        - MRP care conferencing
-        - Medication management
+        - Income and Social Status
+        - Social Support Networks
+        - Education and Literacy
+        - Employment/Working Conditions
+        - Social Environments
+        - Physical Environments
+        - Personal Health Practices and Coping Skills
+        - Healthy Child Development
+        - Biology and Genetic Endowment
+        - Health Services
+        - Gender
+        - Culture
 
     - part: half
       title: Take Action
