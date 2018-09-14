@@ -39,6 +39,7 @@ sections:
       text-2: Watch the video and complete the resource to reflect on a time in your practice when you had to adapt to be more culturally connected.
 
     - part: half
+      spacer: ""
       youtube: https://www.youtube.com/embed/xw9BBb8LhYw
 
 
