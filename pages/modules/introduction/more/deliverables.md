@@ -18,6 +18,6 @@ deliverables:
     link: https://learn.vch.ca/m2/mod/ibook/view.php?id=1159
     duration: 15 mins
   - text: Final Quiz
-    link: "#"
+    link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19198
     duration: 20 mins
 ---

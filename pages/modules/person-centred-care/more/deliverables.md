@@ -27,6 +27,6 @@ deliverables:
     link: http://vch-connect.vch.ca/policies_manuals/adult_older_adult/adult_iv/Pages/default.aspx
     duration: 30 mins
   - text: Final Quiz
-    link: "#"
+    link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19197
     duration: 20 mins
 ---
