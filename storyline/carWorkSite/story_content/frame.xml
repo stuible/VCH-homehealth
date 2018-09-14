@@ -508,46 +508,46 @@
           <color name="diva">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xFFFFFF" alpha="0" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
           <color name="divb">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xFFFFFF" alpha="0" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
           <color name="bg">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xFFFFFF" alpha="0" stop="0" />
-                <color rgb="0xFFFFFF" alpha="0" stop="255" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
           <color name="border">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xFFFFFF" alpha="0" stop="0" />
-                <color rgb="0xFFFFFF" alpha="0" stop="255" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
           <color name="menu_shade">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xDBDBDB" alpha="100" stop="0" />
-                <color rgb="0xC3C3C3" alpha="100" stop="255" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
           <color name="slide_bg">
             <fill type="linear" rotation="90">
               <colors>
-                <color rgb="0xFFFFFF" alpha="0" stop="0" />
-                <color rgb="0xCFCFCF" alpha="0" stop="255" />
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
+                <color rgb="0x5AAF7F" alpha="100" stop="255" />
               </colors>
             </fill>
           </color>
@@ -1096,6 +1096,17 @@
                 <color rgb="0xBCBCBC" alpha="100" stop="0" />
                 <color rgb="0xBCBCBC" alpha="100" stop="128" />
                 <color rgb="0xC3C3C3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="HTML">
+        <group_colors>
+          <color name="htmlpage_bg_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x5AAF7F" alpha="100" stop="0" />
               </colors>
             </fill>
           </color>
