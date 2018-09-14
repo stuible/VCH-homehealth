@@ -677,14 +677,22 @@ body {
     /* background-attachment: fixed; */
     background-position: center;
     margin: 0 auto; }
+  .landing .pretitle {
+    margin-top: 25px;
+    margin-bottom: -30px;
+    color: #fff; }
   .landing .title {
-    font-size: 3em;
-    margin-top: 10px;
+    font-size: 6.88em;
     text-transform: uppercase;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     color: #fff; }
+  .landing .subtitle {
+    margin-top: -30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700; }
   .landing .description {
     color: #fff;
     margin-top: 75px;

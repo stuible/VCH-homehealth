@@ -3,4 +3,4 @@ layout: landing
 permalink: "/"
 video: Homepage.mp4
 ---
-Home and community care services provide a range of health care and support to people who have acture, chronic, pallative or rehabilitative health care needs
+Goals of Care in Home Health include:  maintaining self-care, preventing complications, delaying decline and optimizing quality of life.
