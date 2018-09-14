@@ -23,7 +23,7 @@ glossary:
   - term: MRP
     definition: Most Responsible Provider (GP, NP)
   - term: Professional autonomy
-    definition: Having the authority to make decisions and the freedom to act in accordance with one&sbquo;s professional knowledge base.
+    definition: Having the authority to make decisions and the freedom to act in accordance with one's professional knowledge base.
   - term: Risk
     definition: The possibility of harm occurring from injury or occupational disease that impacts a person’s health or safety. A risk requires a control plan intended to eliminate or control a ‘risk to workers’ health and safety. 
   - term: Violence
