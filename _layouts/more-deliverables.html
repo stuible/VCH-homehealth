@@ -16,9 +16,9 @@ layout: more-deliverables
             <!-- <div class="more-subtitle full">Quiz</div> -->
             {% for deliverable in page.deliverables %}
                 <div class="deliverable row">
-                    <div class="nine columns">
+                    <div class="nine columns">{{ deliverable.text }}
                         <a href="{{ deliverable.link }}" target="_blank">
-                            {{ deliverable.text }}
+                            {{ deliverable.link-text }}
                         </a>
                     </div>
                     <div class="three columns"> {{ deliverable.duration }} </div>
