@@ -24,7 +24,7 @@ medications:
   - Extra strength acetaminophen (3-4 times per week)
 
 visit: 
-  Follow-up Visit: ALS Centre team has been following May and after a recent appointment they called the health unit and indicated that for a variety of reasons, May is now approaching end stage ALS. They stated May now has a prognosis of approximately 6 months.  Client’s husband was unable to attend the appointment and therefore further in-depth conversation did not take place.
+  Follow-up Visit: ALS Centre team has been following May and after a recent appointment they called the health unit and indicated that for a variety of reasons, May is now approaching end stage ALS. They stated May now has a prognosis of approximately 6 months.  May’s husband was unable to attend the appointment and therefore an in-depth conversation did not take place.
 
 reflection:
   - What are your priorities for your next visit and what concerns might you identify in advance?
