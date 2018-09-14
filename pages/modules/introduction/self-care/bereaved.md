@@ -6,7 +6,7 @@ image:
 
 #FIRST LEVEL
 questions: 
-  - question: Mr. Dee whom I cared for just passed away while I was there. I feel very emotional, because we established a close bond while caring for him over the last year. It all happened so fast. I don’t know how to get passed this.  I 
+  - question: Mr. Dee whom I cared for just passed away while I was there. I feel very emotional, because we established a close bond while caring for him over the last year. It all happened so fast. I don’t know how to get past this.  I 
     link: 1
     background: bereaved/q1.jpg
     answers:
