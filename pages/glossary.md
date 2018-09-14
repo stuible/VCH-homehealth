@@ -5,9 +5,9 @@ title: Glossary
 
 glossary:
   - term: ADLS
-    definition: Activities of Daily Living (bathing, dressing, toileting)
+    definition: Activities of Daily Living (e.g. bathing, dressing, toileting)
   - term: Aggression
-    definition: Abusive or intimidating behaviour and includes, but is not limited to, arguing, yelling, swearing at, insulting someone, acting out (hitting, kicking, throwing, breaking), leering, lewd comments, unwanted touching.
+    definition: Abusive or intimidating behaviour and includes, but is not limited to, arguing, yelling, swearing at, insulting someone, acting out (e.g. hitting, kicking, throwing, breaking), leering, lewd comments, unwanted touching.
   - term: Care Management
     definition: A client centred approach of care coordination to support client and their caregivers in managing their health challenges more effectively 
   - term: Chronic Obstructive Pulmonary Disease (COPD)
@@ -19,9 +19,9 @@ glossary:
   - term: Holistic Approach
     definition: Encompassing of the physical, emotional, spiritual, cultural, cognitive, developmental, environmental and social needs of a client
   - term: IADLS
-    definition: Instrumental activities of daily living (finances, shopping, meal prep, taking medications)
+    definition: Instrumental activities of daily living (e.g. finances, shopping, meal prep, taking medications)
   - term: MRP
-    definition: Most Responsible Provider (GP, NP)
+    definition: Most Responsible Provider (i.e. GP, NP)
   - term: Professional autonomy
     definition: Having the authority to make decisions and the freedom to act in accordance with one&#8217;s professional knowledge base.
   - term: Risk
