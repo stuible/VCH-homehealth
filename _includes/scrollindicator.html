@@ -1,4 +1,7 @@
-<div class="scroll-btn">
+{% if include.caseStudy %}
+{% assign caseStudyClass = "case-study-scroll" %}
+{% endif %}
+<div class="scroll-btn {{ caseStudyClass }}">
     <button onclick="{{ include.onClick }}" href="">
         <span class="mouse">
             <span>

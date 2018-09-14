@@ -70,3 +70,9 @@
     color: #cfcfcf;
     margin-top: -15px;
 }
+
+.case-study-scroll {
+    transition: opacity 300ms linear;
+    opacity: 0;
+    // cursor: default;
+}

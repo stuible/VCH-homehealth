@@ -36,4 +36,25 @@ function finalizeCaseStudy(){
         active: false,
         icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
       });
+
+      
+      $( window ).resize(function() {
+        updateCaseStudyScroller();
+      });
+
+      setTimeout(
+        function() 
+        {
+            updateCaseStudyScroller();
+        }, 2000);
+
+}
+
+function updateCaseStudyScroller(){
+    if( $('.case-study-video').height() >= $( window ).height() ){
+        $('.case-study-scroll').css('opacity', '1');
+    }
+    else {
+        $('.case-study-scroll').css('opacity', '0');
+    }
 }
