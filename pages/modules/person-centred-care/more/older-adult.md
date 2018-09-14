@@ -28,6 +28,7 @@ sections:
         - "Aging is associated with increased risk of chronic diseases and with functional decline, which can affect a person’s ability to perform: ADLs and IADLs"
 
     - part: half
+      spacer: ""
       youtube: https://www.youtube.com/embed/6B84HfTzdA4
 
 
