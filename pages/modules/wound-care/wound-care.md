@@ -1,21 +1,13 @@
 --- 
-layout: coming-soon
+layout: module
 permalink: "/modules/wound-care/"
 background: wound.jpeg
 enabled: true
 
-cases:
-  - name: Margaret
-    image: MargaretPortrait2.jpeg
-    url: margaret
-  - name: Franny
-    image: FrannyPortrait.png
-    url: franny
-  - name: Luigi
-    image: LuigiPortrait.png
-    url: luigi
-  - name: Agit
-    image: AjitPortrait.png
-    url: agit
+objectives:
+  - objective: Examines anatomy and physiology of the skin, age-related changes and other factors that affect wound healing
+  - objective: Differentiates between wound etiologies and identifies interventions for each etiology including appropriate use of products and other equipment
+  - objective: Teaches about care for colostomy/ileostomy/urostomy
+  - objective: Performs wound care and compression therapy as indicated
+
 ---
-#### Before you do the Wound Care I'm going to need you to do this...
