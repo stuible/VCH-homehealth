@@ -8,6 +8,7 @@ $().ready(function () {
   var landing = Barba.BaseView.extend({
     namespace: 'landing',
     onEnter: function () {
+      clearBackground();
       darkBackground(true);
     },
     onEnterCompleted: function () {
