@@ -711,16 +711,12 @@ body {
   .landing .actions {
     margin-top: 50px; }
   .landing .logos {
-    bottom: 2em;
-    padding: 4em;
-    right: 0;
-    left: 0;
-    position: absolute;
+    padding: 5em;
     margin: 0 auto;
     z-index: -1; }
     .landing .logos img {
       height: 2.75em;
-      margin: 0 1.25em;
+      margin: 0 1.25em 1.25em 1.25em;
       width: auto; }
 
 .landing-button {
