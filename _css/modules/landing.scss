@@ -86,6 +86,7 @@
         left: 0;
         position: absolute;
         margin: 0 auto;
+        z-index: -1;
         img {
             height: 2.75em;
             margin: 0 1.25em;
@@ -96,7 +97,6 @@
 
 .landing-button {
     width: 13em;
-
 }
 
 .lt-logo {
