@@ -3,4 +3,4 @@ layout: landing
 permalink: "/"
 video: Homepage.mp4
 ---
-Goals of Care in Home Health include:  maintaining self-care, preventing complications, delaying decline and optimizing quality of life.
+The goals of care in Home Health are to maintaining self-care, preventing complications, delay decline and optimize quality of life.
