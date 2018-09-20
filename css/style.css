@@ -1683,6 +1683,15 @@ body {
   margin-bottom: 25px; }
   .deliverable a {
     color: #000; }
+    .deliverable a.quiz {
+      font-size: 1.75em;
+      font-family: "hkgrotesk-bold", sans-serif;
+      color: #5AAF7F;
+      -webkit-text-decoration-color: #5AAF7F;
+      -moz-text-decoration-color: #5AAF7F;
+      text-decoration-color: #5AAF7F; }
+  .deliverable div.quiz {
+    font-family: "hkgrotesk-bold", sans-serif; }
 
 .video.gallery .name {
   padding: 5px;

@@ -33,8 +33,10 @@ deliverables:
     link: http://vch-connect.vch.ca/policies_manuals/adult_older_adult/adult_iv/Pages/default.aspx
     link-text: Adult IV Manual (complete on unit)
     duration: 30 mins
-  - text: ""
-    link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19197
-    link-text: Final Quiz
-    duration: 20 mins
+    
+
+quiz:
+  text: Final Quiz
+  link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19197
+  duration: 20 mins
 ---

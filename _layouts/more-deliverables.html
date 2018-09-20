@@ -24,6 +24,16 @@ layout: more-deliverables
                     <div class="three columns"> {{ deliverable.duration }} </div>
                 </div>
             {% endfor %}
+
+            <div class="deliverable row">
+                <div class="nine columns">
+                    <a href="{{ page.quiz['link'] }}" class="quiz" target="_blank">
+                        {{ page.quiz['text'] }}
+                    </a>
+                </div>
+                <div class="three columns quiz"> {{ page.quiz['duration'] }} </div>
+            </div>
+
             </div>
             <div class="container more-back margin top fifty" style="margin-bottom: 25px">
                 <a href="{{ site.baseurl }}{{ breadcrumb_url_array[1] }}#topic" class="button">← Back To Module</a>

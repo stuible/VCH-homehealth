@@ -5,33 +5,35 @@ $sectionTitleMarginBottom: 30px;
 $sectionTitlePaddingBottom: 5px;
 $sectionTitleBoarderBottom: 5px;
 
-.more-title{
+.more-title {
     font-size: 4em;
     font-family: $serifFont;
 }
 
 .more-subtitle {
     font-size: 1.75em;
+
     // font-weight: 400;
     border-bottom-style: solid;
+
     // border-bottom: 5px solid $primaryColour;
     width: fit-content;
     margin-bottom: 25px;
     border-bottom-width: 5px;
 
-    &.full{
+    &.full {
         border-bottom-color: $primaryColour;
-
     }
 }
 
-.six.columns:first-child, .twelve.columns{
-    .more-subtitle{
+.six.columns:first-child, .twelve.columns {
+    .more-subtitle {
         border-bottom-width: 5px;
     }
 }
-.six.columns:not(:first-child){
-    .more-subtitle{
+
+.six.columns:not(:first-child) {
+    .more-subtitle {
         border-bottom-width: 2px;
         font-size: 1.25em;
         margin-top: 15px;
@@ -47,8 +49,7 @@ $sectionTitleBoarderBottom: 5px;
     font-size: 20px;
 }
 
-.more-section{
-
+.more-section {
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -56,7 +57,7 @@ $sectionTitleBoarderBottom: 5px;
         margin-top: 0px;
     }
 
-    .six.columns:nth-of-type(odd){
+    .six.columns:nth-of-type(odd) {
         margin-left: 0px;
     }
 
@@ -68,10 +69,10 @@ $sectionTitleBoarderBottom: 5px;
         margin-bottom: 25px;
     }
 
-    &:nth-of-type(odd){
+    &:nth-of-type(odd) {
         background-color: #ffffff;
 
-        .more-subtitle{
+        .more-subtitle {
             border-bottom-color: $primaryColour;
         }
 
@@ -79,11 +80,12 @@ $sectionTitleBoarderBottom: 5px;
             border-bottom-color: $primaryColour;
         }
     }
-    &:nth-of-type(even){
+
+    &:nth-of-type(even) {
         background-color: $primaryColour;
         color: #ffffff;
 
-        .more-subtitle{
+        .more-subtitle {
             border-bottom-color: #fff;
         }
 
@@ -102,15 +104,15 @@ $sectionTitleBoarderBottom: 5px;
     justify-content: center;
 }
 
-.more-circle-container{
+.more-circle-container {
     // width: 10px;
-    flex: 1; 
+    flex: 1;
     text-align: center;
+
     /* width: 0; */
     min-width: 100px;
     max-width: 150px;
     margin-bottom: 20px;
-    
 }
 
 .more-circle {
@@ -132,30 +134,29 @@ $sectionTitleBoarderBottom: 5px;
     margin-bottom: 15px;
 }
 
-.more-small-text{
+.more-small-text {
     text-align: center;
     margin-top: 5px;
 }
 
 // Video
-.more-video{
+.more-video {
     video {
         width: 100%;
     }
-
 }
 
 // Multi Select Quiz
 
-.quiz.question{
+.quiz.question {
     margin-bottom: 10px;
 }
 
-.quiz.answers{
+.quiz.answers {
     position: relative;
 }
 
-.quiz.answer{
+.quiz.answer {
     margin-bottom: 10px;
     background-color: $primaryColour;
     padding: 5px 10px;
@@ -163,16 +164,16 @@ $sectionTitleBoarderBottom: 5px;
     cursor: pointer;
 }
 
-.quiz.button-container{
+.quiz.button-container {
     text-align: center;
     margin-top: 25px;
 }
 
-.quiz.button{
+.quiz.button {
     // margin: 0 auto;
 }
 
-.quiz.feedback{
+.quiz.feedback {
     position: absolute;
     display: none;
     padding: 25px;
@@ -183,11 +184,12 @@ $sectionTitleBoarderBottom: 5px;
     border-radius: 8px;
     color: #fff;
 
-    &.correct{
+    &.correct {
         background-color: $primaryColour;
         display: block;
     }
-    &.incorrect{
+
+    &.incorrect {
         background-color: #C04F4D;
         display: block;
     }
@@ -203,47 +205,46 @@ $sectionTitleBoarderBottom: 5px;
 }
 
 //Custom Checkbox
-.quiz.answer>input[type="checkbox"] {
+.quiz.answer > input[type="checkbox"] {
     opacity: 0;
     position: absolute;
     margin-left: 7px;
     margin-top: 7px;
     z-index: 0;
-    transform: scale(2)
+    transform: scale(2);
 }
 
-.quiz.answer>label {
+.quiz.answer > label {
     position: relative;
     display: inline-block;
     color: #fff;
     font-weight: 300;
     margin-bottom: 0;
     line-height: 27px;
-    
+
     /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
     padding-left: 40px;
     min-height: 27px;
     cursor: pointer;
 }
 
-.quiz.answer>label::before,
-.quiz.answer>label::after {
+.quiz.answer > label::before,
+.quiz.answer > label::after {
     position: absolute;
     content: "";
-    
+
     /*Needed for the line-height to take effect*/
     display: inline-block;
 }
 
 /*Outer box of the fake checkbox*/
-.quiz.answer>label::before{
+.quiz.answer > label::before {
     height: 23px;
     width: 23px;
-    
     border: 2px solid;
     border-radius: 50%;
     left: 0px;
-    
+
     /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
      *to vertically center it.
      */
@@ -251,56 +252,57 @@ $sectionTitleBoarderBottom: 5px;
 }
 
 /*Checkmark of the fake checkbox*/
-.quiz.answer>label::after {
+.quiz.answer > label::after {
     height: 15px;
     width: 15px;
     background-color: #fff;
     border-radius: 50%;
     content: "";
-    
+
     // transform: rotate(-45deg);
-    
+
     left: 6px;
     top: 6px;
 }
 
 /*Hide the checkmark by default*/
-.quiz.answer>input[type="checkbox"] + label::after {
+.quiz.answer > input[type="checkbox"] + label::after {
     content: none;
 }
 
 /*Unhide on the checked state*/
-.quiz.answer>input[type="checkbox"]:checked + label::after {
+.quiz.answer > input[type="checkbox"]:checked + label::after {
     content: "";
 }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.quiz.answer>input[type="checkbox"]:focus + label::before {
+.quiz.answer > input[type="checkbox"]:focus + label::before {
     // outline: rgb(59, 153, 252) auto 5px;
 }
-
 
 //Drag and Drop Quiz
 
 .matching-circle {
     background-repeat: no-repeat;
-    // background-attachment: 
+
+    // background-attachment:
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
-.matching-circle.target{
+.matching-circle.target {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: dashed 3px rgb(180, 180, 180);
 }
 
-.matching-circle.answer{
+.matching-circle.answer {
     height: 75px;
     width: 75px;
     border-radius: 50%;
     background-color: antiquewhite;
+
     // border: dashed 3px rgb(180, 180, 180);
 }
 
@@ -315,14 +317,14 @@ $sectionTitleBoarderBottom: 5px;
     }
 }
 
-.matching-answer{
+.matching-answer {
     margin-bottom: 25px;
 }
 
 .matching-option {
     margin-bottom: 25px;
 
-    &.correct .matching-circle.target{
+    &.correct .matching-circle.target {
         border: solid 3px $primaryColour !important;
     }
 }
@@ -331,6 +333,7 @@ $sectionTitleBoarderBottom: 5px;
 .more-bullets {
     margin-top: 50px;
     list-style-type: disc;
+
     // list-style-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2Ii8+PC9zdmc+');
 }
 
@@ -342,12 +345,27 @@ $sectionTitleBoarderBottom: 5px;
 }
 
 //Deliverable
-.deliverable{
+.deliverable {
     margin-bottom: 25px;
 
     a {
         color: #000;
+
+        &.quiz {
+            font-size: 1.75em;
+            // font-weight: 700;
+            font-family: $fontBold;
+    
+            color: $primaryColour;
+            text-decoration-color: $primaryColour;
+        }
     }
+
+    div.quiz {
+        font-family: $fontBold;
+    }
+
+    
 }
 
 // VIDEO GALLERY
@@ -389,22 +407,17 @@ img.more-poster {
     width: 100%;
 }
 
-
 //Resources
 
-
 .more-resources {
-
     .resource-container {
         display: inline-block;
         max-width: 150px;
     }
 
     .resource {
-
-        >img{
+        > img {
             max-width: 40px;
         }
-        
     }
 }

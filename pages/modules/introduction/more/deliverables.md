@@ -21,8 +21,9 @@ deliverables:
     link: https://learn.vch.ca/m2/mod/ibook/view.php?id=1159
     link-text: Re:act Act on Adult Abuse and Neglect – It’s Your Duty.
     duration: 15 mins
-  - text: ""
-    link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19198
-    link-text: Final Quiz
-    duration: 20 mins
+
+quiz:
+  text: Final Quiz
+  link: http://learninghub.phsa.ca/moodle/mod/scorm/view.php?id=19198
+  duration: 20 mins
 ---
