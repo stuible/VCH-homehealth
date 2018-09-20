@@ -1,0 +1,63 @@
+--- 
+layout: resources-all
+---
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+
+<body>
+    <div class="background"></div>
+    {% include menu.html %}
+
+    <div id="barba-wrapper">
+        <div class="barba-container" data-namespace="glossary" data-nav-text='{{ breadcrumb_text_json }}' data-nav-url='{{ breadcrumb_url_json }}'>
+            <div class="center-align container more-title">Resources</div>
+            {% for page in site.pages %}
+            {% if page.layout == 'resources' %}  
+
+            <div class="container resources">
+                <div class="more-subtitle full">{{ page.title }}</div>
+                <div class="twelve columns">
+                <ul>
+                {% for resource in page.resources %}
+                            {% if resource[1].first %}
+                                <li>{{ resource[0] }}</li>
+                                <ul>
+                                {% for subresource in resource[1] %}
+                                    {% capture processed_link %}
+                                        {% if  subresource.first[1] contains '://'  
+                                            or subresource.first[1] contains 'www.' 
+                                            or subresource.first[1] contains '.com' 
+                                            or subresource.first[1] contains '.ca' 
+                                        %}
+                                        {{ subresource.first[1] }}{% else %}{{ site.baseurl }}/{{ subresource.first[1] }}
+                                        {% endif %}
+                                    {% endcapture%}
+                                    <li><a href="{{ processed_link }}" target="_blank" class="no-barba">{{ subresource.first[0] }}</a></li>   
+                                {% endfor %}
+                                </ul>
+                            {% else %}
+                            {% capture processed_link %}
+                                {% if  resource[1] contains '://'  
+                                    or resource[1] contains 'www.' 
+                                    or resource[1] contains '.com' 
+                                    or resource[1] contains '.ca' 
+                                %}
+                                {{ resource[1] }}{% else %}{{ site.baseurl }}/{{ resource[1] }}
+                                {% endif %}
+                            {% endcapture%}
+                                <li><a href="{{ processed_link }}" target="_blank" class="no-barba">{{ resource[0] }}</a></li>
+                            {% endif %} 
+                {% endfor %}
+                </ul>
+                </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
