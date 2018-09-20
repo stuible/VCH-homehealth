@@ -196,19 +196,8 @@ function drawModulesIcon() {
 }
 $().ready(function () {
 
+  //create progress cookie if one does not already exist
   if(Cookies.get(progressCookieName) === undefined) createProgress();
-
-      //Enable lazy loading
-      // $('.lazy').Lazy({
-      //   // your configuration goes here
-      //   //scrollDirection: 'vertical',
-      //   effect: 'fadeIn',
-      //   effectTime: 200,
-      //   visibleOnly: true,
-      //   onError: function(element) {
-      //       console.log('error lazy loading ' + element.data('src'));
-      //   }
-      // });
 
   instantiateMenu();
 
@@ -445,6 +434,26 @@ function getLastPart(url) {
   return (url.lastIndexOf('/') !== url.length - 1
     ? parts[parts.length - 1]
     : parts[parts.length - 2]);
+}
+
+function realBrowserCheck() 
+{
+
+    var ms_ie = false;
+    var ua = window.navigator.userAgent;
+    var old_ie = ua.indexOf('MSIE ');
+    var new_ie = ua.indexOf('Trident/');
+
+    if ((old_ie > -1) || (new_ie > -1)) {
+      ms_ie = true;
+    }
+
+    if ( is_ie ) {
+      alert("YOU ARE USING INTERNET EXPLORER!!! BAD!!! | ie" + parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+    }
+    else {
+      console.log("at least it's not IE");
+    }
 }
 var progressCookieName = 'module-progress';
 
