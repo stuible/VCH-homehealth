@@ -15,7 +15,7 @@ sections:
       sub-title: Take Action
       text: "Review the following pictures:"
       gallery:
-        - Assisted Living-a housing model that includes assistance with personal care and hospitality services to clients living at risk or who can no longer be supported in their own home (photo of Clarendon court): modules/intro/topic/environment/AssistedLiving.jpg
+        - Assisted Living-a housing model that includes assistance with personal care and hospitality services to clients living at risk or who can no longer be supported in their own home (photo of Clarendon Court): modules/intro/topic/environment/AssistedLiving.jpg
         - Independent Seniors living- Privately run facilities that provide housing and sometimes activities to seniors (photo of Shannon Oaks): modules/intro/topic/environment/IndependentSeniorsLiving.jpg
         - Ambulatory Care Clinic-AC should be the first place home health clients come to get care. All services are provided and more clients can be seen when they come to the clinic than driving to individual homes (picture of AC clinic): modules/intro/topic/environment/AmbulatoryCareClinic.jpg
         - Social housing- Partners such as BC Housing and other non-profit organizations help provide housing to marginalized populations (picture of SRO): modules/intro/topic/environment/SocialHousing1.jpg
@@ -32,11 +32,11 @@ sections:
       text: Community health nurses come across a variety of risks and hazards in the settings they work in. Community Risk Screening ensures mitigation of potential risk for staff and clients receiving services.  It promotes improved documentation and communication of risk among clinicians in all community programs. 
     - part: half
       title: Take Action
-      text: Please click on the photos to review and determine what risks and hazards exist in each environment
+      text: Please click on the photos to review and determine what risks and hazards exist in each environment.
       gallery:
-        - Remove clutter to make space and provide care: modules/intro/topic/environment/HazardsRisks2.jpg
-        - Remind clients to keep stairs & ramps free of clutter and objects: modules/intro/topic/environment/HazardsRisks1.jpg
-        - Ensure items are safely stacked to prevent injuring care staff: modules/intro/topic/environment/HazardsRisks3.jpg
+        - Some entrances may be dangerous: modules/intro/topic/environment/HazardsRisks2.jpg
+        - Remove clutter to make space and provide care: modules/intro/topic/environment/HazardsRisks1.jpg
+        - Some clients may smoke indoors: modules/intro/topic/environment/HazardsRisks3.jpg
 
   - section:
     - part: half
@@ -44,7 +44,7 @@ sections:
       text: The nurse’s car is a tool home care nurses use.
     - part: half
       title: Take Action
-      text: Examine the picture to determine what could be done better.  Hover over the picture of the car for answers.
+      text: Examine the picture to determine what could be done better. Hover over the picture of the car for answers.
       storyline: carWorkSite
 
   - section:

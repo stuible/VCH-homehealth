@@ -47,14 +47,14 @@ sections:
 
     - part: half
       title: Caregiver Burnout
-      text: Caregivers are an important part of the team when caring for home health clients. In addition to providing care to their loved ones, some may work full-time, have families of their own or are trying to manage their own health challenges. This can lead to feelings of being stressed and over-whelmed. Indicate with an X in the box signs of caregiver burn out.
+      text: Caregivers are an important part of the team when caring for home health clients. In addition to providing care to their loved ones, some may work full-time, have families of their own or are trying to manage their own health challenges. This can lead to feelings of being stressed and over-whelmed.
 
     - part: half
       title: Action
-      text: Select the correct answers
+      text: Select all the signs of caregiver burn out.
       quiz-multiple-select:
         - question: "Caregivers can experience:"
-        - feedback: ['Incorrect', 'You were right, but there are more...', 'You got them all!']
+        - feedback: ['Incorrect', 'You were right, but there are more...', 'You got it! All of of these are signs of caregiver burn out.']
 
         - true: Changes in sleep pattersn
         - true: Increased irritability and moodiness

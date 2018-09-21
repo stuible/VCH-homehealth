@@ -1,8 +1,8 @@
 ---
 layout: more
-permalink: "/modules/introduction/clinicians/"
+permalink: "/modules/introduction/comunity-health/"
 title: Community Health Clinicians
-id: clinicians
+id: comunity-health
 
 sections:
   - section:
@@ -26,7 +26,7 @@ sections:
         - category: [Access and Equity, modules/intro/topic/clinicians/6a.jpg] 
         - category: [Professional Responsibility and Accountability, modules/intro/topic/clinicians/7a.jpg] 
 
-        - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities.
+        - Health Promotion: Encourage clients and families dealing with chronic illnesses to participate in regular physical and social activities
         - Access and Equity: Advocate for families caring for ill loved ones. Seek and provide resources to clients, and caregivers for higher levels of care
         - Health Maintenance, Restoration and Palliation: Collaborate with the client to adapt the care provided based on clients’ choices, their own personal skills, and the resources available
         - Professional Relationships: Provide ‘continuity of care’ and build trust with the client and their family leading to better health
@@ -49,14 +49,14 @@ sections:
     - part: half
       spacer: ""
       title: Self-reflection
-      text: Reflect on the list above. How might you incorporate these values into your everyday practice as a CHN ? Are there values and beliefs missing? What are they?
+      text: Reflect on the list above. How might you incorporate these values into your everyday practice as a CHN? Are there values and beliefs missing? What are they?
 
   - section:
     - part: full
       title: Primary Nurse
     - part: spacer
     - part: full
-      text: Sometimes community uses the primary nurse model of nursing care delivery to co-create with the client, a plan of care. The primary nurse is responsible for maintaining continuity of care,  developing a therapeutic relationship and is accountable to the client, client’s caregivers and the health care team.
+      text: Sometimes community uses the primary nurse model of nursing care delivery to co-create with the client a plan of care. The primary nurse is responsible for maintaining continuity of care, developing a therapeutic relationship and is accountable to the client, client’s caregivers and the health care team.
 
       
 
@@ -72,7 +72,7 @@ sections:
 
     - part: half
       title: Self-reflection
-      text: Reflect on how you might demonstrate autonomy in your practice
+      text: Reflect on how you might demonstrate autonomy in your practice.
 
   - section:
     - part: full
@@ -101,7 +101,7 @@ sections:
       image: modules/intro/topic/clinicians/InterprofessionalCollaboration.svg
     - part: half
       title: Take Action
-      text: Watch the video and reflect on the model of interprofessional collaboration, What are your strengths and areas for growth when it comes to collobarating with a team?
+      text: Watch the video and reflect on the model of interprofessional collaboration. What are your strengths and areas for growth when it comes to collaborating with a team?
       youtube: https://www.youtube.com/embed/8_2KXroUKRQ
 
   - section:
@@ -129,7 +129,7 @@ sections:
       text: Care planning is an integral part of client care. There are 10 recommendations on how to involve clients in planning their care. These are called the 10 C’s. 
     - part: half
       title: Take Action
-      text-2: Watch the video and decide which of the 10 C’s of care planning is often missed and why
+      text-2: Watch the video and decide which of the 10 C’s of care planning is often missed and why.
       youtube: https://www.youtube.com/embed/Xe_69r1Dl0w
 
   - section:

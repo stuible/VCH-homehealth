@@ -9,7 +9,7 @@ sections:
 
     - part: half
       title: Self Management Support
-      text: "The home health team can support client’s in managing their chronic conditions by:"
+      text: "The home health team can support clients in managing their chronic conditions by:"
       bullets:
         - Assessment and monitoring
         - Managing emergencies
@@ -19,7 +19,7 @@ sections:
 
     - part: half
       title: Take Action
-      text: Please watch the ‘Self Managing and Self Management Support’ video
+      text: "Please watch the following video:"
       youtube: https://www.youtube.com/embed/uRQ853sRt0o
 
   - section:
@@ -42,14 +42,14 @@ sections:
 
     - part: half
       title: Self Reflection
-      text: Not all chronic health challenges are physical. Watch the Living with Mental Health video and reflect.
+      text: Not all chronic health challenges are physical. Watch the video “Living with Mental Health” and reflect.
       youtube: https://www.youtube.com/embed/ezI2W32yNg8
 
 
   - section:
     - part: full
       title: Anxiety and Depression
-      text: Indicate which signs and symptoms go with the underlying issue by dragging and dropping
+      text: Drag and drop the sign/symptom to its corresponding underlying issue.
       spacer: ""
     - part: full
       quiz-matching:
@@ -76,12 +76,12 @@ sections:
       title: Take Action
       text: Review images of strategies you can use to help support taking their medication properly. Click an image to expand.
       gallery:
-        - Image: modules/pcc/topic/chronic/clock.jpg
-        - Image: modules/pcc/topic/chronic/notepad.jpg
-        - Image: modules/pcc/topic/chronic/pillcase.jpg
-        - Image: modules/pcc/topic/chronic/binder.jpg
-        - Image: modules/pcc/topic/chronic/help.jpg
-        - Image: modules/pcc/topic/chronic/case.jpg
+        - Timer: modules/pcc/topic/chronic/clock.jpg
+        - Journal: modules/pcc/topic/chronic/notepad.jpg
+        - Pill Box: modules/pcc/topic/chronic/pillcase.jpg
+        - Binder: modules/pcc/topic/chronic/binder.jpg
+        - Reminders: modules/pcc/topic/chronic/help.jpg
+        - Lockbox: modules/pcc/topic/chronic/case.jpg
       
 
 

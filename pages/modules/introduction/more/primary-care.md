@@ -13,7 +13,7 @@ sections:
 
     - part: full
       sub-title: Take Action
-      text:  Drag and drop to match the term with the definition
+      text:  Drag and drop the term to its matching definition.
 
     - part: full
       quiz-matching-equal:
@@ -33,7 +33,7 @@ sections:
   - section:
     - part: half
       title: Primary Care
-      text: VCH operates primary care clinics whereby people who meet the mandate can access services; primary care clinics use a PHC approach.
+      text: VCH operates primary care clinics whereby people who meet the mandate can access services. Primary care clinics use a PHC approach.
     - part: half
       image: modules/intro/topic/intro/PrimaryCare.jpg
 
@@ -73,7 +73,7 @@ sections:
     - part: half
       title: Take Action
       text: Before we walk along side our clients, we have to understand where they are coming from.
-      text-2: "1. Please watch the introduction to: Hope that Helps: Trauma Informed Care"
+      text-2: "1. Watch the introduction to the video “Hope that Helps: Trauma Informed Care."
       youtube: https://www.youtube.com/embed/KODThTB-rHc
     - part: half
       title: Take Action

@@ -9,7 +9,7 @@ sections:
 
     - part: half
       title: Physical Changes
-      text: As we age, our body changes
+      text: As we age, our body changes.
       spacer: ""
       sub-title: Take Action
       text-2: Hover over each part of the image to discover the physical changes.
@@ -22,10 +22,7 @@ sections:
 
     - part: half
       title: Aging In Place
-      text: "Support older adults to age in place involves the following:"
-      bullets:
-        - Keeping the older adult independent, healthy and able to manage chronic conditions in their home environment
-        - "Aging is associated with increased risk of chronic diseases and with functional decline, which can affect a person’s ability to perform: ADLs and IADLs"
+      text: Aging is associated with increased risk of chronic diseases and with functional decline, which can affect a person’s ability to perform ADLs and IADLs. Support older adults to age in place involves keeping the older adult independent, healthy, and ablate manage chronic conditions in their home environment.
 
     - part: half
       spacer: ""
@@ -48,11 +45,11 @@ sections:
 
     - part: full
       title: The 3 D's
-      text: "Dementia, depression and delirium can significantly impact an older adult"
+      text: "Dementia, depression and delirium can significantly impact an older adult."
 
     - part: full
       sub-title: Take Action
-      text: Please watch the videos ‘Communicating with People Living with Dementia’ and ‘Segment on Elderly Depression 
+      text: "Please watch the two videos on the 3 D's:"
 
     - part: half
       youtube: https://www.youtube.com/embed/jhSFA_ib48U
@@ -63,7 +60,7 @@ sections:
 
   - section: 
     - part: full
-      text: "Indicate which signs/symptoms below by drag and drop"
+      text: "Drag and drop the symptoms to the corresponding indicator."
       spacer: ""
 
     - part: full
