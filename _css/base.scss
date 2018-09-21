@@ -42,3 +42,8 @@ body {
     }
 }
 
+.padding {
+    @include smaller-than(phablet){
+        margin-top: 0 !important; 
+    }
+}

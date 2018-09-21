@@ -44,7 +44,7 @@ sections:
       text: The nurse’s car is a tool home care nurses use.
     - part: half
       title: Take Action
-      text: Examine the pircure to determine what could be done better.  Hover over the picture of the car for answers.
+      text: Examine the picture to determine what could be done better.  Hover over the picture of the car for answers.
       storyline: carWorkSite
 
   - section:
@@ -55,10 +55,13 @@ sections:
         - Minimize the items you bring in to the clients’ homes (e.g., only  the necessary supplies, client’s chart if needed, etc.)
         - Have Personal Protective Equipment (PPE) packed for each specific client and bring it in a separate bag into the clients’ homes
         - Do not bring left over supplies back to the car or to the unit after they have been in the clients’ home
+    - part: half
+      padding: 145px
+      bullets:
         - Safely wrap/seal non-disposable soiled utensils/instruments used in clients’ home and return to the ‘dirty utility’ room for autoclaving
         - Do not transport used sharps unless safely sealed and locked in sharps container 
         - Do not transport bio-hazardous fluids (e.g., fluids drained, urine samples, etc)
-    - part: half
+
 
 
 ---

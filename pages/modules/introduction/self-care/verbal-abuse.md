@@ -1,7 +1,7 @@
 --- 
 layout: branching-narrative
-permalink: "/modules/introduction/vebal-abuse/"
-title: vebal-abuse
+permalink: "/modules/introduction/verbal-abuse/"
+title: verbal-abuse
 image:
 
 #FIRST LEVEL

@@ -45,6 +45,11 @@ module Jekyll
           </div>
       ]
 
+      elsif type == 'padding'
+      output = %Q[
+        <div class="padding" style="margin-top:#{text}"></div>
+      ]
+
       elsif type == 'spacer-title'
           output = %Q[
             <div class="more-subtitle #{size}" style="visibility: hidden">

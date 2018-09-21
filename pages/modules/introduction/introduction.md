@@ -27,7 +27,7 @@ cases:
     url: bereaved
   - name: Verbal Abuse
     image: verbalabuse.jpg
-    url: vebal-abuse
+    url: verbal-abuse
   - name: Burnt Out
     image: burnout.jpg
     url: burnt-out

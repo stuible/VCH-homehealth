@@ -34,6 +34,10 @@ body {
 .margin.top.fifty {
   margin-top: 50px; }
 
+@media (max-width: 549px) {
+  .padding {
+    margin-top: 0 !important; } }
+
 @font-face {
   font-family: 'Perpetua';
   src: url("../fonts/perpetua/Perpetua.eot?#iefix") format("embedded-opentype"), url("../fonts/perpetua/Perpetua.otf") format("opentype"), url("../fonts/perpetua/Perpetua.woff") format("woff"), url("../fonts/perpetua/Perpetua.ttf") format("truetype"), url("../fonts/perpetua/Perpetua.svg#Perpetua") format("svg");
