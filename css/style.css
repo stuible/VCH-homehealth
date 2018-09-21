@@ -1811,9 +1811,12 @@ img.more-poster {
   transform: translateX(-50%); }
 
 /* RESOURCES PAGE */
-.resources ul {
-  list-style: none; }
-  .resources ul ul {
-    list-style: disc; }
-  .resources ul a {
-    color: black; }
+.resources {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .resources ul {
+    list-style: none; }
+    .resources ul ul {
+      list-style: disc; }
+    .resources ul a {
+      color: black; }
