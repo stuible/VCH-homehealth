@@ -24,7 +24,7 @@ medications:
   - Extra strength acetaminophen (3-4 times per week)
 
 visit: 
-  Initial Visit: Using a translator to help communicate, May shares she is experiencing increased fatigue, pain and decreased appetite. May is staying in bed for longer periods during the day. You notice her grimace when she turns in bed and she winces as she sits up. May states that up until a month ago she had been feeling very well. Her mood is low and she is crying at times throughout the day, although never in front of the children.  She became tearful when speaking about David’s love and the responsibilities that he has taken over from her. She is not able to actively participate in her faith community. She no longer feels she is able to be the mother to her children that she wants to be.  David has left you a note asking you to text or email him about how is wife is doing.
+  Initial Visit: With the help of a translator, May shares she is experiencing increased fatigue, pain and decreased appetite. May is staying in bed for longer periods during the day. A  grimace is noticeable when she turns in bed and she winces as she sits up. May states that she had been feeling very well up until a month ago. Now her mood is low and she is crying several times throughout the day, although never in front of the children. She became tearful when speaking about David’s love and support. May is not able to actively participate in her faith community and no longer feels she is able to be the mother that she wants to be. David has left a note asking to text or email him about how is wife is doing.
 
 reflection:
   - What are some strategies for effective communication when using family, friends or services for translation?

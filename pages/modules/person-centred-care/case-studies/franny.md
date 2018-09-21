@@ -7,16 +7,16 @@ title: Franny’s Story
 background:
   - title: Background
     image: franny/1.png
-    text: Franny is a 48 year old woman that lives in a four story walk up apartment building.  Originally from small town Saskatchewan, Franny moved west about 14 years ago after she divorced her ex-husband of 12 years. She is from a large conservative family and her father was the town’s minister. During the marriage, Franny went through some challenging times not being able to conceive due to endometriosis and she was also diagnosed with depression.
+    text: Franny is a 48 year old woman who lives in a four-storey walk-up apartment building. Originally from a small town in Saskatchewan, Franny moved west about 14 years ago after she divorced her ex-husband of 12 years. She is from a large conservative family, her father having been the town’s minister. During the troubled marriage, Franny went through not challenges such as inabilities to conceive due to endometriosis and being diagnosed with depression.
   - title: Situation
     image: franny/2.png
-    text: When Franny located to Vancouver for a fresh start, she did not know anyone and had little support from family or friends back home who disapproved of her divorce. Franny was diagnosed with bipolar Type 1 disorder about 10 years ago after going through a manic episode where she was self-medicating with street drugs. Subsequently, she contracted Hepatitis C.  After Franny completed her drug rehabilitation, she met her current partner Paula. Paula is Metis, also from the prairies, and the two moved in together after dating for six months.
+    text: When Franny relocated to Vancouver she had to start from scratch. She did not know anyone and had little support from family or friends back home who disapproved of her divorce. Franny was diagnosed with Bipolar Type 1 disorder 10 years ago after going through a manic episode where she was self-medicating with street drugs. Subsequently this lead her to contract Hepatitis C. After Franny completed drug rehabilitation, she met her current partner Paula. After dating Paula, a Metis also from the prairies, for six months the couple moved in together.
   - title: Concerns
     image: franny/3.png
-    text: Six months ago, Franny was diagnosed with stage III ovarian cancer and immediately started on chemotherapy. She has been experiencing significant nausea with the chemo and is using medicinal marijuana to help control it. Paula was concerned about Franny using medicinal marijuana because of her history with substance use disorder. Paula has been talking to an elder about doing a healing circle for Franny.
+    text: Six months ago, Franny was diagnosed with Stage III Ovarian Cancer and immediately started on chemotherapy. She has been experiencing significant nausea from the treatment and is using medicinal marijuana to help control it. Paula was concerned about Franny using marijuana because of her history with substance use disorder. Paula has been talking to an Elder about performing a healing circle for Franny.
 
 
-supports:  Franny only really has Paula as her support system; they do have a few close friends in the LGBT Community.  Franny has not re-connected with her family back in Saskatchewan, but she has been thinking of them since her diagnosis.
+supports:  Franny relies heavily on Paula as her sole support system, but they maintain a few close friends in the LGBT Community. Franny has not re-connected with her family back in Saskatchewan, but she has been thinking of them since her diagnosis.
 
 medications:
   - Harvoni one tablet daily
@@ -29,7 +29,7 @@ medications:
 
 
 visit: 
-  Initial Visit: Franny appears pale and tired. She is having problems eating due to the nausea. She has been missing taking her medications because of the nausea and Paula worries that this may contribute to a change in her mental health. Most recently, Franny had an emergency appendectomy and the surgical incision has dehisced.
+  Initial Visit: Franny appears pale and tired. She is having problems eating due to the nausea. She has been neglecting to take her medications because of the nausea and Paula worries that this may contribute to a change in her mental health. Most recently, Franny had an emergency appendectomy and the surgical incision has dehisced.
 
 reflection:
   - What are your preconceived ideas when caring for clients with mental health challenges or substance use disorder?
