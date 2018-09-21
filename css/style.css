@@ -649,6 +649,7 @@ body {
 
 /* LANDING */
 .landing {
+  font-size: 0.8em;
   text-align: center;
   padding-bottom: 4em;
   height: auto; }
@@ -718,6 +719,9 @@ body {
       height: 2.75em;
       margin: 0 1.25em 1.25em 1.25em;
       width: auto; }
+  @media (min-width: 550px) {
+    .landing {
+      font-size: 1em; } }
 
 .landing-button {
   width: 13em; }

@@ -3,7 +3,7 @@
 /* LANDING */
 
 .landing {
-    // z-index: -1;
+    font-size: 0.8em;
     text-align: center;
     padding-bottom: 4em;
     height: auto;
@@ -92,6 +92,10 @@
             margin: 0 1.25em 1.25em 1.25em;
             width: auto;
         }
+    }
+
+    @include larger-than(phablet){
+        font-size: 1em;
     }
 }
 
