@@ -116,8 +116,8 @@ function instantiateSlider() {
 
   function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
-    vex.dialog.buttons.YES.text = 'Start';
-    vex.dialog.buttons.NO.text = 'Cancel';
+    // vex.dialog.buttons.YES.text = 'Start';
+    // vex.dialog.buttons.NO.text = 'Cancel';
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
       var prereqs = $(this).data('content');
@@ -142,6 +142,7 @@ function instantiateSlider() {
       vex.dialog.open({
         message: 'Before I Begin',
         input: beforeBeginningHTML,
+        className: 'vex-theme-default prereq',
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, {
             text: 'Start',

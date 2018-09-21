@@ -196,6 +196,8 @@ function drawModulesIcon() {
 }
 $().ready(function () {
 
+  realBrowserCheck();
+
   //create progress cookie if one does not already exist
   if(Cookies.get(progressCookieName) === undefined) createProgress();
 
@@ -440,17 +442,23 @@ function getLastPart(url) {
 function realBrowserCheck() 
 {
 
-    var ms_ie = false;
+    var is_ie = false;
     var ua = window.navigator.userAgent;
     var old_ie = ua.indexOf('MSIE ');
     var new_ie = ua.indexOf('Trident/');
 
     if ((old_ie > -1) || (new_ie > -1)) {
-      ms_ie = true;
+      is_ie = true;
     }
 
     if ( is_ie ) {
-      alert("YOU ARE USING INTERNET EXPLORER!!! BAD!!! | ie" + parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+      vex.dialog.alert({ unsafeMessage: '\
+        <div class="ie-warning">\
+        <h4 class="title">Internet Explorer Detected</h4>\
+        <img src="' + baseurl + '/image/logos/sad-ie.png">\
+        <p>This Home Health website uses new web technology that is not supported by Internet Explorer.  We strongly recommend you download a more modern browser like <a target="_blank" href="https://www.google.com/chrome/browser/">Google Chrome</a> as some features may not work as intended.</p>\
+        </div>\
+        ' });
     }
     else {
       console.log("at least it's not IE");
@@ -666,8 +674,8 @@ function instantiateSlider() {
 
   function instantiatePopups(){
     //BEFORE I BEGIN POPUP CODE
-    vex.dialog.buttons.YES.text = 'Start';
-    vex.dialog.buttons.NO.text = 'Cancel';
+    // vex.dialog.buttons.YES.text = 'Start';
+    // vex.dialog.buttons.NO.text = 'Cancel';
     $('.before-begin-button').click(function () {
       var href = $(this).data('href');
       var prereqs = $(this).data('content');
@@ -692,6 +700,7 @@ function instantiateSlider() {
       vex.dialog.open({
         message: 'Before I Begin',
         input: beforeBeginningHTML,
+        className: 'vex-theme-default prereq',
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, {
             text: 'Start',

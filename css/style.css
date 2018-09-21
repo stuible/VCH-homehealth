@@ -261,7 +261,7 @@ body {
     box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.25);
     border: #e7e7e7 2px solid inset; }
 
-.vex-dialog-message {
+.prereq .vex-dialog-message {
   text-align: center;
   font-size: 25px;
   border-bottom: solid #5AAF7F 3px;
@@ -291,6 +291,17 @@ body {
 
 .ui-accordion-header {
   cursor: pointer; }
+
+.ie-warning {
+  text-align: center; }
+  .ie-warning .title {
+    border-bottom: #5AAF7F 5px solid;
+    display: inline-block; }
+  .ie-warning img {
+    height: 100px;
+    margin-bottom: 25px; }
+  .ie-warning p {
+    text-align: left; }
 
 .accordion-icon {
   float: right;
