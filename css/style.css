@@ -1280,14 +1280,6 @@ body {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .swiper-slide > a > div {
-    background: -webkit-linear-gradient(273deg, rgba(0, 0, 0, 0.518645) 0%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0) 100%);
-    background: -moz-linear-gradient(273deg, rgba(0, 0, 0, 0.518645) 0%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0) 100%);
-    background: -o-linear-gradient(273deg, rgba(0, 0, 0, 0.518645) 0%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(177deg, rgba(0, 0, 0, 0.518645) 0%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0) 100%);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
 
 .slide-title {
   color: #fff;
@@ -1356,6 +1348,8 @@ body {
   position: absolute;
   z-index: -1;
   width: 100%;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
