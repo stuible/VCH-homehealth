@@ -299,7 +299,8 @@ body {
     display: inline-block; }
   .ie-warning img {
     height: 100px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-top: 10px; }
   .ie-warning p {
     text-align: left; }
 
@@ -1731,7 +1732,8 @@ img.more-poster {
 
 .more-resources .resource-container {
   display: inline-block;
-  max-width: 150px; }
+  max-width: 150px;
+  margin-right: 15px; }
 
 .more-resources .resource > img {
   max-width: 40px; }
