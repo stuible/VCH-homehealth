@@ -1123,7 +1123,11 @@ function instantiateGlossary() {
     
         if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
         
-        $.fn.textWidth.fakeEl.text(text || this.val() || this.text() || this.attr('placeholder')).css('font', font || this.css('font'));
+        $.fn.textWidth.fakeEl.text(text || this.val() || this.text() || this.attr('placeholder')).css({
+            'font-weight' : this.css('font-weight'),
+            'font-size' : this.css('font-size'),
+            'font-family' : this.css('font-family')
+        });
         
         return $.fn.textWidth.fakeEl.width();
     };
