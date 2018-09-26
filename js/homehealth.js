@@ -498,7 +498,7 @@ function createProgress(){
 
     var introMoreOnTopic = {
         'primary-care' : new element(false),
-        'clinicians' : new element(false),
+        'community-health' : new element(false),
         'environment' : new element(false),
         'hand-hygiene' : new element(false),
         'deliverables' : new element(false),
