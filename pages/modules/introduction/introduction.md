@@ -38,7 +38,7 @@ more:
     url: primary-care
   - title: Community Health
     image: modules/pcc/topic/CareoftheOlderAdult.jpg
-    url: comunity-health
+    url: community-health
   - title: Environment
     image: modules/pcc/topic/ManagingChronicConditions.jpg
     url: environment

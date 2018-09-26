@@ -1,8 +1,8 @@
 ---
 layout: more
-permalink: "/modules/introduction/comunity-health/"
+permalink: "/modules/introduction/community-health/"
 title: Community Health Clinicians
-id: comunity-health
+id: community-health
 
 sections:
   - section:
