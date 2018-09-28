@@ -27,11 +27,11 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-shell": "^0.6.5",
-    "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.1"
   },
   "dependencies": {
     "gulp-newer": "^1.4.0",
+    "gulp-remove-logging": "^1.2.0",
     "svgo": "^1.0.5"
   }
 }
