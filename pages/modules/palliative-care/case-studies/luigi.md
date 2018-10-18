@@ -1,6 +1,6 @@
 --- 
 layout: case-study
-permalink: "/modules/pallative-care/luigi/"
+permalink: "/modules/palliative-care/luigi/"
 video: CaseStudy3.mp4
 title: Luigi’s Story
 collapse-backstory: true

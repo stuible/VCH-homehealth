@@ -1,6 +1,6 @@
 --- 
 layout: case-study
-permalink: "/modules/pallative-care/agit/"
+permalink: "/modules/palliative-care/agit/"
 video: CaseStudy4.mp4
 title: Ajit’s Story
 collapse-backstory: true

@@ -1,7 +1,7 @@
 --- 
 layout: module
-title: Pallative Care
-permalink: "/modules/pallative-care/"
+title: Palliative Care
+permalink: "/modules/palliative-care/"
 background: pallative.jpeg
 
 objectives:

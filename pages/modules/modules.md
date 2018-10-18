@@ -42,8 +42,8 @@ modules:
         linktext: Central Venous Lines Care & Maintenance
         text: Online Course
         
-  - name: Pallative Care
-    pagename: pallative-care
+  - name: Palliative Care
+    pagename: palliative-care
     video: Pallatative-HHsmall.mp4
     background: pallative.jpeg
     before-beginning:
