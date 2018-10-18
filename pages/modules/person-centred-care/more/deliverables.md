@@ -9,9 +9,9 @@ deliverables:
     link: https://culturallyconnected.ca/
     link-text: Cultural Connectedness
     duration: 60 mins
-  - text: Harm Reduction
+  - text: Please complete the module on 
     link: https://learninghub.phsa.ca/Courses/13040/harm-reduction
-    link-text: Cultural Connectedness
+    link-text: Harm Reduction
     duration: 180 mins
   - text: Please complete the course on 
     link: https://learninghub.phsa.ca/Courses/11044/chronic-disease-self-management-online
@@ -22,7 +22,7 @@ deliverables:
     link-text: "Heart failure: Management and Support"
     duration: 45 mins
   - text: Please complete the module 
-    link: https://learn.vch.ca/m2/course/view.php?id=1236
+    link: https://learninghub.phsa.ca/Courses/14421/fh-home-health-copd-management-online
     link-text: COPD Management
     duration: 60 mins
   - text: Please complete the module 
