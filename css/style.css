@@ -542,7 +542,7 @@ body {
   width: 100%;
   color: #ffffff;
   position: fixed;
-  font-family: "hkgrotesk-regular", sans-serif;
+  font-family: "hkgrotesk-bold", sans-serif;
   letter-spacing: 0.005em;
   height: 75px;
   top: 0px;
@@ -553,8 +553,7 @@ body {
   background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  z-index: 11;
-  font-weight: 400; }
+  z-index: 11; }
   .menubar a {
     color: unset;
     text-decoration: none; }
@@ -744,6 +743,9 @@ body {
   width: fit-content;
   margin: 0 auto; }
 
+.vex.vex-theme-default .vex-content {
+  font-family: "hkgrotesk-regular", sans-serif !important; }
+
 .vex-dialog-button-primary {
   background-color: #5AAF7F !important; }
 
@@ -756,7 +758,8 @@ body {
 .vex-duration {
   margin-top: 25px;
   color: #838383;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  font-family: "hkgrotesk-bold", sans-serif; }
 
 .vex-title {
   color: #000;
@@ -1751,7 +1754,7 @@ body {
 .slide-title {
   color: #fff;
   font-size: 2em;
-  font-family: "hkgrotesk-regular", sans-serif;
+  font-family: "hkgrotesk-bold", sans-serif;
   letter-spacing: 0.05em;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;

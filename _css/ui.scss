@@ -27,6 +27,11 @@
     padding-bottom: 5px;
     width: fit-content;
     margin: 0 auto;
+    
+}
+
+.vex.vex-theme-default .vex-content {
+    font-family: $font !important;
 }
 
 .vex-dialog-button-primary {
@@ -45,6 +50,7 @@
     margin-top: 25px;
     color: #838383;
     font-size: 0.8em;
+    font-family: $fontBold;
 }
 
 .vex-title{

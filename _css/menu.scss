@@ -6,14 +6,14 @@
     width: 100%;
     color: #ffffff;
     position: fixed;
-    font-family: $font;
+    font-family: $fontBold;
     letter-spacing: 0.005em;
     height: $menuHeight;
     top: 0px;
     background-color: #00000000; /* For browsers that do not support gradients */
     background: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.3)); 
     z-index: 11;
-    font-weight: 400;
+    // font-weight: 400;
 
     a {
         color: unset;
