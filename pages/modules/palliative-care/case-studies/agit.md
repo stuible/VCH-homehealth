@@ -2,7 +2,7 @@
 layout: case-study
 permalink: "/modules/palliative-care/agit/"
 video: CaseStudy4.mp4
-title: Ajit’s Story
+title: Agit’s Story
 collapse-backstory: true
 
 background:
